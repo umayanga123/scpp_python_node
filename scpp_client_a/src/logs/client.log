@@ -1,0 +1,25 @@
+2016-06-23 23:14:30,689 - utils.crypto_utils - INFO -                                                             keys exists
+2016-06-23 23:14:30,689 - __main__ - INFO - client started
+2016-06-23 23:14:30,708 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDeWhYYWxiY094MnFiK0NmMzhDdDRDNWUragpDR1B0T2VHaGZDWjgvL0trSlVYOEw1L0NRb1g0U1E4N1ZqV0VJYWhwOXdLNE1WZ3ozbGxpdWlLVjc0U25mTzdDCk1qbUdBVVZOWVRTV1pZamtFYUt6NnVaK0lqUktnYXd1MVJVUHB4VHBHNFVSeG1KTDFjc3NRY25EZTBkamJ4WjAKTGhGakhCamRKbVJIS3hVNExRSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1466703870.7 ^mysensors hgX7ZVoJOhTrx0AYA8Kgjak+VgHXcyRBuoUt+bnjJ9/WkS7fLnDkrhubTBWrklguLmHZi2iK4GpwlwcQmdspNg8WR5BcO8rbixmxb1vyTg5XcowzyX7Z8q0RuHPBevk66jAvrqc3956d63NU7cTG6EixaFGmCkXqRm7cTAotqiM=
+2016-06-23 23:14:30,708 - utils.senz_parser - INFO -                                                             DATA
+2016-06-23 23:14:30,708 - utils.senz_parser - INFO -                                                             hgX7ZVoJOhTrx0AYA8Kgjak+VgHXcyRBuoUt+bnjJ9/WkS7fLnDkrhubTBWrklguLmHZi2iK4GpwlwcQmdspNg8WR5BcO8rbixmxb1vyTg5XcowzyX7Z8q0RuHPBevk66jAvrqc3956d63NU7cTG6EixaFGmCkXqRm7cTAotqiM=
+2016-06-23 23:14:30,708 - utils.senz_parser - INFO -                                                             mysensors
+2016-06-23 23:14:30,708 - utils.senz_parser - INFO -                                                             None
+2016-06-23 23:14:30,708 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDeWhYYWxiY094MnFiK0NmMzhDdDRDNWUragpDR1B0T2VHaGZDWjgvL0trSlVYOEw1L0NRb1g0U1E4N1ZqV0VJYWhwOXdLNE1WZ3ozbGxpdWlLVjc0U25mTzdDCk1qbUdBVVZOWVRTV1pZamtFYUt6NnVaK0lqUktnYXd1MVJVUHB4VHBHNFVSeG1KTDFjc3NRY25EZTBkamJ4WjAKTGhGakhCamRKbVJIS3hVNExRSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1466703870.7', '#msg': 'ALREADY_REGISTERED'}
+2016-06-23 23:14:30,708 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-06-23 23:14:30,709 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-06-23 23:14:46,728 - __main__ - INFO - read senz: SHARE #id @uma ^node1 Ev2NqKHtISjTSwBfuzZRGfcSrbf/w2AsuNKWh47X/oTOPlnSZQduDyHfjfXNlFxFEgGGs7JKGU02XH78XORG07FkKXG4y5X5OEUEjmBoY5ip6cTu4ayRowDVuS1dYlsLOxmXpgsydC3ct7Li9zVK7GhKoGFaXt1jRqakhdJgzeo=
+2016-06-23 23:14:46,749 - __main__ - INFO - datagram received PING
+2016-06-23 23:15:06,758 - __main__ - INFO - datagram received PING
+2016-06-23 23:15:21,687 - __main__ - INFO - read senz: UNSHARE #id @uma ^node1 Xg4C6wNkdMcFh0r7dlKudw2X4e/YeeximN0LPRJalIryGg5vbXUKJHDF/1paad/YZYCk7dnScqLL1ZDHjaalBt0cXd4BRiNSGjLnEf3wYe+Ct8712Ps819mL+IJV0VZEub+lpxq+PeBPRXCf5kIxwv20oK5pI6UTCkNbyqXZGY4=
+2016-06-23 23:15:26,761 - __main__ - INFO - datagram received PING
+2016-06-23 23:15:46,780 - __main__ - INFO - datagram received PING
+2016-06-23 23:16:06,785 - __main__ - INFO - datagram received PING
+2016-06-23 23:16:26,800 - __main__ - INFO - datagram received PING
+2016-06-23 23:16:46,806 - __main__ - INFO - datagram received PING
+2016-06-23 23:17:06,822 - __main__ - INFO - datagram received PING
+2016-06-23 23:17:26,823 - __main__ - INFO - datagram received PING
+2016-06-23 23:17:46,842 - __main__ - INFO - datagram received PING
+2016-06-23 23:18:06,851 - __main__ - INFO - datagram received PING
+2016-06-23 23:18:26,870 - __main__ - INFO - datagram received PING
+2016-06-23 23:18:43,997 - __main__ - INFO - client stopped

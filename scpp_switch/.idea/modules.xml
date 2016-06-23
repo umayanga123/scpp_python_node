@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../scpp_client_a/.idea/scpp_client_a.iml" filepath="$PROJECT_DIR$/../scpp_client_a/.idea/scpp_client_a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scpp_client_b/.idea/scpp_client_b.iml" filepath="$PROJECT_DIR$/../scpp_client_b/.idea/scpp_client_b.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/scpp_switch.iml" filepath="$PROJECT_DIR$/.idea/scpp_switch.iml" />
     </modules>
   </component>
