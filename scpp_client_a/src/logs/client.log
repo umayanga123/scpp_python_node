@@ -23,3 +23,19 @@
 2016-06-23 23:18:06,851 - __main__ - INFO - datagram received PING
 2016-06-23 23:18:26,870 - __main__ - INFO - datagram received PING
 2016-06-23 23:18:43,997 - __main__ - INFO - client stopped
+2016-08-08 07:50:30,366 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-08 07:50:30,367 - __main__ - INFO - client started
+2016-08-08 07:50:30,381 - __main__ - INFO - datagram received DATA #msg REGISTRATION_FAIL #time 1470622830.38 ^mysensors FizOSM81xoc6Dsi906DKE39iFm59cOkRTbIVNP4O0YgLSkvYG1rhYsxDENoR7QNizo3NEr8/R91gQpkvDNzPVkNzb2mKc0iA9QLcTQTHqG81drJVXiv42sK6LWamJ78IZ7vQ4sXLZbxVlFFwzr2ZclBj9281x1X78F6NY1A7L/c=
+2016-08-08 07:50:30,382 - utils.senz_parser - INFO -                                                             DATA
+2016-08-08 07:50:30,382 - utils.senz_parser - INFO -                                                             FizOSM81xoc6Dsi906DKE39iFm59cOkRTbIVNP4O0YgLSkvYG1rhYsxDENoR7QNizo3NEr8/R91gQpkvDNzPVkNzb2mKc0iA9QLcTQTHqG81drJVXiv42sK6LWamJ78IZ7vQ4sXLZbxVlFFwzr2ZclBj9281x1X78F6NY1A7L/c=
+2016-08-08 07:50:30,382 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-08 07:50:30,382 - utils.senz_parser - INFO -                                                             None
+2016-08-08 07:50:30,382 - utils.senz_parser - INFO -                                                             {'#time': '1470622830.38', '#msg': 'REGISTRATION_FAIL'}
+2016-08-08 07:50:30,382 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-08 07:50:30,383 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-08 07:50:37,338 - __main__ - INFO - datagram received PING
+2016-08-08 07:50:57,355 - __main__ - INFO - datagram received PING
+2016-08-08 07:51:17,375 - __main__ - INFO - datagram received PING
+2016-08-08 07:51:37,375 - __main__ - INFO - datagram received PING
+2016-08-08 07:51:57,393 - __main__ - INFO - datagram received PING
+2016-08-08 07:52:00,362 - __main__ - INFO - client stopped

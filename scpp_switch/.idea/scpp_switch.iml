@@ -8,6 +8,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="scpp_client_a" />
     <orderEntry type="module" module-name="scpp_client_b" />
+    <orderEntry type="module" module-name="scpp_client_b" />
+    <orderEntry type="module" module-name="scpp_client_b" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
