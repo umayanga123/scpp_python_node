@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # create a file handler
-#handler = logging.FileHandler('logs/server.log')
+handler = logging.FileHandler('logs/server.log')
 handler=logging.StreamHandler()
 handler.setLevel(logging.INFO)
 

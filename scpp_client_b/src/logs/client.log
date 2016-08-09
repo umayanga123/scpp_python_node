@@ -19,3 +19,39 @@
 2016-08-08 07:50:39,668 - handlers.senz_handler - INFO -                                                                 senz received DATA
 2016-08-08 07:50:39,668 - handlers.senz_handler - INFO -                                                                 Post Handled
 2016-08-08 07:52:03,058 - __main__ - INFO - client stopped
+2016-08-09 10:42:04,442 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-09 10:42:04,452 - __main__ - INFO - client started
+2016-08-09 10:42:04,467 - utils.senz_parser - INFO -                                                             DATA
+2016-08-09 10:42:04,468 - utils.senz_parser - INFO -                                                             D1gbsk0W/bZImxoI4t2tcu8TuH8g06fAAPNqt3KYkIfvZyUfuv1QyGTGgo+cq0zJq75Gz4frun00oRGDVOp94T9MFN/uYM8cwS6X7CrhNixJr8ce3uySmH8MI5zNXs58T1wNdx7RfnB34Un+2Q0rqCiIBW+f/veOwhUO1UwO8Y4=
+2016-08-09 10:42:04,468 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-09 10:42:04,468 - utils.senz_parser - INFO -                                                             None
+2016-08-09 10:42:04,468 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470719524.47', '#msg': 'ALREADY_REGISTERED'}
+2016-08-09 10:42:04,469 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-09 10:42:04,470 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-09 10:42:22,197 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-09 10:42:22,197 - utils.senz_parser - INFO -                                                             Aj9x43N03IAcOslAZtd304At1hYXeopzpdI56DkMm8+wEVj6QDsfM57/ssKaI9pPqlln4nm90xp3RLdxku5fvcuCftj16sLjky8kOPP+4sq1wx4/6Txms8Tk0FpV/ixXI++p72C+xZU+en446TSzwmUNSa7JW3MvKF4XWTvPgZ4=
+2016-08-09 10:42:22,197 - utils.senz_parser - INFO -                                                             node1
+2016-08-09 10:42:22,198 - utils.senz_parser - INFO -                                                             node2
+2016-08-09 10:42:22,198 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#balance': '', '#time': '1470719524.47', '#msg': 'ALREADY_REGISTERED', '#id': ''}
+2016-08-09 10:42:22,198 - handlers.senz_handler - INFO -                                                                 senz received SHARE
+2016-08-09 10:42:22,198 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-09 10:55:38,179 - __main__ - INFO - client stopped
+2016-08-09 11:16:54,046 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-09 11:16:54,047 - __main__ - INFO - client started
+2016-08-09 11:16:54,065 - utils.senz_parser - INFO -                                                             DATA
+2016-08-09 11:16:54,065 - utils.senz_parser - INFO -                                                             ACa1ghK5NvYAaN56zrf/EAlpgEuLhNWHG7SxpGEC7TjLp8oFEnQa8xsNSmdX6fV25558jsLwAvjVpymJ38jwa3GGNp0BEiQbOyHMEcXPqE4ixZTn1Rsz8Eif3UPYEtKccOV/ic50Qs4Z10C7ILFpnxEdPqRX6bpw2HdwBvvwQTk=
+2016-08-09 11:16:54,065 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-09 11:16:54,065 - utils.senz_parser - INFO -                                                             None
+2016-08-09 11:16:54,065 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470721614.06', '#msg': 'ALREADY_REGISTERED'}
+2016-08-09 11:16:54,066 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-09 11:16:54,067 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-09 11:17:07,780 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-09 11:17:07,781 - utils.senz_parser - INFO -                                                             Fvf2C418kyvBSsweyVc96aU+8vOredS9crpLjfWiUuZ4wT8qlN0e9pd+dfvq1kAonIVbKcf086EJl+SqgCFsfi36GtiECJCtP6agNhbUMgVFJ4c3MJ97TwjLr6mKX+jz8g3voypJpq5fC801w2pBEjasCwvqBqefGt/3Y/CnMLk=
+2016-08-09 11:17:07,781 - utils.senz_parser - INFO -                                                             node1
+2016-08-09 11:17:07,781 - utils.senz_parser - INFO -                                                             node2
+2016-08-09 11:17:07,781 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470721614.06', '#msg': 'ALREADY_REGISTERED', '#balance': ''}
+2016-08-09 11:17:07,781 - handlers.senz_handler - INFO -                                                                 senz received SHARE
+2016-08-09 11:17:07,782 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-09 11:20:05,091 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-09 11:20:05,092 - __main__ - INFO - client started
+2016-08-09 11:20:05,097 - __main__ - INFO - client stopped

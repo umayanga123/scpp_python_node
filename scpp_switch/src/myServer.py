@@ -19,7 +19,7 @@
 ##  limitations under the License.
 ##
 ###############################################################################
-
+import tkMessageBox
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet import reactor
 import sys
@@ -29,41 +29,51 @@ import logging
 
 from pymongo import MongoClient
 
-#lib_path = os.path.abspath('utils')
-#sys.path.append(lib_path)
-
+from sever_ui import CumulativeLogger
+import sever_ui.MainWindowApp
 from utils.myParser import *
 from utils.myUser import *
 from utils.myCrypto import *
 
+import gettext
+
+_ = gettext.gettext
+
+logging.basicConfig()
+'''l = logging.getLogger()
+l.setLevel(logging.INFO)'''
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-# create a file handler
-#handler = logging.FileHandler('logs/server.log')
-handler=logging.StreamHandler()
-handler.setLevel(logging.INFO)
+if not (os.path.exists('logs')):
+    os.mkdir('logs')
+
+filehandler = logging.FileHandler('logs/server.log')
+filehandler.setLevel(logging.INFO)
 
 # create a logging format
-formatter = logging.Formatter('[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-
-handler.setFormatter(formatter)
-
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+filehandler.setFormatter(formatter)
 # add the handlers to the logger
-logger.addHandler(handler)
+logger.addHandler(filehandler)
+#logger.propagate = False
 
-#UDP Server port number should be assigned here
+
+# UDP Server port number should be assigned here
 port = 9090
 # At present we manage connection in a dictionary.
 # We save connection IP and port along with user/device name
 connections = {}
 connectionsTime = {}
 
-#These global variables will be used to keep the server name and its public key
+# These global variables will be used to keep the server name and its public key
 serverName = "mysensors"
 serverPubkey = ""
-#Database connection will be kept in this variable
+# Database connection will be kept in this variable
 database = ""
+
+
 # Here's a UDP version of the simplest possible SENZE protocol
 
 
@@ -74,6 +84,7 @@ class mySensorUDPServer(DatagramProtocol):
     # SHARE #pubkey PEM_PUBKEY @mysensors #time timeOfRequest
         ^userName signatureOfTheSenze
     '''
+
     def createUser(self, query, address):
         global database
         global serverName
@@ -91,7 +102,7 @@ class mySensorUDPServer(DatagramProtocol):
             phone = data['phone']
         if cry.verifySENZE(query, pubkey):
             reg_status = usr.addUser(query.getSender(), phone, query.getSENZE(),
-                                 pubkey, query.getSignature())
+                                     pubkey, query.getSignature())
 
         logger.info('Registration status: %s' % reg_status)
 
@@ -103,12 +114,14 @@ class mySensorUDPServer(DatagramProtocol):
             st = 'DATA #msg REGISTRATION_FAIL'
         senze = cry.signSENZE(st)
         self.transport.write(senze, address)
+
     '''
     # This methid will remove the user
          at the server based on the following SENZE
     # UNSHARE #pubkey @mysensors #time timeOfRequest
          ^userName signatureOfTheSenze
     '''
+
     def removeUser(self, sender, pubkey, address):
         global database
         global serverName
@@ -174,8 +187,8 @@ class mySensorUDPServer(DatagramProtocol):
         for recipient in recipients:
             recipientDB = myUser(database, recipient)
             if 'pubkey' in sensors:
-                #Since mysensors already has public key of it clients,
-                #it responses on behalf of the client.
+                # Since mysensors already has public key of it clients,
+                # it responses on behalf of the client.
                 pubkey = recipientDB.loadPublicKey()
                 if pubkey != '':
                     if sender in connections.keys():
@@ -185,12 +198,12 @@ class mySensorUDPServer(DatagramProtocol):
                         cry = myCrypto(serverName)
                         senze = cry.signSENZE(senze)
                         self.transport.write(senze, backward)
-            #Otherwise GET message will forward to the recipients
+            # Otherwise GET message will forward to the recipients
             else:
                 if recipient in connections.keys():
                     forward = connections[recipient]
                     if forward != 0 and \
-                       recipientDB.isShare(sender, query.getSensors()):
+                            recipientDB.isShare(sender, query.getSensors()):
                         self.transport.write(query.getFULLSENZE(), forward)
                     else:
                         logger.error('Senz not shared with recipient: %s' % recipient)
@@ -204,7 +217,7 @@ class mySensorUDPServer(DatagramProtocol):
         sender = query.getSender()
         usr = myUser(database, sender)
         recipients = query.getUsers()
-        #PUT message will forward to the recipients
+        # PUT message will forward to the recipients
         for recipient in recipients:
             if recipient in connections.keys():
                 recipientDB = myUser(database, recipient)
@@ -228,7 +241,7 @@ class mySensorUDPServer(DatagramProtocol):
         for recipient in recipients:
             if recipient in connections.keys():
                 recipientDB = myUser(database, recipient)
-                #DATA msg queries will always deliverd
+                # DATA msg queries will always deliverd
                 if recipientDB.isAllow(sender, sensors) or "msg" in sensors:
                     forward = connections[recipient]
                     if forward != 0:
@@ -258,13 +271,13 @@ class mySensorUDPServer(DatagramProtocol):
         pubkey = senderDB.loadPublicKey()
 
         if cmd == "SHARE" and "pubkey" in sensors and serverName in recipients:
-            #Create a new account
+            # Create a new account
             self.createUser(query, address)
             validQuery = True
 
-        elif cmd == "UNSHARE" and "pubkey" in sensors and\
-                serverName in recipients:
-            #Remove the account
+        elif cmd == "UNSHARE" and "pubkey" in sensors and \
+                        serverName in recipients:
+            # Remove the account
             status = False
             if pubkey != "":
                 if cry.verifySENZE(query, pubkey):
@@ -295,38 +308,43 @@ class mySensorUDPServer(DatagramProtocol):
             senze = cry.signSENZE(senze)
             self.transport.write(senze, address)
 
-    #Let's send a ping to keep open the port
+    # Let's send a ping to keep open the port
     def sendPing(self, delay):
         global connections
         for recipient in connections:
             forward = connections[recipient]
             timeGap = time.time() - connectionsTime[recipient]
-            #If there are no activities messages during in an hour * 24 (day),
-            #let's close the connection
+            # If there are no activities messages during in an hour * 24 (day),
+            # let's close the connection
             if (timeGap < 3600 * 24):
                 self.transport.write("PING", forward)
             else:
                 connections[recipient] = 0
-            #   connectionsTime.pop(recipient,None)
+                #   connectionsTime.pop(recipient,None)
         reactor.callLater(delay, self.sendPing, delay=delay)
 
-    #This function is called when we start the protocol
+    # This function is called when we start the protocol
     def startProtocol(self):
         logger.info("Server started")
         self.sendPing(20)
 
 
+def log():
+    logger.info("Server Public Key :" + serverPubkey)
+
+
 def init():
-# If .servername is not there we will read the server name from keyboard
-# else we will get it from .servername file
+    # If .servername is not there we will read the server name from keyboard
+    # else we will get it from .servername file
     try:
         if not os.path.isfile(".servername"):
-            serverName = raw_input("Enter the server name:")
+            serverName = "mysensors"
+            # serverName = raw_input("Enter the server name:")
             f = open(".servername", 'w')
             f.write(serverName + '\n')
             f.close()
         else:
-            #The server name will be read form the .servername file
+            # The server name will be read form the .servername file
             f = open(".servername", "r")
             serverName = f.readline().rstrip("\n")
     except:
@@ -340,7 +358,6 @@ def init():
     try:
         cry = myCrypto(serverName)
         if not os.path.isfile(cry.pubKeyLoc):
-
             # Private key and public key was saved in the
             #           .servernamePriveKey and .servernamePubKey files
             cry.generateRSA(1024)
@@ -354,23 +371,36 @@ def main():
     global database
     global port
 
-    #Create connection to the Mongo DB
+    # Create connection to the Mongo DB
     try:
         client = MongoClient('localhost', 27017)
-        #Creating the database for the server
+        # Creating the database for the server
         db = client[serverName]
         collection = db['users']
         # Access the user collection from the database
         database = db.users
 
+
     except:
         logger.error("Cannot aaccess the Mongo database.")
         raise SystemExit
 
-    reactor.listenUDP(port, mySensorUDPServer())
-    reactor.run()
+    try:
+        reactor.listenUDP(port, mySensorUDPServer())
+        reactor.run(installSignalHandlers=False)
+    except Exception, e:
+        tkMessageBox.showinfo("SCPP Message", "Server All ready Started")
+        #logger.info(_('Switch Shut Down'))
+        reactor.callFromThread(reactor.stop)
+        pass
+
+
+def stop_switch():
+    logger.info(_('Switch Shut Down'))
+    reactor.callFromThread(reactor.stop)
+
 
 if __name__ == '__main__':
-    init()
-    logger.info(serverPubkey)
-    main()
+    cl = CumulativeLogger.CumulativeLogger()
+    logger.info(_('Starting the SCPP Minner...!'))
+    sever_ui.MainWindowApp.MainWindowApp(cl).run()
