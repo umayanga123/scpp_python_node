@@ -1,0 +1,18 @@
+2016-08-10 09:29:09,043 - __main__ - INFO - client started
+2016-08-10 09:29:09,047 - __main__ - INFO - client stopped
+2016-08-10 09:30:41,137 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-10 09:30:41,138 - __main__ - INFO - client started
+2016-08-10 09:30:41,143 - __main__ - INFO - client stopped
+2016-08-10 09:31:32,623 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-10 09:31:32,623 - __main__ - INFO - client started
+2016-08-10 09:31:32,643 - __main__ - INFO - datagram received DATA #msg REGISTRATION_DONE #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1470801692.64 ^mysensors Ph/0OX0rvu069Y3ovUQBuMPQRTl3aRy/HxGSofjYMEVSuGb5XRGnWFSu0khmYCHVzh8QhMq5RN9HZeh3SKBJDGC8PidratR8l12EYwleoXNO9Fqm6mg1xPlWuQ1IHQKUdu/t7GU88FYlsXMJ9RpqJeKeuF8NaVVpgAR/f/TPEZg=
+2016-08-10 09:31:32,644 - utils.senz_parser - INFO -                                                             DATA
+2016-08-10 09:31:32,644 - utils.senz_parser - INFO -                                                             Ph/0OX0rvu069Y3ovUQBuMPQRTl3aRy/HxGSofjYMEVSuGb5XRGnWFSu0khmYCHVzh8QhMq5RN9HZeh3SKBJDGC8PidratR8l12EYwleoXNO9Fqm6mg1xPlWuQ1IHQKUdu/t7GU88FYlsXMJ9RpqJeKeuF8NaVVpgAR/f/TPEZg=
+2016-08-10 09:31:32,644 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-10 09:31:32,644 - utils.senz_parser - INFO -                                                             None
+2016-08-10 09:31:32,644 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470801692.64', '#msg': 'REGISTRATION_DONE'}
+2016-08-10 09:31:32,645 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-10 09:31:32,648 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 09:31:42,723 - __main__ - INFO - datagram received PING
+2016-08-10 09:32:02,725 - __main__ - INFO - datagram received PING
+2016-08-10 09:59:31,488 - __main__ - INFO - client stopped

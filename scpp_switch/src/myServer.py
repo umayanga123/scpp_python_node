@@ -94,14 +94,14 @@ class mySensorUDPServer(DatagramProtocol):
         cry = myCrypto(serverName)
         data = query.getData()
         pubkey = ''
-        phone = ''
+        #phone = ''
         reg_status = ''
         if 'pubkey' in data:
             pubkey = data['pubkey']
-        if 'phone' in data:
-            phone = data['phone']
+        '''if 'phone' in data:
+            phone = data['phone']'''
         if cry.verifySENZE(query, pubkey):
-            reg_status = usr.addUser(query.getSender(), phone, query.getSENZE(),
+            reg_status = usr.addUser(query.getSender(),query.getSENZE(),
                                      pubkey, query.getSignature())
 
         logger.info('Registration status: %s' % reg_status)

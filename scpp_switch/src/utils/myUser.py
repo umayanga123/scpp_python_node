@@ -49,7 +49,7 @@ class myUser:
        else:
           doc=""
 
-   def addUser(self,name,phone,senze,pubkey,signature):
+   def addUser(self,name,senze,pubkey,signature):
        # find user with same useraname and pubkey
        doc=self.database.find_one({"name":name,"pubkey":pubkey})
        if(doc):
@@ -65,7 +65,7 @@ class myUser:
        else:
           #The system support public key based authentication.
           #It saves public key
-          user = {"name":name,"phone":phone,"senze":senze,"pubkey":pubkey,"signature":signature}
+          user = {"name":name,"senze":senze,"pubkey":pubkey,"signature":signature}
           post_id = self.database.insert(user)
           return 'DONE'
 

@@ -6,7 +6,7 @@ class ProgressBarWithAck:
     """ Create progress bar controller, remember connector """
     self.conn  = conn
     self.cur   = 0
-    self.limit = 100
+    self.limit = 10
 
   def set(self, cur, limit):
     """ Initialize current position and maximal value """

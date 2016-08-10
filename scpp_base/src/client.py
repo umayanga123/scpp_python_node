@@ -1,3 +1,4 @@
+from distlib.compat import raw_input
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet.task import LoopingCall
 from twisted.internet import reactor, threads

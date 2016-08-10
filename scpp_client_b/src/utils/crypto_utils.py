@@ -6,6 +6,8 @@ from base64 import b64encode
 import os.path
 import logging
 
+from config.config import clientname
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -77,7 +79,7 @@ def init_keys():
         key_file.close()
 
     # TODO read senzy name from config file
-    senzy_name = 'switch'
+    senzy_name =clientname
     init_dirs(senzy_name)
     '''
     # generate keys

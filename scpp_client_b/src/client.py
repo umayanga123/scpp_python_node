@@ -78,6 +78,7 @@ class SenzcProtocol(DatagramProtocol):
         Call when datagram protocol stops. Need to clear global connection if
         exits from here
         """
+        reactor.callFromThread(reactor.stop)
         logger.info('client stopped')
 
     def datagramReceived(self, datagram, host):

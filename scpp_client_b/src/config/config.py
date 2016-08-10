@@ -2,7 +2,7 @@ import ConfigParser as cp
 
 
 config = cp.RawConfigParser()
-config.read('config.cfg')
+config.read('config/config.cfg')
 
 host=config.get("connections","host")
 port=config.getint("connections","port")
