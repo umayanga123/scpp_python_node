@@ -16,3 +16,271 @@
 2016-08-10 09:31:42,723 - __main__ - INFO - datagram received PING
 2016-08-10 09:32:02,725 - __main__ - INFO - datagram received PING
 2016-08-10 09:59:31,488 - __main__ - INFO - client stopped
+
+
+2016-08-10 23:04:21,194 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-10 23:04:21,195 - __main__ - INFO - client started
+2016-08-10 23:04:21,212 - __main__ - INFO - datagram received DATA #msg REGISTRATION_DONE #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1470850461.21 ^mysensors ZOJ+SrKTYDQtEVRA4hyWEelqO65dVvG5QhZgw9LAbhQJ4fF8WUTFj7c8S+xgllaDjz8fboOx3jZzKe8TdaXBPJtojh0GG8ClphYwuYyKJbwurAgO+3xmBF+ZWSD/9SvDQVSgwdja0EWXPlrhMCuITbW8UNR07a1v/nUT56vGly0=
+2016-08-10 23:04:21,212 - utils.senz_parser - INFO -                                                             DATA
+2016-08-10 23:04:21,212 - utils.senz_parser - INFO -                                                             ZOJ+SrKTYDQtEVRA4hyWEelqO65dVvG5QhZgw9LAbhQJ4fF8WUTFj7c8S+xgllaDjz8fboOx3jZzKe8TdaXBPJtojh0GG8ClphYwuYyKJbwurAgO+3xmBF+ZWSD/9SvDQVSgwdja0EWXPlrhMCuITbW8UNR07a1v/nUT56vGly0=
+2016-08-10 23:04:21,212 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-10 23:04:21,212 - utils.senz_parser - INFO -                                                             None
+2016-08-10 23:04:21,212 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470850461.21', '#msg': 'REGISTRATION_DONE'}
+2016-08-10 23:04:21,213 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-10 23:04:21,214 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:04:40,623 - __main__ - INFO - datagram received PING
+2016-08-10 23:05:00,625 - __main__ - INFO - datagram received PING
+2016-08-10 23:05:20,640 - __main__ - INFO - datagram received PING
+2016-08-10 23:05:21,940 - __main__ - INFO - datagram received SHARE #ide 12 #msg ok @node2 @baseNode ^node1 iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:05:21,940 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-10 23:05:21,940 - utils.senz_parser - INFO -                                                             iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:05:21,941 - utils.senz_parser - INFO -                                                             node1
+2016-08-10 23:05:21,941 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-10 23:05:21,941 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470850461.21', '#msg': 'ok', '#ide': '12'}
+2016-08-10 23:05:21,941 - handlers.senz_handler - INFO -                                                                 senz received SHARE
+2016-08-10 23:05:21,942 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:05:40,656 - __main__ - INFO - datagram received PING
+2016-08-10 23:05:53,511 - __main__ - INFO - client stopped
+2016-08-10 23:13:29,093 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-10 23:13:29,094 - __main__ - INFO - client started
+2016-08-10 23:13:29,105 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1470851009.1 ^mysensors frfWEaXeRtgAmqzDw/WYxWr+qwzjrErRqBgerYKgu6CWck8rBsOdqYDOydZM1q2+VeI0RCqiGGUQcSP8LgeFMyCIBba56jbInA0qr34UURadajhWCuVWy7cIqGy2nuMlJpm/vYve493R80BULEc5OE0CJAvCWxtGFg3xZ9WThoY=
+2016-08-10 23:13:29,105 - utils.senz_parser - INFO -                                                             DATA
+2016-08-10 23:13:29,105 - utils.senz_parser - INFO -                                                             frfWEaXeRtgAmqzDw/WYxWr+qwzjrErRqBgerYKgu6CWck8rBsOdqYDOydZM1q2+VeI0RCqiGGUQcSP8LgeFMyCIBba56jbInA0qr34UURadajhWCuVWy7cIqGy2nuMlJpm/vYve493R80BULEc5OE0CJAvCWxtGFg3xZ9WThoY=
+2016-08-10 23:13:29,105 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-10 23:13:29,105 - utils.senz_parser - INFO -                                                             None
+2016-08-10 23:13:29,105 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470851009.1', '#msg': 'ALREADY_REGISTERED'}
+2016-08-10 23:13:29,106 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-10 23:13:29,106 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:13:32,318 - __main__ - INFO - datagram received SHARE #ide 12 #msg ok @node2 @baseNode ^node1 iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:13:32,318 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-10 23:13:32,318 - utils.senz_parser - INFO -                                                             iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:13:32,318 - utils.senz_parser - INFO -                                                             node1
+2016-08-10 23:13:32,318 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-10 23:13:32,318 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470851009.1', '#msg': 'ok', '#ide': '12'}
+2016-08-10 23:13:32,319 - handlers.senz_handler - INFO -                                                                 senz received SHARE
+2016-08-10 23:13:32,319 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:13:40,058 - __main__ - INFO - datagram received PING
+2016-08-10 23:13:54,374 - __main__ - INFO - client stopped
+2016-08-10 23:15:15,873 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-10 23:15:15,874 - __main__ - INFO - client started
+2016-08-10 23:15:15,886 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1470851115.88 ^mysensors NhZ3GxpUatrXc8FIucCnqGwUTTAux0TeLzaeZ0xiLMbRHz91/iaxH8EPJUOgw05Qf4M4oaIkvt/Xpuu3iKaPvt5eBXH3oFdxyXGbZlh6aJPAa525nylV4K2H2U2Kyk2D86qukX9i7FZItxfh9+domVr4cTRs5nU5U1qaYDcl3LU=
+2016-08-10 23:15:15,886 - utils.senz_parser - INFO -                                                             DATA
+2016-08-10 23:15:15,886 - utils.senz_parser - INFO -                                                             NhZ3GxpUatrXc8FIucCnqGwUTTAux0TeLzaeZ0xiLMbRHz91/iaxH8EPJUOgw05Qf4M4oaIkvt/Xpuu3iKaPvt5eBXH3oFdxyXGbZlh6aJPAa525nylV4K2H2U2Kyk2D86qukX9i7FZItxfh9+domVr4cTRs5nU5U1qaYDcl3LU=
+2016-08-10 23:15:15,886 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-10 23:15:15,886 - utils.senz_parser - INFO -                                                             None
+2016-08-10 23:15:15,887 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470851115.88', '#msg': 'ALREADY_REGISTERED'}
+2016-08-10 23:15:15,887 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-10 23:15:15,888 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:15:19,427 - __main__ - INFO - datagram received SHARE #ide 12 #msg ok @node2 @baseNode ^node1 iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:15:19,427 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-10 23:15:19,427 - utils.senz_parser - INFO -                                                             iK0MBD24500mu9D9+qkQ17uv/BNduuyQ7pOZFwyNt7FQH5LXncCPtyI1twrVP0+pu7OCVepuaVWlzRrNwicHmphufSh/EAOB73W0EMSWOIx4PpKrgcBuwzSL9pARZgwfh9R45MCShNIulMdDMdRUnELzM58zPtak1Gx5Yb8vHls=
+2016-08-10 23:15:19,427 - utils.senz_parser - INFO -                                                             node1
+2016-08-10 23:15:19,428 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-10 23:15:19,428 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1470851115.88', '#msg': 'ok', '#ide': '12'}
+2016-08-10 23:15:19,428 - handlers.senz_handler - INFO -                                                                 senz received SHARE
+2016-08-10 23:15:19,429 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-10 23:15:20,097 - __main__ - INFO - datagram received PING
+2016-08-10 23:15:40,106 - __main__ - INFO - datagram received PING
+2016-08-10 23:16:00,111 - __main__ - INFO - datagram received PING
+2016-08-10 23:16:20,114 - __main__ - INFO - datagram received PING
+2016-08-10 23:16:40,116 - __main__ - INFO - datagram received PING
+2016-08-10 23:17:00,134 - __main__ - INFO - datagram received PING
+2016-08-10 23:17:20,152 - __main__ - INFO - datagram received PING
+2016-08-10 23:17:40,170 - __main__ - INFO - datagram received PING
+2016-08-10 23:18:00,186 - __main__ - INFO - datagram received PING
+2016-08-10 23:18:20,202 - __main__ - INFO - datagram received PING
+2016-08-10 23:18:40,221 - __main__ - INFO - datagram received PING
+2016-08-10 23:31:29,517 - __main__ - INFO - client stopped
+2016-08-14 07:57:50,884 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 07:57:50,901 - __main__ - INFO - client started
+2016-08-14 07:57:50,942 - __main__ - INFO - client stopped
+2016-08-14 08:02:32,693 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:02:32,694 - __main__ - INFO - client started
+2016-08-14 08:02:32,698 - __main__ - INFO - client stopped
+2016-08-14 08:03:44,982 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:03:44,983 - __main__ - INFO - client started
+2016-08-14 08:03:44,988 - __main__ - INFO - client stopped
+2016-08-14 08:03:44,989 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:06:06,153 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:06:06,153 - __main__ - INFO - client started
+2016-08-14 08:06:06,158 - __main__ - INFO - client stopped
+2016-08-14 08:06:06,159 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:06:06,553 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:06:06,553 - __main__ - INFO - client started
+2016-08-14 08:06:06,558 - __main__ - INFO - client stopped
+2016-08-14 08:06:06,559 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:17:12,867 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:17:12,868 - __main__ - INFO - client started
+2016-08-14 08:17:12,873 - __main__ - INFO - client stopped
+2016-08-14 08:17:12,873 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:28:49,445 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:28:49,446 - __main__ - INFO - client started
+2016-08-14 08:28:49,454 - __main__ - INFO - client stopped
+2016-08-14 08:28:49,455 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:31:31,298 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:31:31,298 - __main__ - INFO - client started
+2016-08-14 08:31:31,303 - __main__ - INFO - client stopped
+2016-08-14 08:31:31,304 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:35:31,155 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:35:31,156 - __main__ - INFO - client started
+2016-08-14 08:35:31,161 - __main__ - INFO - client stopped
+2016-08-14 08:35:31,162 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:36:22,509 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:36:22,510 - __main__ - INFO - client started
+2016-08-14 08:36:22,514 - __main__ - INFO - client stopped
+2016-08-14 08:36:22,515 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:37:25,022 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:37:25,022 - __main__ - INFO - client started
+2016-08-14 08:37:25,027 - __main__ - INFO - client stopped
+2016-08-14 08:37:25,027 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:37:43,679 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:37:43,680 - __main__ - INFO - client started
+2016-08-14 08:37:43,687 - __main__ - INFO - client stopped
+2016-08-14 08:37:43,688 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:38:27,743 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:38:27,744 - __main__ - INFO - client started
+2016-08-14 08:38:27,748 - __main__ - INFO - client stopped
+2016-08-14 08:38:27,749 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:40:30,351 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:40:30,351 - __main__ - INFO - client started
+2016-08-14 08:40:30,356 - __main__ - INFO - client stopped
+2016-08-14 08:40:30,357 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:40:48,929 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:40:48,929 - __main__ - INFO - client started
+2016-08-14 08:40:48,934 - __main__ - INFO - client stopped
+2016-08-14 08:40:48,935 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:41:03,923 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:41:03,923 - __main__ - INFO - client started
+2016-08-14 08:41:03,928 - __main__ - INFO - client stopped
+2016-08-14 08:41:03,929 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:41:16,660 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:41:16,661 - __main__ - INFO - client started
+2016-08-14 08:41:16,666 - __main__ - INFO - client stopped
+2016-08-14 08:41:16,667 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:41:28,420 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:41:28,421 - __main__ - INFO - client started
+2016-08-14 08:41:28,426 - __main__ - INFO - client stopped
+2016-08-14 08:41:28,426 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:42:33,692 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:42:33,693 - __main__ - INFO - client started
+2016-08-14 08:42:33,698 - __main__ - INFO - client stopped
+2016-08-14 08:44:20,756 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:44:20,757 - __main__ - INFO - client started
+2016-08-14 08:44:20,762 - __main__ - INFO - client stopped
+2016-08-14 08:44:20,763 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:45:30,044 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:45:30,045 - __main__ - INFO - client started
+2016-08-14 08:45:30,050 - __main__ - INFO - client stopped
+2016-08-14 08:45:30,050 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:45:57,462 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:45:57,462 - __main__ - INFO - client started
+2016-08-14 08:45:57,467 - __main__ - INFO - client stopped
+2016-08-14 08:45:57,468 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:48:25,840 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:48:25,841 - __main__ - INFO - client started
+2016-08-14 08:48:25,846 - __main__ - INFO - client stopped
+2016-08-14 08:48:25,847 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:48:57,927 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:48:57,927 - __main__ - INFO - client started
+2016-08-14 08:48:57,932 - __main__ - INFO - client stopped
+2016-08-14 08:48:57,933 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:49:10,080 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:49:10,080 - __main__ - INFO - client started
+2016-08-14 08:49:10,085 - __main__ - INFO - client stopped
+2016-08-14 08:49:10,086 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:53:18,665 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:53:18,665 - __main__ - INFO - client started
+2016-08-14 08:53:18,670 - __main__ - INFO - client stopped
+2016-08-14 08:53:18,671 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:58:50,144 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:58:50,144 - __main__ - INFO - client started
+2016-08-14 08:58:50,149 - __main__ - INFO - client stopped
+2016-08-14 08:58:50,150 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:59:07,257 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:59:07,258 - __main__ - INFO - client started
+2016-08-14 08:59:07,264 - __main__ - INFO - client stopped
+2016-08-14 08:59:07,265 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:59:21,908 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:59:21,909 - __main__ - INFO - client started
+2016-08-14 08:59:21,914 - __main__ - INFO - client stopped
+2016-08-14 08:59:21,914 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 08:59:57,376 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 08:59:57,377 - __main__ - INFO - client started
+2016-08-14 08:59:57,382 - __main__ - INFO - client stopped
+2016-08-14 08:59:57,382 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:00:46,433 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:00:46,433 - __main__ - INFO - client started
+2016-08-14 09:00:46,438 - __main__ - INFO - client stopped
+2016-08-14 09:00:46,439 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:02:22,319 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:02:22,319 - __main__ - INFO - client started
+2016-08-14 09:02:22,324 - __main__ - INFO - client stopped
+2016-08-14 09:02:22,325 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:02:36,293 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:02:36,293 - __main__ - INFO - client started
+2016-08-14 09:02:36,298 - __main__ - INFO - client stopped
+2016-08-14 09:02:36,299 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:03:02,327 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:03:02,327 - __main__ - INFO - client started
+2016-08-14 09:03:02,332 - __main__ - INFO - client stopped
+2016-08-14 09:03:02,333 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:03:23,647 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:03:23,648 - __main__ - INFO - client started
+2016-08-14 09:03:23,653 - __main__ - INFO - client stopped
+2016-08-14 09:03:23,654 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:04:51,658 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:04:51,659 - __main__ - INFO - client started
+2016-08-14 09:04:51,664 - __main__ - INFO - client stopped
+2016-08-14 09:04:51,665 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:05:09,307 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:05:09,308 - __main__ - INFO - client started
+2016-08-14 09:05:09,315 - __main__ - INFO - client stopped
+2016-08-14 09:05:09,316 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:07:35,063 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:07:35,064 - __main__ - INFO - client started
+2016-08-14 09:07:35,070 - __main__ - INFO - client stopped
+2016-08-14 09:07:35,071 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:07:49,679 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:07:49,679 - __main__ - INFO - client started
+2016-08-14 09:07:49,684 - __main__ - INFO - client stopped
+2016-08-14 09:07:49,685 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:10:57,172 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:10:57,173 - __main__ - INFO - client started
+2016-08-14 09:10:57,177 - __main__ - INFO - client stopped
+2016-08-14 09:10:57,178 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:11:19,958 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:11:19,959 - __main__ - INFO - client started
+2016-08-14 09:11:19,963 - __main__ - INFO - client stopped
+2016-08-14 09:11:19,964 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:11:30,049 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:11:30,050 - __main__ - INFO - client started
+2016-08-14 09:11:30,055 - __main__ - INFO - client stopped
+2016-08-14 09:11:30,055 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:11:56,496 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:11:56,497 - __main__ - INFO - client started
+2016-08-14 09:11:56,501 - __main__ - INFO - client stopped
+2016-08-14 09:11:56,502 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:12:30,981 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:12:30,981 - __main__ - INFO - client started
+2016-08-14 09:12:30,986 - __main__ - INFO - client stopped
+2016-08-14 09:12:30,987 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:12:49,828 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:12:49,829 - __main__ - INFO - client started
+2016-08-14 09:12:49,833 - __main__ - INFO - client stopped
+2016-08-14 09:12:49,834 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:13:32,466 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:13:32,466 - __main__ - INFO - client started
+2016-08-14 09:13:32,471 - __main__ - INFO - client stopped
+2016-08-14 09:13:32,471 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:13:40,954 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:13:40,954 - __main__ - INFO - client started
+2016-08-14 09:13:40,959 - __main__ - INFO - client stopped
+2016-08-14 09:13:40,960 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:13:51,902 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:13:51,903 - __main__ - INFO - client started
+2016-08-14 09:13:51,908 - __main__ - INFO - client stopped
+2016-08-14 09:13:51,908 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-14 09:14:33,879 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-14 09:14:33,880 - __main__ - INFO - client started
+2016-08-14 09:14:33,884 - __main__ - INFO - client stopped
+2016-08-14 09:14:33,885 - __main__ - INFO - Starting the SCPP Stock Exchange...!

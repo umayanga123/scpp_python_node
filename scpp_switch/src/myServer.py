@@ -57,7 +57,7 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
-#logger.propagate = False
+# logger.propagate = False
 
 
 # UDP Server port number should be assigned here
@@ -94,14 +94,14 @@ class mySensorUDPServer(DatagramProtocol):
         cry = myCrypto(serverName)
         data = query.getData()
         pubkey = ''
-        #phone = ''
+        # phone = ''
         reg_status = ''
         if 'pubkey' in data:
             pubkey = data['pubkey']
         '''if 'phone' in data:
             phone = data['phone']'''
         if cry.verifySENZE(query, pubkey):
-            reg_status = usr.addUser(query.getSender(),query.getSENZE(),
+            reg_status = usr.addUser(query.getSender(), query.getSENZE(),
                                      pubkey, query.getSignature())
 
         logger.info('Registration status: %s' % reg_status)
@@ -160,6 +160,7 @@ class mySensorUDPServer(DatagramProtocol):
                 if forward != 0:
                     logger.info('Forward senz to: %s' % recipient)
                     self.transport.write(query.getFULLSENZE(), forward)
+
                 else:
                     logger.error('Not recipient found : %s' % recipient)
 
@@ -257,6 +258,7 @@ class mySensorUDPServer(DatagramProtocol):
 
         logger.info('senz received:  %s' % datagram)
 
+
         query = myParser(datagram)
         recipients = query.getUsers()
         sender = query.getSender()
@@ -275,8 +277,7 @@ class mySensorUDPServer(DatagramProtocol):
             self.createUser(query, address)
             validQuery = True
 
-        elif cmd == "UNSHARE" and "pubkey" in sensors and \
-                        serverName in recipients:
+        elif cmd == "UNSHARE" and "pubkey" in sensors and serverName in recipients:
             # Remove the account
             status = False
             if pubkey != "":
@@ -286,6 +287,7 @@ class mySensorUDPServer(DatagramProtocol):
 
         else:
             if pubkey != "":
+                #print "else wada" + query.getFULLSENZE()
                 if cry.verifySENZE(query, pubkey):
                     validQuery = True
 
@@ -390,7 +392,7 @@ def main():
         reactor.run(installSignalHandlers=False)
     except Exception, e:
         tkMessageBox.showinfo("SCPP Message", "Server All ready Started")
-        #logger.info(_('Switch Shut Down'))
+        # logger.info(_('Switch Shut Down'))
         reactor.callFromThread(reactor.stop)
         pass
 

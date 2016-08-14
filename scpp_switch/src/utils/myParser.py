@@ -89,6 +89,7 @@ class myParser:
           else:
               if state=='DATA':
                  self.data[sen]=word
+                 print self.data
                  state='CLEAR'
 
 

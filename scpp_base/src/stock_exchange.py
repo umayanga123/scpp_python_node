@@ -9,11 +9,17 @@ import os
 import logging
 
 
+
+from base_ui import CumulativeLogger
+import base_ui.MainWindowApp
 from utils.crypto_utils import *
 from handlers.senz_handler import *
 from models.senz import *
 from config.config import *
 
+import gettext
+
+_ = gettext.gettext
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -123,12 +129,14 @@ class SenzcProtocol(DatagramProtocol):
         self.transport.write(signed_senz)
 
     def read_senz(self):
-        while True:
+        print('Read Senze')
+        '''while True:
             input_senz = raw_input("Senz : ")
             senz = str(input_senz) + " ^%s" % (clientname)
             signed_senz = sign_senz(senz)
             logger.info('read senz: %s' % signed_senz)
-            self.transport.write(signed_senz)
+            self.transport.write(signed_senz)'''
+
 
 
 
@@ -153,6 +161,9 @@ class SenzcProtocol(DatagramProtocol):
             handler = SenzHandler(self.transport)
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
+
+def log():
+    logger.info("Log ")
 
 
 def init():
@@ -182,5 +193,9 @@ def start():
 
 
 if __name__ == '__main__':
+
     init()
     start()
+    cl = CumulativeLogger.CumulativeLogger()
+    logger.info(_('Starting the SCPP Stock Exchange...!'))
+    base_ui.MainWindowApp.MainWindowApp(cl).run()

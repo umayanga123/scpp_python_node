@@ -115,8 +115,7 @@ class SenzcProtocol(DatagramProtocol):
         receiver = servername
         sender = clientname
 
-        senz = "SHARE #pubkey %s #time %s @%s ^%s" % \
-                         (pubkey, time.time(), receiver, sender)
+        senz = "SHARE  #pubkey %s #time %s @%s ^%s" % (pubkey, time.time(), receiver, sender)
         signed_senz = sign_senz(senz)
 
         self.transport.write(signed_senz)
