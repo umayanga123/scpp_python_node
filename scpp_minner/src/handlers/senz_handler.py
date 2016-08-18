@@ -8,7 +8,7 @@ from utils.crypto_utils import *
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/minner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format

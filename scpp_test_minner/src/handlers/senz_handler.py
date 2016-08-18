@@ -2,13 +2,17 @@ import sys
 import os
 import logging
 
+#TODO refactore paths
+#sys.path.append(os.path.abspath('./utils'))
+#sys.path.append(os.path.abspath('./models'))
+
 from utils.senz_parser import *
 from utils.crypto_utils import *
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/test_log.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -47,7 +51,8 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        logger.info( 'senz received %s' % senz.type)
+        logger.info( 'senz received %s ' % senz.attributes["#msg"])
+        print senz.attributes["#msg"]
 
     def postHandle(self, arg):
         """

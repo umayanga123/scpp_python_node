@@ -15,7 +15,7 @@ import myServer
 
 _ = gettext.gettext
 
-MESSAGE_LOG          = 'log'      # Message to logger
+MESSAGE_LOG          = 'logs'      # Message to logger
 MESSAGE_EXIT_CANCEL  = 'cancel'   # Calculations are cancelled
 MESSAGE_EXIT_OK      = 'ok'       # .. succesfully finished
 MESSAGE_EXIT_ERROR   = 'error'    # .. finished with error

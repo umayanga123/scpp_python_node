@@ -1,0 +1,10 @@
+2016-08-18 22:45:28,379 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-18 22:45:28,379 - __main__ - INFO - client started
+2016-08-18 22:45:28,389 - utils.senz_parser - INFO -                                                             DATA
+2016-08-18 22:45:28,389 - utils.senz_parser - INFO -                                                             QRb4sepMSN7rz4wuYMfs3HmHf37mpFk35BO0AOCpTc+o6edKeE2AfBNxI5t5WDwhVjPcO/xP35xMiGRW3zdzmJkl5yMtQW4+lAur8g9SO881k9koLAhlfp3GriWd7QvdTCEVI6VQ3Mr73mKJSI89xx105fz80xg8TKLHZH1uM4w=
+2016-08-18 22:45:28,389 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-18 22:45:28,389 - utils.senz_parser - INFO -                                                             None
+2016-08-18 22:45:28,390 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471540528.39', '#msg': 'ALREADY_REGISTERED'}
+2016-08-18 22:45:28,390 - handlers.senz_handler - INFO -                                                                 senz received ALREADY_REGISTERED 
+2016-08-18 22:45:28,391 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-18 22:45:31,576 - __main__ - INFO - client stopped

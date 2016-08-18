@@ -2,19 +2,17 @@ from Tkinter import *
 import gettext
 import logging
 import sys
+import os
 
 
-from base_ui import start_application
-from base_ui.ActionWindow import ActionWindow
-from base_ui.ThreadsConnector import ThreadsConnector
-from base_ui.ViewLog import ViewLog
+
 
 _ = gettext.gettext
 
 
 class MainWindowApp:
     def __init__(self, log):
-        """ Remember cumulative log, get logger """
+        """ Remember cumulative logs, get logger """
         self.log = log
         self.logger = logging.getLogger(self.__class__.__name__)
 
@@ -58,7 +56,9 @@ class MainWindowApp:
     def onExit(self):
         """ Process 'Exit' command """
         # self.root.quit()
-        sys.exit()
+        #sys.exit()
+        os._exit(0)
+
 
     def onDatabaseLog(self):
         """ Process 'View Log' command """

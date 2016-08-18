@@ -1,16 +1,13 @@
 import sys
 import os
 
-#TODO refactore paths
-#sys.path.append(os.path.abspath('./models'))
-
 from models.senz import *
 import logging
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/test_log.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format

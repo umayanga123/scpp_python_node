@@ -10,7 +10,7 @@ class CumulativeLoggerHandler(logging.Handler):
     self.main = main
 
   def emit(self, record):
-    """ Process a log message """
+    """ Process a logs message """
     self.main.addItem(record)
 
 class CumulativeLogger:
@@ -23,11 +23,11 @@ class CumulativeLogger:
     logging.getLogger().addHandler(h)
 
   def addItem(self, record):
-    """ Remember a log item """
+    """ Remember a logs item """
     self.items.append(record)
 
   def getText(self, fmt='%(asctime)s %(message)s', datefmt='%H:%M:%S'):
-    """ Convert log messages to text. On formats see logger.Formatter """
+    """ Convert logs messages to text. On formats see logger.Formatter """
     f   = logging.Formatter(fmt, datefmt)
     buf = StringIO.StringIO()
     b   = 0

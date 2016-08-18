@@ -1,4 +1,3 @@
-from distlib.compat import raw_input
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet.task import LoopingCall
 from twisted.internet import reactor, threads
@@ -7,19 +6,12 @@ import time
 import sys
 import os
 import logging
-import multiprocessing
 
 
-from base_ui import CumulativeLogger
-import base_ui.MainWindowApp
 from utils.crypto_utils import *
 from handlers.senz_handler import *
 from models.senz import *
 from config.config import *
-
-import gettext
-
-_ = gettext.gettext
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -27,7 +19,7 @@ logger.setLevel(logging.INFO)
 if not(os.path.exists('logs')):
     os.mkdir('logs')
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/test_log.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -73,19 +65,21 @@ class SenzcProtocol(DatagramProtocol):
         self.share_pubkey()
 
         # start thread to read senz from cmd
+        #a = threads.deferToThread(self.read_senz)
+        #a.addCallback(handler.postHandle)
         d = threads.deferToThread(self.read_senz)
 
-
+        # start ping sender to send ping messages to server in everty 30 mins
+        #lc = LoopingCall(self.send_ping)
+        #lc.start(60 * 30)
 
     def stopProtocol(self):
         """
         Call when datagram protocol stops. Need to clear global connection if
         exits from here
-       """
+        """
         reactor.callFromThread(reactor.stop)
         logger.info('client stopped')
-
-
 
     def datagramReceived(self, datagram, host):
         """
@@ -97,7 +91,7 @@ class SenzcProtocol(DatagramProtocol):
             datagra - senz message
             host - receving host
         """
-        logger.info('datagram received %s' % datagram)
+        #logger.info('datagram received %s' % datagram) #tremporary remove log
 
         # handle receved datagram(senz)
         self.handle_datagram(datagram)
@@ -121,26 +115,42 @@ class SenzcProtocol(DatagramProtocol):
         receiver = servername
         sender = clientname
 
-        senz = "SHARE #pubkey %s #time %s @%s ^%s" % \
-                         (pubkey, time.time(), receiver, sender)
+        senz = "SHARE  #pubkey %s #time %s @%s ^%s" % (pubkey, time.time(), receiver, sender)
         signed_senz = sign_senz(senz)
-
-        # print(signed_senz)
 
         self.transport.write(signed_senz)
 
     def read_senz(self):
-        print('Read Senze')
-        '''while True:
+        while True:
             input_senz = raw_input("Senz : ")
             senz = str(input_senz) + " ^%s" % (clientname)
-            #signed_senz = sign_senz(senz)
-            #logger.info('read senz: %s' % signed_senz)
-           # self.transport.write(signed_senz)'''
+            signed_senz = sign_senz(senz)
 
+            self.transport.write(signed_senz)
 
+            logger.info('read senz: %s' % signed_senz)
 
+    def send_ping(self):
+        """
+        Send ping message to server in everty 30 minutes. The purpose of
+        peroidc ping message is keeping the connection(NAT table entry).
+        ping message would be like below
 
+            DATA
+                #time <time>
+            @mysensors
+            ^<sender> <digital signature>
+        """
+        # TODO get sender and receiver config
+        # send ping message to server via DATA senz
+        receiver ='mysensors'  #'homep'
+        sender = clientname
+
+        senz = "DATA #time %s @%s ^%s" % \
+                                    (time.time(), receiver, sender)
+        signed_senz = sign_senz(senz)
+
+        self.transport.write(signed_senz)
 
     def handle_datagram(self, datagram):
         """
@@ -163,9 +173,6 @@ class SenzcProtocol(DatagramProtocol):
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
 
-def log():
-    logger.info("Log ")
-
 
 def init():
     """
@@ -183,8 +190,6 @@ def start():
     have to provide server host and port details form here.(read from config)
     """
 
-    init()
-
     # TODO get host and port from config
     host = serverhost
     port = serverport
@@ -196,15 +201,5 @@ def start():
 
 
 if __name__ == '__main__':
-
-    global t,t1
-    t = multiprocessing.Process(target=start,args=())
-    t.start()
-
-    cl = CumulativeLogger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Stock Exchange...!'))
-    t1 = multiprocessing.Process(target=base_ui.MainWindowApp.MainWindowApp(cl).run(), args=())
-    t1.start()
-
-
-
+    init()
+    start()

@@ -66,7 +66,7 @@ class ActionWindow(tkSimpleDialog.Dialog):
         self.aw_alarm = self.after(100, self.periodicCheckForMessages)
 
     def onLogMessage(self, text):
-        """ Display log message """
+        """ Display logs message """
         w = self.logwnd
         w.configure(state=Tkinter.NORMAL)
         w.insert(Tkinter.END, text)
@@ -104,7 +104,7 @@ class ActionWindow(tkSimpleDialog.Dialog):
         self.progress_bar.pack(fill=Tkinter.X)
 
     def packLogWindow(self, master):
-        """ Pack log window """
+        """ Pack logs window """
         self.logwnd = ScrolledText.ScrolledText(master, width=60, height=12, state=Tkinter.DISABLED)
         self.logwnd.pack(fill=Tkinter.BOTH, expand=1)
 

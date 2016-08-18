@@ -1,4 +1,3 @@
-from distlib.compat import raw_input
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet.task import LoopingCall
 from twisted.internet import reactor, threads
@@ -7,19 +6,13 @@ import time
 import sys
 import os
 import logging
-import multiprocessing
 
 
-from base_ui import CumulativeLogger
-import base_ui.MainWindowApp
 from utils.crypto_utils import *
 from handlers.senz_handler import *
 from models.senz import *
 from config.config import *
 
-import gettext
-
-_ = gettext.gettext
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -27,7 +20,7 @@ logger.setLevel(logging.INFO)
 if not(os.path.exists('logs')):
     os.mkdir('logs')
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/minner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -74,7 +67,6 @@ class SenzcProtocol(DatagramProtocol):
 
         # start thread to read senz from cmd
         d = threads.deferToThread(self.read_senz)
-
 
 
     def stopProtocol(self):
@@ -130,14 +122,12 @@ class SenzcProtocol(DatagramProtocol):
         self.transport.write(signed_senz)
 
     def read_senz(self):
-        print('Read Senze')
-        '''while True:
+        while True:
             input_senz = raw_input("Senz : ")
             senz = str(input_senz) + " ^%s" % (clientname)
-            #signed_senz = sign_senz(senz)
-            #logger.info('read senz: %s' % signed_senz)
-           # self.transport.write(signed_senz)'''
-
+            signed_senz = sign_senz(senz)
+            logger.info('read senz: %s' % signed_senz)
+            self.transport.write(signed_senz)
 
 
 
@@ -163,9 +153,6 @@ class SenzcProtocol(DatagramProtocol):
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
 
-def log():
-    logger.info("Log ")
-
 
 def init():
     """
@@ -183,8 +170,6 @@ def start():
     have to provide server host and port details form here.(read from config)
     """
 
-    init()
-
     # TODO get host and port from config
     host = serverhost
     port = serverport
@@ -196,15 +181,5 @@ def start():
 
 
 if __name__ == '__main__':
-
-    global t,t1
-    t = multiprocessing.Process(target=start,args=())
-    t.start()
-
-    cl = CumulativeLogger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Stock Exchange...!'))
-    t1 = multiprocessing.Process(target=base_ui.MainWindowApp.MainWindowApp(cl).run(), args=())
-    t1.start()
-
-
-
+    init()
+    start()

@@ -11,7 +11,7 @@ from config.config import clientname
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/stock_exchange.logs')
+filehandler = logging.FileHandler('logs/test_log.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -79,7 +79,7 @@ def init_keys():
         key_file.close()
 
     # TODO read senzy name from config file
-    senzy_name = clientname #'switch'
+    senzy_name =clientname
     init_dirs(senzy_name)
     '''
     # generate keys

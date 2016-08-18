@@ -12,7 +12,7 @@ _ = gettext.gettext
 
 class MainWindowApp:
     def __init__(self, log):
-        """ Remember cumulative log, get logger """
+        """ Remember cumulative logs, get logger """
         self.log = log
         self.logger = logging.getLogger(self.__class__.__name__)
 
@@ -39,7 +39,7 @@ class MainWindowApp:
         """ Process 'Start' command """
         self.logger.info(_('start module'))
         conn = ThreadsConnector.ThreadsConnector()
-        wnd = ActionWindow.ActionWindow(self.root, _('Switch dashbord'), _('Switch log view'))
+        wnd = ActionWindow.ActionWindow(self.root, _('Switch dashbord'), _('Switch logs view'))
         conn.runInGui(wnd, conn, None, start_application.calc, 'calc')
 
     def center(self, toplevel):

@@ -49,7 +49,7 @@ logger.setLevel(logging.INFO)
 if not (os.path.exists('logs')):
     os.mkdir('logs')
 
-filehandler = logging.FileHandler('logs/server.log')
+filehandler = logging.FileHandler('logs/server.logs')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format

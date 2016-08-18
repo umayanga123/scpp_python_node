@@ -10,7 +10,7 @@ class LoggerToWindowHandler(logging.Handler):
     self.conn = conn
 
   def emit(self, record):
-    """ Process a log message """
+    """ Process a logs message """
     self.conn.put_message([ThreadsConnector.MESSAGE_LOG, self.format(record)])
     self.conn.ack()
 

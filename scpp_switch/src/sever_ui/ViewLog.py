@@ -5,7 +5,7 @@ import gettext
 _ = gettext.gettext
 
 class ViewLog(tkSimpleDialog.Dialog):
-  """ Display log messages of a program """
+  """ Display logs messages of a program """
 
   def __init__(self, parent, log):
     """ Create and display window. Log is CumulativeLogger. """
