@@ -19,7 +19,8 @@ class MainWindowApp:
     def run(self):
         """ Create and run GUI """
         self.root = root = Tkinter.Tk()
-        root.title(_('Long Operation Demo'));
+        root.title(_('Long Operation Demo'))
+        root.resizable(width=False, height=False)
         Tkinter.Button(root, text=_('Start'), command=self.onStart, width=10).pack(side=Tkinter.LEFT)
         Tkinter.Button(root, text=_('View Log'), command=self.onViewLog, width=10).pack(side=Tkinter.LEFT)
         Tkinter.Button(root, text=_('Exit'), command=self.onExit, width=10).pack(side=Tkinter.LEFT)

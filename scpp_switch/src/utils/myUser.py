@@ -224,13 +224,17 @@ class myUser:
        post_id = self.database.save(self.usrDoc)
        return True
 
+
+   #GET Method Check
    def isShare(self,recipient,sensors):
+       print self.usrDoc
        if not (self.usrDoc): return False
        for sensor in sensors:
            if not sensor in self.usrDoc.keys(): return False
            if not recipient in self.usrDoc[sensor]: return False
        return True
 
+   #data method Check
    def isAllow(self,sender,sensors):
        if not (self.usrDoc): return False
        if not sender in self.usrDoc.keys(): return False

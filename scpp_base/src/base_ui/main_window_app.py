@@ -1,4 +1,5 @@
 from Tkinter import *
+import tkMessageBox
 import gettext
 import logging
 import sys
@@ -77,6 +78,7 @@ class MainWindowApp:
     def putTestData(self):
         """ Process 'View Log' command """
         print 'Not Yet implement / sample DB table create'
+        tkMessageBox.showinfo("Message", "Not Yet implement / sample DB table create")
 
 
 

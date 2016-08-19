@@ -194,8 +194,7 @@ class mySensorUDPServer(DatagramProtocol):
                 if pubkey != '':
                     if sender in connections.keys():
                         backward = connections[sender]
-                        senze = 'DATA #name %s #pubkey %s' % (recipient,
-                                                              pubkey)
+                        senze = 'DATA #name %s #pubkey %s' % (recipient,pubkey)
                         cry = myCrypto(serverName)
                         senze = cry.signSENZE(senze)
                         self.transport.write(senze, backward)
@@ -203,8 +202,8 @@ class mySensorUDPServer(DatagramProtocol):
             else:
                 if recipient in connections.keys():
                     forward = connections[recipient]
-                    if forward != 0 and \
-                            recipientDB.isShare(sender, query.getSensors()):
+                    print  forward ,sender , query.getSensors(),recipientDB.isShare(sender, query.getSensors())
+                    if forward != 0 and recipientDB.isShare(sender, query.getSensors()):
                         self.transport.write(query.getFULLSENZE(), forward)
                     else:
                         logger.error('Senz not shared with recipient: %s' % recipient)

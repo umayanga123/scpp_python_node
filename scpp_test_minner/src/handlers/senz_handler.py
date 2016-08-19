@@ -51,8 +51,8 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        logger.info( 'senz received %s ' % senz.attributes["#msg"])
-        print senz.attributes["#msg"]
+        logger.info( 'senz received %s ' % senz.type)
+        #print senz.attributes["#msg"]
 
     def postHandle(self, arg):
         """
