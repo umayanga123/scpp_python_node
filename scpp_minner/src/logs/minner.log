@@ -9,3 +9,561 @@
 2016-08-18 22:44:19,814 - handlers.senz_handler - INFO -                                                                 senz received DATA
 2016-08-18 22:44:19,815 - handlers.senz_handler - INFO -                                                                 Post Handled
 2016-08-18 22:44:22,008 - __main__ - INFO - client stopped
+2016-08-19 14:48:51,862 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 14:48:51,863 - __main__ - INFO - client started
+2016-08-19 14:48:52,066 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471598332.06 ^mysensors cmc47b9DDCDRcH/Fdq39DH7Ow0z8an5iVa12dNJE7GEoaJkkt6zC4jT2L6YFDmviKy8lTKM9WbaXnKBhUxrl4Iq2MK+IgThGqdP23LRSOdBoPMMQncr6EeCrNaGyBFzfWBFTn/FJbqXv1hIhZoTsPUMIo/3uBU95OrxrV1GfTHw=
+2016-08-19 14:48:52,067 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 14:48:52,067 - utils.senz_parser - INFO -                                                             cmc47b9DDCDRcH/Fdq39DH7Ow0z8an5iVa12dNJE7GEoaJkkt6zC4jT2L6YFDmviKy8lTKM9WbaXnKBhUxrl4Iq2MK+IgThGqdP23LRSOdBoPMMQncr6EeCrNaGyBFzfWBFTn/FJbqXv1hIhZoTsPUMIo/3uBU95OrxrV1GfTHw=
+2016-08-19 14:48:52,067 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 14:48:52,067 - utils.senz_parser - INFO -                                                             None
+2016-08-19 14:48:52,067 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471598332.06', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 14:48:52,068 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 14:48:52,068 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 14:48:58,466 - __main__ - INFO - datagram received PING
+2016-08-19 14:49:18,483 - __main__ - INFO - datagram received PING
+2016-08-19 14:49:38,502 - __main__ - INFO - datagram received PING
+2016-08-19 14:49:58,517 - __main__ - INFO - datagram received PING
+2016-08-19 14:50:18,536 - __main__ - INFO - datagram received PING
+2016-08-19 14:50:38,551 - __main__ - INFO - datagram received PING
+2016-08-19 14:50:58,557 - __main__ - INFO - datagram received PING
+2016-08-19 14:51:03,178 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode   ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 14:51:18,566 - __main__ - INFO - datagram received PING
+2016-08-19 14:51:38,583 - __main__ - INFO - datagram received PING
+2016-08-19 14:51:58,602 - __main__ - INFO - datagram received PING
+2016-08-19 14:52:18,614 - __main__ - INFO - datagram received PING
+2016-08-19 14:52:38,632 - __main__ - INFO - datagram received PING
+2016-08-19 14:52:58,650 - __main__ - INFO - datagram received PING
+2016-08-19 14:53:18,669 - __main__ - INFO - datagram received PING
+2016-08-19 14:53:28,284 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 14:53:38,676 - __main__ - INFO - datagram received PING
+2016-08-19 14:53:58,692 - __main__ - INFO - datagram received PING
+2016-08-19 14:54:18,710 - __main__ - INFO - datagram received PING
+2016-08-19 14:54:38,718 - __main__ - INFO - datagram received PING
+2016-08-19 14:54:58,724 - __main__ - INFO - datagram received PING
+2016-08-19 14:55:05,786 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode   ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 14:55:18,734 - __main__ - INFO - datagram received PING
+2016-08-19 14:55:38,753 - __main__ - INFO - datagram received PING
+2016-08-19 14:55:58,773 - __main__ - INFO - datagram received PING
+2016-08-19 14:56:18,784 - __main__ - INFO - datagram received PING
+2016-08-19 14:56:38,787 - __main__ - INFO - datagram received PING
+2016-08-19 14:56:58,805 - __main__ - INFO - datagram received PING
+2016-08-19 14:57:07,885 - __main__ - INFO - read senz: UNSHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode   ^node1 osdl0tDFhaUT1DwADC8hKhFt7vDIKojqTsHGGPnkSNnDbjiWoj2ACp9R/lWm4h3RVvK3SDOniR35ElouorApDrpvsCBUc841Nzxro+9yY+cBNIJxUV4+hdwk9HPF+tAGQhgOqRikkbdyhL+3ux+lnOdlGhOS18EQBTnpeoKgEMo=
+2016-08-19 14:57:18,815 - __main__ - INFO - datagram received PING
+2016-08-19 14:57:38,818 - __main__ - INFO - datagram received PING
+2016-08-19 14:57:58,838 - __main__ - INFO - datagram received PING
+2016-08-19 14:58:18,857 - __main__ - INFO - datagram received PING
+2016-08-19 14:58:30,579 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode   ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 14:58:38,860 - __main__ - INFO - datagram received PING
+2016-08-19 14:58:58,879 - __main__ - INFO - datagram received PING
+2016-08-19 14:59:18,890 - __main__ - INFO - datagram received PING
+2016-08-19 14:59:38,902 - __main__ - INFO - datagram received PING
+2016-08-19 14:59:58,921 - __main__ - INFO - datagram received PING
+2016-08-19 15:00:18,940 - __main__ - INFO - datagram received PING
+2016-08-19 15:00:38,959 - __main__ - INFO - datagram received PING
+2016-08-19 15:00:58,977 - __main__ - INFO - datagram received PING
+2016-08-19 15:01:18,996 - __main__ - INFO - datagram received PING
+2016-08-19 15:01:39,013 - __main__ - INFO - datagram received PING
+2016-08-19 15:01:59,032 - __main__ - INFO - datagram received PING
+2016-08-19 15:02:19,037 - __main__ - INFO - datagram received PING
+2016-08-19 15:02:39,055 - __main__ - INFO - datagram received PING
+2016-08-19 15:02:59,071 - __main__ - INFO - datagram received PING
+2016-08-19 15:03:19,076 - __main__ - INFO - datagram received PING
+2016-08-19 15:03:39,093 - __main__ - INFO - datagram received PING
+2016-08-19 15:03:59,112 - __main__ - INFO - datagram received PING
+2016-08-19 15:04:19,131 - __main__ - INFO - datagram received PING
+2016-08-19 15:04:39,150 - __main__ - INFO - datagram received PING
+2016-08-19 15:04:59,166 - __main__ - INFO - datagram received PING
+2016-08-19 15:05:07,830 - __main__ - INFO - datagram received PING
+2016-08-19 15:47:02,252 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 15:47:02,253 - __main__ - INFO - client started
+2016-08-19 15:47:02,273 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471601822.27 ^mysensors o6zqrqnN2N431UsaNHpPfNgeOgNFHJ8h7hqULWEjfqfqCdfASxfzo6qdgwgz98ZhGxSydcLnwI9YPziu5qTdNu4Sv5RkLWLWyoKVmFyZFG7hpVZq6kgTtYD0wy92Gc5JU+r/q8fx6LnwlfcG5918z7JOKxIf/VYTWJ/XMvCcuKw=
+2016-08-19 15:47:02,273 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 15:47:02,273 - utils.senz_parser - INFO -                                                             o6zqrqnN2N431UsaNHpPfNgeOgNFHJ8h7hqULWEjfqfqCdfASxfzo6qdgwgz98ZhGxSydcLnwI9YPziu5qTdNu4Sv5RkLWLWyoKVmFyZFG7hpVZq6kgTtYD0wy92Gc5JU+r/q8fx6LnwlfcG5918z7JOKxIf/VYTWJ/XMvCcuKw=
+2016-08-19 15:47:02,273 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 15:47:02,273 - utils.senz_parser - INFO -                                                             None
+2016-08-19 15:47:02,274 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471601822.27', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 15:47:02,274 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 15:47:02,275 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 15:47:12,171 - __main__ - INFO - datagram received PING
+2016-08-19 15:47:22,737 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 15:47:32,176 - __main__ - INFO - datagram received PING
+2016-08-19 15:47:52,176 - __main__ - INFO - datagram received PING
+2016-08-19 15:48:12,195 - __main__ - INFO - datagram received PING
+2016-08-19 15:48:32,201 - __main__ - INFO - datagram received PING
+2016-08-19 15:48:32,719 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode   ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 15:48:52,218 - __main__ - INFO - datagram received PING
+2016-08-19 15:49:12,238 - __main__ - INFO - datagram received PING
+2016-08-19 15:49:24,808 - __main__ - INFO - read senz: UNSHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode   ^node1 osdl0tDFhaUT1DwADC8hKhFt7vDIKojqTsHGGPnkSNnDbjiWoj2ACp9R/lWm4h3RVvK3SDOniR35ElouorApDrpvsCBUc841Nzxro+9yY+cBNIJxUV4+hdwk9HPF+tAGQhgOqRikkbdyhL+3ux+lnOdlGhOS18EQBTnpeoKgEMo=
+2016-08-19 15:49:32,245 - __main__ - INFO - datagram received PING
+2016-08-19 15:49:52,261 - __main__ - INFO - datagram received PING
+2016-08-19 15:50:12,280 - __main__ - INFO - datagram received PING
+2016-08-19 15:50:32,296 - __main__ - INFO - datagram received PING
+2016-08-19 15:50:52,312 - __main__ - INFO - datagram received PING
+2016-08-19 15:51:12,330 - __main__ - INFO - datagram received PING
+2016-08-19 15:51:32,346 - __main__ - INFO - datagram received PING
+2016-08-19 15:51:52,364 - __main__ - INFO - datagram received PING
+2016-08-19 15:52:12,379 - __main__ - INFO - datagram received PING
+2016-08-19 15:52:32,398 - __main__ - INFO - datagram received PING
+2016-08-19 15:52:52,416 - __main__ - INFO - datagram received PING
+2016-08-19 15:53:12,432 - __main__ - INFO - datagram received PING
+2016-08-19 15:53:32,450 - __main__ - INFO - datagram received PING
+2016-08-19 15:53:52,461 - __main__ - INFO - datagram received PING
+2016-08-19 15:54:12,480 - __main__ - INFO - datagram received PING
+2016-08-19 15:54:32,495 - __main__ - INFO - datagram received PING
+2016-08-19 15:54:52,514 - __main__ - INFO - datagram received PING
+2016-08-19 15:55:12,529 - __main__ - INFO - datagram received PING
+2016-08-19 15:55:32,532 - __main__ - INFO - datagram received PING
+2016-08-19 15:55:52,544 - __main__ - INFO - datagram received PING
+2016-08-19 15:56:12,547 - __main__ - INFO - datagram received PING
+2016-08-19 15:56:32,548 - __main__ - INFO - datagram received PING
+2016-08-19 15:56:52,564 - __main__ - INFO - datagram received PING
+2016-08-19 15:57:12,566 - __main__ - INFO - datagram received PING
+2016-08-19 15:57:32,584 - __main__ - INFO - datagram received PING
+2016-08-19 15:57:52,603 - __main__ - INFO - datagram received PING
+2016-08-19 15:58:12,619 - __main__ - INFO - datagram received PING
+2016-08-19 15:58:32,636 - __main__ - INFO - datagram received PING
+2016-08-19 15:58:52,646 - __main__ - INFO - datagram received PING
+2016-08-19 15:59:12,656 - __main__ - INFO - datagram received PING
+2016-08-19 15:59:32,675 - __main__ - INFO - datagram received PING
+2016-08-19 15:59:52,693 - __main__ - INFO - datagram received PING
+2016-08-19 16:00:12,708 - __main__ - INFO - datagram received PING
+2016-08-19 16:00:32,711 - __main__ - INFO - datagram received PING
+2016-08-19 16:00:52,730 - __main__ - INFO - datagram received PING
+2016-08-19 16:01:12,746 - __main__ - INFO - datagram received PING
+2016-08-19 16:01:32,758 - __main__ - INFO - datagram received PING
+2016-08-19 16:01:52,775 - __main__ - INFO - datagram received PING
+2016-08-19 16:02:12,791 - __main__ - INFO - datagram received PING
+2016-08-19 16:02:32,807 - __main__ - INFO - datagram received PING
+2016-08-19 16:02:52,810 - __main__ - INFO - datagram received PING
+2016-08-19 16:03:12,827 - __main__ - INFO - datagram received PING
+2016-08-19 16:03:32,832 - __main__ - INFO - datagram received PING
+2016-08-19 16:03:52,847 - __main__ - INFO - datagram received PING
+2016-08-19 16:04:12,863 - __main__ - INFO - datagram received PING
+2016-08-19 16:04:32,871 - __main__ - INFO - datagram received PING
+2016-08-19 16:04:52,888 - __main__ - INFO - datagram received PING
+2016-08-19 16:05:12,907 - __main__ - INFO - datagram received PING
+2016-08-19 16:05:32,925 - __main__ - INFO - datagram received PING
+2016-08-19 16:05:52,942 - __main__ - INFO - datagram received PING
+2016-08-19 16:06:12,942 - __main__ - INFO - datagram received PING
+2016-08-19 16:06:32,961 - __main__ - INFO - datagram received PING
+2016-08-19 16:06:52,977 - __main__ - INFO - datagram received PING
+2016-08-19 16:07:12,996 - __main__ - INFO - datagram received PING
+2016-08-19 16:07:33,014 - __main__ - INFO - datagram received PING
+2016-08-19 16:07:53,031 - __main__ - INFO - datagram received PING
+2016-08-19 16:08:13,036 - __main__ - INFO - datagram received PING
+2016-08-19 16:08:33,053 - __main__ - INFO - datagram received PING
+2016-08-19 16:08:53,055 - __main__ - INFO - datagram received PING
+2016-08-19 16:09:13,074 - __main__ - INFO - datagram received PING
+2016-08-19 16:09:33,085 - __main__ - INFO - datagram received PING
+2016-08-19 16:09:53,103 - __main__ - INFO - datagram received PING
+2016-08-19 16:10:13,120 - __main__ - INFO - datagram received PING
+2016-08-19 16:10:33,136 - __main__ - INFO - datagram received PING
+2016-08-19 16:10:53,154 - __main__ - INFO - datagram received PING
+2016-08-19 16:11:13,174 - __main__ - INFO - datagram received PING
+2016-08-19 16:11:33,193 - __main__ - INFO - datagram received PING
+2016-08-19 16:11:53,212 - __main__ - INFO - datagram received PING
+2016-08-19 16:12:13,231 - __main__ - INFO - datagram received PING
+2016-08-19 16:12:33,240 - __main__ - INFO - datagram received PING
+2016-08-19 16:12:53,256 - __main__ - INFO - datagram received PING
+2016-08-19 16:13:13,273 - __main__ - INFO - datagram received PING
+2016-08-19 16:13:33,288 - __main__ - INFO - datagram received PING
+2016-08-19 16:13:53,307 - __main__ - INFO - datagram received PING
+2016-08-19 16:14:13,313 - __main__ - INFO - datagram received PING
+2016-08-19 16:14:33,313 - __main__ - INFO - datagram received PING
+2016-08-19 16:14:53,328 - __main__ - INFO - datagram received PING
+2016-08-19 16:15:13,347 - __main__ - INFO - datagram received PING
+2016-08-19 16:15:33,348 - __main__ - INFO - datagram received PING
+2016-08-19 16:15:53,350 - __main__ - INFO - datagram received PING
+2016-08-19 16:16:13,369 - __main__ - INFO - datagram received PING
+2016-08-19 16:16:33,380 - __main__ - INFO - datagram received PING
+2016-08-19 16:16:53,399 - __main__ - INFO - datagram received PING
+2016-08-19 16:17:13,414 - __main__ - INFO - datagram received PING
+2016-08-19 16:17:29,507 - __main__ - INFO - client stopped
+2016-08-19 16:20:08,574 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 16:20:08,574 - __main__ - INFO - client started
+2016-08-19 16:20:08,584 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471603808.58 ^mysensors lzvfkLv7OGav23vFxI+IXL1RyVvOQWXPCnQ+PIKzI1cr1qT+tLZes0TMzw15Gx3XcPAwtcvTUY468s7uh6HIirYZtsZa1MvTkvxfH2MKwesP8qWlf3G4R6gtO3eVHf1gwFZIO0s8Zcwq8bL7XOU3/L1hK0O0J9Mdv8mYhak/CUQ=
+2016-08-19 16:20:08,584 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 16:20:08,585 - utils.senz_parser - INFO -                                                             lzvfkLv7OGav23vFxI+IXL1RyVvOQWXPCnQ+PIKzI1cr1qT+tLZes0TMzw15Gx3XcPAwtcvTUY468s7uh6HIirYZtsZa1MvTkvxfH2MKwesP8qWlf3G4R6gtO3eVHf1gwFZIO0s8Zcwq8bL7XOU3/L1hK0O0J9Mdv8mYhak/CUQ=
+2016-08-19 16:20:08,585 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 16:20:08,585 - utils.senz_parser - INFO -                                                             None
+2016-08-19 16:20:08,585 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471603808.58', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 16:20:08,585 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 16:20:08,586 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 16:20:13,526 - __main__ - INFO - datagram received PING
+2016-08-19 16:20:33,543 - __main__ - INFO - datagram received PING
+2016-08-19 16:20:53,556 - __main__ - INFO - datagram received PING
+2016-08-19 16:21:13,556 - __main__ - INFO - datagram received PING
+2016-08-19 16:21:33,574 - __main__ - INFO - datagram received PING
+2016-08-19 16:21:53,592 - __main__ - INFO - datagram received PING
+2016-08-19 16:22:13,610 - __main__ - INFO - datagram received PING
+2016-08-19 16:22:33,625 - __main__ - INFO - datagram received PING
+2016-08-19 16:22:53,628 - __main__ - INFO - datagram received PING
+2016-08-19 16:23:13,629 - __main__ - INFO - datagram received PING
+2016-08-19 16:23:33,648 - __main__ - INFO - datagram received PING
+2016-08-19 16:23:53,665 - __main__ - INFO - datagram received PING
+2016-08-19 16:24:13,684 - __main__ - INFO - datagram received PING
+2016-08-19 16:24:33,698 - __main__ - INFO - datagram received PING
+2016-08-19 16:24:53,700 - __main__ - INFO - datagram received PING
+2016-08-19 16:25:13,716 - __main__ - INFO - datagram received PING
+2016-08-19 16:25:33,719 - __main__ - INFO - datagram received PING
+2016-08-19 16:25:53,736 - __main__ - INFO - datagram received PING
+2016-08-19 16:26:13,755 - __main__ - INFO - datagram received PING
+2016-08-19 16:26:33,772 - __main__ - INFO - datagram received PING
+2016-08-19 16:26:53,790 - __main__ - INFO - datagram received PING
+2016-08-19 16:27:13,808 - __main__ - INFO - datagram received PING
+2016-08-19 16:27:33,827 - __main__ - INFO - datagram received PING
+2016-08-19 16:27:53,841 - __main__ - INFO - datagram received PING
+2016-08-19 16:28:13,860 - __main__ - INFO - datagram received PING
+2016-08-19 16:28:33,878 - __main__ - INFO - datagram received PING
+2016-08-19 16:28:53,881 - __main__ - INFO - datagram received PING
+2016-08-19 16:29:13,890 - __main__ - INFO - datagram received PING
+2016-08-19 16:29:33,905 - __main__ - INFO - datagram received PING
+2016-08-19 16:29:53,905 - __main__ - INFO - datagram received PING
+2016-08-19 16:30:13,907 - __main__ - INFO - datagram received PING
+2016-08-19 16:30:33,923 - __main__ - INFO - datagram received PING
+2016-08-19 16:30:51,056 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 16:30:53,925 - __main__ - INFO - datagram received PING
+2016-08-19 16:31:02,054 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 16:31:13,936 - __main__ - INFO - datagram received PING
+2016-08-19 16:31:33,955 - __main__ - INFO - datagram received PING
+2016-08-19 16:31:53,970 - __main__ - INFO - datagram received PING
+2016-08-19 16:32:13,989 - __main__ - INFO - datagram received PING
+2016-08-19 16:32:34,008 - __main__ - INFO - datagram received PING
+2016-08-19 16:32:54,017 - __main__ - INFO - datagram received PING
+2016-08-19 16:33:14,033 - __main__ - INFO - datagram received PING
+2016-08-19 16:33:34,053 - __main__ - INFO - datagram received PING
+2016-08-19 16:33:54,072 - __main__ - INFO - datagram received PING
+2016-08-19 16:34:14,090 - __main__ - INFO - datagram received PING
+2016-08-19 16:34:34,097 - __main__ - INFO - datagram received PING
+2016-08-19 16:34:54,113 - __main__ - INFO - datagram received PING
+2016-08-19 16:35:14,133 - __main__ - INFO - datagram received PING
+2016-08-19 16:35:34,151 - __main__ - INFO - datagram received PING
+2016-08-19 16:35:54,153 - __main__ - INFO - datagram received PING
+2016-08-19 16:36:14,154 - __main__ - INFO - datagram received PING
+2016-08-19 16:36:34,172 - __main__ - INFO - datagram received PING
+2016-08-19 16:36:54,190 - __main__ - INFO - datagram received PING
+2016-08-19 16:37:14,209 - __main__ - INFO - datagram received PING
+2016-08-19 16:37:34,225 - __main__ - INFO - datagram received PING
+2016-08-19 16:37:54,239 - __main__ - INFO - datagram received PING
+2016-08-19 16:38:14,241 - __main__ - INFO - datagram received PING
+2016-08-19 16:38:34,252 - __main__ - INFO - datagram received PING
+2016-08-19 16:38:54,271 - __main__ - INFO - datagram received PING
+2016-08-19 16:39:14,288 - __main__ - INFO - datagram received PING
+2016-08-19 16:39:34,290 - __main__ - INFO - datagram received PING
+2016-08-19 16:39:54,308 - __main__ - INFO - datagram received PING
+2016-08-19 16:40:14,326 - __main__ - INFO - datagram received PING
+2016-08-19 16:40:34,346 - __main__ - INFO - datagram received PING
+2016-08-19 16:40:54,356 - __main__ - INFO - datagram received PING
+2016-08-19 16:41:14,375 - __main__ - INFO - datagram received PING
+2016-08-19 16:41:34,394 - __main__ - INFO - datagram received PING
+2016-08-19 16:41:54,411 - __main__ - INFO - datagram received PING
+2016-08-19 16:42:14,428 - __main__ - INFO - datagram received PING
+2016-08-19 16:42:34,447 - __main__ - INFO - datagram received PING
+2016-08-19 16:42:54,466 - __main__ - INFO - datagram received PING
+2016-08-19 16:43:14,484 - __main__ - INFO - datagram received PING
+2016-08-19 16:43:34,502 - __main__ - INFO - datagram received PING
+2016-08-19 16:43:54,522 - __main__ - INFO - datagram received PING
+2016-08-19 16:44:14,541 - __main__ - INFO - datagram received PING
+2016-08-19 16:44:34,544 - __main__ - INFO - datagram received PING
+2016-08-19 16:44:54,563 - __main__ - INFO - datagram received PING
+2016-08-19 16:45:14,578 - __main__ - INFO - datagram received PING
+2016-08-19 16:45:34,596 - __main__ - INFO - datagram received PING
+2016-08-19 16:45:54,615 - __main__ - INFO - datagram received PING
+2016-08-19 16:46:14,634 - __main__ - INFO - datagram received PING
+2016-08-19 16:46:34,635 - __main__ - INFO - datagram received PING
+2016-08-19 16:46:54,655 - __main__ - INFO - datagram received PING
+2016-08-19 16:47:14,671 - __main__ - INFO - datagram received PING
+2016-08-19 16:47:34,686 - __main__ - INFO - datagram received PING
+2016-08-19 16:47:54,704 - __main__ - INFO - datagram received PING
+2016-08-19 16:48:14,721 - __main__ - INFO - datagram received PING
+2016-08-19 16:48:34,737 - __main__ - INFO - datagram received PING
+2016-08-19 16:48:54,755 - __main__ - INFO - datagram received PING
+2016-08-19 16:49:14,767 - __main__ - INFO - datagram received PING
+2016-08-19 16:49:34,785 - __main__ - INFO - datagram received PING
+2016-08-19 16:49:54,801 - __main__ - INFO - datagram received PING
+2016-08-19 16:50:14,818 - __main__ - INFO - datagram received PING
+2016-08-19 16:50:34,836 - __main__ - INFO - datagram received PING
+2016-08-19 16:50:54,854 - __main__ - INFO - datagram received PING
+2016-08-19 16:51:14,871 - __main__ - INFO - datagram received PING
+2016-08-19 16:51:34,890 - __main__ - INFO - datagram received PING
+2016-08-19 16:51:54,890 - __main__ - INFO - datagram received PING
+2016-08-19 16:52:14,909 - __main__ - INFO - datagram received PING
+2016-08-19 16:52:34,926 - __main__ - INFO - datagram received PING
+2016-08-19 16:52:54,944 - __main__ - INFO - datagram received PING
+2016-08-19 16:53:14,954 - __main__ - INFO - datagram received PING
+2016-08-19 16:53:34,971 - __main__ - INFO - datagram received PING
+2016-08-19 16:53:54,989 - __main__ - INFO - datagram received PING
+2016-08-19 16:54:15,008 - __main__ - INFO - datagram received PING
+2016-08-19 16:54:35,022 - __main__ - INFO - datagram received PING
+2016-08-19 16:54:55,042 - __main__ - INFO - datagram received PING
+2016-08-19 16:55:15,055 - __main__ - INFO - datagram received PING
+2016-08-19 16:55:35,058 - __main__ - INFO - datagram received PING
+2016-08-19 16:55:55,058 - __main__ - INFO - datagram received PING
+2016-08-19 16:56:15,059 - __main__ - INFO - datagram received PING
+2016-08-19 16:56:35,076 - __main__ - INFO - datagram received PING
+2016-08-19 16:56:55,092 - __main__ - INFO - datagram received PING
+2016-08-19 16:57:15,110 - __main__ - INFO - datagram received PING
+2016-08-19 16:57:35,129 - __main__ - INFO - datagram received PING
+2016-08-19 16:57:55,142 - __main__ - INFO - datagram received PING
+2016-08-19 16:58:15,159 - __main__ - INFO - datagram received PING
+2016-08-19 16:58:35,167 - __main__ - INFO - datagram received PING
+2016-08-19 16:58:55,181 - __main__ - INFO - datagram received PING
+2016-08-19 16:59:15,198 - __main__ - INFO - datagram received PING
+2016-08-19 16:59:35,214 - __main__ - INFO - datagram received PING
+2016-08-19 16:59:55,221 - __main__ - INFO - datagram received PING
+2016-08-19 17:00:15,237 - __main__ - INFO - datagram received PING
+2016-08-19 17:00:35,252 - __main__ - INFO - datagram received PING
+2016-08-19 17:00:55,268 - __main__ - INFO - datagram received PING
+2016-08-19 17:01:15,285 - __main__ - INFO - datagram received PING
+2016-08-19 17:01:35,291 - __main__ - INFO - datagram received PING
+2016-08-19 17:01:55,309 - __main__ - INFO - datagram received PING
+2016-08-19 17:02:15,327 - __main__ - INFO - datagram received PING
+2016-08-19 17:02:35,346 - __main__ - INFO - datagram received PING
+2016-08-19 17:02:55,365 - __main__ - INFO - datagram received PING
+2016-08-19 17:03:15,383 - __main__ - INFO - datagram received PING
+2016-08-19 17:03:35,397 - __main__ - INFO - datagram received PING
+2016-08-19 17:03:55,411 - __main__ - INFO - datagram received PING
+2016-08-19 17:04:15,430 - __main__ - INFO - datagram received PING
+2016-08-19 17:04:35,431 - __main__ - INFO - datagram received PING
+2016-08-19 17:04:55,445 - __main__ - INFO - datagram received PING
+2016-08-19 17:05:15,447 - __main__ - INFO - datagram received PING
+2016-08-19 17:05:35,466 - __main__ - INFO - datagram received PING
+2016-08-19 17:05:55,484 - __main__ - INFO - datagram received PING
+2016-08-19 17:06:15,488 - __main__ - INFO - datagram received PING
+2016-08-19 17:06:35,490 - __main__ - INFO - datagram received PING
+2016-08-19 17:06:55,506 - __main__ - INFO - datagram received PING
+2016-08-19 17:07:15,526 - __main__ - INFO - datagram received PING
+2016-08-19 17:07:35,539 - __main__ - INFO - datagram received PING
+2016-08-19 17:07:55,542 - __main__ - INFO - datagram received PING
+2016-08-19 17:08:15,560 - __main__ - INFO - datagram received PING
+2016-08-19 17:08:35,577 - __main__ - INFO - datagram received PING
+2016-08-19 17:08:55,595 - __main__ - INFO - datagram received PING
+2016-08-19 17:09:15,613 - __main__ - INFO - datagram received PING
+2016-08-19 17:09:35,626 - __main__ - INFO - datagram received PING
+2016-08-19 17:09:55,640 - __main__ - INFO - datagram received PING
+2016-08-19 17:10:15,658 - __main__ - INFO - datagram received PING
+2016-08-19 17:10:35,671 - __main__ - INFO - datagram received PING
+2016-08-19 17:10:55,687 - __main__ - INFO - datagram received PING
+2016-08-19 17:11:15,706 - __main__ - INFO - datagram received PING
+2016-08-19 17:11:35,725 - __main__ - INFO - datagram received PING
+2016-08-19 17:11:55,739 - __main__ - INFO - datagram received PING
+2016-08-19 17:12:15,759 - __main__ - INFO - datagram received PING
+2016-08-19 17:12:35,763 - __main__ - INFO - datagram received PING
+2016-08-19 17:12:55,775 - __main__ - INFO - datagram received PING
+2016-08-19 17:13:15,789 - __main__ - INFO - datagram received PING
+2016-08-19 17:13:35,807 - __main__ - INFO - datagram received PING
+2016-08-19 17:13:55,826 - __main__ - INFO - datagram received PING
+2016-08-19 17:14:15,827 - __main__ - INFO - datagram received PING
+2016-08-19 17:14:35,841 - __main__ - INFO - datagram received PING
+2016-08-19 17:14:55,848 - __main__ - INFO - datagram received PING
+2016-08-19 17:15:15,863 - __main__ - INFO - datagram received PING
+2016-08-19 17:15:35,869 - __main__ - INFO - datagram received PING
+2016-08-19 17:15:55,888 - __main__ - INFO - datagram received PING
+2016-08-19 17:16:15,906 - __main__ - INFO - datagram received PING
+2016-08-19 17:16:35,925 - __main__ - INFO - datagram received PING
+2016-08-19 17:16:55,939 - __main__ - INFO - datagram received PING
+2016-08-19 17:17:15,958 - __main__ - INFO - datagram received PING
+2016-08-19 17:17:35,972 - __main__ - INFO - datagram received PING
+2016-08-19 17:17:55,987 - __main__ - INFO - datagram received PING
+2016-08-19 17:18:16,005 - __main__ - INFO - datagram received PING
+2016-08-19 17:18:36,023 - __main__ - INFO - datagram received PING
+2016-08-19 17:18:56,042 - __main__ - INFO - datagram received PING
+2016-08-19 17:19:16,059 - __main__ - INFO - datagram received PING
+2016-08-19 17:19:36,065 - __main__ - INFO - datagram received PING
+2016-08-19 17:19:56,070 - __main__ - INFO - datagram received PING
+2016-08-19 17:20:16,083 - __main__ - INFO - datagram received PING
+2016-08-19 17:20:36,088 - __main__ - INFO - datagram received PING
+2016-08-19 17:20:56,105 - __main__ - INFO - datagram received PING
+2016-08-19 17:21:16,121 - __main__ - INFO - datagram received PING
+2016-08-19 17:21:36,140 - __main__ - INFO - datagram received PING
+2016-08-19 17:21:56,157 - __main__ - INFO - datagram received PING
+2016-08-19 17:22:16,166 - __main__ - INFO - datagram received PING
+2016-08-19 17:22:36,181 - __main__ - INFO - datagram received PING
+2016-08-19 17:22:56,199 - __main__ - INFO - datagram received PING
+2016-08-19 17:23:16,217 - __main__ - INFO - datagram received PING
+2016-08-19 17:23:36,227 - __main__ - INFO - datagram received PING
+2016-08-19 17:23:56,227 - __main__ - INFO - datagram received PING
+2016-08-19 17:24:16,245 - __main__ - INFO - datagram received PING
+2016-08-19 17:24:36,264 - __main__ - INFO - datagram received PING
+2016-08-19 17:24:56,281 - __main__ - INFO - datagram received PING
+2016-08-19 17:25:16,298 - __main__ - INFO - datagram received PING
+2016-08-19 17:25:36,315 - __main__ - INFO - datagram received PING
+2016-08-19 17:25:56,325 - __main__ - INFO - datagram received PING
+2016-08-19 17:26:16,342 - __main__ - INFO - datagram received PING
+2016-08-19 17:26:36,347 - __main__ - INFO - datagram received PING
+2016-08-19 17:26:56,358 - __main__ - INFO - datagram received PING
+2016-08-19 17:27:16,372 - __main__ - INFO - datagram received PING
+2016-08-19 17:27:36,390 - __main__ - INFO - datagram received PING
+2016-08-19 17:27:56,404 - __main__ - INFO - datagram received PING
+2016-08-19 17:28:16,423 - __main__ - INFO - datagram received PING
+2016-08-19 17:28:36,442 - __main__ - INFO - datagram received PING
+2016-08-19 17:28:56,460 - __main__ - INFO - datagram received PING
+2016-08-19 17:29:16,477 - __main__ - INFO - datagram received PING
+2016-08-19 17:29:36,482 - __main__ - INFO - datagram received PING
+2016-08-19 17:29:56,498 - __main__ - INFO - datagram received PING
+2016-08-19 17:30:16,506 - __main__ - INFO - datagram received PING
+2016-08-19 17:30:36,525 - __main__ - INFO - datagram received PING
+2016-08-19 17:30:56,528 - __main__ - INFO - datagram received PING
+2016-08-19 17:31:16,545 - __main__ - INFO - datagram received PING
+2016-08-19 17:31:36,548 - __main__ - INFO - datagram received PING
+2016-08-19 17:31:53,886 - __main__ - INFO - client stopped
+2016-08-19 17:32:41,944 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 17:32:41,945 - __main__ - INFO - client started
+2016-08-19 17:32:41,960 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471608161.96 ^mysensors SKkg34zQ9PHNEzIxx+OvmvnekaMNYpE0ahC7Orb9MJlY3yQXvBYWwZSqIy2I1vC0YZlepw0NbB58XT7GTeQPnbhcILGvJYhFZZi61CkqIth15HNJM0xw9+ZRxwuTykBn0f53W3d8W2FQBm7LoS6I2ZhEfBMa3bxrWVl8i0fjorM=
+2016-08-19 17:32:41,960 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 17:32:41,960 - utils.senz_parser - INFO -                                                             SKkg34zQ9PHNEzIxx+OvmvnekaMNYpE0ahC7Orb9MJlY3yQXvBYWwZSqIy2I1vC0YZlepw0NbB58XT7GTeQPnbhcILGvJYhFZZi61CkqIth15HNJM0xw9+ZRxwuTykBn0f53W3d8W2FQBm7LoS6I2ZhEfBMa3bxrWVl8i0fjorM=
+2016-08-19 17:32:41,960 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 17:32:41,960 - utils.senz_parser - INFO -                                                             None
+2016-08-19 17:32:41,960 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471608161.96', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 17:32:41,961 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 17:32:41,962 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 17:32:56,591 - __main__ - INFO - datagram received PING
+2016-08-19 17:33:16,593 - __main__ - INFO - datagram received PING
+2016-08-19 17:33:36,610 - __main__ - INFO - datagram received PING
+2016-08-19 17:33:56,630 - __main__ - INFO - datagram received PING
+2016-08-19 17:34:16,648 - __main__ - INFO - datagram received PING
+2016-08-19 17:34:36,666 - __main__ - INFO - datagram received PING
+2016-08-19 17:34:56,684 - __main__ - INFO - datagram received PING
+2016-08-19 17:35:16,698 - __main__ - INFO - datagram received PING
+2016-08-19 17:35:30,558 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 17:35:36,701 - __main__ - INFO - datagram received PING
+2016-08-19 17:35:56,715 - __main__ - INFO - datagram received PING
+2016-08-19 17:36:16,734 - __main__ - INFO - datagram received PING
+2016-08-19 17:36:36,736 - __main__ - INFO - datagram received PING
+2016-08-19 17:36:56,741 - __main__ - INFO - datagram received PING
+2016-08-19 17:37:16,741 - __main__ - INFO - datagram received PING
+2016-08-19 17:37:36,758 - __main__ - INFO - datagram received PING
+2016-08-19 17:37:56,778 - __main__ - INFO - datagram received PING
+2016-08-19 17:37:59,679 - __main__ - INFO - client stopped
+2016-08-19 17:44:40,071 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 17:44:40,072 - __main__ - INFO - client started
+2016-08-19 17:44:40,085 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471608880.08 ^mysensors QTItfa03VLbJI/jY0XXwraVoBV0Cy7m4EXhk0fJsIxgWsLtOiFZbUuQsHwIslQ3pqQqFddptXtF3Dl3ex6s8ORhKl2JURITWlzWfFdAziJKzj8qpK0XXmX4ul3TO7TL4etQ9gZ1Wxr8vnQsykubnkZFudLUYUkvCsLmI2NqaCgE=
+2016-08-19 17:44:40,085 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 17:44:40,085 - utils.senz_parser - INFO -                                                             QTItfa03VLbJI/jY0XXwraVoBV0Cy7m4EXhk0fJsIxgWsLtOiFZbUuQsHwIslQ3pqQqFddptXtF3Dl3ex6s8ORhKl2JURITWlzWfFdAziJKzj8qpK0XXmX4ul3TO7TL4etQ9gZ1Wxr8vnQsykubnkZFudLUYUkvCsLmI2NqaCgE=
+2016-08-19 17:44:40,085 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 17:44:40,085 - utils.senz_parser - INFO -                                                             None
+2016-08-19 17:44:40,085 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471608880.08', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 17:44:40,086 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 17:44:40,087 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 17:44:40,210 - __main__ - INFO - client stopped
+2016-08-19 17:45:01,599 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 17:45:01,841 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 17:45:01,841 - __main__ - INFO - client started
+2016-08-19 17:45:01,850 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471608901.85 ^mysensors TcdZzMNrngcb8WWDsZTVz8gRBtKAMQAAKpdKeacBPguZk8Kb8xKQWs5Gchf5PFXUlp5/Q7RJhuZLdoLANcmHaBH3tcknuB+n9p/5Nq/CcCt6rI048YvC5+IvSRls4gaYpoTqN+TRtL1NjlCaWJYcoabZXWAgvO9XBxosMc11skI=
+2016-08-19 17:45:01,851 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 17:45:01,851 - utils.senz_parser - INFO -                                                             TcdZzMNrngcb8WWDsZTVz8gRBtKAMQAAKpdKeacBPguZk8Kb8xKQWs5Gchf5PFXUlp5/Q7RJhuZLdoLANcmHaBH3tcknuB+n9p/5Nq/CcCt6rI048YvC5+IvSRls4gaYpoTqN+TRtL1NjlCaWJYcoabZXWAgvO9XBxosMc11skI=
+2016-08-19 17:45:01,851 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 17:45:01,851 - utils.senz_parser - INFO -                                                             None
+2016-08-19 17:45:01,851 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471608901.85', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 17:45:01,851 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 17:45:01,852 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 17:45:13,628 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 17:45:17,029 - __main__ - INFO - datagram received PING
+2016-08-19 17:45:37,048 - __main__ - INFO - datagram received PING
+2016-08-19 17:45:57,059 - __main__ - INFO - datagram received PING
+2016-08-19 17:46:17,077 - __main__ - INFO - datagram received PING
+2016-08-19 17:46:37,096 - __main__ - INFO - datagram received PING
+2016-08-19 17:46:57,113 - __main__ - INFO - datagram received PING
+2016-08-19 17:47:17,130 - __main__ - INFO - datagram received PING
+2016-08-19 17:47:37,148 - __main__ - INFO - datagram received PING
+2016-08-19 17:47:54,004 - __main__ - INFO - read senz: SHARE #M_S_ID   #NO_COIN  #S_ID  @baseNode  ^node1 1BHZ86JTtDIEMTS0nUXx9CCJUcTP917jejbf7YQ2bsAeaklCd77SgE6yEJYShsAN9+zkgf5mL467w0gzEwcVUlN9Eq5wePvZJPUseX3SC/EgWzCcUfrkMzQO+Q1lEjyXzYiJnxakq4yV8oGD5p5ZCy07RsI8RkqqA3au8PglTCk=
+2016-08-19 17:47:57,150 - __main__ - INFO - datagram received PING
+2016-08-19 17:48:17,163 - __main__ - INFO - datagram received PING
+2016-08-19 17:48:37,180 - __main__ - INFO - datagram received PING
+2016-08-19 17:48:57,198 - __main__ - INFO - datagram received PING
+2016-08-19 17:49:17,214 - __main__ - INFO - datagram received PING
+2016-08-19 17:49:37,217 - __main__ - INFO - datagram received PING
+2016-08-19 17:49:39,954 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode   ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 17:49:57,235 - __main__ - INFO - datagram received PING
+2016-08-19 17:50:17,251 - __main__ - INFO - datagram received PING
+2016-08-19 17:50:37,253 - __main__ - INFO - datagram received PING
+2016-08-19 17:50:57,271 - __main__ - INFO - datagram received PING
+2016-08-19 17:51:17,277 - __main__ - INFO - datagram received PING
+2016-08-19 17:51:22,618 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 17:51:37,283 - __main__ - INFO - datagram received PING
+2016-08-19 17:51:57,286 - __main__ - INFO - datagram received PING
+2016-08-19 17:51:58,204 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 17:52:17,304 - __main__ - INFO - datagram received PING
+2016-08-19 17:52:37,320 - __main__ - INFO - datagram received PING
+2016-08-19 17:52:57,327 - __main__ - INFO - datagram received PING
+2016-08-19 17:53:17,346 - __main__ - INFO - datagram received PING
+2016-08-19 17:53:37,362 - __main__ - INFO - datagram received PING
+2016-08-19 17:53:57,381 - __main__ - INFO - datagram received PING
+2016-08-19 17:54:15,323 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 17:54:17,381 - __main__ - INFO - datagram received PING
+2016-08-19 17:54:37,400 - __main__ - INFO - datagram received PING
+2016-08-19 17:54:57,418 - __main__ - INFO - datagram received PING
+2016-08-19 17:55:14,373 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 17:55:17,421 - __main__ - INFO - datagram received PING
+2016-08-19 17:55:37,438 - __main__ - INFO - datagram received PING
+2016-08-19 17:55:57,457 - __main__ - INFO - datagram received PING
+2016-08-19 17:56:17,476 - __main__ - INFO - datagram received PING
+2016-08-19 17:56:37,495 - __main__ - INFO - datagram received PING
+2016-08-19 17:56:57,512 - __main__ - INFO - datagram received PING
+2016-08-19 17:57:17,531 - __main__ - INFO - datagram received PING
+2016-08-19 17:57:37,549 - __main__ - INFO - datagram received PING
+2016-08-19 17:57:57,559 - __main__ - INFO - datagram received PING
+2016-08-19 17:58:17,575 - __main__ - INFO - datagram received PING
+2016-08-19 17:58:37,591 - __main__ - INFO - datagram received PING
+2016-08-19 17:58:57,599 - __main__ - INFO - datagram received PING
+2016-08-19 17:59:17,618 - __main__ - INFO - datagram received PING
+2016-08-19 17:59:37,634 - __main__ - INFO - datagram received PING
+2016-08-19 17:59:57,646 - __main__ - INFO - datagram received PING
+2016-08-19 18:00:17,650 - __main__ - INFO - datagram received PING
+2016-08-19 18:00:24,599 - __main__ - INFO - client stopped
+2016-08-19 18:32:36,685 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-19 18:32:36,685 - __main__ - INFO - client started
+2016-08-19 18:32:36,698 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1471611756.7 ^mysensors TBPLsywZxFW/XhG6Y5tziWo1HolDTt6Vv9kV3uwglRp7r6iJGw7XzEltNjdCpxETtf/rQbQVcVfwIOEtylbQH8q3HT7CZe9VsEiX8Dg3Cmut/QgP2f/8vPufbVMgg/KFkrkvHbZmEAlTOXw2D6ISePVsW9idkmckRlrx9UcWkRs=
+2016-08-19 18:32:36,698 - utils.senz_parser - INFO -                                                             DATA
+2016-08-19 18:32:36,698 - utils.senz_parser - INFO -                                                             TBPLsywZxFW/XhG6Y5tziWo1HolDTt6Vv9kV3uwglRp7r6iJGw7XzEltNjdCpxETtf/rQbQVcVfwIOEtylbQH8q3HT7CZe9VsEiX8Dg3Cmut/QgP2f/8vPufbVMgg/KFkrkvHbZmEAlTOXw2D6ISePVsW9idkmckRlrx9UcWkRs=
+2016-08-19 18:32:36,698 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-19 18:32:36,698 - utils.senz_parser - INFO -                                                             None
+2016-08-19 18:32:36,698 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1471611756.7', '#msg': 'ALREADY_REGISTERED'}
+2016-08-19 18:32:36,699 - handlers.senz_handler - INFO -                                                                 senz received DATA
+2016-08-19 18:32:36,699 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-19 18:32:39,117 - __main__ - INFO - datagram received PING
+2016-08-19 18:32:40,376 - __main__ - INFO - read senz: DATA #M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode  ^node1 Qhzo1KgmCMXigzDlGXbmT/Uf8Kypz01WKUMLwa9CT8ECYjKN0Ki0dViNC8aa7VuuZqEhwpf8NGcib4ITHpw7Q49033KaPvx00xNtz+3iRTH3zg9rPIuYZ29D9i+VX0rHtvClGkoBMmO7CjFw9C6A5rkt4erjGf9XZ0bvAp+oJ9c=
+2016-08-19 18:32:59,135 - __main__ - INFO - datagram received PING
+2016-08-19 18:33:19,152 - __main__ - INFO - datagram received PING
+2016-08-19 18:33:39,170 - __main__ - INFO - datagram received PING
+2016-08-19 18:33:59,189 - __main__ - INFO - datagram received PING
+2016-08-19 18:34:19,208 - __main__ - INFO - datagram received PING
+2016-08-19 18:34:39,226 - __main__ - INFO - datagram received PING
+2016-08-19 18:34:59,245 - __main__ - INFO - datagram received PING
+2016-08-19 18:35:19,263 - __main__ - INFO - datagram received PING
+2016-08-19 18:35:39,280 - __main__ - INFO - datagram received PING
+2016-08-19 18:35:59,298 - __main__ - INFO - datagram received PING
+2016-08-19 18:36:19,315 - __main__ - INFO - datagram received PING
+2016-08-19 18:36:39,335 - __main__ - INFO - datagram received PING
+2016-08-19 18:36:59,350 - __main__ - INFO - datagram received PING
+2016-08-19 18:37:19,366 - __main__ - INFO - datagram received PING
+2016-08-19 18:37:39,384 - __main__ - INFO - datagram received PING
+2016-08-19 18:37:59,400 - __main__ - INFO - datagram received PING
+2016-08-19 18:38:19,418 - __main__ - INFO - datagram received PING
+2016-08-19 18:38:39,437 - __main__ - INFO - datagram received PING
+2016-08-19 18:38:59,455 - __main__ - INFO - datagram received PING
+2016-08-19 18:39:19,473 - __main__ - INFO - datagram received PING
+2016-08-19 18:39:39,492 - __main__ - INFO - datagram received PING
+2016-08-19 18:39:59,512 - __main__ - INFO - datagram received PING
+2016-08-19 18:40:19,529 - __main__ - INFO - datagram received PING
+2016-08-19 18:40:39,547 - __main__ - INFO - datagram received PING
+2016-08-19 18:40:59,554 - __main__ - INFO - datagram received PING
+2016-08-19 18:41:19,555 - __main__ - INFO - datagram received PING
+2016-08-19 18:41:39,573 - __main__ - INFO - datagram received PING
+2016-08-19 18:41:59,589 - __main__ - INFO - datagram received PING
+2016-08-19 18:42:19,607 - __main__ - INFO - datagram received PING
+2016-08-19 18:42:39,625 - __main__ - INFO - datagram received PING
+2016-08-19 18:42:59,643 - __main__ - INFO - datagram received PING
+2016-08-19 18:43:19,661 - __main__ - INFO - datagram received PING
+2016-08-19 18:43:39,679 - __main__ - INFO - datagram received PING
+2016-08-19 18:43:59,698 - __main__ - INFO - datagram received PING
+2016-08-19 18:44:19,715 - __main__ - INFO - datagram received PING
+2016-08-19 18:44:39,733 - __main__ - INFO - datagram received PING
+2016-08-19 18:44:59,752 - __main__ - INFO - datagram received PING
+2016-08-19 18:45:19,759 - __main__ - INFO - datagram received PING
+2016-08-19 18:45:39,776 - __main__ - INFO - datagram received PING
+2016-08-19 18:45:59,795 - __main__ - INFO - datagram received PING
+2016-08-19 18:46:19,796 - __main__ - INFO - datagram received PING
+2016-08-19 18:46:39,800 - __main__ - INFO - datagram received PING
+2016-08-19 18:46:59,818 - __main__ - INFO - datagram received PING
+2016-08-19 18:47:19,835 - __main__ - INFO - datagram received PING

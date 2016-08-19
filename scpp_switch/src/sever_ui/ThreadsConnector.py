@@ -11,7 +11,7 @@ import sys
 import traceback
 import gettext
 import ProgressBarWithAck
-import myServer
+import scpp_switch
 
 _ = gettext.gettext
 

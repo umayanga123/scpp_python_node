@@ -9,7 +9,7 @@ import Queue
 import gettext
 import sys
 
-import myServer
+import scpp_switch
 
 _ = gettext.gettext
 
@@ -146,4 +146,4 @@ class ActionWindow(tkSimpleDialog.Dialog):
         if tkMessageBox.askyesno(title=_('Cancelling operation'), message=_('Shut Down Switch?'), parent=self):
             self.conn.cancel()
             tkSimpleDialog.Dialog.cancel(self)
-            myServer.stop_switch()
+            scpp_switch.stop_switch()

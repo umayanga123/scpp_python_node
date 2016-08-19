@@ -2,8 +2,10 @@ import sys
 import os
 import logging
 
-from utils.senz_parser import *
-from utils.crypto_utils import *
+from db.db_handler import *
+
+
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -12,11 +14,12 @@ filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - \
-                                                                %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s -  %(message)s')
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
+
+
 
 
 class SenzHandler():
@@ -46,8 +49,16 @@ class SenzHandler():
         asynchronously. Whenc senz message receives this function will be
         called by twisted thread(thread safe mode via twisted library)
         """
-
         logger.info( 'senz received %s' % senz.type)
+        dbh= db_handler()
+
+        #tempory adding function
+        if(senz.receiver ==None):
+            dbh.testData()
+
+        #print senz.type=="DATA" and senz.receiver !=None
+        if(senz.type=="DATA" and senz.receiver !=None):
+            dbh.addTransaction(senz.attributes)
 
     def postHandle(self, arg):
         """

@@ -81,16 +81,7 @@ def init_keys():
     # TODO read senzy name from config file
     senzy_name = clientname #'switch'
     init_dirs(senzy_name)
-    '''
-    # generate keys
-    key_pair = RSA.generate(1024, e=65537)
-    public_key = key_pair.publickey().exportKey("PEM")
-    private_key = key_pair.exportKey("PEM")
 
-    # save keys in pem file
-    save_key('publicKey.pem', public_key)
-    save_key('privateKey.pem', private_key)
-    '''
 
 def get_pubkey():
     """

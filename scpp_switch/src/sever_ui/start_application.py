@@ -1,7 +1,7 @@
 import logging
 import time
 
-import myServer
+import scpp_switch
 
 
 def calc(connector, progress):
@@ -10,9 +10,9 @@ def calc(connector, progress):
     progress.tick()
     connector.ack()  # can be ommitted in this program
     time.sleep(.2)
-  myServer.init()
-  myServer.log()
-  myServer.main()
+  scpp_switch.init()
+  scpp_switch.log()
+  scpp_switch.main()
 
 
 

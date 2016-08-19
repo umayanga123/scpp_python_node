@@ -1,8 +1,6 @@
 import sys
 import os
 
-#TODO refactore paths
-#sys.path.append(os.path.abspath('./models'))
 
 from models.senz import *
 import logging
@@ -14,8 +12,7 @@ filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - \
-                                                            %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
@@ -78,11 +75,11 @@ def parse(message):
     logger.info(senz.receiver)
     logger.info(senz.attributes)
 
-    #print senz.type
-    #print senz.signature
-    #print senz.sender
-    #print senz.receiver
-    #print senz.attributes
+    '''print senz.type
+    print senz.signature
+    print senz.sender
+    print senz.receiver
+    print senz.attributes'''
 
     return senz
 

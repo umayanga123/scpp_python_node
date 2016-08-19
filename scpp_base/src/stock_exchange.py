@@ -10,14 +10,16 @@ import logging
 import multiprocessing
 
 
-from base_ui import CumulativeLogger
-import base_ui.MainWindowApp
+from utils.senz_parser import parse
+from base_ui import cumulative_logger
+import base_ui.main_window_app
 from utils.crypto_utils import *
 from handlers.senz_handler import *
 from models.senz import *
 from config.config import *
 
 import gettext
+
 
 _ = gettext.gettext
 
@@ -121,8 +123,7 @@ class SenzcProtocol(DatagramProtocol):
         receiver = servername
         sender = clientname
 
-        senz = "SHARE #pubkey %s #time %s @%s ^%s" % \
-                         (pubkey, time.time(), receiver, sender)
+        senz = "SHARE #pubkey %s #time %s @%s ^%s" % (pubkey, time.time(), receiver, sender)
         signed_senz = sign_senz(senz)
 
         # print(signed_senz)
@@ -205,9 +206,9 @@ if __name__ == '__main__':
     t = multiprocessing.Process(target=start,args=())
     t.start()
 
-    cl = CumulativeLogger.CumulativeLogger()
+    cl = cumulative_logger.CumulativeLogger()
     logger.info(_('Starting the SCPP Stock Exchange...!'))
-    t1 = multiprocessing.Process(target=base_ui.MainWindowApp.MainWindowApp(cl).run(), args=())
+    t1 = multiprocessing.Process(target=base_ui.main_window_app.MainWindowApp(cl).run(), args=())
     t1.start()
 
 
