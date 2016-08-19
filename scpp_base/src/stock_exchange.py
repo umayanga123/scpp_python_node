@@ -73,7 +73,7 @@ class SenzcProtocol(DatagramProtocol):
         self.share_pubkey()
 
         # start thread to read senz from cmd
-        d = threads.deferToThread(self.read_senz)
+        ###d = threads.deferToThread(self.read_senz)   ///comand line remove
 
 
 
@@ -130,6 +130,10 @@ class SenzcProtocol(DatagramProtocol):
         self.transport.write(signed_senz)
 
     def read_senz(self):
+        """
+            this is command line senz input get method and , i comment it to futher development.
+            hope it will not nesserry.
+        """
         print('Read Senze')
         '''while True:
             input_senz = raw_input("Senz : ")

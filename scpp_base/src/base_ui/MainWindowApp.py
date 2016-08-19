@@ -4,8 +4,9 @@ import logging
 import sys
 import os
 
+from PIL import ImageTk,Image
 
-
+from base_ui import ViewLog
 
 _ = gettext.gettext
 
@@ -19,54 +20,58 @@ class MainWindowApp:
     def run(self):
         """ Create and run GUI """
         self.root = root = Tk()
-        root.geometry('{}x{}'.format( 400, 100))
-        root.title(_('Welcome TO Money Exchange'));
+        self.root.columnconfigure(0, weight=1)  #center component
+        #self.root.config(bg='Thistle')
+        root.geometry('{}x{}'.format( 350, 500))
+        root.resizable(width=False, height=False)
+        root.title(_('Welcome Money Exchange'))
 
-        l1=Label(root, text="Coin Rate :", fg="red",font=("Helvetica", 16)).grid(row=0,column=0)
-        l2=Label(root, text="1 coin === 0.0002$", font=("Helvetica", 16))
-
-        b1=Button(root, text=_('Refresh Coin Value'), command=self.getCoinValue, width=30).grid(row=1,)
-        b2=Button(root, text=_('View Transaction Details'), command=self.onDatabaseLog, width=30)
-        b3=Button(root, text=_('Exit'), command=self.onExit, width=10)
-
-
-
-        l2.grid(row=0,column=0)
+        path = "img/b.png"
+        # Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
+        img = ImageTk.PhotoImage(Image.open(path))
 
 
-        b2.grid(row=2,column=0)
-        b3.grid(row=3,column=0)
+        self.topBar = Frame(self.root, border=1, relief=GROOVE )
+        self.topBar.grid(row=0, column=0, columnspan=2,sticky=E+W +N +S)
+        self.topBar.columnconfigure(0, weight=1)
+
+        l0=Label(self.topBar, image=img).grid(row=1, column=0,columnspan=2, sticky=N , padx=5, pady=20)
+        l1=Label(self.topBar, text="Coin Rate :", fg="red",font=("Helvetica", 16)).grid(row=1,column=0,sticky=W +S,pady=5,padx=5)
+        l2=Label(self.topBar, text="1 coin === 0.0002$", font=("Helvetica", 16))
+
+        b1=Button(self.root, text=_('Refresh Coin Value'), command=self.getCoinValue, width=30 ,background='green').grid(row=1,column=0,pady=5,padx=5)
+
+        b2=Button(self.root, text=_('View Transaction Details'), command=self.onDatabaseLog, width=30)
+        b3=Button(self.root, text=_('View Log File'), command=self.onViewLog, width=30)
+        b4=Button(self.root, text=_('Exit'), command=self.onExit, width=10,background='red')
 
 
-        '''e1 = Entry(root)
-        e2 = Entry(root)
 
-        e1.grid(row=0, column=1)
-        e2.grid(row=1, column=1)
+        l2.grid(row=1,column=0,sticky=E+S,pady=5,padx=5)
+        b2.grid(row=3,column=0,pady=5,padx=5)
+        b3.grid(row=4, column=0,pady=5,padx=5)
+        b4.grid(row=5,column=0,pady=5,padx=5)
 
-
-
-        Button(root, text=_('Refresh'), command=self.getCoinValue, width=30 ).pack(side=TOP)
-        Button(root, text=_('View Transaction Details'), command=self.onDatabaseLog, width=30).pack(side=TOP)
-        Button(root, text=_('Exit'), command=self.onExit, width=10).pack(side=TOP)'''
 
         self.center(root)
         root.mainloop()
 
     def onExit(self):
         """ Process 'Exit' command """
-        # self.root.quit()
-        #sys.exit()
         os._exit(0)
 
 
     def onDatabaseLog(self):
-        """ Process 'View Log' command """
+        """ Process 'View DB enrties' command """
         print "take database recodes"
 
     def getCoinValue(self):
         """ Process 'Start' command """
         print "get coin values"
+
+    def onViewLog(self):
+        """ Process 'View Log' command """
+        ViewLog.ViewLog(self.root, self.log)
 
 
     def center(self, toplevel):
