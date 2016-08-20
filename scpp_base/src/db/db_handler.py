@@ -6,6 +6,7 @@ class db_handler:
    global collection;
    global db;
 
+
    def __init__(self):
        client = MongoClient('localhost', 27017)
        self.db = client.scpp_stock_exchange
@@ -74,6 +75,15 @@ class db_handler:
            #print document['NO_COIN'] ,document['coin_detail'][0]['COIN_VALUE']
            generate_coin_value += document['NO_COIN'] * document['coin_detail'][0]['COIN_VALUE']
 
-       print totalcoin ,generate_coin_value
+       #print totalcoin ,generate_coin_value
+       #print (generate_coin_value/totalcoin)*0.01
 
-       return  generate_coin_value/totalcoin
+
+       self.cv= (generate_coin_value / totalcoin) * 0.01
+       #db_handler.cv = self.cv
+       return self.cv
+
+
+   def getCoinValue(self):
+
+       return 000;

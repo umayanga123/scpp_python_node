@@ -3,9 +3,8 @@ import os
 import logging
 
 from db.db_handler import *
-
-
-
+from utils.crypto_utils import sign_senz
+from config.config import *
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -49,6 +48,8 @@ class SenzHandler():
         asynchronously. Whenc senz message receives this function will be
         called by twisted thread(thread safe mode via twisted library)
         """
+
+        print senz.attributes
         logger.info( 'senz received %s' % senz.type)
         dbh= db_handler()
 
@@ -59,6 +60,13 @@ class SenzHandler():
         #print senz.type=="DATA" and senz.receiver !=None
         if(senz.type=="DATA" and senz.receiver !=None):
             dbh.addTransaction(senz.attributes)
+        elif(senz.type=="SHARE" and senz.attributes["#COIN_VALUE"] == ""):
+            #print dbh.calulateCoinsValue()
+            senze = 'PUT #COIN_VALUE %s ' % (dbh.calulateCoinsValue())
+            senz = str(senze) + "@%s  ^%s" % (senz.sender , clientname)
+            signed_senz = sign_senz(senz)
+            logger.info('read senz: %s' % signed_senz)
+            self.transport.write(signed_senz)
 
     def postHandle(self, arg):
         """

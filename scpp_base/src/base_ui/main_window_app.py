@@ -32,9 +32,11 @@ class MainWindowApp:
         root.title(_('Welcome Money Exchange'))
 
         # set the window icon
-        root.wm_iconbitmap('')
+        img = PhotoImage(file='img/scpp_global.png')
+        root.tk.call('wm', 'iconphoto', root._w, img)
 
-        path = "img/b.png"
+
+        path = "img/coin_base.png"
         # Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
         img = ImageTk.PhotoImage(Image.open(path))
 
@@ -43,7 +45,7 @@ class MainWindowApp:
         self.topBar.grid(row=0, column=0, columnspan=2,sticky=E+W +N +S)
         self.topBar.columnconfigure(0, weight=1)
 
-        l0=Label(self.topBar, image=img).grid(row=1, column=0,columnspan=2, sticky=N , padx=5, pady=20)
+        l0=Label(self.topBar, image=img).grid(row=1, column=0,columnspan=2, sticky=N , padx=5, pady=35)
         l1=Label(self.topBar, text="        Coin Rate :", fg="red",font=("Helvetica", 16)).grid(row=1,column=0,sticky=W +S,pady=5,padx=5)
         self.l2=Label(self.topBar, text="", font=("Helvetica", 16) ,anchor=W)
 
@@ -80,7 +82,7 @@ class MainWindowApp:
         global value
         cv= db_handler()
         value = cv.calulateCoinsValue()
-       # self.topBar.columnconfigure(0, weight=0)
+        # self.topBar.columnconfigure(0, weight=0)
         self.l2.configure(text=str(value)+"$          ")
 
 

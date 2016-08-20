@@ -4,6 +4,7 @@ import logging
 
 from utils.senz_parser import *
 from utils.crypto_utils import *
+from config.config import *
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -12,8 +13,7 @@ filehandler = logging.FileHandler('logs/minner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - \
-                                                                %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
@@ -46,8 +46,17 @@ class SenzHandler():
         asynchronously. Whenc senz message receives this function will be
         called by twisted thread(thread safe mode via twisted library)
         """
+        print senz
+        logger.info('senz received %s' % senz.type)
 
-        logger.info( 'senz received %s' % senz.type)
+        if (senz.type == 'PUT'):
+            print "Coin value :" ,senz.attributes["#COIN_VALUE"]
+            senze = 'UNSHARE #COIN_VALUE '
+            senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
+            signed_senz = sign_senz(senz)
+            logger.info('read senz: %s' % signed_senz)
+            self.transport.write(signed_senz)
+
 
     def postHandle(self, arg):
         """
