@@ -32,7 +32,48 @@ class db_handler:
 
            self.m_collection.insert_many(services)
            self.t_collection.insert(transaction)
-           print "create test service_detail  transaction table"
+           print 'create test service_detail  transaction table'
+           return 'done'
 
 
 
+   def calulateCoinsValue(self):
+
+       totalcoin =0;
+       generate_coin_value=0;
+
+       self.t_collection = self.db.transaction_detail
+       self.m_collection = self.db.service_detail
+
+       cursor = self.t_collection.aggregate(
+           [
+               {"$group": {"_id":"", "total_coin": {"$sum": "$NO_COIN"}}}
+           ]
+
+       )
+
+
+
+       cursor1= self.t_collection.aggregate([
+            { "$lookup":
+                {
+                    'from': "service_detail",'localField': "S_ID","foreignField": "S_ID",'as': "coin_detail"
+
+                }
+            }
+       ])
+
+
+
+       for document in cursor:
+           totalcoin = document['total_coin']
+
+
+       for document in cursor1:
+           #print(document)
+           #print document['NO_COIN'] ,document['coin_detail'][0]['COIN_VALUE']
+           generate_coin_value += document['NO_COIN'] * document['coin_detail'][0]['COIN_VALUE']
+
+       print totalcoin ,generate_coin_value
+
+       return  generate_coin_value/totalcoin

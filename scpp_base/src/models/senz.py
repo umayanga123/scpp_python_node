@@ -3,8 +3,7 @@ class Senz(object):
     Keep senz message attributes in here. Senz parser will be generates this
     type of object when datagram recives.
     """
-    def __init__(self, type=None, sender=None, receiver=None, attributes={},
-                 signature=None):
+    def __init__(self, type=None, sender=None, receiver=None, attributes={},signature=None):
         """
         Initlize senz object with defaly values from here
 

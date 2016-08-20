@@ -8,11 +8,15 @@ import os
 from PIL import ImageTk,Image
 
 from base_ui import view_log
+from db.db_handler import db_handler
 
 _ = gettext.gettext
 
 
 class MainWindowApp:
+
+    global l2;
+
     def __init__(self, log):
         """ Remember cumulative logs, get logger """
         self.log = log
@@ -27,6 +31,9 @@ class MainWindowApp:
         root.resizable(width=False, height=False)
         root.title(_('Welcome Money Exchange'))
 
+        # set the window icon
+        root.wm_iconbitmap('')
+
         path = "img/b.png"
         # Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
         img = ImageTk.PhotoImage(Image.open(path))
@@ -37,8 +44,8 @@ class MainWindowApp:
         self.topBar.columnconfigure(0, weight=1)
 
         l0=Label(self.topBar, image=img).grid(row=1, column=0,columnspan=2, sticky=N , padx=5, pady=20)
-        l1=Label(self.topBar, text="Coin Rate :", fg="red",font=("Helvetica", 16)).grid(row=1,column=0,sticky=W +S,pady=5,padx=5)
-        l2=Label(self.topBar, text="1 coin === 0.0002$", font=("Helvetica", 16))
+        l1=Label(self.topBar, text="        Coin Rate :", fg="red",font=("Helvetica", 16)).grid(row=1,column=0,sticky=W +S,pady=5,padx=5)
+        self.l2=Label(self.topBar, text="", font=("Helvetica", 16) ,anchor=W)
 
         b1=Button(self.root, text=_('Refresh Coin Value'), command=self.getCoinValue, width=30 ,background='green').grid(row=1,column=0,pady=5,padx=5)
 
@@ -49,12 +56,13 @@ class MainWindowApp:
 
 
 
-        l2.grid(row=1,column=0,sticky=E+S,pady=5,padx=5)
+        self.l2.grid(row=1,column=0,sticky=E+S,pady=5,padx=5)
         b2.grid(row=3,column=0,pady=5,padx=5)
         b3.grid(row=4, column=0,pady=5,padx=5)
         b4.grid(row=5,column=0,pady=5,padx=5)
         b5.grid(row=6, column=0, pady=5, padx=5)
 
+        self.getCoinValue();
         self.center(root)
         root.mainloop()
 
@@ -69,7 +77,12 @@ class MainWindowApp:
 
     def getCoinValue(self):
         """ Process 'Start' command """
-        print "get coin values"
+        global value
+        cv= db_handler()
+        value = cv.calulateCoinsValue()
+       # self.topBar.columnconfigure(0, weight=0)
+        self.l2.configure(text=str(value)+"$          ")
+
 
     def onViewLog(self):
         """ Process 'View Log' command """
