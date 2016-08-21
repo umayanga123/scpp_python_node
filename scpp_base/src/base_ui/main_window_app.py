@@ -1,17 +1,18 @@
-from Tkinter import *
 import tkMessageBox
 import gettext
 import logging
-import sys
 import os
 
+from Tkinter import *
 from PIL import ImageTk,Image
-
 from base_ui import view_log
+from base_ui.data_view import DataView
 from db.db_handler import db_handler
 
-_ = gettext.gettext
 
+_ = gettext.gettext
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 class MainWindowApp:
 
@@ -70,11 +71,18 @@ class MainWindowApp:
 
     def onExit(self):
         """ Process 'Exit' command """
+        #reactor.callFromThread(reactor.stop)
+        logger.info(_('client shutDown..!'))
+        #sys.exit(0)
         os._exit(0)
 
 
     def onDatabaseLog(self):
         """ Process 'View DB enrties' command """
+        root1 = Tk()
+        root1.title(_('Transaction Detail Table'))
+        root1.resizable(width=False, height=False)
+        DataView(root1)
         print "take database recodes"
 
     def getCoinValue(self):
@@ -92,7 +100,7 @@ class MainWindowApp:
 
     def putTestData(self):
         """ Process 'View Log' command """
-        print 'Not Yet implement / sample DB table create'
+        #print 'Not Yet implement / sample DB table create'
         tkMessageBox.showinfo("Message", "Not Yet implement / sample DB table create")
 
 

@@ -1,22 +1,20 @@
+import os.path
+import logging
+
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_v1_5
 from base64 import b64encode
-
-import os.path
-import logging
-
 from config.config import clientname
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - \
-                                                            %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
@@ -79,7 +77,7 @@ def init_keys():
         key_file.close()
 
     # TODO read senzy name from config file
-    senzy_name = clientname #'switch'
+    senzy_name = clientname
     init_dirs(senzy_name)
 
 
@@ -92,7 +90,6 @@ def get_pubkey():
             pubkey - Base64 encoded public key
     """
     pubkey = open('.keys/publicKey.pem', "r").read()
-
     return b64encode(pubkey)
 
 
@@ -131,5 +128,4 @@ def sign_senz(senz):
     digest = SHA256.new("".join(senz.split()))
     signature = signer.sign(digest)
     signed_senz = "%s %s" % (senz, b64encode(signature))
-
     return signed_senz

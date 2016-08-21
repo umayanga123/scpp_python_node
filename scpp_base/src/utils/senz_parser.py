@@ -1,13 +1,11 @@
 import sys
 import os
-
+import logging
 
 from models.senz import *
-import logging
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
 
@@ -86,4 +84,6 @@ def parse(message):
 '''
 parse('SHARE #bal #trans #nic 234 #time tim @agent ^myz <sig>')
 parse('SHARE #bal #trans #nic #acc 4345234 #time tim @agent ^myz <sig>')
+--------------------------------------------------
+parse('PUT #COIN_VALUE  value  @sender ^myz <sig>')
 '''

@@ -2,9 +2,11 @@ import Tkinter
 import tkSimpleDialog
 import ScrolledText
 import gettext
+
 _ = gettext.gettext
 
 class ViewLog(tkSimpleDialog.Dialog):
+
   """ Display logs messages of a program """
 
   def __init__(self, parent, log):
@@ -23,8 +25,7 @@ class ViewLog(tkSimpleDialog.Dialog):
 
   def buttonbox(self):
     """ Create custom buttons """
-    w = Tkinter.Button(self, text=_('Close'), width=10, command=self.ok, default=Tkinter.ACTIVE)
+    w = Tkinter.Button(self, text=_('Back'), width=10, command=self.cancel, default=Tkinter.ACTIVE , background='red')
     w.pack(side=Tkinter.RIGHT)
-    self.bind("<Return>", self.ok)
-    self.bind("<Escape>", self.cancel)
+
 

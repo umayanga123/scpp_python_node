@@ -19,30 +19,30 @@
 ##  limitations under the License.
 ##
 ###############################################################################
-import tkMessageBox
-from twisted.internet.protocol import DatagramProtocol
-from twisted.internet import reactor
 import sys
 import os.path
 import time
 import logging
+import tkMessageBox
 
-from pymongo import MongoClient
+import multiprocessing
 
-from sever_ui import CumulativeLogger
 import sever_ui.MainWindowApp
+import gettext
+
+
+from twisted.internet.protocol import DatagramProtocol
+from twisted.internet import reactor
+from pymongo import MongoClient
+from sever_ui import CumulativeLogger
 from utils.myParser import *
 from utils.myUser import *
 from utils.myCrypto import *
 
-import gettext
 
 _ = gettext.gettext
 
 logging.basicConfig()
-'''l = logging.getLogger()
-l.setLevel(logging.INFO)'''
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -372,6 +372,9 @@ def main():
     global database
     global port
 
+    init()
+    log()
+
     # Create connection to the Mongo DB
     try:
         client = MongoClient('localhost', 27017)
@@ -402,6 +405,17 @@ def stop_switch():
 
 
 if __name__ == '__main__':
+
+
+    '''global t, t1
+    t = multiprocessing.Process(target=main, args=())
+    t.start()
+
     cl = CumulativeLogger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Minner...!'))
+    logger.info(_('Starting the SCPP Switch...!'))
+    t1 = multiprocessing.Process(target=sever_ui.MainWindowApp.MainWindowApp(cl).run(), args=())
+    t1.start()'''
+
+    cl = CumulativeLogger.CumulativeLogger()
+    logger.info(_('Starting the SCPP Switch...!'))
     sever_ui.MainWindowApp.MainWindowApp(cl).run()

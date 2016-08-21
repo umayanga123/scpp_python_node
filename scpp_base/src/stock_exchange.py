@@ -1,28 +1,25 @@
-from distlib.compat import raw_input
-from twisted.internet.protocol import DatagramProtocol
-from twisted.internet.task import LoopingCall
-from twisted.internet import reactor, threads
-
 import time
 import sys
 import os
 import logging
 import multiprocessing
+import tkMessageBox
 
-
+from Tkinter import Tk
+import base_ui.main_window_app
+import gettext
+from twisted.internet.protocol import DatagramProtocol
+from twisted.internet import reactor, threads
 from utils.senz_parser import parse
 from base_ui import cumulative_logger
-import base_ui.main_window_app
 from utils.crypto_utils import *
 from handlers.senz_handler import *
-from models.senz import *
 from config.config import *
-
-import gettext
 
 
 _ = gettext.gettext
 
+logging.basicConfig() #comment this stop console logger print
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -31,16 +28,11 @@ if not(os.path.exists('logs')):
 
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
-
 # create a logging format
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
-
-
-
-
 
 class SenzcProtocol(DatagramProtocol):
     """
@@ -77,17 +69,17 @@ class SenzcProtocol(DatagramProtocol):
         # start thread to read senz from cmd
         ###d = threads.deferToThread(self.read_senz)   ///comand line remove
 
-
-
     def stopProtocol(self):
         """
         Call when datagram protocol stops. Need to clear global connection if
         exits from here
        """
         reactor.callFromThread(reactor.stop)
-        logger.info('client stopped')
-
-
+        logger.info(_('client stopped( switch not connected)'))
+        root = Tk()
+        root.withdraw()
+        tkMessageBox.showinfo("Message", "Switch not connected or not Start , try later")
+        os._exit(0)
 
     def datagramReceived(self, datagram, host):
         """
@@ -99,7 +91,7 @@ class SenzcProtocol(DatagramProtocol):
             datagra - senz message
             host - receving host
         """
-        logger.info('datagram received %s' % datagram)
+        logger.info(_('datagram received %s' % datagram))
 
         # handle receved datagram(senz)
         self.handle_datagram(datagram)
@@ -127,25 +119,20 @@ class SenzcProtocol(DatagramProtocol):
         signed_senz = sign_senz(senz)
 
         # print(signed_senz)
-
         self.transport.write(signed_senz)
 
-    def read_senz(self):
+    '''def read_senz(self):
         """
             this is command line senz input get method and , i comment it to futher development.
             hope it will not nesserry.
         """
-        print('Read Senze')
-        '''while True:
+
+        while True:
             input_senz = raw_input("Senz : ")
             senz = str(input_senz) + " ^%s" % (clientname)
             #signed_senz = sign_senz(senz)
             #logger.info('read senz: %s' % signed_senz)
            # self.transport.write(signed_senz)'''
-
-
-
-
 
     def handle_datagram(self, datagram):
         """
@@ -168,8 +155,8 @@ class SenzcProtocol(DatagramProtocol):
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
 
-def log():
-    logger.info("Log ")
+'''def log():
+    logger.info("Log ")'''
 
 
 def init():

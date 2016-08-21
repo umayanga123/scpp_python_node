@@ -1,1 +1,1 @@
-__all__ = ["ViewLog","MainWindowApp","CumulativeLoggerHandler"]
+__all__ = ["ViewLog","MainWindowApp","CumulativeLoggerHandler","DataView"]

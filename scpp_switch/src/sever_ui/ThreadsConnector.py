@@ -93,8 +93,7 @@ class ThreadsConnector:
       self.put_message([MESSAGE_EXIT_ERROR,  TEXT_EXIT_ERROR])
     self.running = 0
 
-  def runInGui(self, wnd, conn,
-      group=None, target=None, name=None, args=(), kwargs={}):
+  def runInGui(self, wnd, conn,group=None, target=None, name=None, args=(), kwargs={}):
     """ Run calculations, using window as a progress indicator
         "wnd" is an object of class ''ActionWindow
         all other parameters are passed to threading.Thread

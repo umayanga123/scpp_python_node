@@ -1,5 +1,6 @@
-from pymongo import MongoClient
 import datetime
+
+from pymongo import MongoClient
 
 class db_handler:
 
@@ -18,7 +19,7 @@ class db_handler:
        self.collection.insert(transaction)
        return 'DONE'
 
-
+   #test function , if it database is empty put data to db.
    def testData(self):
        self.t_collection =self.db.transaction_detail
        self.m_collection =self.db.service_detail
@@ -46,6 +47,9 @@ class db_handler:
        self.t_collection = self.db.transaction_detail
        self.m_collection = self.db.service_detail
 
+
+       #This method take all number of generate new crypto coin
+
        cursor = self.t_collection.aggregate(
            [
                {"$group": {"_id":"", "total_coin": {"$sum": "$NO_COIN"}}}
@@ -53,8 +57,7 @@ class db_handler:
 
        )
 
-
-
+       #This method join two table and return that new table
        cursor1= self.t_collection.aggregate([
             { "$lookup":
                 {
@@ -65,25 +68,40 @@ class db_handler:
        ])
 
 
-
+       #assign total generate new coin numebr
        for document in cursor:
            totalcoin = document['total_coin']
 
 
+       #calculate value of coins
        for document in cursor1:
-           #print(document)
-           #print document['NO_COIN'] ,document['coin_detail'][0]['COIN_VALUE']
            generate_coin_value += document['NO_COIN'] * document['coin_detail'][0]['COIN_VALUE']
 
-       #print totalcoin ,generate_coin_value
-       #print (generate_coin_value/totalcoin)*0.01
+       #calculate cripto coin value
+       if(totalcoin != 0):
+           self.cv= (generate_coin_value / totalcoin) * 0.01
+       else:
+           self.cv = 0
 
-
-       self.cv= (generate_coin_value / totalcoin) * 0.01
-       #db_handler.cv = self.cv
        return self.cv
 
 
+   #this methoth shout be implment take coin value with out excute calculator function
    def getCoinValue(self):
-
+       #not yet implement
        return 000;
+
+
+   '''
+    retunr all service detals table data
+   '''
+   def getAllServiceDetail(self):
+       self.m_collection = self.db.service_detail
+       return self.m_collection
+
+   '''
+    return all transaction table data
+   '''
+   def getAllTransactionDetails(self):
+       self.t_collection = self.db.transaction_detail.find()
+       return self.t_collection

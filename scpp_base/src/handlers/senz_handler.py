@@ -8,7 +8,6 @@ from config.config import *
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
 filehandler.setLevel(logging.INFO)
 
@@ -49,7 +48,7 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        print senz.attributes
+        #print senz.attributes
         logger.info( 'senz received %s' % senz.type)
         dbh= db_handler()
 
@@ -65,7 +64,7 @@ class SenzHandler():
             senze = 'PUT #COIN_VALUE %s ' % (dbh.calulateCoinsValue())
             senz = str(senze) + "@%s  ^%s" % (senz.sender , clientname)
             signed_senz = sign_senz(senz)
-            logger.info('read senz: %s' % signed_senz)
+            logger.info('Auto Excute: %s' % signed_senz)
             self.transport.write(signed_senz)
 
     def postHandle(self, arg):
@@ -74,4 +73,3 @@ class SenzHandler():
         this is a call back funcion
         """
         logger.info("Post Handled")
-        #self.transport.write('senz')

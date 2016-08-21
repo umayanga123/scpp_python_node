@@ -7,6 +7,8 @@ import start_application
 import gettext
 import sys
 
+from PIL import ImageTk,Image
+
 _ = gettext.gettext
 
 
@@ -21,9 +23,20 @@ class MainWindowApp:
         self.root = root = Tkinter.Tk()
         root.title(_('Long Operation Demo'))
         root.resizable(width=False, height=False)
-        Tkinter.Button(root, text=_('Start'), command=self.onStart, width=10).pack(side=Tkinter.LEFT)
+
+        # set the window icon
+        img = Tkinter.PhotoImage(file='img/scpp_global.png')
+        root.tk.call('wm', 'iconphoto', root._w, img)
+
+        path = "img/scpp_switch.png"
+        # Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
+        img = ImageTk.PhotoImage(Image.open(path))
+
+
+        Tkinter.Label(root, image=img).pack(side=Tkinter.TOP)
+        Tkinter.Button(root, text=_('Start'), command=self.onStart, width=10 ,background='green').pack(side=Tkinter.LEFT)
         Tkinter.Button(root, text=_('View Log'), command=self.onViewLog, width=10).pack(side=Tkinter.LEFT)
-        Tkinter.Button(root, text=_('Exit'), command=self.onExit, width=10).pack(side=Tkinter.LEFT)
+        Tkinter.Button(root, text=_('Exit'), command=self.onExit, width=10 ,background='red').pack(side=Tkinter.LEFT)
         self.center(root)
         root.mainloop()
 

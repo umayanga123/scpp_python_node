@@ -18,18 +18,16 @@
 ##  limitations under the License.
 ##
 ###############################################################################
+import time
+import os.path
 
 from Crypto.Hash import SHA256
 from Crypto.Hash import SHA
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import AES
-import time
-
 from base64 import b64encode, b64decode
-
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto import Random
-import os.path
 
 class myCrypto:
   user=""

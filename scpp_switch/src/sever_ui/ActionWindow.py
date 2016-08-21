@@ -1,6 +1,8 @@
 import tkSimpleDialog
 import tkMessageBox
 import Tkinter
+from twisted.internet import reactor
+
 import ProgressBarView
 import ScrolledText
 import logging
@@ -8,7 +10,6 @@ import ThreadsConnector
 import Queue
 import gettext
 import sys
-
 import scpp_switch
 
 _ = gettext.gettext
@@ -44,6 +45,7 @@ class ActionWindow(tkSimpleDialog.Dialog):
 
     def destroy(self):
         """ Terminate periodic process and call parent's destroy """
+
         self.after_cancel(self.aw_alarm)
         tkSimpleDialog.Dialog.destroy(self)
 
@@ -110,8 +112,7 @@ class ActionWindow(tkSimpleDialog.Dialog):
 
     def packStatusText(self, master):
         """ Pack a status text """
-        self.status_label = Tkinter.Label(master, text=_('Task is in progress'), anchor=Tkinter.NW,
-                                          justify=Tkinter.LEFT)
+        self.status_label = Tkinter.Label(master, text=_('Task is in progress'), anchor=Tkinter.NW,justify=Tkinter.LEFT)
         self.status_label.pack(fill=Tkinter.X)
 
     def buttonbox(self):
@@ -121,6 +122,8 @@ class ActionWindow(tkSimpleDialog.Dialog):
         (self.button_ok, self.button_cancel) = self.pack_slaves()[-1].pack_slaves()
         self.button_ok.configure(state=Tkinter.DISABLED)
         self.bind('<Escape>', lambda e: 'break')
+
+
 
     def fixWindowLayout(self):
         """ Make window content resizable, set minimal sizes of window to avoid disappearing of GUI elements """
@@ -134,6 +137,7 @@ class ActionWindow(tkSimpleDialog.Dialog):
     def ok(self, event=None):
         """ Handle 'ok' button. Can be called only after end of calculations """
         if not (self.conn.isRunning()):
+            scpp_switch.stop_switch()
             tkSimpleDialog.Dialog.ok(self)
             sys.exit()
 
