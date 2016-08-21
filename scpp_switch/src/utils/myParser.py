@@ -27,7 +27,7 @@ logger.setLevel(logging.INFO)
 
 # create a file handler
 handler = logging.FileHandler('logs/switch.logs')
-handler=logging.StreamHandler()
+handler = logging.StreamHandler()
 handler.setLevel(logging.INFO)
 
 # create a logging format
@@ -37,88 +37,90 @@ handler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(handler)
 
+
 class myParser:
-   """
+    """
     Incoming messages from websockets will be parsed
     by the Parser and obtained the query parameters.
     Appropriate action will be invoked by the MySensor Sever or Client.
    """
 
-   def __init__(self,msg):
-      self.users=list()
-      #All senssors tag with # and $
-      self.sensors=list()
-      #Protected sensors tag with $
-      self.esensors=list()
-      self.command=""
-      self.data={}
-      self.sender=""
-      self.signature=""
-      self.senze=""
-      self.fullSenze=""
+    def __init__(self, msg):
+        self.users = list()
+        # All senssors tag with # and $
+        self.sensors = list()
+        # Protected sensors tag with $
+        self.esensors = list()
+        self.command = ""
+        self.data = {}
+        self.sender = ""
+        self.signature = ""
+        self.senze = ""
+        self.fullSenze = ""
 
-      self.fullSenze=msg
-      tList=msg.split()
-      state='CLEAR'
-      sen=""
-      commandList=["SHARE","UNSHARE","PUT","GET","DATA"]
-      logger.info(msg)
+        self.fullSenze = msg
+        tList = msg.split()
+        state = 'CLEAR'
+        sen = ""
+        commandList = ["SHARE", "UNSHARE", "PUT", "GET", "DATA"]
+        logger.info(msg)
 
-      while tList:
-          word=tList.pop(0)
-          self.senze+=word
+        while tList:
+            word = tList.pop(0)
+            self.senze += word
 
-          if word.upper() in commandList:
-             self.command=word
-          elif word.startswith("#") or word.startswith("$"):
-             sen=word[1:]
-             if not sen in self.sensors:
-                self.sensors.append(sen)
-             #Valuable sensors need to be protected.
-             #It is tagged in the esensors list.
-             if word.startswith("$") and not sen in self.esensors:
-                self.esensors.append(sen)
-             state='DATA'
-          elif word.startswith("@"):
-             usr=word[1:]
-             if not usr in self.users:
-                self.users.append(word[1:])
-          elif word.startswith("^"):
-             self.sender=word[1:]
-             self.signature=tList.pop(0)
-          else:
-              if state=='DATA':
-                 self.data[sen]=word
-                 print self.data
-                 state='CLEAR'
+            if word.upper() in commandList:
+                self.command = word
+            elif word.startswith("#") or word.startswith("$"):
+                sen = word[1:]
+                if not sen in self.sensors:
+                    self.sensors.append(sen)
+                # Valuable sensors need to be protected.
+                # It is tagged in the esensors list.
+                if word.startswith("$") and not sen in self.esensors:
+                    self.esensors.append(sen)
+                state = 'DATA'
+            elif word.startswith("@"):
+                usr = word[1:]
+                if not usr in self.users:
+                    self.users.append(word[1:])
+            elif word.startswith("^"):
+                self.sender = word[1:]
+                self.signature = tList.pop(0)
+            else:
+                if state == 'DATA':
+                    self.data[sen] = word
+                    print self.data
+                    state = 'CLEAR'
+
+    def getUsers(self):
+        return self.users
+
+    def getSensors(self):
+        return self.sensors
+
+    def geteSensors(self):
+        return self.esensors
+
+    def getData(self):
+        return self.data
+
+    def getCmd(self):
+        return self.command
+
+    def getSender(self):
+        return self.sender
+
+    def getSENZE(self):
+        return self.senze
+
+    def getFULLSENZE(self):
+        return self.fullSenze
+
+    def getSignature(self):
+        return self.signature
 
 
-   def getUsers(self):
-       return self.users
-
-   def getSensors(self):
-       return self.sensors
-
-   def geteSensors(self):
-       return self.esensors
-
-   def getData(self):
-       return self.data
-
-   def getCmd(self):
-       return self.command
-
-   def getSender(self):
-       return self.sender
-
-   def getSENZE(self):
-       return self.senze
-
-   def getFULLSENZE(self):
-       return self.fullSenze
-
-   def getSignature(self):
-       return self.signature
 '''
 #testData=["SHARE #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDbit1eVpzcXIxeS93Y2hjTkh1MzducE5RSwpSRHFBOTl6REkxeUtzOTFLNUJvNWFKWG1qOXc2cUJwdnVPdkNZQUxHcEdXVC9NUm1Ka3pLOGZUclJhVFlyY1ZMCkJsbklkMXVneWUzZDJFM3lBRFREZlNWWGlOZXpKS2MrSkErN0ExV25FZ0tacXB6ZmYvalNhZXgrR25YcWZ5d0cKeVQvR201QnhwdTc2SXFkYU9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ== @mysensors ^home0 iT4zN85/JNaWiDw56gLqYFDpf6dwkfUOIkP/QlGvLOz4PF7KgJOhefEfH8xQXBmLQAOq3blIVuHIZC55CqTFevfovLcy4Ff42VEFAqMqj42Z3cmoApxgU6tzs/V5BjlrmQAry2TGQ0Qx18uqJANjuyvxMTMMwpiWRK1GM5jZch4="]
 

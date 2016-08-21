@@ -1,11 +1,3 @@
-import sys
-import os
-import logging
-
-#TODO refactore paths
-#sys.path.append(os.path.abspath('./utils'))
-#sys.path.append(os.path.abspath('./models'))
-
 from utils.senz_parser import *
 from utils.crypto_utils import *
 

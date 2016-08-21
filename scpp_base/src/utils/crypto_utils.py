@@ -7,7 +7,6 @@ from Crypto.Signature import PKCS1_v1_5
 from base64 import b64encode
 from config.config import clientname
 
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
@@ -18,7 +17,6 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
-
 
 
 def init_keys():
@@ -32,6 +30,7 @@ def init_keys():
         2. Generate rsa keys
         3. Save ras keys in .keys directory
     """
+
     def init_dirs(senzy_name):
         """
         Create '.keys' directory and 'name' file if not exits. We have to write
@@ -52,7 +51,7 @@ def init_keys():
             senzy_name_file.write(senzy_name)
             senzy_name_file.close()
 
-            #test
+            # test
             # generate keys
             key_pair = RSA.generate(1024, e=65537)
             public_key = key_pair.publickey().exportKey("PEM")
@@ -61,7 +60,7 @@ def init_keys():
             # save keys in pem file
             save_key('publicKey.pem', public_key)
             save_key('privateKey.pem', private_key)
-            #test over
+            # test over
         else:
             logger.info('keys exists')
 

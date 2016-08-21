@@ -22,7 +22,6 @@ filehandler.setFormatter(formatter)
 logger.addHandler(filehandler)
 
 
-
 def init_keys():
     """
     Initilize keys from here, device name exists in the 'name' file. Verify
@@ -34,6 +33,7 @@ def init_keys():
         2. Generate rsa keys
         3. Save ras keys in .keys directory
     """
+
     def init_dirs(senzy_name):
         """
         Create '.keys' directory and 'name' file if not exits. We have to write
@@ -54,7 +54,7 @@ def init_keys():
             senzy_name_file.write(senzy_name)
             senzy_name_file.close()
 
-            #test
+            # test
             # generate keys
             key_pair = RSA.generate(1024, e=65537)
             public_key = key_pair.publickey().exportKey("PEM")
@@ -63,7 +63,7 @@ def init_keys():
             # save keys in pem file
             save_key('publicKey.pem', public_key)
             save_key('privateKey.pem', private_key)
-            #test over
+            # test over
         else:
             logger.info('keys exists')
 
@@ -79,7 +79,7 @@ def init_keys():
         key_file.close()
 
     # TODO read senzy name from config file
-    senzy_name = clientname #'switch'
+    senzy_name = clientname  # 'switch'
     init_dirs(senzy_name)
     '''
     # generate keys
@@ -91,6 +91,7 @@ def init_keys():
     save_key('publicKey.pem', public_key)
     save_key('privateKey.pem', private_key)
     '''
+
 
 def get_pubkey():
     """

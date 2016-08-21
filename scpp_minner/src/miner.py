@@ -1,23 +1,24 @@
-from twisted.internet.protocol import DatagramProtocol
-from twisted.internet.task import LoopingCall
-from twisted.internet import reactor, threads
-
+import gettext
 import time
-import sys
-import os
-import logging
+import multiprocessing
+import tkMessageBox
+from Tkinter import Tk
 
-
+from twisted.internet.protocol import DatagramProtocol
+from twisted.internet import reactor, threads
+from miner_ui import cumulative_logger
+from miner_ui.main_window_app import MainWindowApp
 from utils.crypto_utils import *
 from handlers.senz_handler import *
-from models.senz import *
 from config.config import *
 
+_ = gettext.gettext
 
+logging.basicConfig()  # comment this stop console logger print
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-if not(os.path.exists('logs')):
+if not (os.path.exists('logs')):
     os.mkdir('logs')
 
 filehandler = logging.FileHandler('logs/minner.log')
@@ -30,15 +31,13 @@ filehandler.setFormatter(formatter)
 logger.addHandler(filehandler)
 
 
-
-
-
 class SenzcProtocol(DatagramProtocol):
     """
     Protocol will connects to udp port(which server runs on). When packet(semz)
     comes to server we have to asynchornosly handle them. We are starting
     thread save twisted thread on GET, SHARE and PUT senz
     """
+
     def __init__(self, host, port):
         """
         initiliaze senz server host and port
@@ -66,8 +65,7 @@ class SenzcProtocol(DatagramProtocol):
         self.share_pubkey()
 
         # start thread to read senz from cmd
-        d = threads.deferToThread(self.read_senz)
-
+        # d = threads.deferToThread(self.read_senz)
 
     def stopProtocol(self):
         """
@@ -75,9 +73,12 @@ class SenzcProtocol(DatagramProtocol):
         exits from here
        """
         reactor.callFromThread(reactor.stop)
-        logger.info('client stopped')
-
-
+        logger.info('client protocol stopped')
+        root = Tk()
+        root.withdraw()
+        tkMessageBox.showinfo("Message", "Switch not connected or not Start , try later")
+        root.quit()
+        #os._exit(0)
 
     def datagramReceived(self, datagram, host):
         """
@@ -113,24 +114,20 @@ class SenzcProtocol(DatagramProtocol):
         receiver = servername
         sender = clientname
 
-        senz = "SHARE #pubkey %s #time %s @%s ^%s" % \
-                         (pubkey, time.time(), receiver, sender)
+        senz = "SHARE #pubkey %s #time %s @%s ^%s" % (pubkey, time.time(), receiver, sender)
         signed_senz = sign_senz(senz)
 
         # print(signed_senz)
 
         self.transport.write(signed_senz)
 
-    def read_senz(self):
+    '''def read_senz(self):
         while True:
             input_senz = raw_input("Senz : ")
             senz = str(input_senz) + " ^%s" % (clientname)
             signed_senz = sign_senz(senz)
             logger.info('read senz: %s' % signed_senz)
-            self.transport.write(signed_senz)
-
-
-
+            self.transport.write(signed_senz)'''
 
     def handle_datagram(self, datagram):
         """
@@ -142,8 +139,8 @@ class SenzcProtocol(DatagramProtocol):
 
         if datagram == 'PING':
             # we ingnore ping messages
-            #logger.info('ping received')
-            pass #temporry stop pin message
+            # logger.info('ping received')
+            pass  # temporry stop pin message
         else:
             # parse senz first
             senz = parse(datagram)
@@ -170,6 +167,7 @@ def start():
     have to provide server host and port details form here.(read from config)
     """
 
+    init()
     # TODO get host and port from config
     host = serverhost
     port = serverport
@@ -181,5 +179,11 @@ def start():
 
 
 if __name__ == '__main__':
-    init()
-    start()
+    global t, t1
+    t = multiprocessing.Process(target=start, args=())
+    t.start()
+
+    cl = cumulative_logger.CumulativeLogger()
+    logger.info(_('Starting the SCPP Stock Exchange...!'))
+    t1 = multiprocessing.Process(target=MainWindowApp(cl).run(), args=())
+    t1.start()

@@ -1,8 +1,6 @@
 import tkSimpleDialog
 import tkMessageBox
 import Tkinter
-from twisted.internet import reactor
-
 import ProgressBarView
 import ScrolledText
 import logging
@@ -11,6 +9,8 @@ import Queue
 import gettext
 import sys
 import scpp_switch
+
+from twisted.internet import reactor
 
 _ = gettext.gettext
 

@@ -16,14 +16,13 @@ from utils.crypto_utils import *
 from handlers.senz_handler import *
 from config.config import *
 
-
 _ = gettext.gettext
 
-logging.basicConfig() #comment this stop console logger print
+logging.basicConfig()  # comment this stop console logger print
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-if not(os.path.exists('logs')):
+if not (os.path.exists('logs')):
     os.mkdir('logs')
 
 filehandler = logging.FileHandler('logs/stock_exchange.logs')
@@ -34,12 +33,14 @@ filehandler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(filehandler)
 
+
 class SenzcProtocol(DatagramProtocol):
     """
     Protocol will connects to udp port(which server runs on). When packet(semz)
     comes to server we have to asynchornosly handle them. We are starting
     thread save twisted thread on GET, SHARE and PUT senz
     """
+
     def __init__(self, host, port):
         """
         initiliaze senz server host and port
@@ -144,8 +145,8 @@ class SenzcProtocol(DatagramProtocol):
 
         if datagram == 'PING':
             # we ingnore ping messages
-            #logger.info('ping received')
-            pass #temporry stop pin message
+            # logger.info('ping received')
+            pass  # temporry stop pin message
         else:
             # parse senz first
             senz = parse(datagram)
@@ -154,6 +155,7 @@ class SenzcProtocol(DatagramProtocol):
             handler = SenzHandler(self.transport)
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
+
 
 '''def log():
     logger.info("Log ")'''
@@ -188,15 +190,11 @@ def start():
 
 
 if __name__ == '__main__':
-
-    global t,t1
-    t = multiprocessing.Process(target=start,args=())
+    global t, t1
+    t = multiprocessing.Process(target=start, args=())
     t.start()
 
     cl = cumulative_logger.CumulativeLogger()
     logger.info(_('Starting the SCPP Stock Exchange...!'))
     t1 = multiprocessing.Process(target=base_ui.main_window_app.MainWindowApp(cl).run(), args=())
     t1.start()
-
-
-

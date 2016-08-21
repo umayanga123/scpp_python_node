@@ -18,8 +18,6 @@ filehandler.setFormatter(formatter)
 logger.addHandler(filehandler)
 
 
-
-
 class SenzHandler():
     """
     Handler incoming senz messages from here. We are dealing with following
@@ -31,6 +29,7 @@ class SenzHandler():
 
     According to the senz type different operations need to be carry out
     """
+
     def __init__(self, transport):
         """
         Initilize udp transport from here. We can use transport to send message
@@ -48,21 +47,21 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        #print senz.attributes
-        logger.info( 'senz received %s' % senz.type)
-        dbh= db_handler()
+        # print senz.attributes
+        logger.info('senz received %s' % senz.type)
+        dbh = db_handler()
 
-        #tempory adding function
-        if(senz.receiver ==None):
+        # tempory adding function
+        if (senz.receiver == None):
             dbh.testData()
 
-        #print senz.type=="DATA" and senz.receiver !=None
-        if(senz.type=="DATA" and senz.receiver !=None):
+        # print senz.type=="DATA" and senz.receiver !=None
+        if (senz.type == "DATA" and senz.receiver != None):
             dbh.addTransaction(senz.attributes)
-        elif(senz.type=="SHARE" and senz.attributes["#COIN_VALUE"] == ""):
-            #print dbh.calulateCoinsValue()
+        elif (senz.type == "SHARE" and senz.attributes["#COIN_VALUE"] == ""):
+            # print dbh.calulateCoinsValue()
             senze = 'PUT #COIN_VALUE %s ' % (dbh.calulateCoinsValue())
-            senz = str(senze) + "@%s  ^%s" % (senz.sender , clientname)
+            senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
             signed_senz = sign_senz(senz)
             logger.info('Auto Excute: %s' % signed_senz)
             self.transport.write(signed_senz)
