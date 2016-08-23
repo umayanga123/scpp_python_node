@@ -1,1 +1,1 @@
-_all__ = ["db_handler"]
+_all__ = ["db_handler","coin_value_handler"]

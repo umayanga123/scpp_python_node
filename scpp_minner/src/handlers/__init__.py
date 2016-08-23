@@ -1,1 +1,1 @@
-_all__ = ["senz_handler"]
+_all__ = ["senz_handler","Connection"]

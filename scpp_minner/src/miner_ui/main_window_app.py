@@ -2,9 +2,11 @@ import tkMessageBox
 import gettext
 import logging
 import os
+import multiprocessing
 
 from Tkinter import *
 from PIL import ImageTk, Image
+from handlers.senz_handler import SenzHandler
 from miner_ui import view_log
 from miner_ui.data_view import DataView
 
@@ -14,7 +16,6 @@ logger.setLevel(logging.INFO)
 
 
 class MainWindowApp:
-    global l2;
 
     def __init__(self, log):
         """ Remember cumulative logs, get logger """
@@ -60,7 +61,7 @@ class MainWindowApp:
         b4.grid(row=4, column=0, pady=5, padx=5)
         b5.grid(row=5, column=0, pady=5, padx=5, sticky=E)
 
-        self.getCoinValue();
+
         self.center(self.root)
         self.root.mainloop()
 
@@ -79,7 +80,9 @@ class MainWindowApp:
 
     def getCoinValue(self):
         """ Process 'Start' command """
-        print "not yet implement"
+        sh = SenzHandler(None)
+        t = multiprocessing.Process(target=sh.coinValueReguest(), args=())
+        t.start()
 
     def onViewLog(self):
         """ Process 'View Log' command """

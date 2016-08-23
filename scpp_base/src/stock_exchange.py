@@ -186,7 +186,7 @@ def start():
     # start ptotocol
     protocol = SenzcProtocol(host, port)
     reactor.listenUDP(0, protocol)
-    reactor.run()
+    reactor.run(installSignalHandlers=False)
 
 
 if __name__ == '__main__':

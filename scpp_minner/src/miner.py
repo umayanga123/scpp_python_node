@@ -8,7 +8,6 @@ from twisted.internet.protocol import DatagramProtocol
 from twisted.internet import reactor, threads
 from miner_ui import cumulative_logger
 from miner_ui.main_window_app import MainWindowApp
-from utils.crypto_utils import *
 from handlers.senz_handler import *
 from config.config import *
 
@@ -64,9 +63,6 @@ class SenzcProtocol(DatagramProtocol):
         # share public key on start
         self.share_pubkey()
 
-        # start thread to read senz from cmd
-        # d = threads.deferToThread(self.read_senz)
-
     def stopProtocol(self):
         """
         Call when datagram protocol stops. Need to clear global connection if
@@ -121,13 +117,6 @@ class SenzcProtocol(DatagramProtocol):
 
         self.transport.write(signed_senz)
 
-    '''def read_senz(self):
-        while True:
-            input_senz = raw_input("Senz : ")
-            senz = str(input_senz) + " ^%s" % (clientname)
-            signed_senz = sign_senz(senz)
-            logger.info('read senz: %s' % signed_senz)
-            self.transport.write(signed_senz)'''
 
     def handle_datagram(self, datagram):
         """
@@ -136,10 +125,10 @@ class SenzcProtocol(DatagramProtocol):
             2. We have to ignore ping messages from server
             3. We have to handler GET, SHARE, PUT senz messages via SenzHandler
         """
-
+        print datagram
         if datagram == 'PING':
             # we ingnore ping messages
-            # logger.info('ping received')
+            logger.info('ping received')
             pass  # temporry stop pin message
         else:
             # parse senz first
@@ -175,7 +164,7 @@ def start():
     # start ptotocol
     protocol = SenzcProtocol(host, port)
     reactor.listenUDP(0, protocol)
-    reactor.run()
+    reactor.run(installSignalHandlers=False)
 
 
 if __name__ == '__main__':
