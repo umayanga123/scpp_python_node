@@ -47,9 +47,11 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        # print senz.attributes
+        print "Hanlder "  ,senz.attributes ,senz.type ,senz.receiver,senz.sender
         logger.info('senz received %s' % senz.type)
         dbh = db_handler()
+
+        print (senz.attributes)
 
         # tempory adding function
         if (senz.receiver == None):
@@ -58,13 +60,15 @@ class SenzHandler():
         # print senz.type=="DATA" and senz.receiver !=None
         if (senz.type == "DATA" and senz.receiver != None):
             dbh.addTransaction(senz.attributes)
-        elif (senz.type == "SHARE" and senz.attributes["#COIN_VALUE"] == ""):
+        elif (senz.type == "SHARE"):
             # print dbh.calulateCoinsValue()
-            senze = 'PUT #COIN_VALUE %s ' % (dbh.calulateCoinsValue())
-            senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
-            signed_senz = sign_senz(senz)
-            logger.info('Auto Excute: %s' % signed_senz)
-            self.transport.write(signed_senz)
+            flag = senz.attributes["#f"]
+            if(flag=="cv"):
+                senze = 'PUT #COIN_VALUE %s ' % (dbh.calulateCoinsValue())
+                senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
+                signed_senz = sign_senz(senz)
+                logger.info('Auto Excute: %s' % signed_senz)
+                self.transport.write(signed_senz)
 
     def postHandle(self, arg):
         """

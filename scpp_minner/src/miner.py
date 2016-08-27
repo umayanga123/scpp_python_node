@@ -6,6 +6,9 @@ from Tkinter import Tk
 
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet import reactor, threads
+
+import sys
+
 from miner_ui import cumulative_logger
 from miner_ui.main_window_app import MainWindowApp
 from handlers.senz_handler import *
@@ -164,7 +167,12 @@ def start():
     # start ptotocol
     protocol = SenzcProtocol(host, port)
     reactor.listenUDP(0, protocol)
-    reactor.run(installSignalHandlers=False)
+    try:
+        reactor.run(installSignalHandlers=False)
+        print 'wada'
+    except (KeyboardInterrupt, SystemExit):
+        print "Unexpected SutDown"
+        sys.exit()
 
 
 if __name__ == '__main__':

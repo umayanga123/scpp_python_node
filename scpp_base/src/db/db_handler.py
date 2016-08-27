@@ -12,7 +12,7 @@ class db_handler:
         self.db = client.scpp_stock_exchange
 
     def addTransaction(self, quarry):
-        # print quarry["#M_S_ID"]
+        print int(quarry["#NO_COIN"])
         self.collection = self.db.transaction_detail
         transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),
                        "date": datetime.datetime.utcnow()}

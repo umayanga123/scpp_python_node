@@ -1,10 +1,12 @@
-import sys
 import socket
 import threading
+import tkMessageBox
+
+from db.db_handler import db_handler
+from minner_algo_handler.minning_algo import minning_algo
 from utils.senz_parser import *
 from utils.crypto_utils import *
 from config.config import *
-
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -48,17 +50,34 @@ class SenzHandler():
         asynchronously. Whenc senz message receives this function will be
         called by twisted thread(thread safe mode via twisted library)
         """
+        print "Hanlder ", senz.attributes, senz.type, senz.receiver, senz.sender
 
-        print  "hnadle call ", senz
         logger.info('senz received %s' % senz.type)
+        cah = minning_algo()
+        dbh = db_handler()
 
-        if(senz.type == 'PUT'):
+        if (senz.type == 'PUT'):
             print "Coin value :", senz.attributes["#COIN_VALUE"]
             senze = 'UNSHARE #COIN_VALUE '
             senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
             signed_senz = sign_senz(senz)
             logger.info('read senz: %s' % signed_senz)
             self.transport.write(signed_senz)
+
+        elif (senz.type == "SHARE"):
+            flag = senz.attributes["#f"]
+            if (flag == "cc"):
+                coin = cah.getCoin(senz.attributes["#S_PARA"])
+
+                senze_c = 'PUT #COIN %s ' % coin
+                senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
+                signed_senzc = sign_senz(senz_c)
+
+                dbh.addMinerDetail(senz.attributes, coin)
+
+                logger.info('Auto Excute: %s' % signed_senzc)
+                self.transport.write(signed_senzc)
+                self.sendTDetailsToBase(senz)
 
     def postHandle(self, arg):
         """
@@ -70,7 +89,7 @@ class SenzHandler():
         return
 
     def coinValueReguest(self):
-        senze = 'SHARE #COIN_VALUE @baseNode '
+        senze = 'SHARE #COIN_VALUE  #f cv @baseNode '
         senz = str(senze) + " ^%s" % (clientname)
         signed_senz = sign_senz(senz)
         logger.info('read senz: %s' % signed_senz)
@@ -78,19 +97,14 @@ class SenzHandler():
         # Create a TCP/IP socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         # Connect the socket to the port where the server is listening
-        server_address = ('127.0.0.1', 9090)
-        print >> sys.stderr, 'connecting to %s port %s' % server_address
+        server_address = (serverhost, serverport)
         sock.connect(server_address)
-
-        print >> sys.stderr, 'sending "%s"' % signed_senz
         sock.sendto(signed_senz, server_address)
+        data = sock.recvfrom(4096)
+        x = parse(data[0])
 
-
-        # Receive response
-        print >> sys.stderr, 'waiting to receive'
-        data, server = sock.recvfrom(4096)
-        print data
-
+        # print "wada" , x.attributes["#COIN_VALUE"]
+        tkMessageBox.showinfo("Message - Coin Rate  ", "Coin Value  :" + x.attributes["#COIN_VALUE"] + "$")
         sock.close()
 
         thread = threading.Thread(target=self.restartProdocole, args=())
@@ -104,3 +118,26 @@ class SenzHandler():
             miner.start()
         except:
             pass
+
+    def sendTDetailsToBase(self, senz):
+        # SHARE  # M_S_ID   #NO_COIN  #S_ID  @baseNode (miner)
+        # DATA  # M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode(miner)
+        # UNSHARE  # M_S_ID   #NO_COIN  #S_ID  @baseNode(miner)
+        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN  #S_ID  '
+        senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
+        signed_senzc = sign_senz(senz_c)
+        self.transport.write(signed_senzc)
+
+        senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #S_ID %s ' % ("M_1", "td", 1, senz.attributes["#S_ID"])
+
+        print "Protocole" ,senze_d
+        senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
+        signed_senzd = sign_senz(senz_d)
+        self.transport.write(signed_senzd)
+
+        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN  #S_ID  '
+        senz_u = str(senze_u) + "@%s  ^%s" % ("baseNode", clientname)
+        signed_senzu = sign_senz(senz_u)
+        self.transport.write(signed_senzu)
+
+        print "call base"

@@ -4,24 +4,23 @@ from pymongo import MongoClient
 
 
 class db_handler:
-    global collection;
-    global db;
-
     def __init__(self):
         client = MongoClient('localhost', 27017)
         self.db = client.scpp_miner
+        self.collection = self.db.miner_detail
 
-    def addTransaction(self, quarry):
-        # print quarry["#M_S_ID"]
-        self.collection = self.db.transaction_detail
-        transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),"date": datetime.datetime.utcnow()}
-        self.collection.insert(transaction)
-        return 'DONE'
+    def addMinerDetail(self, quarry, coin):
+
+        print quarry
+        miner_object = {"M_S_ID": "M_1", "S_ID": int(quarry["#S_ID"]), "S_PARA": quarry["#S_PARA"],"COIN": str(coin), "NO_COIN": int(1), "date": datetime.datetime.utcnow()}
+        print miner_object
+        self.collection.insert(miner_object)
+        return 'ADD DATA SUCCESSFULLY'
 
     '''
-    return all transaction table data
+    return all miner_detail table data
    '''
 
-    def getAllTransactionDetails(self):
-        self.t_collection = self.db.transaction_detail.find()
-        return self.t_collection
+    def getAllMinerDetails(self):
+        md = self.db.miner_detail.find()
+        return md
