@@ -42,7 +42,7 @@ class SenzHandler():
             trnsport - twisted transport instance
         """
         self.transport = transport
-        print self.transport
+
 
     def handleSenz(self, senz):
         """
@@ -53,7 +53,6 @@ class SenzHandler():
         print "Hanlder ", senz.attributes, senz.type, senz.receiver, senz.sender
 
         logger.info('senz received %s' % senz.type)
-        cah = minning_algo()
         dbh = db_handler()
 
         if (senz.type == 'PUT'):
@@ -67,6 +66,7 @@ class SenzHandler():
         elif (senz.type == "SHARE"):
             flag = senz.attributes["#f"]
             if (flag == "cc"):
+                cah = minning_algo()
                 coin = cah.getCoin(senz.attributes["#S_PARA"])
 
                 senze_c = 'PUT #COIN %s ' % coin
@@ -84,7 +84,7 @@ class SenzHandler():
         After handling senz message this function will be called. Basically
         this is a call back funcion
         """
-        print "post Handelr"
+        #print "post Handelr"
         logger.info("Post Handled")
         return
 
@@ -120,17 +120,12 @@ class SenzHandler():
             pass
 
     def sendTDetailsToBase(self, senz):
-        # SHARE  # M_S_ID   #NO_COIN  #S_ID  @baseNode (miner)
-        # DATA  # M_S_ID 1  #NO_COIN 3 #S_ID 1 @baseNode(miner)
-        # UNSHARE  # M_S_ID   #NO_COIN  #S_ID  @baseNode(miner)
         senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN  #S_ID  '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
         self.transport.write(signed_senzc)
 
         senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #S_ID %s ' % ("M_1", "td", 1, senz.attributes["#S_ID"])
-
-        print "Protocole" ,senze_d
         senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzd = sign_senz(senz_d)
         self.transport.write(signed_senzd)
@@ -140,4 +135,4 @@ class SenzHandler():
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)
 
-        print "call base"
+

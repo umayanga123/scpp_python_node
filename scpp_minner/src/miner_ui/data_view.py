@@ -16,15 +16,17 @@ class DataView(Frame):
 
     def CreateUI(self):
         tv = Treeview(self)
-        tv['columns'] = ('no_of_coin', 's_id', 'm_s_id')
+        tv['columns'] = ('m_s_id', 's_id','s_para','no_of_coin')
         tv.heading("#0", text='Date', anchor='c')
         tv.column("#0", anchor="c")
-        tv.heading('no_of_coin', text='No Of Coin')
-        tv.column('no_of_coin', anchor='center', width=100)
-        tv.heading('s_id', text='Service ID')
-        tv.column('s_id', anchor='center', width=100)
         tv.heading('m_s_id', text='Minner ID')
         tv.column('m_s_id', anchor='center', width=100)
+        tv.heading('s_id', text='Service ID')
+        tv.column('s_id', anchor='center', width=100)
+        tv.heading('s_para', text='Data')
+        tv.column('s_para', anchor='center', width=100)
+        tv.heading('no_of_coin', text='No Of Coin')
+        tv.column('no_of_coin', anchor='center', width=100)
         tv.grid(sticky=(N, S, W, E))
         self.treeview = tv
         self.grid_rowconfigure(0, weight=1)
@@ -35,13 +37,13 @@ class DataView(Frame):
 
     def LoadTable(self):
         dbh = db_handler()
-        t_deatail = dbh.getAllTransactionDetails()
+        t_deatail = dbh.getAllMinerDetails()
         self.rows = t_deatail.count()
-        print t_deatail, self.rows
+        #print t_deatail, self.rows
         for document in t_deatail:
-            print document["NO_COIN"], document["S_ID"], document["M_S_ID"], document["date"]
+            #print document["NO_COIN"], document["S_ID"], document["M_S_ID"], document["date"]
             self.treeview.insert('', 'end', text=document["date"].date(),
-                                 values=(document["NO_COIN"], document["S_ID"], document["M_S_ID"]))
+                                 values=( document["S_ID"], document["S_PARA"] ,document["M_S_ID"],document["NO_COIN"]))
 
     def back(self):
         self.root.destroy()

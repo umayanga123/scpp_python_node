@@ -21,7 +21,7 @@ class MainWindowApp:
     def run(self):
         """ Create and run GUI """
         self.root = root = Tkinter.Tk()
-        root.title(_('Long Operation Demo'))
+        root.title(_('SCPP Switch'))
         root.resizable(width=False, height=False)
 
         # set the window icon
@@ -53,7 +53,7 @@ class MainWindowApp:
         """ Process 'Start' command """
         self.logger.info(_('start module'))
         conn = ThreadsConnector.ThreadsConnector()
-        wnd = ActionWindow.ActionWindow(self.root, _('Switch dashbord'), _('Switch logs view'))
+        wnd = ActionWindow.ActionWindow(self.root, _('Switch Dashboard'), _('Switch logs view'))
         conn.runInGui(wnd, conn, None, start_application.calc, 'calc')
 
     def center(self, toplevel):

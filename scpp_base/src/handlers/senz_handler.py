@@ -47,11 +47,9 @@ class SenzHandler():
         called by twisted thread(thread safe mode via twisted library)
         """
 
-        print "Hanlder "  ,senz.attributes ,senz.type ,senz.receiver,senz.sender
+        #print "Hanlder "  ,senz.attributes ,senz.type ,senz.receiver,senz.sender
         logger.info('senz received %s' % senz.type)
         dbh = db_handler()
-
-        print (senz.attributes)
 
         # tempory adding function
         if (senz.receiver == None):

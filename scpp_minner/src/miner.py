@@ -1,7 +1,6 @@
 import gettext
 import time
 import multiprocessing
-import tkMessageBox
 from Tkinter import Tk
 
 from twisted.internet.protocol import DatagramProtocol
@@ -128,11 +127,11 @@ class SenzcProtocol(DatagramProtocol):
             2. We have to ignore ping messages from server
             3. We have to handler GET, SHARE, PUT senz messages via SenzHandler
         """
-        print datagram
+        #print datagram
         if datagram == 'PING':
             # we ingnore ping messages
-            logger.info('ping received')
-            pass  # temporry stop pin message
+            #logger.info('ping received') # temporry stop pin message
+            pass
         else:
             # parse senz first
             senz = parse(datagram)
@@ -165,13 +164,13 @@ def start():
     port = serverport
 
     # start ptotocol
-    protocol = SenzcProtocol(host, port)
-    reactor.listenUDP(0, protocol)
+
     try:
+        protocol = SenzcProtocol(host, port)
+        reactor.listenUDP(0, protocol)
         reactor.run(installSignalHandlers=False)
-        print 'wada'
-    except (KeyboardInterrupt, SystemExit):
-        print "Unexpected SutDown"
+    except KeyboardInterrupt:
+        print "Unexpected Shut Down"
         sys.exit()
 
 

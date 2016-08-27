@@ -67,9 +67,6 @@ class SenzcProtocol(DatagramProtocol):
         # share public key on start
         self.share_pubkey()
 
-        # start thread to read senz from cmd
-        ###d = threads.deferToThread(self.read_senz)   ///comand line remove
-
     def stopProtocol(self):
         """
         Call when datagram protocol stops. Need to clear global connection if
@@ -122,19 +119,6 @@ class SenzcProtocol(DatagramProtocol):
         # print(signed_senz)
         self.transport.write(signed_senz)
 
-    '''def read_senz(self):
-        """
-            this is command line senz input get method and , i comment it to futher development.
-            hope it will not nesserry.
-        """
-
-        while True:
-            input_senz = raw_input("Senz : ")
-            senz = str(input_senz) + " ^%s" % (clientname)
-            #signed_senz = sign_senz(senz)
-            #logger.info('read senz: %s' % signed_senz)
-           # self.transport.write(signed_senz)'''
-
     def handle_datagram(self, datagram):
         """
         Handle receving senz from here, we have to do
@@ -155,10 +139,6 @@ class SenzcProtocol(DatagramProtocol):
             handler = SenzHandler(self.transport)
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
-
-
-'''def log():
-    logger.info("Log ")'''
 
 
 def init():

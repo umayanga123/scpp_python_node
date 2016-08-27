@@ -202,3 +202,31 @@
 2016-08-27 20:03:58,019 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472308201.17', '#msg': 'REGISTRATION_DONE', '#COIN': '14d2e49fb754b678f4dc'}
 2016-08-27 20:03:58,020 - handlers.senz_handler - INFO -                                                                 senz received PUT 
 2016-08-27 20:03:58,020 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-27 22:28:52,392 - __main__ - INFO - client stopped
+2016-08-27 22:28:54,140 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:28:54,140 - __main__ - INFO - client started
+2016-08-27 22:28:54,167 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:28:54,167 - utils.senz_parser - INFO -                                                             Qqc5wWUr7czPA+1dRxy8UjC8eddpHoPwodKblrjLAlmPrn/wLmG2JdIuygbqKY/Y0Mljh8rPTP+WhFXXMZFOhjx2nh2ev4TbeYVIllWuGMzwWwDt1fzcch+SSmroeThRfaONi//IcD3yS7tMrwW6GKkK/q799bWUC1ZE5hIImx4=
+2016-08-27 22:28:54,167 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:28:54,167 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:28:54,167 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472317134.16', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:28:54,168 - handlers.senz_handler - INFO -                                                                 senz received DATA 
+2016-08-27 22:28:54,168 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-27 22:47:43,523 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:47:43,523 - __main__ - INFO - client started
+2016-08-27 22:47:43,549 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:47:43,549 - utils.senz_parser - INFO -                                                             Vo3/OrqFb2r/99rA07JRRrFfSzvGTjcACk7J5zxE1c4hWXTezqvIcEBRIsMj0Th+vEPSXWyPSGNRuC3k+/aPerEA3+3jyxCxcuVHY5L8PhgyPYWcrcxyOEnyfiNLx3ldXn84F+45iJn4Hmwj3oVnCHu0vrkZeizdj1RgEWfFZlM=
+2016-08-27 22:47:43,549 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:47:43,549 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:47:43,549 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318263.55', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:47:43,550 - handlers.senz_handler - INFO -                                                                 senz received DATA 
+2016-08-27 22:47:43,550 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-27 22:48:23,064 - __main__ - INFO - read senz: SHARE #S_ID 3 #f cc #S_PARA 3km #COIN  @node1 ^node2 8piym43ZCFwUpgRiru+NPoZbsSqWzeBjTqaIb3NIvmJHmRKd5GhO5Zjv0sNeL6Z6LCjLH3v8PU9iH1CCN6Hc3YAopx8TvVWsiy4aTb7ZIxdH4QOIbe2PfemGhl3rkWLHxWPaJXb2P8tqndmdVibN+PBN8sK+pDePxhUNdoRt2e0=
+2016-08-27 22:48:23,939 - utils.senz_parser - INFO -                                                             PUT
+2016-08-27 22:48:23,939 - utils.senz_parser - INFO -                                                             SMZI4STuXlP8rRU1mlqEGmNWVN1HdBmacU4Ix/76Q3zTizzh27iDreQeBjLQU6fEut52gm2tNsv2hdselGfysJh1eiPUYs9vV1qAFPBP6D8Iu2KWowgYZcOp8KpHCMtxu/s7GNYxmNoFBKc+YP2VPenu+eB2VpBzBIiOhIE7h5M=
+2016-08-27 22:48:23,939 - utils.senz_parser - INFO -                                                             node1
+2016-08-27 22:48:23,939 - utils.senz_parser - INFO -                                                             node2
+2016-08-27 22:48:23,940 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318263.55', '#msg': 'ALREADY_REGISTERED', '#COIN': '709fe4d13900424eb101'}
+2016-08-27 22:48:23,940 - handlers.senz_handler - INFO -                                                                 senz received PUT 
+2016-08-27 22:48:23,941 - handlers.senz_handler - INFO -                                                                 Post Handled
+2016-08-27 22:48:52,501 - __main__ - INFO - client stopped

@@ -970,3 +970,808 @@
 2016-08-27 20:26:45,724 - miner - INFO - ping received
 2016-08-27 20:27:05,742 - miner - INFO - datagram received PING
 2016-08-27 20:27:05,743 - miner - INFO - ping received
+2016-08-27 20:27:19,748 - handlers.senz_handler - INFO - read senz: SHARE #COIN_VALUE  #f cv @baseNode  ^node1 HwQMepdqPk2o9OxFiFXnma2Nl+rQYaT4tYeB7wRftaKeS2tnF3rT1lERJeCvYc5CZxQIwdGQDc5j5KYjVfY730mCSt7PjaMx8hPCrbq5i+18rqfQpJXH23HlB19tnhWcMNBOhp50Y9q6xZS5cXEglzT+QwWa+eh1KkYMMcRykXY=
+2016-08-27 20:27:19,780 - utils.senz_parser - INFO -                                                             PUT
+2016-08-27 20:27:19,780 - utils.senz_parser - INFO -                                                             h9Pm6whFZUC4vTwF9BCPxmSUf4tziasqQspYnJCJkt6jwZYfNiXeUenso6CprYSi5BIPua08a39NodDxmjnQ0PgLuCJq37Rx/mOsuIb246T0q51L6lsRa831AJHgBAUaDy7XcS5/u0AEdU7woqKgQcjsFt2zLO+aeqMfN6Qrjq0=
+2016-08-27 20:27:19,781 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-27 20:27:19,781 - utils.senz_parser - INFO -                                                             node1
+2016-08-27 20:27:19,781 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#COIN_VALUE': '0.15', '#msg': 'ALREADY_REGISTERED', '#time': '1472308459.48'}
+2016-08-27 20:27:20,612 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 20:27:20,618 - miner - INFO - client started
+2016-08-27 20:27:20,647 - miner - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472309840.64 ^mysensors GDO9qdkDDndUyzaWGK+oOlvD5Pd6BnoXqP8QkVdXeg08O+hfpSpxgpLx0oSSJvB0a4JEuT379rNikRTo4Nz6ahJe6NDYHzsVTmfXryFOOTQrOxaZ4TbhTf6kUvqftVvOFXw4CeSSP5F22vMsXFsHqQHDLIw8pQdUxCX4kAnYFWg=
+2016-08-27 20:27:20,648 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 20:27:20,648 - utils.senz_parser - INFO -                                                             GDO9qdkDDndUyzaWGK+oOlvD5Pd6BnoXqP8QkVdXeg08O+hfpSpxgpLx0oSSJvB0a4JEuT379rNikRTo4Nz6ahJe6NDYHzsVTmfXryFOOTQrOxaZ4TbhTf6kUvqftVvOFXw4CeSSP5F22vMsXFsHqQHDLIw8pQdUxCX4kAnYFWg=
+2016-08-27 20:27:20,648 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 20:27:20,648 - utils.senz_parser - INFO -                                                             None
+2016-08-27 20:27:20,648 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#COIN_VALUE': '0.15', '#msg': 'ALREADY_REGISTERED', '#time': '1472309840.64'}
+2016-08-27 20:27:20,650 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 20:27:20,654 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 20:27:25,747 - miner - INFO - datagram received PING
+2016-08-27 20:27:25,748 - miner - INFO - ping received
+2016-08-27 20:27:45,766 - miner - INFO - datagram received PING
+2016-08-27 20:27:45,767 - miner - INFO - ping received
+2016-08-27 20:28:05,785 - miner - INFO - datagram received PING
+2016-08-27 20:28:05,785 - miner - INFO - ping received
+2016-08-27 20:28:25,804 - miner - INFO - datagram received PING
+2016-08-27 20:28:25,805 - miner - INFO - ping received
+2016-08-27 20:28:45,809 - miner - INFO - datagram received PING
+2016-08-27 20:28:45,809 - miner - INFO - ping received
+2016-08-27 20:29:05,812 - miner - INFO - datagram received PING
+2016-08-27 20:29:05,813 - miner - INFO - ping received
+2016-08-27 20:29:25,827 - miner - INFO - datagram received PING
+2016-08-27 20:29:25,828 - miner - INFO - ping received
+2016-08-27 20:29:45,846 - miner - INFO - datagram received PING
+2016-08-27 20:29:45,846 - miner - INFO - ping received
+2016-08-27 20:30:05,848 - miner - INFO - datagram received PING
+2016-08-27 20:30:05,848 - miner - INFO - ping received
+2016-08-27 20:30:25,860 - miner - INFO - datagram received PING
+2016-08-27 20:30:25,861 - miner - INFO - ping received
+2016-08-27 20:30:45,864 - miner - INFO - datagram received PING
+2016-08-27 20:30:45,864 - miner - INFO - ping received
+2016-08-27 20:31:05,883 - miner - INFO - datagram received PING
+2016-08-27 20:31:05,883 - miner - INFO - ping received
+2016-08-27 20:31:25,898 - miner - INFO - datagram received PING
+2016-08-27 20:31:25,899 - miner - INFO - ping received
+2016-08-27 20:31:45,915 - miner - INFO - datagram received PING
+2016-08-27 20:31:45,915 - miner - INFO - ping received
+2016-08-27 20:32:05,930 - miner - INFO - datagram received PING
+2016-08-27 20:32:05,931 - miner - INFO - ping received
+2016-08-27 20:32:25,948 - miner - INFO - datagram received PING
+2016-08-27 20:32:25,948 - miner - INFO - ping received
+2016-08-27 20:32:45,964 - miner - INFO - datagram received PING
+2016-08-27 20:32:45,964 - miner - INFO - ping received
+2016-08-27 20:33:05,977 - miner - INFO - datagram received PING
+2016-08-27 20:33:05,978 - miner - INFO - ping received
+2016-08-27 20:33:25,981 - miner - INFO - datagram received PING
+2016-08-27 20:33:25,981 - miner - INFO - ping received
+2016-08-27 20:33:45,997 - miner - INFO - datagram received PING
+2016-08-27 20:33:45,997 - miner - INFO - ping received
+2016-08-27 20:34:06,000 - miner - INFO - datagram received PING
+2016-08-27 20:34:06,000 - miner - INFO - ping received
+2016-08-27 20:34:26,018 - miner - INFO - datagram received PING
+2016-08-27 20:34:26,018 - miner - INFO - ping received
+2016-08-27 20:34:46,021 - miner - INFO - datagram received PING
+2016-08-27 20:34:46,022 - miner - INFO - ping received
+2016-08-27 20:35:06,038 - miner - INFO - datagram received PING
+2016-08-27 20:35:06,038 - miner - INFO - ping received
+2016-08-27 20:35:26,051 - miner - INFO - datagram received PING
+2016-08-27 20:35:26,051 - miner - INFO - ping received
+2016-08-27 20:35:46,066 - miner - INFO - datagram received PING
+2016-08-27 20:35:46,066 - miner - INFO - ping received
+2016-08-27 20:36:06,085 - miner - INFO - datagram received PING
+2016-08-27 20:36:06,085 - miner - INFO - ping received
+2016-08-27 20:36:26,102 - miner - INFO - datagram received PING
+2016-08-27 20:36:26,103 - miner - INFO - ping received
+2016-08-27 20:36:46,104 - miner - INFO - datagram received PING
+2016-08-27 20:36:46,104 - miner - INFO - ping received
+2016-08-27 20:37:06,113 - miner - INFO - datagram received PING
+2016-08-27 20:37:06,114 - miner - INFO - ping received
+2016-08-27 20:37:26,126 - miner - INFO - datagram received PING
+2016-08-27 20:37:26,127 - miner - INFO - ping received
+2016-08-27 20:37:46,129 - miner - INFO - datagram received PING
+2016-08-27 20:37:46,129 - miner - INFO - ping received
+2016-08-27 20:38:06,148 - miner - INFO - datagram received PING
+2016-08-27 20:38:06,148 - miner - INFO - ping received
+2016-08-27 20:38:26,167 - miner - INFO - datagram received PING
+2016-08-27 20:38:26,167 - miner - INFO - ping received
+2016-08-27 20:38:46,183 - miner - INFO - datagram received PING
+2016-08-27 20:38:46,184 - miner - INFO - ping received
+2016-08-27 20:39:06,203 - miner - INFO - datagram received PING
+2016-08-27 20:39:06,203 - miner - INFO - ping received
+2016-08-27 20:39:26,204 - miner - INFO - datagram received PING
+2016-08-27 20:39:26,204 - miner - INFO - ping received
+2016-08-27 20:39:46,206 - miner - INFO - datagram received PING
+2016-08-27 20:39:46,206 - miner - INFO - ping received
+2016-08-27 20:40:06,210 - miner - INFO - datagram received PING
+2016-08-27 20:40:06,210 - miner - INFO - ping received
+2016-08-27 20:40:26,225 - miner - INFO - datagram received PING
+2016-08-27 20:40:26,225 - miner - INFO - ping received
+2016-08-27 20:40:46,244 - miner - INFO - datagram received PING
+2016-08-27 20:40:46,244 - miner - INFO - ping received
+2016-08-27 20:41:06,263 - miner - INFO - datagram received PING
+2016-08-27 20:41:06,263 - miner - INFO - ping received
+2016-08-27 20:41:26,280 - miner - INFO - datagram received PING
+2016-08-27 20:41:26,280 - miner - INFO - ping received
+2016-08-27 20:41:46,280 - miner - INFO - datagram received PING
+2016-08-27 20:41:46,281 - miner - INFO - ping received
+2016-08-27 20:42:06,300 - miner - INFO - datagram received PING
+2016-08-27 20:42:06,300 - miner - INFO - ping received
+2016-08-27 20:42:26,314 - miner - INFO - datagram received PING
+2016-08-27 20:42:26,315 - miner - INFO - ping received
+2016-08-27 20:42:46,327 - miner - INFO - datagram received PING
+2016-08-27 20:42:46,328 - miner - INFO - ping received
+2016-08-27 20:43:06,338 - miner - INFO - datagram received PING
+2016-08-27 20:43:06,338 - miner - INFO - ping received
+2016-08-27 20:43:26,356 - miner - INFO - datagram received PING
+2016-08-27 20:43:26,356 - miner - INFO - ping received
+2016-08-27 20:43:46,364 - miner - INFO - datagram received PING
+2016-08-27 20:43:46,365 - miner - INFO - ping received
+2016-08-27 20:44:06,382 - miner - INFO - datagram received PING
+2016-08-27 20:44:06,382 - miner - INFO - ping received
+2016-08-27 20:44:26,400 - miner - INFO - datagram received PING
+2016-08-27 20:44:26,400 - miner - INFO - ping received
+2016-08-27 20:44:46,404 - miner - INFO - datagram received PING
+2016-08-27 20:44:46,405 - miner - INFO - ping received
+2016-08-27 20:45:06,405 - miner - INFO - datagram received PING
+2016-08-27 20:45:06,405 - miner - INFO - ping received
+2016-08-27 20:45:26,419 - miner - INFO - datagram received PING
+2016-08-27 20:45:26,420 - miner - INFO - ping received
+2016-08-27 20:45:46,436 - miner - INFO - datagram received PING
+2016-08-27 20:45:46,437 - miner - INFO - ping received
+2016-08-27 20:46:06,446 - miner - INFO - datagram received PING
+2016-08-27 20:46:06,447 - miner - INFO - ping received
+2016-08-27 20:46:26,466 - miner - INFO - datagram received PING
+2016-08-27 20:46:26,466 - miner - INFO - ping received
+2016-08-27 20:46:46,469 - miner - INFO - datagram received PING
+2016-08-27 20:46:46,470 - miner - INFO - ping received
+2016-08-27 20:47:06,489 - miner - INFO - datagram received PING
+2016-08-27 20:47:06,489 - miner - INFO - ping received
+2016-08-27 20:47:26,489 - miner - INFO - datagram received PING
+2016-08-27 20:47:26,490 - miner - INFO - ping received
+2016-08-27 20:47:46,489 - miner - INFO - datagram received PING
+2016-08-27 20:47:46,490 - miner - INFO - ping received
+2016-08-27 20:48:06,506 - miner - INFO - datagram received PING
+2016-08-27 20:48:06,506 - miner - INFO - ping received
+2016-08-27 20:48:26,524 - miner - INFO - datagram received PING
+2016-08-27 20:48:26,524 - miner - INFO - ping received
+2016-08-27 20:48:46,528 - miner - INFO - datagram received PING
+2016-08-27 20:48:46,529 - miner - INFO - ping received
+2016-08-27 20:49:06,544 - miner - INFO - datagram received PING
+2016-08-27 20:49:06,544 - miner - INFO - ping received
+2016-08-27 20:49:26,563 - miner - INFO - datagram received PING
+2016-08-27 20:49:26,564 - miner - INFO - ping received
+2016-08-27 20:49:46,573 - miner - INFO - datagram received PING
+2016-08-27 20:49:46,573 - miner - INFO - ping received
+2016-08-27 20:50:06,588 - miner - INFO - datagram received PING
+2016-08-27 20:50:06,589 - miner - INFO - ping received
+2016-08-27 20:50:26,592 - miner - INFO - datagram received PING
+2016-08-27 20:50:26,592 - miner - INFO - ping received
+2016-08-27 20:50:46,592 - miner - INFO - datagram received PING
+2016-08-27 20:50:46,593 - miner - INFO - ping received
+2016-08-27 20:51:06,612 - miner - INFO - datagram received PING
+2016-08-27 20:51:06,612 - miner - INFO - ping received
+2016-08-27 20:51:26,613 - miner - INFO - datagram received PING
+2016-08-27 20:51:26,614 - miner - INFO - ping received
+2016-08-27 20:51:46,632 - miner - INFO - datagram received PING
+2016-08-27 20:51:46,632 - miner - INFO - ping received
+2016-08-27 20:52:06,649 - miner - INFO - datagram received PING
+2016-08-27 20:52:06,650 - miner - INFO - ping received
+2016-08-27 20:52:26,667 - miner - INFO - datagram received PING
+2016-08-27 20:52:26,667 - miner - INFO - ping received
+2016-08-27 20:52:46,668 - miner - INFO - datagram received PING
+2016-08-27 20:52:46,668 - miner - INFO - ping received
+2016-08-27 20:53:06,671 - miner - INFO - datagram received PING
+2016-08-27 20:53:06,671 - miner - INFO - ping received
+2016-08-27 20:53:26,674 - miner - INFO - datagram received PING
+2016-08-27 20:53:26,675 - miner - INFO - ping received
+2016-08-27 20:53:46,692 - miner - INFO - datagram received PING
+2016-08-27 20:53:46,692 - miner - INFO - ping received
+2016-08-27 20:54:06,710 - miner - INFO - datagram received PING
+2016-08-27 20:54:06,710 - miner - INFO - ping received
+2016-08-27 20:54:26,723 - miner - INFO - datagram received PING
+2016-08-27 20:54:26,724 - miner - INFO - ping received
+2016-08-27 20:54:46,725 - miner - INFO - datagram received PING
+2016-08-27 20:54:46,726 - miner - INFO - ping received
+2016-08-27 20:55:06,744 - miner - INFO - datagram received PING
+2016-08-27 20:55:06,745 - miner - INFO - ping received
+2016-08-27 20:55:26,761 - miner - INFO - datagram received PING
+2016-08-27 20:55:26,761 - miner - INFO - ping received
+2016-08-27 20:55:46,778 - miner - INFO - datagram received PING
+2016-08-27 20:55:46,779 - miner - INFO - ping received
+2016-08-27 20:56:06,780 - miner - INFO - datagram received PING
+2016-08-27 20:56:06,780 - miner - INFO - ping received
+2016-08-27 20:56:26,783 - miner - INFO - datagram received PING
+2016-08-27 20:56:26,783 - miner - INFO - ping received
+2016-08-27 20:56:46,786 - miner - INFO - datagram received PING
+2016-08-27 20:56:46,786 - miner - INFO - ping received
+2016-08-27 20:57:06,787 - miner - INFO - datagram received PING
+2016-08-27 20:57:06,787 - miner - INFO - ping received
+2016-08-27 20:57:26,803 - miner - INFO - datagram received PING
+2016-08-27 20:57:26,804 - miner - INFO - ping received
+2016-08-27 20:57:46,811 - miner - INFO - datagram received PING
+2016-08-27 20:57:46,811 - miner - INFO - ping received
+2016-08-27 20:58:06,815 - miner - INFO - datagram received PING
+2016-08-27 20:58:06,815 - miner - INFO - ping received
+2016-08-27 20:58:26,819 - miner - INFO - datagram received PING
+2016-08-27 20:58:26,820 - miner - INFO - ping received
+2016-08-27 20:58:46,822 - miner - INFO - datagram received PING
+2016-08-27 20:58:46,822 - miner - INFO - ping received
+2016-08-27 20:59:06,830 - miner - INFO - datagram received PING
+2016-08-27 20:59:06,830 - miner - INFO - ping received
+2016-08-27 20:59:26,845 - miner - INFO - datagram received PING
+2016-08-27 20:59:26,845 - miner - INFO - ping received
+2016-08-27 20:59:46,861 - miner - INFO - datagram received PING
+2016-08-27 20:59:46,861 - miner - INFO - ping received
+2016-08-27 21:00:06,880 - miner - INFO - datagram received PING
+2016-08-27 21:00:06,880 - miner - INFO - ping received
+2016-08-27 21:00:26,883 - miner - INFO - datagram received PING
+2016-08-27 21:00:26,883 - miner - INFO - ping received
+2016-08-27 21:00:46,897 - miner - INFO - datagram received PING
+2016-08-27 21:00:46,897 - miner - INFO - ping received
+2016-08-27 21:01:06,899 - miner - INFO - datagram received PING
+2016-08-27 21:01:06,900 - miner - INFO - ping received
+2016-08-27 21:01:26,917 - miner - INFO - datagram received PING
+2016-08-27 21:01:26,918 - miner - INFO - ping received
+2016-08-27 21:01:46,917 - miner - INFO - datagram received PING
+2016-08-27 21:01:46,918 - miner - INFO - ping received
+2016-08-27 21:02:06,930 - miner - INFO - datagram received PING
+2016-08-27 21:02:06,930 - miner - INFO - ping received
+2016-08-27 21:02:26,931 - miner - INFO - datagram received PING
+2016-08-27 21:02:26,931 - miner - INFO - ping received
+2016-08-27 21:02:46,938 - miner - INFO - datagram received PING
+2016-08-27 21:02:46,938 - miner - INFO - ping received
+2016-08-27 21:03:06,938 - miner - INFO - datagram received PING
+2016-08-27 21:03:06,939 - miner - INFO - ping received
+2016-08-27 21:03:26,939 - miner - INFO - datagram received PING
+2016-08-27 21:03:26,939 - miner - INFO - ping received
+2016-08-27 21:03:46,955 - miner - INFO - datagram received PING
+2016-08-27 21:03:46,955 - miner - INFO - ping received
+2016-08-27 21:04:06,965 - miner - INFO - datagram received PING
+2016-08-27 21:04:06,965 - miner - INFO - ping received
+2016-08-27 21:04:26,967 - miner - INFO - datagram received PING
+2016-08-27 21:04:26,968 - miner - INFO - ping received
+2016-08-27 21:04:46,970 - miner - INFO - datagram received PING
+2016-08-27 21:04:46,970 - miner - INFO - ping received
+2016-08-27 21:05:06,984 - miner - INFO - datagram received PING
+2016-08-27 21:05:06,985 - miner - INFO - ping received
+2016-08-27 21:05:26,985 - miner - INFO - datagram received PING
+2016-08-27 21:05:26,985 - miner - INFO - ping received
+2016-08-27 21:05:47,004 - miner - INFO - datagram received PING
+2016-08-27 21:05:47,005 - miner - INFO - ping received
+2016-08-27 21:06:07,005 - miner - INFO - datagram received PING
+2016-08-27 21:06:07,006 - miner - INFO - ping received
+2016-08-27 21:06:27,024 - miner - INFO - datagram received PING
+2016-08-27 21:06:27,024 - miner - INFO - ping received
+2016-08-27 21:06:47,040 - miner - INFO - datagram received PING
+2016-08-27 21:06:47,041 - miner - INFO - ping received
+2016-08-27 21:07:07,058 - miner - INFO - datagram received PING
+2016-08-27 21:07:07,059 - miner - INFO - ping received
+2016-08-27 21:07:27,076 - miner - INFO - datagram received PING
+2016-08-27 21:07:27,077 - miner - INFO - ping received
+2016-08-27 21:07:47,095 - miner - INFO - datagram received PING
+2016-08-27 21:07:47,095 - miner - INFO - ping received
+2016-08-27 21:08:07,096 - miner - INFO - datagram received PING
+2016-08-27 21:08:07,096 - miner - INFO - ping received
+2016-08-27 21:08:27,097 - miner - INFO - datagram received PING
+2016-08-27 21:08:27,097 - miner - INFO - ping received
+2016-08-27 21:08:47,100 - miner - INFO - datagram received PING
+2016-08-27 21:08:47,101 - miner - INFO - ping received
+2016-08-27 21:09:07,116 - miner - INFO - datagram received PING
+2016-08-27 21:09:07,117 - miner - INFO - ping received
+2016-08-27 21:09:27,117 - miner - INFO - datagram received PING
+2016-08-27 21:09:27,117 - miner - INFO - ping received
+2016-08-27 21:09:47,128 - miner - INFO - datagram received PING
+2016-08-27 21:09:47,129 - miner - INFO - ping received
+2016-08-27 21:10:07,132 - miner - INFO - datagram received PING
+2016-08-27 21:10:07,133 - miner - INFO - ping received
+2016-08-27 21:10:27,141 - miner - INFO - datagram received PING
+2016-08-27 21:10:27,142 - miner - INFO - ping received
+2016-08-27 21:10:47,143 - miner - INFO - datagram received PING
+2016-08-27 21:10:47,144 - miner - INFO - ping received
+2016-08-27 21:11:07,143 - miner - INFO - datagram received PING
+2016-08-27 21:11:07,144 - miner - INFO - ping received
+2016-08-27 21:11:27,146 - miner - INFO - datagram received PING
+2016-08-27 21:11:27,147 - miner - INFO - ping received
+2016-08-27 21:11:47,148 - miner - INFO - datagram received PING
+2016-08-27 21:11:47,149 - miner - INFO - ping received
+2016-08-27 21:12:07,162 - miner - INFO - datagram received PING
+2016-08-27 21:12:07,163 - miner - INFO - ping received
+2016-08-27 21:12:27,175 - miner - INFO - datagram received PING
+2016-08-27 21:12:27,176 - miner - INFO - ping received
+2016-08-27 21:12:47,194 - miner - INFO - datagram received PING
+2016-08-27 21:12:47,194 - miner - INFO - ping received
+2016-08-27 21:13:07,198 - miner - INFO - datagram received PING
+2016-08-27 21:13:07,198 - miner - INFO - ping received
+2016-08-27 21:13:27,209 - miner - INFO - datagram received PING
+2016-08-27 21:13:27,210 - miner - INFO - ping received
+2016-08-27 21:13:47,225 - miner - INFO - datagram received PING
+2016-08-27 21:13:47,226 - miner - INFO - ping received
+2016-08-27 21:14:07,229 - miner - INFO - datagram received PING
+2016-08-27 21:14:07,229 - miner - INFO - ping received
+2016-08-27 21:14:27,229 - miner - INFO - datagram received PING
+2016-08-27 21:14:27,230 - miner - INFO - ping received
+2016-08-27 21:14:47,237 - miner - INFO - datagram received PING
+2016-08-27 21:14:47,237 - miner - INFO - ping received
+2016-08-27 21:15:07,255 - miner - INFO - datagram received PING
+2016-08-27 21:15:07,255 - miner - INFO - ping received
+2016-08-27 21:15:27,270 - miner - INFO - datagram received PING
+2016-08-27 21:15:27,271 - miner - INFO - ping received
+2016-08-27 21:15:47,271 - miner - INFO - datagram received PING
+2016-08-27 21:15:47,271 - miner - INFO - ping received
+2016-08-27 21:16:07,271 - miner - INFO - datagram received PING
+2016-08-27 21:16:07,272 - miner - INFO - ping received
+2016-08-27 21:16:27,274 - miner - INFO - datagram received PING
+2016-08-27 21:16:27,274 - miner - INFO - ping received
+2016-08-27 21:16:47,285 - miner - INFO - datagram received PING
+2016-08-27 21:16:47,285 - miner - INFO - ping received
+2016-08-27 21:17:07,304 - miner - INFO - datagram received PING
+2016-08-27 21:17:07,304 - miner - INFO - ping received
+2016-08-27 21:17:27,308 - miner - INFO - datagram received PING
+2016-08-27 21:17:27,308 - miner - INFO - ping received
+2016-08-27 21:17:47,312 - miner - INFO - datagram received PING
+2016-08-27 21:17:47,313 - miner - INFO - ping received
+2016-08-27 21:18:07,315 - miner - INFO - datagram received PING
+2016-08-27 21:18:07,315 - miner - INFO - ping received
+2016-08-27 21:18:27,322 - miner - INFO - datagram received PING
+2016-08-27 21:18:27,323 - miner - INFO - ping received
+2016-08-27 21:18:47,340 - miner - INFO - datagram received PING
+2016-08-27 21:18:47,340 - miner - INFO - ping received
+2016-08-27 21:19:07,354 - miner - INFO - datagram received PING
+2016-08-27 21:19:07,355 - miner - INFO - ping received
+2016-08-27 21:19:27,358 - miner - INFO - datagram received PING
+2016-08-27 21:19:27,358 - miner - INFO - ping received
+2016-08-27 21:19:47,359 - miner - INFO - datagram received PING
+2016-08-27 21:19:47,359 - miner - INFO - ping received
+2016-08-27 21:20:07,367 - miner - INFO - datagram received PING
+2016-08-27 21:20:07,368 - miner - INFO - ping received
+2016-08-27 21:20:27,371 - miner - INFO - datagram received PING
+2016-08-27 21:20:27,372 - miner - INFO - ping received
+2016-08-27 21:20:47,372 - miner - INFO - datagram received PING
+2016-08-27 21:20:47,373 - miner - INFO - ping received
+2016-08-27 21:21:07,389 - miner - INFO - datagram received PING
+2016-08-27 21:21:07,390 - miner - INFO - ping received
+2016-08-27 21:21:27,393 - miner - INFO - datagram received PING
+2016-08-27 21:21:27,394 - miner - INFO - ping received
+2016-08-27 21:21:47,411 - miner - INFO - datagram received PING
+2016-08-27 21:21:47,412 - miner - INFO - ping received
+2016-08-27 21:22:07,430 - miner - INFO - datagram received PING
+2016-08-27 21:22:07,431 - miner - INFO - ping received
+2016-08-27 21:22:27,431 - miner - INFO - datagram received PING
+2016-08-27 21:22:27,431 - miner - INFO - ping received
+2016-08-27 21:22:47,433 - miner - INFO - datagram received PING
+2016-08-27 21:22:47,433 - miner - INFO - ping received
+2016-08-27 21:23:07,448 - miner - INFO - datagram received PING
+2016-08-27 21:23:07,449 - miner - INFO - ping received
+2016-08-27 21:23:27,466 - miner - INFO - datagram received PING
+2016-08-27 21:23:27,467 - miner - INFO - ping received
+2016-08-27 21:23:47,468 - miner - INFO - datagram received PING
+2016-08-27 21:23:47,468 - miner - INFO - ping received
+2016-08-27 21:24:07,468 - miner - INFO - datagram received PING
+2016-08-27 21:24:07,469 - miner - INFO - ping received
+2016-08-27 21:24:27,488 - miner - INFO - datagram received PING
+2016-08-27 21:24:27,488 - miner - INFO - ping received
+2016-08-27 21:24:47,506 - miner - INFO - datagram received PING
+2016-08-27 21:24:47,506 - miner - INFO - ping received
+2016-08-27 21:25:07,513 - miner - INFO - datagram received PING
+2016-08-27 21:25:07,514 - miner - INFO - ping received
+2016-08-27 21:25:27,514 - miner - INFO - datagram received PING
+2016-08-27 21:25:27,515 - miner - INFO - ping received
+2016-08-27 21:25:47,531 - miner - INFO - datagram received PING
+2016-08-27 21:25:47,532 - miner - INFO - ping received
+2016-08-27 21:26:07,534 - miner - INFO - datagram received PING
+2016-08-27 21:26:07,534 - miner - INFO - ping received
+2016-08-27 21:26:27,538 - miner - INFO - datagram received PING
+2016-08-27 21:26:27,539 - miner - INFO - ping received
+2016-08-27 21:26:47,557 - miner - INFO - datagram received PING
+2016-08-27 21:26:47,557 - miner - INFO - ping received
+2016-08-27 21:27:07,560 - miner - INFO - datagram received PING
+2016-08-27 21:27:07,561 - miner - INFO - ping received
+2016-08-27 21:27:27,567 - miner - INFO - datagram received PING
+2016-08-27 21:27:27,568 - miner - INFO - ping received
+2016-08-27 21:27:47,579 - miner - INFO - datagram received PING
+2016-08-27 21:27:47,580 - miner - INFO - ping received
+2016-08-27 21:28:07,582 - miner - INFO - datagram received PING
+2016-08-27 21:28:07,582 - miner - INFO - ping received
+2016-08-27 21:28:27,598 - miner - INFO - datagram received PING
+2016-08-27 21:28:27,599 - miner - INFO - ping received
+2016-08-27 21:28:47,612 - miner - INFO - datagram received PING
+2016-08-27 21:28:47,613 - miner - INFO - ping received
+2016-08-27 21:29:07,612 - miner - INFO - datagram received PING
+2016-08-27 21:29:07,613 - miner - INFO - ping received
+2016-08-27 21:29:27,623 - miner - INFO - datagram received PING
+2016-08-27 21:29:27,623 - miner - INFO - ping received
+2016-08-27 21:29:47,632 - miner - INFO - datagram received PING
+2016-08-27 21:29:47,633 - miner - INFO - ping received
+2016-08-27 21:30:07,651 - miner - INFO - datagram received PING
+2016-08-27 21:30:07,652 - miner - INFO - ping received
+2016-08-27 21:30:27,654 - miner - INFO - datagram received PING
+2016-08-27 21:30:27,654 - miner - INFO - ping received
+2016-08-27 21:30:47,656 - miner - INFO - datagram received PING
+2016-08-27 21:30:47,657 - miner - INFO - ping received
+2016-08-27 21:31:07,673 - miner - INFO - datagram received PING
+2016-08-27 21:31:07,674 - miner - INFO - ping received
+2016-08-27 21:31:27,682 - miner - INFO - datagram received PING
+2016-08-27 21:31:27,682 - miner - INFO - ping received
+2016-08-27 21:31:47,693 - miner - INFO - datagram received PING
+2016-08-27 21:31:47,693 - miner - INFO - ping received
+2016-08-27 21:32:07,709 - miner - INFO - datagram received PING
+2016-08-27 21:32:07,710 - miner - INFO - ping received
+2016-08-27 21:32:27,713 - miner - INFO - datagram received PING
+2016-08-27 21:32:27,713 - miner - INFO - ping received
+2016-08-27 21:32:47,732 - miner - INFO - datagram received PING
+2016-08-27 21:32:47,732 - miner - INFO - ping received
+2016-08-27 21:33:07,733 - miner - INFO - datagram received PING
+2016-08-27 21:33:07,734 - miner - INFO - ping received
+2016-08-27 21:33:27,734 - miner - INFO - datagram received PING
+2016-08-27 21:33:27,734 - miner - INFO - ping received
+2016-08-27 21:33:47,734 - miner - INFO - datagram received PING
+2016-08-27 21:33:47,734 - miner - INFO - ping received
+2016-08-27 21:34:07,753 - miner - INFO - datagram received PING
+2016-08-27 21:34:07,753 - miner - INFO - ping received
+2016-08-27 21:34:27,772 - miner - INFO - datagram received PING
+2016-08-27 21:34:27,773 - miner - INFO - ping received
+2016-08-27 21:34:47,791 - miner - INFO - datagram received PING
+2016-08-27 21:34:47,791 - miner - INFO - ping received
+2016-08-27 21:35:07,798 - miner - INFO - datagram received PING
+2016-08-27 21:35:07,799 - miner - INFO - ping received
+2016-08-27 21:35:27,800 - miner - INFO - datagram received PING
+2016-08-27 21:35:27,800 - miner - INFO - ping received
+2016-08-27 21:35:47,813 - miner - INFO - datagram received PING
+2016-08-27 21:35:47,813 - miner - INFO - ping received
+2016-08-27 21:36:07,814 - miner - INFO - datagram received PING
+2016-08-27 21:36:07,815 - miner - INFO - ping received
+2016-08-27 21:36:27,824 - miner - INFO - datagram received PING
+2016-08-27 21:36:27,824 - miner - INFO - ping received
+2016-08-27 21:36:47,826 - miner - INFO - datagram received PING
+2016-08-27 21:36:47,827 - miner - INFO - ping received
+2016-08-27 21:37:07,845 - miner - INFO - datagram received PING
+2016-08-27 21:37:07,846 - miner - INFO - ping received
+2016-08-27 21:37:27,864 - miner - INFO - datagram received PING
+2016-08-27 21:37:27,864 - miner - INFO - ping received
+2016-08-27 21:37:47,883 - miner - INFO - datagram received PING
+2016-08-27 21:37:47,883 - miner - INFO - ping received
+2016-08-27 21:38:07,885 - miner - INFO - datagram received PING
+2016-08-27 21:38:07,886 - miner - INFO - ping received
+2016-08-27 21:38:27,901 - miner - INFO - datagram received PING
+2016-08-27 21:38:27,901 - miner - INFO - ping received
+2016-08-27 21:38:47,920 - miner - INFO - datagram received PING
+2016-08-27 21:38:47,921 - miner - INFO - ping received
+2016-08-27 21:39:07,921 - miner - INFO - datagram received PING
+2016-08-27 21:39:07,922 - miner - INFO - ping received
+2016-08-27 21:39:27,936 - miner - INFO - datagram received PING
+2016-08-27 21:39:27,937 - miner - INFO - ping received
+2016-08-27 21:39:47,949 - miner - INFO - datagram received PING
+2016-08-27 21:39:47,949 - miner - INFO - ping received
+2016-08-27 21:40:07,954 - miner - INFO - datagram received PING
+2016-08-27 21:40:07,955 - miner - INFO - ping received
+2016-08-27 21:40:27,963 - miner - INFO - datagram received PING
+2016-08-27 21:40:27,963 - miner - INFO - ping received
+2016-08-27 21:40:47,981 - miner - INFO - datagram received PING
+2016-08-27 21:40:47,981 - miner - INFO - ping received
+2016-08-27 21:41:07,985 - miner - INFO - datagram received PING
+2016-08-27 21:41:07,985 - miner - INFO - ping received
+2016-08-27 21:41:27,985 - miner - INFO - datagram received PING
+2016-08-27 21:41:27,986 - miner - INFO - ping received
+2016-08-27 21:41:48,004 - miner - INFO - datagram received PING
+2016-08-27 21:41:48,004 - miner - INFO - ping received
+2016-08-27 21:42:08,023 - miner - INFO - datagram received PING
+2016-08-27 21:42:08,024 - miner - INFO - ping received
+2016-08-27 21:42:28,040 - miner - INFO - datagram received PING
+2016-08-27 21:42:28,040 - miner - INFO - ping received
+2016-08-27 21:42:48,057 - miner - INFO - datagram received PING
+2016-08-27 21:42:48,058 - miner - INFO - ping received
+2016-08-27 21:43:08,076 - miner - INFO - datagram received PING
+2016-08-27 21:43:08,077 - miner - INFO - ping received
+2016-08-27 21:43:28,089 - miner - INFO - datagram received PING
+2016-08-27 21:43:28,089 - miner - INFO - ping received
+2016-08-27 21:43:48,101 - miner - INFO - datagram received PING
+2016-08-27 21:43:48,101 - miner - INFO - ping received
+2016-08-27 21:44:08,117 - miner - INFO - datagram received PING
+2016-08-27 21:44:08,118 - miner - INFO - ping received
+2016-08-27 21:44:28,123 - miner - INFO - datagram received PING
+2016-08-27 21:44:28,123 - miner - INFO - ping received
+2016-08-27 21:44:48,125 - miner - INFO - datagram received PING
+2016-08-27 21:44:48,126 - miner - INFO - ping received
+2016-08-27 21:45:08,128 - miner - INFO - datagram received PING
+2016-08-27 21:45:08,128 - miner - INFO - ping received
+2016-08-27 21:45:28,147 - miner - INFO - datagram received PING
+2016-08-27 21:45:28,147 - miner - INFO - ping received
+2016-08-27 21:45:48,155 - miner - INFO - datagram received PING
+2016-08-27 21:45:48,156 - miner - INFO - ping received
+2016-08-27 21:46:08,174 - miner - INFO - datagram received PING
+2016-08-27 21:46:08,175 - miner - INFO - ping received
+2016-08-27 21:46:28,178 - miner - INFO - datagram received PING
+2016-08-27 21:46:28,178 - miner - INFO - ping received
+2016-08-27 21:46:48,197 - miner - INFO - datagram received PING
+2016-08-27 21:46:48,198 - miner - INFO - ping received
+2016-08-27 21:47:08,215 - miner - INFO - datagram received PING
+2016-08-27 21:47:08,215 - miner - INFO - ping received
+2016-08-27 21:47:28,219 - miner - INFO - datagram received PING
+2016-08-27 21:47:28,219 - miner - INFO - ping received
+2016-08-27 21:47:48,237 - miner - INFO - datagram received PING
+2016-08-27 21:47:48,237 - miner - INFO - ping received
+2016-08-27 21:48:08,239 - miner - INFO - datagram received PING
+2016-08-27 21:48:08,239 - miner - INFO - ping received
+2016-08-27 21:48:28,256 - miner - INFO - datagram received PING
+2016-08-27 21:48:28,256 - miner - INFO - ping received
+2016-08-27 21:48:48,261 - miner - INFO - datagram received PING
+2016-08-27 21:48:48,262 - miner - INFO - ping received
+2016-08-27 21:49:08,280 - miner - INFO - datagram received PING
+2016-08-27 21:49:08,281 - miner - INFO - ping received
+2016-08-27 21:49:28,298 - miner - INFO - datagram received PING
+2016-08-27 21:49:28,299 - miner - INFO - ping received
+2016-08-27 21:49:48,300 - miner - INFO - datagram received PING
+2016-08-27 21:49:48,300 - miner - INFO - ping received
+2016-08-27 21:50:08,318 - miner - INFO - datagram received PING
+2016-08-27 21:50:08,318 - miner - INFO - ping received
+2016-08-27 21:50:28,321 - miner - INFO - datagram received PING
+2016-08-27 21:50:28,322 - miner - INFO - ping received
+2016-08-27 21:50:48,322 - miner - INFO - datagram received PING
+2016-08-27 21:50:48,322 - miner - INFO - ping received
+2016-08-27 21:51:08,340 - miner - INFO - datagram received PING
+2016-08-27 21:51:08,340 - miner - INFO - ping received
+2016-08-27 21:51:28,356 - miner - INFO - datagram received PING
+2016-08-27 21:51:28,356 - miner - INFO - ping received
+2016-08-27 21:51:48,369 - miner - INFO - datagram received PING
+2016-08-27 21:51:48,369 - miner - INFO - ping received
+2016-08-27 21:52:08,388 - miner - INFO - datagram received PING
+2016-08-27 21:52:08,388 - miner - INFO - ping received
+2016-08-27 21:52:28,406 - miner - INFO - datagram received PING
+2016-08-27 21:52:28,406 - miner - INFO - ping received
+2016-08-27 21:52:48,420 - miner - INFO - datagram received PING
+2016-08-27 21:52:48,421 - miner - INFO - ping received
+2016-08-27 21:53:08,436 - miner - INFO - datagram received PING
+2016-08-27 21:53:08,436 - miner - INFO - ping received
+2016-08-27 21:53:28,453 - miner - INFO - datagram received PING
+2016-08-27 21:53:28,453 - miner - INFO - ping received
+2016-08-27 21:53:48,459 - miner - INFO - datagram received PING
+2016-08-27 21:53:48,460 - miner - INFO - ping received
+2016-08-27 21:54:08,477 - miner - INFO - datagram received PING
+2016-08-27 21:54:08,478 - miner - INFO - ping received
+2016-08-27 21:54:28,496 - miner - INFO - datagram received PING
+2016-08-27 21:54:28,496 - miner - INFO - ping received
+2016-08-27 21:54:48,500 - miner - INFO - datagram received PING
+2016-08-27 21:54:48,501 - miner - INFO - ping received
+2016-08-27 21:55:08,507 - miner - INFO - datagram received PING
+2016-08-27 21:55:08,508 - miner - INFO - ping received
+2016-08-27 21:55:28,527 - miner - INFO - datagram received PING
+2016-08-27 21:55:28,527 - miner - INFO - ping received
+2016-08-27 21:55:48,527 - miner - INFO - datagram received PING
+2016-08-27 21:55:48,528 - miner - INFO - ping received
+2016-08-27 21:56:08,531 - miner - INFO - datagram received PING
+2016-08-27 21:56:08,531 - miner - INFO - ping received
+2016-08-27 21:56:28,534 - miner - INFO - datagram received PING
+2016-08-27 21:56:28,534 - miner - INFO - ping received
+2016-08-27 21:56:48,548 - miner - INFO - datagram received PING
+2016-08-27 21:56:48,549 - miner - INFO - ping received
+2016-08-27 21:57:08,551 - miner - INFO - datagram received PING
+2016-08-27 21:57:08,552 - miner - INFO - ping received
+2016-08-27 21:57:28,569 - miner - INFO - datagram received PING
+2016-08-27 21:57:28,569 - miner - INFO - ping received
+2016-08-27 21:57:48,572 - miner - INFO - datagram received PING
+2016-08-27 21:57:48,572 - miner - INFO - ping received
+2016-08-27 21:58:08,575 - miner - INFO - datagram received PING
+2016-08-27 21:58:08,576 - miner - INFO - ping received
+2016-08-27 21:58:28,577 - miner - INFO - datagram received PING
+2016-08-27 21:58:28,577 - miner - INFO - ping received
+2016-08-27 21:58:48,594 - miner - INFO - datagram received PING
+2016-08-27 21:58:48,594 - miner - INFO - ping received
+2016-08-27 21:59:08,596 - miner - INFO - datagram received PING
+2016-08-27 21:59:08,596 - miner - INFO - ping received
+2016-08-27 21:59:28,614 - miner - INFO - datagram received PING
+2016-08-27 21:59:28,615 - miner - INFO - ping received
+2016-08-27 21:59:48,618 - miner - INFO - datagram received PING
+2016-08-27 21:59:48,618 - miner - INFO - ping received
+2016-08-27 22:00:08,628 - miner - INFO - datagram received PING
+2016-08-27 22:00:08,628 - miner - INFO - ping received
+2016-08-27 22:00:28,631 - miner - INFO - datagram received PING
+2016-08-27 22:00:28,631 - miner - INFO - ping received
+2016-08-27 22:00:48,649 - miner - INFO - datagram received PING
+2016-08-27 22:00:48,649 - miner - INFO - ping received
+2016-08-27 22:01:08,663 - miner - INFO - datagram received PING
+2016-08-27 22:01:08,664 - miner - INFO - ping received
+2016-08-27 22:01:28,665 - miner - INFO - datagram received PING
+2016-08-27 22:01:28,666 - miner - INFO - ping received
+2016-08-27 22:01:48,681 - miner - INFO - datagram received PING
+2016-08-27 22:01:48,681 - miner - INFO - ping received
+2016-08-27 22:02:08,691 - miner - INFO - datagram received PING
+2016-08-27 22:02:08,692 - miner - INFO - ping received
+2016-08-27 22:02:28,709 - miner - INFO - datagram received PING
+2016-08-27 22:02:28,710 - miner - INFO - ping received
+2016-08-27 22:02:48,727 - miner - INFO - datagram received PING
+2016-08-27 22:02:48,728 - miner - INFO - ping received
+2016-08-27 22:03:08,746 - miner - INFO - datagram received PING
+2016-08-27 22:03:08,747 - miner - INFO - ping received
+2016-08-27 22:03:28,759 - miner - INFO - datagram received PING
+2016-08-27 22:03:28,760 - miner - INFO - ping received
+2016-08-27 22:03:48,766 - miner - INFO - datagram received PING
+2016-08-27 22:03:48,767 - miner - INFO - ping received
+2016-08-27 22:04:08,781 - miner - INFO - datagram received PING
+2016-08-27 22:04:08,781 - miner - INFO - ping received
+2016-08-27 22:04:28,794 - miner - INFO - datagram received PING
+2016-08-27 22:04:28,795 - miner - INFO - ping received
+2016-08-27 22:04:45,675 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:04:45,675 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:04:45,678 - __main__ - INFO - client started
+2016-08-27 22:04:45,759 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472315685.76 ^mysensors SeMtWB4h4Cq+45lQKY5QyRmVQ7GCLwZhrmWton5qap8kFfzXv2dIq3DNud43970fiCLwfGgW6UL9hwscwzCZ7pcbQRcDC7WCiM36QS9uOmtBkUEffiO3Wr/Cu2rvVKyUzSOvWKDD3+/LsWe+k30LlS7cnSjcDzzX0OVx7JLy9Mo=
+2016-08-27 22:04:45,760 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:04:45,760 - utils.senz_parser - INFO -                                                             SeMtWB4h4Cq+45lQKY5QyRmVQ7GCLwZhrmWton5qap8kFfzXv2dIq3DNud43970fiCLwfGgW6UL9hwscwzCZ7pcbQRcDC7WCiM36QS9uOmtBkUEffiO3Wr/Cu2rvVKyUzSOvWKDD3+/LsWe+k30LlS7cnSjcDzzX0OVx7JLy9Mo=
+2016-08-27 22:04:45,760 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:04:45,761 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:04:45,761 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472315685.76', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:04:45,763 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:04:45,767 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:04:48,797 - __main__ - INFO - datagram received PING
+2016-08-27 22:04:48,798 - __main__ - INFO - ping received
+2016-08-27 22:05:08,816 - __main__ - INFO - datagram received PING
+2016-08-27 22:05:28,826 - __main__ - INFO - datagram received PING
+2016-08-27 22:05:48,845 - __main__ - INFO - datagram received PING
+2016-08-27 22:06:08,848 - __main__ - INFO - datagram received PING
+2016-08-27 22:06:28,864 - __main__ - INFO - datagram received PING
+2016-08-27 22:06:48,881 - __main__ - INFO - datagram received PING
+2016-08-27 22:07:08,897 - __main__ - INFO - datagram received PING
+2016-08-27 22:07:28,904 - __main__ - INFO - datagram received PING
+2016-08-27 22:07:48,921 - __main__ - INFO - datagram received PING
+2016-08-27 22:08:08,937 - __main__ - INFO - datagram received PING
+2016-08-27 22:08:28,946 - __main__ - INFO - datagram received PING
+2016-08-27 22:08:48,964 - __main__ - INFO - datagram received PING
+2016-08-27 22:09:08,966 - __main__ - INFO - datagram received PING
+2016-08-27 22:09:28,985 - __main__ - INFO - datagram received PING
+2016-08-27 22:09:48,989 - __main__ - INFO - datagram received PING
+2016-08-27 22:10:09,007 - __main__ - INFO - datagram received PING
+2016-08-27 22:10:29,025 - __main__ - INFO - datagram received PING
+2016-08-27 22:10:49,030 - __main__ - INFO - datagram received PING
+2016-08-27 22:11:09,037 - __main__ - INFO - datagram received PING
+2016-08-27 22:11:29,049 - __main__ - INFO - datagram received PING
+2016-08-27 22:17:31,676 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:17:31,677 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:17:31,679 - __main__ - INFO - client started
+2016-08-27 22:17:31,699 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472316451.7 ^mysensors IMjl4GXSwqGOpnsGjaAjgkjEcqFVyjbn4axjZrACnR47w69QgX6ICWGrCacBFpGw2WHt0u9f3iIVDBAqH+M8OOoNFDBf6/YTFdLsusfYOuv1KJeU0lO2kyq/oUXW/MAzHiwVrdWvTZb7erv3aXVJRmG4Qk8km8KtbCnuEqQf8xs=
+2016-08-27 22:17:31,699 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:17:31,699 - utils.senz_parser - INFO -                                                             IMjl4GXSwqGOpnsGjaAjgkjEcqFVyjbn4axjZrACnR47w69QgX6ICWGrCacBFpGw2WHt0u9f3iIVDBAqH+M8OOoNFDBf6/YTFdLsusfYOuv1KJeU0lO2kyq/oUXW/MAzHiwVrdWvTZb7erv3aXVJRmG4Qk8km8KtbCnuEqQf8xs=
+2016-08-27 22:17:31,699 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:17:31,700 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:17:31,700 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472316451.7', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:17:31,702 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:17:31,709 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:17:45,075 - __main__ - INFO - datagram received PING
+2016-08-27 22:18:05,076 - __main__ - INFO - datagram received PING
+2016-08-27 22:18:25,077 - __main__ - INFO - datagram received PING
+2016-08-27 22:18:45,096 - __main__ - INFO - datagram received PING
+2016-08-27 22:19:05,112 - __main__ - INFO - datagram received PING
+2016-08-27 22:19:25,130 - __main__ - INFO - datagram received PING
+2016-08-27 22:19:45,133 - __main__ - INFO - datagram received PING
+2016-08-27 22:20:05,137 - __main__ - INFO - datagram received PING
+2016-08-27 22:20:25,155 - __main__ - INFO - datagram received PING
+2016-08-27 22:20:45,174 - __main__ - INFO - datagram received PING
+2016-08-27 22:21:05,186 - __main__ - INFO - datagram received PING
+2016-08-27 22:21:25,189 - __main__ - INFO - datagram received PING
+2016-08-27 22:21:45,203 - __main__ - INFO - datagram received PING
+2016-08-27 22:22:05,222 - __main__ - INFO - datagram received PING
+2016-08-27 22:22:25,238 - __main__ - INFO - datagram received PING
+2016-08-27 22:22:32,410 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:22:32,411 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:22:32,412 - __main__ - INFO - client started
+2016-08-27 22:22:32,427 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472316752.43 ^mysensors pxgPVEBM96I3K72iCcJlcrSCHXWLidAMfh14U2yTo7Tk1t4u1/SUjymctOM2zQDy7SpWEcmPo3F+qxhlAjMjrmrE6fMdhHCobC6ICjBfF6KGhZeJY+DxaMYf+WoIHnP8hlg5fC3opOs8ndD1c2txmr1KtVXEzVlCRffuxhwffa0=
+2016-08-27 22:22:32,427 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:22:32,427 - utils.senz_parser - INFO -                                                             pxgPVEBM96I3K72iCcJlcrSCHXWLidAMfh14U2yTo7Tk1t4u1/SUjymctOM2zQDy7SpWEcmPo3F+qxhlAjMjrmrE6fMdhHCobC6ICjBfF6KGhZeJY+DxaMYf+WoIHnP8hlg5fC3opOs8ndD1c2txmr1KtVXEzVlCRffuxhwffa0=
+2016-08-27 22:22:32,428 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:22:32,428 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:22:32,428 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472316752.43', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:22:32,430 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:22:32,432 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:22:38,195 - handlers.senz_handler - INFO - read senz: SHARE #COIN_VALUE  #f cv @baseNode  ^node1 HwQMepdqPk2o9OxFiFXnma2Nl+rQYaT4tYeB7wRftaKeS2tnF3rT1lERJeCvYc5CZxQIwdGQDc5j5KYjVfY730mCSt7PjaMx8hPCrbq5i+18rqfQpJXH23HlB19tnhWcMNBOhp50Y9q6xZS5cXEglzT+QwWa+eh1KkYMMcRykXY=
+2016-08-27 22:22:38,346 - utils.senz_parser - INFO -                                                             PUT
+2016-08-27 22:22:38,346 - utils.senz_parser - INFO -                                                             h9Pm6whFZUC4vTwF9BCPxmSUf4tziasqQspYnJCJkt6jwZYfNiXeUenso6CprYSi5BIPua08a39NodDxmjnQ0PgLuCJq37Rx/mOsuIb246T0q51L6lsRa831AJHgBAUaDy7XcS5/u0AEdU7woqKgQcjsFt2zLO+aeqMfN6Qrjq0=
+2016-08-27 22:22:38,346 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-27 22:22:38,347 - utils.senz_parser - INFO -                                                             node1
+2016-08-27 22:22:38,347 - utils.senz_parser - INFO -                                                             {'#COIN_VALUE': '0.15'}
+2016-08-27 22:22:39,312 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:22:39,313 - miner - INFO - client started
+2016-08-27 22:22:39,343 - miner - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472316759.33 ^mysensors QzZDdZ+1x5ZgtcTyrQ0MJlipffkY/CAwWVy2N+OgEXw+yrv8vAky51xUNooG3gQlb8i33suC633iFaZ0V8Z5D//55APUoQzSpmvZ6B3nds5Lsp+Dg7IRoLer6ZkMi68hblMhEivQvDCL4dNsvBCPdBiyWLFXgLV92LNp/sA0pSs=
+2016-08-27 22:22:39,343 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:22:39,343 - utils.senz_parser - INFO -                                                             QzZDdZ+1x5ZgtcTyrQ0MJlipffkY/CAwWVy2N+OgEXw+yrv8vAky51xUNooG3gQlb8i33suC633iFaZ0V8Z5D//55APUoQzSpmvZ6B3nds5Lsp+Dg7IRoLer6ZkMi68hblMhEivQvDCL4dNsvBCPdBiyWLFXgLV92LNp/sA0pSs=
+2016-08-27 22:22:39,343 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:22:39,344 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:22:39,344 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#COIN_VALUE': '0.15', '#msg': 'ALREADY_REGISTERED', '#time': '1472316759.33'}
+2016-08-27 22:22:39,348 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:22:39,351 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:22:45,243 - miner - INFO - datagram received PING
+2016-08-27 22:23:05,246 - miner - INFO - datagram received PING
+2016-08-27 22:23:25,264 - miner - INFO - datagram received PING
+2016-08-27 22:23:45,271 - miner - INFO - datagram received PING
+2016-08-27 22:24:05,274 - miner - INFO - datagram received PING
+2016-08-27 22:24:25,292 - miner - INFO - datagram received PING
+2016-08-27 22:24:45,305 - miner - INFO - datagram received PING
+2016-08-27 22:25:05,322 - miner - INFO - datagram received PING
+2016-08-27 22:25:25,336 - miner - INFO - datagram received PING
+2016-08-27 22:25:45,336 - miner - INFO - datagram received PING
+2016-08-27 22:26:05,339 - miner - INFO - datagram received PING
+2016-08-27 22:26:25,343 - miner - INFO - datagram received PING
+2016-08-27 22:26:45,345 - miner - INFO - datagram received PING
+2016-08-27 22:27:05,361 - miner - INFO - datagram received PING
+2016-08-27 22:27:25,367 - miner - INFO - datagram received PING
+2016-08-27 22:27:45,384 - miner - INFO - datagram received PING
+2016-08-27 22:28:05,384 - miner - INFO - datagram received PING
+2016-08-27 22:28:25,400 - miner - INFO - datagram received PING
+2016-08-27 22:28:45,406 - miner - INFO - datagram received PING
+2016-08-27 22:29:05,409 - miner - INFO - datagram received PING
+2016-08-27 22:29:25,409 - miner - INFO - datagram received PING
+2016-08-27 22:29:45,410 - miner - INFO - datagram received PING
+2016-08-27 22:30:05,428 - miner - INFO - datagram received PING
+2016-08-27 22:30:25,440 - miner - INFO - datagram received PING
+2016-08-27 22:30:45,446 - miner - INFO - datagram received PING
+2016-08-27 22:31:05,465 - miner - INFO - datagram received PING
+2016-08-27 22:31:25,465 - miner - INFO - datagram received PING
+2016-08-27 22:31:45,467 - miner - INFO - datagram received PING
+2016-08-27 22:32:05,469 - miner - INFO - datagram received PING
+2016-08-27 22:32:07,275 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:32:07,276 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:32:07,278 - __main__ - INFO - client started
+2016-08-27 22:32:07,293 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472317327.29 ^mysensors LTkEfGEo1N0rB4yEAGQWKk9GdVF0U+ChFd8bMTchoM0RBpJY0htr4y61pqrA42D8ysKFloiVk5+Ubtneuj9Gv9CJCzo+N3cgOqBs0KsgRSRiwjeITooP/us1sOxGE8oMT8ywpeX06ZC7vwx4I/IDkTuci1bKztH2PgF+tTLC/uY=
+2016-08-27 22:32:07,293 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:32:07,294 - utils.senz_parser - INFO -                                                             LTkEfGEo1N0rB4yEAGQWKk9GdVF0U+ChFd8bMTchoM0RBpJY0htr4y61pqrA42D8ysKFloiVk5+Ubtneuj9Gv9CJCzo+N3cgOqBs0KsgRSRiwjeITooP/us1sOxGE8oMT8ywpeX06ZC7vwx4I/IDkTuci1bKztH2PgF+tTLC/uY=
+2016-08-27 22:32:07,294 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:32:07,294 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:32:07,294 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472317327.29', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:32:07,295 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:32:07,298 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:35:39,652 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:35:39,652 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:35:39,653 - __main__ - INFO - client started
+2016-08-27 22:35:39,659 - __main__ - INFO - client protocol stopped
+2016-08-27 22:47:28,234 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:47:28,234 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:47:28,236 - __main__ - INFO - client started
+2016-08-27 22:47:28,257 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472318248.26 ^mysensors G+fds/yVO0IiOv1d0vf8OjfvlLoC0CIkbNgfPYmT5iKQcdSnYHuzfwyulMM30nBOS4rlp29k98F/TA9GyGUcsNZXcFj1PNyf1Q94UtNtxb8bofe5x1eHPqPryAXS71LhcCa6+62Ft21P0NaxS3NM7zrPedFiqmWY9yXd7ipXWb4=
+2016-08-27 22:47:28,257 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:47:28,258 - utils.senz_parser - INFO -                                                             G+fds/yVO0IiOv1d0vf8OjfvlLoC0CIkbNgfPYmT5iKQcdSnYHuzfwyulMM30nBOS4rlp29k98F/TA9GyGUcsNZXcFj1PNyf1Q94UtNtxb8bofe5x1eHPqPryAXS71LhcCa6+62Ft21P0NaxS3NM7zrPedFiqmWY9yXd7ipXWb4=
+2016-08-27 22:47:28,258 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:47:28,258 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:47:28,258 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318248.26', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:47:28,260 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:47:28,268 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:47:31,310 - handlers.senz_handler - INFO - read senz: SHARE #COIN_VALUE  #f cv @baseNode  ^node1 HwQMepdqPk2o9OxFiFXnma2Nl+rQYaT4tYeB7wRftaKeS2tnF3rT1lERJeCvYc5CZxQIwdGQDc5j5KYjVfY730mCSt7PjaMx8hPCrbq5i+18rqfQpJXH23HlB19tnhWcMNBOhp50Y9q6xZS5cXEglzT+QwWa+eh1KkYMMcRykXY=
+2016-08-27 22:47:31,351 - utils.senz_parser - INFO -                                                             PUT
+2016-08-27 22:47:31,351 - utils.senz_parser - INFO -                                                             UxQzP/v/oYbP5W8ffW59Q+L3vB+CNypfFLCQovxrszf0rfUdkxYvRQL4bBKq9hjKMsybf8PDuV6U+Tv+XCePFKWHRu2wNSRuA3frRd2z65Rt5GcNieo/Kx507s8KN5O0KO+hQHbrexIIfv9uIjIQXi+3NmU00gfSkYGwzpgY2h0=
+2016-08-27 22:47:31,351 - utils.senz_parser - INFO -                                                             baseNode
+2016-08-27 22:47:31,351 - utils.senz_parser - INFO -                                                             node1
+2016-08-27 22:47:31,351 - utils.senz_parser - INFO -                                                             {'#COIN_VALUE': '0'}
+2016-08-27 22:47:32,758 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:47:32,764 - miner - INFO - client started
+2016-08-27 22:47:32,787 - miner - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472318252.79 ^mysensors etKeMxiyrKUniwI6ETKCJXkrv4hpsYaK5b3peiyQVA9iklakyodOE1OLAVXJAgEKTYldx9tseW3l/1ly6NIaaAOMhL6uDedfdyONJnSzfdOJyGoqQXyN+ClxyXNCIhn21xnzZq6s8to9uFz9LJyBqWHqyh0ZBTXysoqitPX3Ewo=
+2016-08-27 22:47:32,788 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:47:32,788 - utils.senz_parser - INFO -                                                             etKeMxiyrKUniwI6ETKCJXkrv4hpsYaK5b3peiyQVA9iklakyodOE1OLAVXJAgEKTYldx9tseW3l/1ly6NIaaAOMhL6uDedfdyONJnSzfdOJyGoqQXyN+ClxyXNCIhn21xnzZq6s8to9uFz9LJyBqWHqyh0ZBTXysoqitPX3Ewo=
+2016-08-27 22:47:32,788 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:47:32,788 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:47:32,789 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#COIN_VALUE': '0', '#msg': 'ALREADY_REGISTERED', '#time': '1472318252.79'}
+2016-08-27 22:47:32,791 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:47:32,794 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:47:34,652 - miner - INFO - datagram received PING
+2016-08-27 22:47:54,654 - miner - INFO - datagram received PING
+2016-08-27 22:48:14,672 - miner - INFO - datagram received PING
+2016-08-27 22:48:23,075 - miner - INFO - datagram received SHARE #S_ID 3 #f cc #S_PARA 3km #COIN  @node1 ^node2 8piym43ZCFwUpgRiru+NPoZbsSqWzeBjTqaIb3NIvmJHmRKd5GhO5Zjv0sNeL6Z6LCjLH3v8PU9iH1CCN6Hc3YAopx8TvVWsiy4aTb7ZIxdH4QOIbe2PfemGhl3rkWLHxWPaJXb2P8tqndmdVibN+PBN8sK+pDePxhUNdoRt2e0=
+2016-08-27 22:48:23,075 - utils.senz_parser - INFO -                                                             SHARE
+2016-08-27 22:48:23,076 - utils.senz_parser - INFO -                                                             8piym43ZCFwUpgRiru+NPoZbsSqWzeBjTqaIb3NIvmJHmRKd5GhO5Zjv0sNeL6Z6LCjLH3v8PU9iH1CCN6Hc3YAopx8TvVWsiy4aTb7ZIxdH4QOIbe2PfemGhl3rkWLHxWPaJXb2P8tqndmdVibN+PBN8sK+pDePxhUNdoRt2e0=
+2016-08-27 22:48:23,076 - utils.senz_parser - INFO -                                                             node2
+2016-08-27 22:48:23,076 - utils.senz_parser - INFO -                                                             node1
+2016-08-27 22:48:23,076 - utils.senz_parser - INFO -                                                             {'#time': '1472318252.79', '#f': 'cc', '#S_ID': '3', '#S_PARA': '3km', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#COIN_VALUE': '0', '#msg': 'ALREADY_REGISTERED', '#COIN': ''}
+2016-08-27 22:48:23,077 - handlers.senz_handler - INFO - senz received SHARE
+2016-08-27 22:48:23,929 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN 709fe4d13900424eb101 @node2  ^node1 SMZI4STuXlP8rRU1mlqEGmNWVN1HdBmacU4Ix/76Q3zTizzh27iDreQeBjLQU6fEut52gm2tNsv2hdselGfysJh1eiPUYs9vV1qAFPBP6D8Iu2KWowgYZcOp8KpHCMtxu/s7GNYxmNoFBKc+YP2VPenu+eB2VpBzBIiOhIE7h5M=
+2016-08-27 22:48:23,953 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:48:34,682 - miner - INFO - datagram received PING
+2016-08-27 22:48:54,699 - miner - INFO - datagram received PING
+2016-08-27 22:49:08,181 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:49:08,182 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:49:08,199 - __main__ - INFO - client started
+2016-08-27 22:49:08,212 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472318348.21 ^mysensors JNCQXVug2X41uokHmwd0nkADX2A7/1zBFUVXoNBvlGmrFgAtng0j3cIR2E0Y1eReBh9a9cxoqMROF+sWDjN9UQQj+fgDFFxIgYNQbWl1K2ooiKE4lyw8J4EBW6Y3rsKMqOH9wFfWQKbZyCx2b6RW3GDsp5uITG8Ox4FYunFyfGw=
+2016-08-27 22:49:08,212 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:49:08,212 - utils.senz_parser - INFO -                                                             JNCQXVug2X41uokHmwd0nkADX2A7/1zBFUVXoNBvlGmrFgAtng0j3cIR2E0Y1eReBh9a9cxoqMROF+sWDjN9UQQj+fgDFFxIgYNQbWl1K2ooiKE4lyw8J4EBW6Y3rsKMqOH9wFfWQKbZyCx2b6RW3GDsp5uITG8Ox4FYunFyfGw=
+2016-08-27 22:49:08,212 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:49:08,212 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:49:08,212 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318348.21', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:49:08,214 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:49:08,217 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:49:14,701 - __main__ - INFO - datagram received PING
+2016-08-27 22:49:29,886 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:49:29,886 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:49:29,888 - __main__ - INFO - client started
+2016-08-27 22:49:29,903 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472318369.9 ^mysensors oOC7hRYipta5LzclH/YB7b7SSVSPsXS+ELBVKAQ3bXWehoQxGuzKusTzq8hT4txmlGH9+8K9ASzRFgBe2YW3wZd9LqKcTO2Zkq3eJ+gpauApInMCH2DqTDcP9qQdU/jyRPD6jIQVi1vWLdPuwaNMZvwxctT+GmMjLJ5FzRq0MPg=
+2016-08-27 22:49:29,903 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:49:29,903 - utils.senz_parser - INFO -                                                             oOC7hRYipta5LzclH/YB7b7SSVSPsXS+ELBVKAQ3bXWehoQxGuzKusTzq8hT4txmlGH9+8K9ASzRFgBe2YW3wZd9LqKcTO2Zkq3eJ+gpauApInMCH2DqTDcP9qQdU/jyRPD6jIQVi1vWLdPuwaNMZvwxctT+GmMjLJ5FzRq0MPg=
+2016-08-27 22:49:29,904 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:49:29,904 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:49:29,904 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318369.9', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:49:29,906 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:49:29,915 - handlers.senz_handler - INFO - Post Handled
+2016-08-27 22:50:01,541 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2016-08-27 22:50:01,542 - utils.crypto_utils - INFO -                                                             keys exists
+2016-08-27 22:50:01,543 - __main__ - INFO - client started
+2016-08-27 22:50:01,555 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1472318401.55 ^mysensors VpCiMMqsyGHJLRUia4yPZs0+ITHdSmyhCghIHd4AB/Zj5/pRrgqrPqP25I7bHAPFRTKgwgi3KKWojeTnCNN8z32OnFTwA6NbD3Dr3tzom2fu4LR+9xKVULWKrk0Kfq8MAfLQ/QzQMJBciH16nlOn8Dp8in/7um15xjtyjrhm3pg=
+2016-08-27 22:50:01,556 - utils.senz_parser - INFO -                                                             DATA
+2016-08-27 22:50:01,556 - utils.senz_parser - INFO -                                                             VpCiMMqsyGHJLRUia4yPZs0+ITHdSmyhCghIHd4AB/Zj5/pRrgqrPqP25I7bHAPFRTKgwgi3KKWojeTnCNN8z32OnFTwA6NbD3Dr3tzom2fu4LR+9xKVULWKrk0Kfq8MAfLQ/QzQMJBciH16nlOn8Dp8in/7um15xjtyjrhm3pg=
+2016-08-27 22:50:01,556 - utils.senz_parser - INFO -                                                             mysensors
+2016-08-27 22:50:01,556 - utils.senz_parser - INFO -                                                             None
+2016-08-27 22:50:01,556 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1472318401.55', '#msg': 'ALREADY_REGISTERED'}
+2016-08-27 22:50:01,558 - handlers.senz_handler - INFO - senz received DATA
+2016-08-27 22:50:01,561 - handlers.senz_handler - INFO - Post Handled

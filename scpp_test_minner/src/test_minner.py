@@ -130,7 +130,7 @@ class SenzcProtocol(DatagramProtocol):
 
             logger.info('read senz: %s' % signed_senz)
 
-    def send_ping(self):
+    '''def send_ping(self):
         """
         Send ping message to server in everty 30 minutes. The purpose of
         peroidc ping message is keeping the connection(NAT table entry).
@@ -150,7 +150,7 @@ class SenzcProtocol(DatagramProtocol):
                                     (time.time(), receiver, sender)
         signed_senz = sign_senz(senz)
 
-        self.transport.write(signed_senz)
+        self.transport.write(signed_senz)'''
 
     def handle_datagram(self, datagram):
         """

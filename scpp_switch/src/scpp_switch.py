@@ -30,7 +30,6 @@ import multiprocessing
 import sever_ui.MainWindowApp
 import gettext
 
-
 from twisted.internet.protocol import DatagramProtocol
 from twisted.internet import reactor
 from pymongo import MongoClient
@@ -38,7 +37,6 @@ from sever_ui import CumulativeLogger
 from utils.myParser import *
 from utils.myUser import *
 from utils.myCrypto import *
-
 
 _ = gettext.gettext
 
@@ -194,7 +192,7 @@ class mySensorUDPServer(DatagramProtocol):
                 if pubkey != '':
                     if sender in connections.keys():
                         backward = connections[sender]
-                        senze = 'DATA #name %s #pubkey %s' % (recipient,pubkey)
+                        senze = 'DATA #name %s #pubkey %s' % (recipient, pubkey)
                         cry = myCrypto(serverName)
                         senze = cry.signSENZE(senze)
                         self.transport.write(senze, backward)
@@ -202,7 +200,7 @@ class mySensorUDPServer(DatagramProtocol):
             else:
                 if recipient in connections.keys():
                     forward = connections[recipient]
-                    print  forward ,sender , query.getSensors(),recipientDB.isShare(sender, query.getSensors())
+                    print  forward, sender, query.getSensors(), recipientDB.isShare(sender, query.getSensors())
                     if forward != 0 and recipientDB.isShare(sender, query.getSensors()):
                         self.transport.write(query.getFULLSENZE(), forward)
                     else:
@@ -257,7 +255,6 @@ class mySensorUDPServer(DatagramProtocol):
 
         logger.info('senz received:  %s' % datagram)
 
-
         query = myParser(datagram)
         recipients = query.getUsers()
         sender = query.getSender()
@@ -286,7 +283,7 @@ class mySensorUDPServer(DatagramProtocol):
 
         else:
             if pubkey != "":
-                #print "else wada" + query.getFULLSENZE()
+                # print "else wada" + query.getFULLSENZE()
                 if cry.verifySENZE(query, pubkey):
                     validQuery = True
 
@@ -405,17 +402,6 @@ def stop_switch():
 
 
 if __name__ == '__main__':
-
-
-    '''global t, t1
-    t = multiprocessing.Process(target=main, args=())
-    t.start()
-
-    cl = CumulativeLogger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Switch...!'))
-    t1 = multiprocessing.Process(target=sever_ui.MainWindowApp.MainWindowApp(cl).run(), args=())
-    t1.start()'''
-
     cl = CumulativeLogger.CumulativeLogger()
     logger.info(_('Starting the SCPP Switch...!'))
     sever_ui.MainWindowApp.MainWindowApp(cl).run()
