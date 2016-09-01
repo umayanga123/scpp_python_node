@@ -152,6 +152,7 @@ class mySensorUDPServer(DatagramProtocol):
         usr = myUser(database, query.getSender())
         recipients = query.getUsers()
         for recipient in recipients:
+            print'recipient'
             if recipient in connections.keys():
                 usr.share(recipient, query.getSensors())
                 forward = connections[recipient]
@@ -266,7 +267,9 @@ class mySensorUDPServer(DatagramProtocol):
         validQuery = False
         cry = myCrypto(serverName)
         senderDB = myUser(database, sender)
+
         pubkey = senderDB.loadPublicKey()
+        print sender, senderDB, database , pubkey
 
         if cmd == "SHARE" and "pubkey" in sensors and serverName in recipients:
             # Create a new account
@@ -282,8 +285,9 @@ class mySensorUDPServer(DatagramProtocol):
             validQuery = True
 
         else:
+            print "wada else" + pubkey
             if pubkey != "":
-                # print "else wada" + query.getFULLSENZE()
+                print "else wada" + query.getFULLSENZE()
                 if cry.verifySENZE(query, pubkey):
                     validQuery = True
 

@@ -67,6 +67,8 @@ class SenzHandler():
                 signed_senz = sign_senz(senz)
                 logger.info('Auto Excute: %s' % signed_senz)
                 self.transport.write(signed_senz)
+        elif (senz.type=="UNSHARE"):
+            pass
 
     def postHandle(self, arg):
         """

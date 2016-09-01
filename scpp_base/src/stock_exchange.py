@@ -135,7 +135,7 @@ class SenzcProtocol(DatagramProtocol):
             # parse senz first
             senz = parse(datagram)
 
-            # start threads for GET, PUT, DATA, SHARE senz
+            # start threads for GET, PUT, DATA, SHARE senz  , UNSHARE
             handler = SenzHandler(self.transport)
             d = threads.deferToThread(handler.handleSenz, senz)
             d.addCallback(handler.postHandle)
