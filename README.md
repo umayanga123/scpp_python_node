@@ -13,7 +13,7 @@ UNSHARE protocol is the inverse of share protocol where client used to unshare k
 
 Used when client wants to add value to a data shared by him/herself before. DATA protocol format consists of message, time and receiver node name. 
 
-##Curruncy Mining Component:-
+##Curruncy Mining Component (Minner/ Test_Miner):-
 
 
 Mining component is a majority Python based currency miner for coin generation. The following
@@ -54,7 +54,7 @@ currently
 
  Send the most required limited data among those stored details to Base
 
-##Service Component
+##Service Component (Base & Switch)
 
 Service component is in responsible for performing communications between nodes and handling currency transactions. The development progress of it so far is as follows:
 
