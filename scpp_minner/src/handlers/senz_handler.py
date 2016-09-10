@@ -2,6 +2,8 @@ import socket
 import threading
 import tkMessageBox
 
+import datetime
+
 from db.db_handler import db_handler
 from minner_algo_handler.minning_algo import minning_algo
 from utils.senz_parser import *
@@ -66,8 +68,12 @@ class SenzHandler():
         elif (senz.type == "SHARE"):
             flag = senz.attributes["#f"]
             if (flag == "cc"):
+
+                format_date =datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                print "formateDate" + format_date +"Sender " + senz.sender
+
                 cah = minning_algo()
-                coin = cah.getCoin(senz.attributes["#S_PARA"])
+                coin = cah.getCoin(senz.attributes["#S_PARA"]+""+format_date+""+senz.sender)
 
                 senze_c = 'PUT #COIN %s ' % coin
                 senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)

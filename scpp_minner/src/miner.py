@@ -181,6 +181,6 @@ if __name__ == '__main__':
     t.start()
 
     cl = cumulative_logger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Stock Exchange...!'))
+    logger.info(_('Starting the SCPP Miner Application..!'))
     t1 = multiprocessing.Process(target=MainWindowApp(cl).run(), args=())
     t1.start()
