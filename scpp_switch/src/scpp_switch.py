@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 ###############################################################################
 ##
-##  My Sensor UDP Server v1.0
-##  @Copyright 2014 MySensors Research Project
+##  SCPP UDP Server v1.0
+##  @Copyright 2016 MySensors Research Project
 ##  SCoRe Lab (www.scorelab.org)
 ##  University of Colombo School of Computing
 ##

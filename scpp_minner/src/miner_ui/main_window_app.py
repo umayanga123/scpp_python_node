@@ -53,7 +53,7 @@ class MainWindowApp:
 
         b2 = Button(self.sideBar, text=_('View Transaction Details'), command=self.onDatabaseLog, width=20)
         b3 = Button(self.sideBar, text=_('View Log File'), command=self.onViewLog, width=20)
-        b4 = Button(self.sideBar, text=_('Minning Rule Define'), command=self.minnerRuleDefine, width=20)
+        b4 = Button(self.sideBar, text=_('Define Mapping Rule'), command=self.minnerRuleDefine, width=20)
         b5 = Button(self.sideBar, text=_('Exit'), command=self.onExit, width=10, background='red')
 
         b2.grid(row=2, column=0, pady=5, padx=5)

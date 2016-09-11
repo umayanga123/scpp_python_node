@@ -6941,3 +6941,7 @@
 2016-09-10 18:23:00,590 - __main__ - INFO - datagram received PING
 2016-09-10 18:23:20,608 - __main__ - INFO - datagram received PING
 2016-09-10 18:23:42,118 - __main__ - INFO - datagram received PING
+2016-09-11 08:08:19,945 - __main__ - INFO - Starting the SCPP Miner Application..!
+2016-09-11 08:08:19,945 - utils.crypto_utils - INFO -                                                             keys exists
+2016-09-11 08:08:19,972 - __main__ - INFO - client started
+2016-09-11 08:08:20,058 - __main__ - INFO - client protocol stopped
