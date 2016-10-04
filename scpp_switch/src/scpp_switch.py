@@ -2,8 +2,6 @@
 ###############################################################################
 ##
 ##  SCPP UDP Server v1.0
-##  @Copyright 2016 MySensors Research Project
-##  SCoRe Lab (www.scorelab.org)
 ##  University of Colombo School of Computing
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
