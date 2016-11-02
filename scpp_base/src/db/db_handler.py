@@ -19,6 +19,15 @@ class db_handler:
         self.collection.insert(transaction)
         return 'DONE'
 
+    # added new method
+    def addCoinWiseTransaction(self, quarry):
+        self.collection = self.db.transaction_detail
+        transaction = {"_id": quarry["#COIN"], "M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]),
+                       "S_ID": int(quarry["#S_ID"]),
+                       "date": datetime.datetime.utcnow()}
+        self.collection.insert(transaction)
+        return 'DONE'
+
     # test function , if it database is empty put data to db.
     def testData(self):
         self.t_collection = self.db.transaction_detail

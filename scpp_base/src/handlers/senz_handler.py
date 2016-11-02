@@ -57,7 +57,8 @@ class SenzHandler():
 
         # print senz.type=="DATA" and senz.receiver !=None
         if (senz.type == "DATA" and senz.receiver != None):
-            dbh.addTransaction(senz.attributes)
+            #dbh.addTransaction(senz.attributes)
+            dbh.addCoinWiseTransaction(senz.attributes)  # ddd added coinWiseTransaction method
         elif (senz.type == "SHARE"):
             # print dbh.calulateCoinsValue()
             flag = senz.attributes["#f"]
