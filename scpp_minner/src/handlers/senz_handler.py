@@ -69,13 +69,13 @@ class SenzHandler():
             flag = senz.attributes["#f"]
             if (flag == "cc"):
 
-                format_date =datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                print "formateDate" + format_date +"Sender " + senz.sender
+                format_date =datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S").replace(" ", "")
+                print "formateDate" + format_date.replace(" ", "") +"Sender " + senz.sender
 
                 cah = minning_algo()
                 coin = cah.getCoin(senz.attributes["#S_PARA"]+""+format_date+""+senz.sender)
 
-                senze_c = 'PUT #COIN %s ' % coin
+                senze_c = 'PUT #COIN %s #TIME %s ' % (coin,format_date)
                 senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
                 signed_senzc = sign_senz(senz_c)
 
@@ -83,7 +83,7 @@ class SenzHandler():
 
                 logger.info('Auto Excute: %s' % signed_senzc)
                 self.transport.write(signed_senzc)
-                self.sendTDetailsToBase(senz)
+                self.sendTDetailsToBase(senz,coin)
         elif (senz.type=="UNSHARE"):
             pass
 
@@ -127,18 +127,18 @@ class SenzHandler():
         except:
             pass
 
-    def sendTDetailsToBase(self, senz):
-        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN  #S_ID  '
+    def sendTDetailsToBase(self, senz ,coin):
+        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN  #S_ID #COIN '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
         self.transport.write(signed_senzc)
 
-        senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #S_ID %s ' % ("M_1", "td","1", senz.attributes["#S_ID"])
+        senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #S_ID %s #COIN %s ' % ("M_1", "td","1", senz.attributes["#S_ID"],coin)
         senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzd = sign_senz(senz_d)
         self.transport.write(signed_senzd)
 
-        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN  #S_ID  '
+        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN  #S_ID #COIN '
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)
