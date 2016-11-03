@@ -19,7 +19,7 @@ class DataView(Frame):
         tv['columns'] = ('m_s_id', 's_id','s_para','no_of_coin')
         tv.heading("#0", text='Date', anchor='c')
         tv.column("#0", anchor="c")
-        tv.heading('m_s_id', text='Minner ID')
+        tv.heading('m_s_id', text='Miner ID')
         tv.column('m_s_id', anchor='center', width=100)
         tv.heading('s_id', text='Service ID')
         tv.column('s_id', anchor='center', width=100)
@@ -42,8 +42,8 @@ class DataView(Frame):
         #print t_deatail, self.rows
         for document in t_deatail:
             #print document["NO_COIN"], document["S_ID"], document["M_S_ID"], document["date"]
-            self.treeview.insert('', 'end', text=document["date"].date(),
-                                 values=( document["S_ID"], document["S_PARA"] ,document["M_S_ID"],document["NO_COIN"]))
+            self.treeview.insert('', 'end', text=document["date"],
+                                 values=( document["M_S_ID"], document["S_ID"] ,document["S_PARA"],document["NO_COIN"]))
 
     def back(self):
         self.root.destroy()

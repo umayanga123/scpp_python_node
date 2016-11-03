@@ -79,7 +79,7 @@ class SenzHandler():
                 senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
                 signed_senzc = sign_senz(senz_c)
 
-                dbh.addMinerDetail(senz.attributes, coin)
+                dbh.addMinerDetail(senz.attributes, coin ,format_date)
 
                 logger.info('Auto Excute: %s' % signed_senzc)
                 self.transport.write(signed_senzc)

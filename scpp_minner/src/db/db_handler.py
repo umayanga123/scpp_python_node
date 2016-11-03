@@ -9,10 +9,10 @@ class db_handler:
         self.db = client.scpp_miner
         self.collection = self.db.miner_detail
 
-    def addMinerDetail(self, quarry, coin):
+    def addMinerDetail(self, quarry, coin, formatedate):
 
         print quarry
-        miner_object = {"M_S_ID": "M_1", "S_ID": int(quarry["#S_ID"]), "S_PARA": quarry["#S_PARA"],"COIN": str(coin), "NO_COIN": int(1), "date": datetime.datetime.utcnow()}
+        miner_object = {"M_S_ID": "M_1", "S_ID": int(quarry["#S_ID"]), "S_PARA": quarry["#S_PARA"],"COIN": str(coin), "NO_COIN": int(1), "date": formatedate}
         print miner_object
         self.collection.insert(miner_object)
         return 'ADD DATA SUCCESSFULLY'
