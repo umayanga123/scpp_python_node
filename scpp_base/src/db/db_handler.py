@@ -22,10 +22,22 @@ class db_handler:
     # added new method
     def addCoinWiseTransaction(self, quarry):
         self.collection = self.db.transaction_detail
-        transaction = {"_id": quarry["#COIN"], "M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]),
-                       "S_ID": int(quarry["#S_ID"]),
-                       "date": datetime.datetime.utcnow()}
-        self.collection.insert(transaction)
+        coinValexists = self.collection.find({"_id": quarry["#COIN"]}).count()
+        print('coin exists : ', coinValexists)
+        if (coinValexists > 0):
+            print('coin hash exists')
+            newTransaction = {"$push": {"TRANSACTION": quarry["#S_ID"] ,"DATE":datetime.datetime.utcnow()}}
+            self.collection.update({"_id": quarry["#COIN"]}, newTransaction)
+        else:
+            print('new coin mined')
+            transaction = {"_id": quarry["#COIN"], "TRANSACTION": [quarry["#M_S_ID"]], "NO_COIN": int(quarry["#NO_COIN"]),"S_ID": int(quarry["#S_ID"])}
+            self.collection.insert(transaction)
+            addServiceId = {"$push": {"TRANSACTION": quarry["#S_ID"]}}
+            addTime = {"$push": {"DATE":datetime.datetime.utcnow()}}
+            self.collection.update({"_id": quarry["#COIN"]},addServiceId)
+            # transaction = {"_id": quarry["#COIN"], "M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]),
+            #                "S_ID": int(quarry["#S_ID"]), "date": datetime.datetime.utcnow()}
+
         return 'DONE'
 
     # test function , if it database is empty put data to db.
