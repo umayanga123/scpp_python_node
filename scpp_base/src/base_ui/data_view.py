@@ -39,9 +39,10 @@ class DataView(Frame):
         self.rows = t_deatail.count()
         print t_deatail, self.rows
         for document in t_deatail:
-            print document["NO_COIN"], document["S_ID"], document["M_S_ID"], document["date"]
-            self.treeview.insert('', 'end', text=document["date"].date(),
-                                 values=(document["NO_COIN"], document["S_ID"], document["M_S_ID"]))
+            #only moninig details are printed in table.no p2p transactions
+            print document["NO_COIN"], document["S_ID"], document["TRANSACTION"][0], document["DATE"][0]
+            self.treeview.insert('', 'end', text=document["DATE"][0].date(),
+                                 values=(document["NO_COIN"], document["S_ID"], document["TRANSACTION"]))
 
     def back(self):
         self.root.destroy()

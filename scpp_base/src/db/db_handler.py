@@ -26,17 +26,16 @@ class db_handler:
         print('coin exists : ', coinValexists)
         if (coinValexists > 0):
             print('coin hash exists')
+            #p2p traction details must pass here, not yet implemented(coin hash, date and client_details needed)
             newTransaction = {"$push": {"TRANSACTION": quarry["#S_ID"] ,"DATE":datetime.datetime.utcnow()}}
             self.collection.update({"_id": quarry["#COIN"]}, newTransaction)
         else:
             print('new coin mined')
-            transaction = {"_id": quarry["#COIN"], "TRANSACTION": [quarry["#M_S_ID"]], "NO_COIN": int(quarry["#NO_COIN"]),"S_ID": int(quarry["#S_ID"])}
+            #TRANSACTION[] and DATE[] arrays initialized
+            transaction = {"_id": quarry["#COIN"], "TRANSACTION": [quarry["#M_S_ID"]], "NO_COIN": int(quarry["#NO_COIN"]),"S_ID": int(quarry["#S_ID"]), "DATE": [datetime.datetime.utcnow()]}
             self.collection.insert(transaction)
             addServiceId = {"$push": {"TRANSACTION": quarry["#S_ID"]}}
-            addTime = {"$push": {"DATE":datetime.datetime.utcnow()}}
             self.collection.update({"_id": quarry["#COIN"]},addServiceId)
-            # transaction = {"_id": quarry["#COIN"], "M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]),
-            #                "S_ID": int(quarry["#S_ID"]), "date": datetime.datetime.utcnow()}
 
         return 'DONE'
 
