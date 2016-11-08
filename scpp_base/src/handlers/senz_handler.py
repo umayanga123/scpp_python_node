@@ -57,8 +57,13 @@ class SenzHandler():
 
         # print senz.type=="DATA" and senz.receiver !=None
         if (senz.type == "DATA" and senz.receiver != None):
-            #dbh.addTransaction(senz.attributes)
-            dbh.addCoinWiseTransaction(senz.attributes)  # ddd added coinWiseTransaction method
+            flag = senz.attributes["#f"]
+            if(flag=="ct"):
+                logger.info('Doing p2p Transaction ::%s' % senz)
+                #should implement database call here
+            else:
+                # dbh.addTransaction(senz.attributes)
+                dbh.addCoinWiseTransaction(senz.attributes)  # ddd added coinWiseTransaction method
         elif (senz.type == "SHARE"):
             # print dbh.calulateCoinsValue()
             flag = senz.attributes["#f"]
@@ -68,6 +73,8 @@ class SenzHandler():
                 signed_senz = sign_senz(senz)
                 logger.info('Auto Excute: %s' % signed_senz)
                 self.transport.write(signed_senz)
+            if(flag=="ctr"):
+                logger.info('Request Massage Transaction :: %s' % senz)
         elif (senz.type=="UNSHARE"):
             pass
 

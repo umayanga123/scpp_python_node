@@ -11,8 +11,9 @@ class db_handler:
         client = MongoClient('localhost', 27017)
         self.db = client.scpp_stock_exchange
 
+    #now not used this method
     def addTransaction(self, quarry):
-      #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
+         #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
         self.collection = self.db.transaction_detail
         transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),
                        "date": datetime.datetime.utcnow()}
@@ -33,9 +34,14 @@ class db_handler:
             print('new coin mined')
             #TRANSACTION[] and DATE[] arrays initialized
             transaction = {"_id": quarry["#COIN"], "TRANSACTION": [quarry["#M_S_ID"]], "NO_COIN": int(quarry["#NO_COIN"]),"S_ID": int(quarry["#S_ID"]), "DATE": [datetime.datetime.utcnow()]}
-            self.collection.insert(transaction)
-            addServiceId = {"$push": {"TRANSACTION": quarry["#S_ID"]}}
-            self.collection.update({"_id": quarry["#COIN"]},addServiceId)
+
+            #protocole trasmit 2 and database already exisis error rise so put new try /catch temporary
+            try:
+                self.collection.insert(transaction)
+                addServiceId = {"$push": {"TRANSACTION": quarry["#S_ID"]}}
+                self.collection.update({"_id": quarry["#COIN"]},addServiceId)
+            except:
+                print("value all ready exist")
 
         return 'DONE'
 
