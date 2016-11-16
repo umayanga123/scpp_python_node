@@ -11,9 +11,9 @@ class db_handler:
         client = MongoClient('localhost', 27017)
         self.db = client.scpp_stock_exchange
 
-    #now not used this method
+    # now not used this method
     def addTransaction(self, quarry):
-         #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
+        #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
         self.collection = self.db.transaction_detail
         transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),
                        "date": datetime.datetime.utcnow()}
@@ -27,21 +27,25 @@ class db_handler:
         print('coin exists : ', coinValexists)
         if (coinValexists > 0):
             print('coin hash exists')
-            #p2p traction details must pass here, not yet implemented(coin hash, date and client_details needed)
-            newTransaction = {"$push": {"TRANSACTION": quarry["#S_ID"] ,"DATE":datetime.datetime.utcnow()}}
+            newTransaction = {"$push": {"TRANSACTION": {"SENDER": quarry["#SENDER"],
+                                                        "RECIVER": quarry["#RECIVER"],
+                                                        "T_NO_COIN": int(quarry["#T_NO_COIN"]),
+                                                        "DATE": datetime.datetime.utcnow()
+                                                        }}}
             self.collection.update({"_id": quarry["#COIN"]}, newTransaction)
         else:
             print('new coin mined')
-            #TRANSACTION[] and DATE[] arrays initialized
-            transaction = {"_id": quarry["#COIN"], "TRANSACTION": [quarry["#M_S_ID"]], "NO_COIN": int(quarry["#NO_COIN"]),"S_ID": int(quarry["#S_ID"]), "DATE": [datetime.datetime.utcnow()]}
-
-            #protocole trasmit 2 and database already exisis error rise so put new try /catch temporary
-            try:
-                self.collection.insert(transaction)
-                addServiceId = {"$push": {"TRANSACTION": quarry["#S_ID"]}}
-                self.collection.update({"_id": quarry["#COIN"]},addServiceId)
-            except:
-                print("value all ready exist")
+            root = {"_id": quarry["#COIN"]
+                , "S_ID": int(quarry["#S_ID"]), "S_PARA": quarry["#S_PARA"], "FORMAT_DATE": quarry["#FORMAT_DATE"],
+                    "NO_COIN": int(quarry["#NO_COIN"]),
+                    "TRANSACTION": [{"MINER": quarry["#M_S_ID"],
+                                     "RECIVER": quarry["#RECIVER"],
+                                     "T_NO_COIN": int(quarry["#NO_COIN"]),
+                                     "DATE": datetime.datetime.utcnow()
+                                     }
+                                    ]
+                    }
+            self.collection.insert(root)
 
         return 'DONE'
 
@@ -56,10 +60,10 @@ class db_handler:
                 , {"S_ID": 3, "COIN_VALUE": 30}
                 , {"S_ID": 4, "COIN_VALUE": 10}]
 
-            transaction = {"M_S_ID": 2, "NO_COIN": 3, "S_ID": 4, "date": datetime.datetime.utcnow()}
+            transaction = {"M_S_ID": 2, "NO_COIN": 3, "S_ID": 4, "date": datetime.datetime.utcnow(),"TEST":"TEST_DATA"}
 
             self.m_collection.insert_many(services)
-            ##self.t_collection.insert(transaction)
+            self.t_collection.insert(transaction)
             print 'create test service_detail  transaction table'
             return 'ADD_TEST_DATA'
 

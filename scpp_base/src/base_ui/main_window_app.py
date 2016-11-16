@@ -52,7 +52,7 @@ class MainWindowApp:
         b1 = Button(self.root, text=_('Refresh Coin Value'), command=self.getCoinValue, width=30,
                     background='green').grid(row=1, column=0, pady=5, padx=5)
 
-        b2 = Button(self.root, text=_('View Transaction Details'), command=self.onDatabaseLog, width=30)
+        b2 = Button(self.root, text=_('View Transaction Root Details'), command=self.onDatabaseLog, width=30)
         b3 = Button(self.root, text=_('View Log File'), command=self.onViewLog, width=30)
         b4 = Button(self.root, text=_('Map Rule Define'), command=self.putTestData, width=30)
         b5 = Button(self.root, text=_('Exit'), command=self.onExit, width=10, background='red')
@@ -77,7 +77,7 @@ class MainWindowApp:
     def onDatabaseLog(self):
         """ Process 'View DB enrties' command """
         root1 = Tk()
-        root1.title(_('Transaction Detail Table'))
+        root1.title(_('Transaction Root Detail Table'))
         root1.resizable(width=False, height=False)
         DataView(root1)
         print "take database recodes"

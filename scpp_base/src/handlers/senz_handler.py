@@ -60,9 +60,12 @@ class SenzHandler():
             flag = senz.attributes["#f"]
             if(flag=="ct"):
                 logger.info('Doing p2p Transaction ::%s' % senz)
-                #should implement database call here
+                print (senz.attributes)
+                dbh.addCoinWiseTransaction(senz.attributes)
+
             else:
-                # dbh.addTransaction(senz.attributes)
+
+                print (senz.attributes)
                 dbh.addCoinWiseTransaction(senz.attributes)  # ddd added coinWiseTransaction method
         elif (senz.type == "SHARE"):
             # print dbh.calulateCoinsValue()

@@ -83,7 +83,7 @@ class SenzHandler():
 
                 logger.info('Auto Excute: %s' % signed_senzc)
                 self.transport.write(signed_senzc)
-                self.sendTDetailsToBase(senz,coin)
+                self.sendTDetailsToBase(senz,coin,format_date)
         elif (senz.type=="UNSHARE"):
             pass
 
@@ -127,18 +127,18 @@ class SenzHandler():
         except:
             pass
 
-    def sendTDetailsToBase(self, senz ,coin):
-        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN  #S_ID #COIN '
+    def sendTDetailsToBase(self, senz ,coin,format_date):
+        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
         self.transport.write(signed_senzc)
 
-        senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #S_ID %s #COIN %s ' % ("M_1", "td","1", senz.attributes["#S_ID"],coin)
+        senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #RECIVER %s #S_ID %s #S_PARA %s #COIN %s #FORMAT_DATE %s ' % ("M_1", "td","1",senz.sender, senz.attributes["#S_ID"],senz.attributes["#S_PARA"],coin,format_date)
         senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzd = sign_senz(senz_d)
         self.transport.write(signed_senzd)
 
-        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN  #S_ID #COIN '
+        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)
