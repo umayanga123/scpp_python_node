@@ -1,0 +1,5 @@
+/updates/Django-1.3.1/Django-1.3.4/7858/
+/updates/delayed_paperclip-2.4.5.2 c23a537/delayed_paperclip-2.4.5.2/8085/
+/updates/libv8-3.3.10.4 x86_64-darwin-10/libv8-3.3.10.4/8087/
+/updates/Data::Compare-1.22/Data::Compare-Type/8313/
+/updates/Fabric-1.4.0/Fabric-1.4.4/8652/
