@@ -87,6 +87,14 @@ class SenzHandler():
                 self.transport.write(signed_senzc)
 
                 self.sendTDetailsToBase(senz,coin,format_date)
+                self.sendTDetailsToMiners(senz, coin, format_date)
+
+            if(flag =="ccb"):
+                logger.info('Mining new coin  Verify Request::%s' % senz)
+                coin =senz.attributes["#COIN"]
+                format_date = senz.attributes["#FORMAT_DATE"]
+                print (senz.attributes)
+                dbh.addCoinWiseTransaction(senz,coin,format_date)
 
         elif (senz.type=="UNSHARE"):
             pass
@@ -137,6 +145,7 @@ class SenzHandler():
 
     def sendTDetailsToBase(self, senz ,coin,format_date):
 
+        pass
         '''senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
@@ -145,11 +154,28 @@ class SenzHandler():
         senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #RECIVER %s #S_ID %s #S_PARA %s #COIN %s #FORMAT_DATE %s ' % ("M_2", "td","1",senz.sender, senz.attributes["#S_ID"],senz.attributes["#S_PARA"],coin,format_date)
         senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzd = sign_senz(senz_d)
-        self.transport.write(signed_senzd)'''
+        self.transport.write(signed_senzd)
+
+        senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
+        senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
+        signed_senzu = sign_senz(senz_u)
+        self.transport.write(signed_senzu)'''
+
+    # send detail to M1
+    def sendTDetailsToMiners(self, senz, coin, format_date):
+        '''senze_c = 'SHARE #M_S_ID  #f "ccb" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
+        senz_c = str(senze_c) + "@%s  ^%s" % ("node3", clientname)
+        signed_senzc = sign_senz(senz_c)
+        self.transport.write(signed_senzc)'''
+
+        senze_d = 'SHARE #msg %s #M_S_ID %s #f %s #NO_COIN %s #RECIVER %s #S_ID %s #S_PARA %s #COIN %s #FORMAT_DATE %s ' % (
+            "new_coin_mining", "M_2", "ccb", "1", senz.sender, senz.attributes["#S_ID"], senz.attributes["#S_PARA"],
+            coin, format_date)
+        senz_d = str(senze_d) + "@%s  ^%s" % ("node1", clientname)
+        signed_senzd = sign_senz(senz_d)
+        self.transport.write(signed_senzd)
 
         senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)
-
-

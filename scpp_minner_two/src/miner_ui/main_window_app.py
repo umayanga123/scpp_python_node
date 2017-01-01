@@ -9,6 +9,7 @@ from Tkinter import *
 from PIL import ImageTk, Image
 from handlers.senz_handler import SenzHandler
 from miner_ui import view_log,data_view
+from miner_ui.block_chain_data_view import BlockChainDataView
 from miner_ui.data_view import DataView
 
 _ = gettext.gettext
@@ -52,15 +53,17 @@ class MainWindowApp:
         b1 = Button(self.sideBar, text=_('Check Coin Value'), command=self.getCoinValue, width=20,
                     background='green').grid(row=1, column=0, pady=5, padx=5)
 
-        b2 = Button(self.sideBar, text=_('View Transaction Details'), command=self.onDatabaseLog, width=20)
-        b3 = Button(self.sideBar, text=_('View Log File'), command=self.onViewLog, width=20)
-        b4 = Button(self.sideBar, text=_('Define Mapping Rule'), command=self.minnerRuleDefine, width=20)
-        b5 = Button(self.sideBar, text=_('Exit'), command=self.onExit, width=10, background='red')
+        b2 = Button(self.sideBar, text=_('Mining Transaction Details'), command=self.onDatabaseLog, width=20)
+        b3 = Button(self.sideBar, text=_('Block Chain Data View'), command=self.onBlockChainLog, width=20)
+        b4 = Button(self.sideBar, text=_('View Log File'), command=self.onViewLog, width=20)
+        b5 = Button(self.sideBar, text=_('Define Mapping Rule'), command=self.minnerRuleDefine, width=20)
+        b6 = Button(self.sideBar, text=_('Exit'), command=self.onExit, width=10, background='red')
 
         b2.grid(row=2, column=0, pady=5, padx=5)
         b3.grid(row=3, column=0, pady=5, padx=5)
         b4.grid(row=4, column=0, pady=5, padx=5)
-        b5.grid(row=5, column=0, pady=5, padx=5, sticky=E)
+        b5.grid(row=5, column=0, pady=5, padx=5)
+        b6.grid(row=6, column=0, pady=5, padx=5, sticky=E)
 
 
         self.center(self.root)
@@ -77,8 +80,14 @@ class MainWindowApp:
         root1 = Tk()
         root1.title(_('Transaction Detail View - M2'))
         root1.resizable(width=False, height=False)
-
         DataView(root1)
+
+    def onBlockChainLog(self):
+        """ Process 'View DB enrties' command """
+        root1 = Tk()
+        root1.title(_('Block Chain Data View - M2'))
+        root1.resizable(width=False, height=False)
+        BlockChainDataView(root1)
 
     def getCoinValue(self):
         """ Process 'Start' command """
