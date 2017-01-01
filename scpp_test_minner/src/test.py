@@ -84,11 +84,11 @@ curdate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 print "Request TIME :", curdate;
 f.write("TIME :%s\n" % curdate+"")
 
-sender = input("Enter Sender Public key :");
+sender = raw_input("Enter Sender Public key :");
 print sender;
 f.write("IN  :%s\n" % sender)
 
-receiver = input("Enter Receiver key  :");
+receiver = raw_input("Enter Receiver key  :");
 print receiver;
 f.write("OUT :%s\n" % receiver)
 

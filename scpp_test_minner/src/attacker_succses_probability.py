@@ -17,12 +17,16 @@ def attacker_succses_probability(M, N, A, T):
             remaining_time_to_verified = 45 - (3 + (M * 1) + (N * 1));
             print "Remain Time to Verified : ", remaining_time_to_verified ,"s"
             T = round(T, 0)
+            hops = 0;
             print "Approximate Time hope (Time for One Ping) ", T ,"s"
             for x in range(1, remaining_time_to_verified + 1, int(T)):
                 if(x +remaining_time_to_verified <= 45):
                     tranaction_sucusses_proper = float(x) / remaining_time_to_verified;
-                    print  "Time :   %s s Transaction Successes Probability : " % (x + remaining_time_to_verified), (
+                    print  "Time :   %s s Transaction Successes Probability(According to Remaining Time): " % (x + remaining_time_to_verified), (
                         1 - tranaction_sucusses_proper)
+                    hops += 1;
+            print "Attacker Successes minimum  probability(Accoding to Remaing Pins :" , float(1)/hops
+
     else:
         print "Transaction Not Verified Attacker Success : %s" % current_tranaction_propability;
 

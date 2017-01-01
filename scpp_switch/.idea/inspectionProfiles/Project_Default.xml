@@ -13,6 +13,10 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="myServer.server_ui" />
+          <option value="src.handlers.senz_handler.utils" />
+          <option value="src.handlers.senz_handler.*" />
+          <option value="src.miner_ui.main_window_app.*" />
+          <option value="src.miner_ui.data_view.db" />
         </list>
       </option>
     </inspection_tool>
