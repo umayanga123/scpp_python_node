@@ -292,3 +292,139 @@
 2017-01-01 17:05:14,908 - __main__ - INFO - datagram received PING
 2017-01-01 17:05:34,926 - __main__ - INFO - datagram received PING
 2017-01-01 17:05:54,944 - __main__ - INFO - datagram received PING
+2017-01-01 19:23:38,835 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-01 19:23:38,835 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-01 19:23:38,860 - __main__ - INFO - client started
+2017-01-01 19:23:38,888 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483278818.89 ^mysensors T92k7fwITERBA+G5rdnnNHERXQ4Y1SZJ+BrsExdTCodxgoAaNgusgNogM4OjK42zRKh8aVPj8VuRKoW+quAIDerpZoqxoAAROWcejfey9VkBxX5fplQXNAnVeocIs32NPcKz0mVpmBsw6bFbx6VEOXlxdqWmLUnLQ7V2f9Npv/Y=
+2017-01-01 19:23:38,889 - utils.senz_parser - INFO -                                                             DATA
+2017-01-01 19:23:38,889 - utils.senz_parser - INFO -                                                             T92k7fwITERBA+G5rdnnNHERXQ4Y1SZJ+BrsExdTCodxgoAaNgusgNogM4OjK42zRKh8aVPj8VuRKoW+quAIDerpZoqxoAAROWcejfey9VkBxX5fplQXNAnVeocIs32NPcKz0mVpmBsw6bFbx6VEOXlxdqWmLUnLQ7V2f9Npv/Y=
+2017-01-01 19:23:38,889 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-01 19:23:38,889 - utils.senz_parser - INFO -                                                             None
+2017-01-01 19:23:38,889 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483278818.89', '#msg': 'ALREADY_REGISTERED'}
+2017-01-01 19:23:38,891 - handlers.senz_handler - INFO - senz received DATA
+2017-01-01 19:23:38,896 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:23:47,692 - __main__ - INFO - datagram received PING
+2017-01-01 19:24:07,710 - __main__ - INFO - datagram received PING
+2017-01-01 19:24:27,718 - __main__ - INFO - datagram received PING
+2017-01-01 19:24:47,719 - __main__ - INFO - datagram received PING
+2017-01-01 19:25:02,708 - __main__ - INFO - datagram received SHARE #f cc #TIME 1483278902 #COIN #S_ID 2 #S_PARA 1 @node1 ^h1 C2soxr6UPLwjMmk4mx8tjc4bwCdW2e4qy2l+Rz7v2UAF+SXBwTcxeX8mRQiJxMYLTIqih4rDYBOUun48/JwgPr61LTSCTCsNWMwWFvrwGzS9LPMYOb1z+wvZzisemlODFbqpsptxGELTDvXMixhOGJAQBZpjIqBEUVZ5AE1AHw4=
+2017-01-01 19:25:02,708 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-01 19:25:02,708 - utils.senz_parser - INFO -                                                             C2soxr6UPLwjMmk4mx8tjc4bwCdW2e4qy2l+Rz7v2UAF+SXBwTcxeX8mRQiJxMYLTIqih4rDYBOUun48/JwgPr61LTSCTCsNWMwWFvrwGzS9LPMYOb1z+wvZzisemlODFbqpsptxGELTDvXMixhOGJAQBZpjIqBEUVZ5AE1AHw4=
+2017-01-01 19:25:02,709 - utils.senz_parser - INFO -                                                             h1
+2017-01-01 19:25:02,709 - utils.senz_parser - INFO -                                                             node1
+2017-01-01 19:25:02,709 - utils.senz_parser - INFO -                                                             {'#COIN': '', '#f': 'cc', '#S_ID': '2', '#S_PARA': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483278818.89', '#msg': 'ALREADY_REGISTERED', '#TIME': '1483278902'}
+2017-01-01 19:25:02,710 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-01 19:25:02,945 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN ed761d9149678e56f07335e800d10c5349e21c61 #TIME 2017-01-0119:25:02 @h1  ^node1 kBA/U3eoTC23Ifnr3BCQ+vSdf9uMFHDr6FNed3dTDkLufjKkIhA/Ozc11MJT9NtSHivszaSzvuWZdb1wlvX0N5UXPakvwuzHi3C7AMYGOReKLY8ZDtt+AGUVoI0+v5IftIemBReCwextM0bw4cSh0d8n/Dxda5fXXvLtKJ962N0=
+2017-01-01 19:25:02,963 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:25:07,721 - __main__ - INFO - datagram received PING
+2017-01-01 19:25:27,740 - __main__ - INFO - datagram received PING
+2017-01-01 19:25:47,752 - __main__ - INFO - datagram received PING
+2017-01-01 19:26:07,754 - __main__ - INFO - datagram received PING
+2017-01-01 19:26:17,453 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-01 19:26:17,453 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-01 19:26:17,455 - __main__ - INFO - client started
+2017-01-01 19:26:17,482 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483278977.48 ^mysensors q0trjgZaGIqm9JNsuI/DTAwssFVHDBLNN0uaBcu5KAXL/ek8MnRni1vwuTcmfQVijoH8hiFBJEXAxX2+c/+/mrII+q1V3mOTagBj8yyMe25IuRLlYWFawJ/mwLLVp8HxDHK4DDkUqAcyQTnkXPsRRhGzz0JyOxD+gvHW6ETHyIA=
+2017-01-01 19:26:17,482 - utils.senz_parser - INFO -                                                             DATA
+2017-01-01 19:26:17,482 - utils.senz_parser - INFO -                                                             q0trjgZaGIqm9JNsuI/DTAwssFVHDBLNN0uaBcu5KAXL/ek8MnRni1vwuTcmfQVijoH8hiFBJEXAxX2+c/+/mrII+q1V3mOTagBj8yyMe25IuRLlYWFawJ/mwLLVp8HxDHK4DDkUqAcyQTnkXPsRRhGzz0JyOxD+gvHW6ETHyIA=
+2017-01-01 19:26:17,483 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-01 19:26:17,483 - utils.senz_parser - INFO -                                                             None
+2017-01-01 19:26:17,483 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483278977.48', '#msg': 'ALREADY_REGISTERED'}
+2017-01-01 19:26:17,484 - handlers.senz_handler - INFO - senz received DATA
+2017-01-01 19:26:17,490 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:26:21,713 - __main__ - INFO - datagram received SHARE #f cc #TIME 1483278979 #COIN #S_ID 2 #S_PARA 11 @node1 ^h1 2iruIwVWMjDcN8LKNbuaGd2zSpWnMwqW2tnjaCkMh54C6HLBenQa3+OZOtOk6b8t+GMR2pPaPIGsJjzOqNH1r/fIIMhd1PFV7Xi9faNbVFn3eqbmz0bvwhX+jVfdScSdPohSb2O1EfPAe3IQZeKTCPU7EwbgKTElpsGtBZBgdBg=
+2017-01-01 19:26:21,713 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-01 19:26:21,714 - utils.senz_parser - INFO -                                                             2iruIwVWMjDcN8LKNbuaGd2zSpWnMwqW2tnjaCkMh54C6HLBenQa3+OZOtOk6b8t+GMR2pPaPIGsJjzOqNH1r/fIIMhd1PFV7Xi9faNbVFn3eqbmz0bvwhX+jVfdScSdPohSb2O1EfPAe3IQZeKTCPU7EwbgKTElpsGtBZBgdBg=
+2017-01-01 19:26:21,714 - utils.senz_parser - INFO -                                                             h1
+2017-01-01 19:26:21,714 - utils.senz_parser - INFO -                                                             node1
+2017-01-01 19:26:21,714 - utils.senz_parser - INFO -                                                             {'#COIN': '', '#f': 'cc', '#S_ID': '2', '#S_PARA': '11', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483278977.48', '#msg': 'ALREADY_REGISTERED', '#TIME': '1483278979'}
+2017-01-01 19:26:21,715 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-01 19:26:21,723 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN af0b960b0fa05ad064566304ec17d2e389453a27 #TIME 2017-01-0119:26:21 @h1  ^node1 X3h2xUmwHpHpfUMVGQrodj8zVTnD4UNoR440r06gBTXUKQSLQeBzKq1dMFm9cLdB7vGJagQcw5RJyyPlMDaVPyhvzoP6200cqPIR5hKMZdfGv2F0EsVjq+0drEmijTByARb4L93qoDYxRv0N8BEB0hVHibl5AZ1o5AV4DdtSyuI=
+2017-01-01 19:26:21,744 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:26:27,757 - __main__ - INFO - datagram received PING
+2017-01-01 19:26:47,759 - __main__ - INFO - datagram received PING
+2017-01-01 19:27:07,777 - __main__ - INFO - datagram received PING
+2017-01-01 19:27:27,796 - __main__ - INFO - datagram received PING
+2017-01-01 19:27:47,813 - __main__ - INFO - datagram received PING
+2017-01-01 19:28:07,831 - __main__ - INFO - datagram received PING
+2017-01-01 19:28:27,849 - __main__ - INFO - datagram received PING
+2017-01-01 19:28:47,866 - __main__ - INFO - datagram received PING
+2017-01-01 19:29:07,883 - __main__ - INFO - datagram received PING
+2017-01-01 19:29:27,898 - __main__ - INFO - datagram received PING
+2017-01-01 19:29:47,917 - __main__ - INFO - datagram received PING
+2017-01-01 19:30:07,936 - __main__ - INFO - datagram received PING
+2017-01-01 19:30:27,953 - __main__ - INFO - datagram received PING
+2017-01-01 19:30:47,972 - __main__ - INFO - datagram received PING
+2017-01-01 19:31:07,990 - __main__ - INFO - datagram received PING
+2017-01-01 19:31:28,006 - __main__ - INFO - datagram received PING
+2017-01-01 19:31:48,024 - __main__ - INFO - datagram received PING
+2017-01-01 19:32:08,043 - __main__ - INFO - datagram received PING
+2017-01-01 19:32:28,045 - __main__ - INFO - datagram received PING
+2017-01-01 19:32:48,064 - __main__ - INFO - datagram received PING
+2017-01-01 19:33:08,083 - __main__ - INFO - datagram received PING
+2017-01-01 19:33:28,101 - __main__ - INFO - datagram received PING
+2017-01-01 19:33:48,119 - __main__ - INFO - datagram received PING
+2017-01-01 19:33:58,565 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-01 19:33:58,565 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-01 19:33:58,566 - __main__ - INFO - client started
+2017-01-01 19:33:58,584 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483279438.58 ^mysensors lEUp8GBHAD6OMl/RirFP7Q3fHXgENiSFHwfWyt8rUPkWHfZDxs2xJo3VJeEmTuinZ8Mme5uRwkHIDkJC7cf7ckDcyKRz7wgqIGpy9YqKLEyTukDIihiaupKz/ZtIDN5ELR7MwWvt6fxULVGhnKhBK7NgmyX3ONlos9fJ+9Ao0fo=
+2017-01-01 19:33:58,587 - utils.senz_parser - INFO -                                                             DATA
+2017-01-01 19:33:58,587 - utils.senz_parser - INFO -                                                             lEUp8GBHAD6OMl/RirFP7Q3fHXgENiSFHwfWyt8rUPkWHfZDxs2xJo3VJeEmTuinZ8Mme5uRwkHIDkJC7cf7ckDcyKRz7wgqIGpy9YqKLEyTukDIihiaupKz/ZtIDN5ELR7MwWvt6fxULVGhnKhBK7NgmyX3ONlos9fJ+9Ao0fo=
+2017-01-01 19:33:58,587 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-01 19:33:58,587 - utils.senz_parser - INFO -                                                             None
+2017-01-01 19:33:58,587 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483279438.58', '#msg': 'ALREADY_REGISTERED'}
+2017-01-01 19:33:58,589 - handlers.senz_handler - INFO - senz received DATA
+2017-01-01 19:33:58,593 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:34:06,333 - __main__ - INFO - datagram received SHARE #f cc #TIME 1483279436 #COIN #S_ID 2 #S_PARA 111 @node1 ^h1 ZYzpr2CJgQRuTADxP85YGuGEmRy7/XIObjXB9VNvJ7rfimVvJ/WSXvJ+sbTUXpUJHrRNWWqQDqbuEp4tV8nbSfm8BYlVmGBUFuYEPHKftWHw4IS0d69VOMeVT+W5n5gUHNtKoeY8WG6zhMNfuKKodk+qEpvuRT+ngrDuTyH+9N0=
+2017-01-01 19:34:06,333 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-01 19:34:06,333 - utils.senz_parser - INFO -                                                             ZYzpr2CJgQRuTADxP85YGuGEmRy7/XIObjXB9VNvJ7rfimVvJ/WSXvJ+sbTUXpUJHrRNWWqQDqbuEp4tV8nbSfm8BYlVmGBUFuYEPHKftWHw4IS0d69VOMeVT+W5n5gUHNtKoeY8WG6zhMNfuKKodk+qEpvuRT+ngrDuTyH+9N0=
+2017-01-01 19:34:06,333 - utils.senz_parser - INFO -                                                             h1
+2017-01-01 19:34:06,334 - utils.senz_parser - INFO -                                                             node1
+2017-01-01 19:34:06,334 - utils.senz_parser - INFO -                                                             {'#COIN': '', '#f': 'cc', '#S_ID': '2', '#S_PARA': '111', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483279438.58', '#msg': 'ALREADY_REGISTERED', '#TIME': '1483279436'}
+2017-01-01 19:34:06,335 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-01 19:34:06,343 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #TIME 2017-01-0119:34:06 @h1  ^node1 aZP5fG/DBCb8uzds7IyM7go2ZP4m9XNYCL4X5AjZSpgZi/BC4qEGo7rj8T19j3AsRTad8g5sqxAHpd7uZtYVHT7pTAOvuxW1ZYuHTCbpLyPH5bjF6r5hwtAlWA0nNZqPGUrwzU0wlyWZSUOCQseJHJMtnHfrMzfrRWnvftxq+lE=
+2017-01-01 19:34:06,366 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:34:08,119 - __main__ - INFO - datagram received PING
+2017-01-01 19:34:28,137 - __main__ - INFO - datagram received PING
+2017-01-01 19:34:48,156 - __main__ - INFO - datagram received PING
+2017-01-01 19:35:08,174 - __main__ - INFO - datagram received PING
+2017-01-01 19:35:28,194 - __main__ - INFO - datagram received PING
+2017-01-01 19:35:48,213 - __main__ - INFO - datagram received PING
+2017-01-01 19:36:08,232 - __main__ - INFO - datagram received PING
+2017-01-01 19:36:28,250 - __main__ - INFO - datagram received PING
+2017-01-01 19:36:48,269 - __main__ - INFO - datagram received PING
+2017-01-01 19:37:08,281 - __main__ - INFO - datagram received PING
+2017-01-01 19:37:28,296 - __main__ - INFO - datagram received PING
+2017-01-01 19:37:48,313 - __main__ - INFO - datagram received PING
+2017-01-01 19:38:08,330 - __main__ - INFO - datagram received PING
+2017-01-01 19:38:28,350 - __main__ - INFO - datagram received PING
+2017-01-01 19:38:48,368 - __main__ - INFO - datagram received PING
+2017-01-01 19:39:08,386 - __main__ - INFO - datagram received PING
+2017-01-01 19:39:28,406 - __main__ - INFO - datagram received PING
+2017-01-01 19:39:48,423 - __main__ - INFO - datagram received PING
+2017-01-01 19:40:08,441 - __main__ - INFO - datagram received PING
+2017-01-01 19:40:25,463 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-01 19:40:25,463 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-01 19:40:25,464 - __main__ - INFO - client started
+2017-01-01 19:40:25,478 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483279825.48 ^mysensors mJnS+4UiOI17O8Gek9sCF90qGDSZop3fA8LULyziCaTp0ySZnj/I7nLKo6jvmZpbqa/LruNqmYChMEHqug9qBe0U+LxISkS2oOuG5vzFp+KtfNA1/SqQ+/kkMWljRsqgNHTqXR5AZlhNyXHSA7dJUINTVpDtSYx/o0XFwkmRBio=
+2017-01-01 19:40:25,478 - utils.senz_parser - INFO -                                                             DATA
+2017-01-01 19:40:25,478 - utils.senz_parser - INFO -                                                             mJnS+4UiOI17O8Gek9sCF90qGDSZop3fA8LULyziCaTp0ySZnj/I7nLKo6jvmZpbqa/LruNqmYChMEHqug9qBe0U+LxISkS2oOuG5vzFp+KtfNA1/SqQ+/kkMWljRsqgNHTqXR5AZlhNyXHSA7dJUINTVpDtSYx/o0XFwkmRBio=
+2017-01-01 19:40:25,478 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-01 19:40:25,479 - utils.senz_parser - INFO -                                                             None
+2017-01-01 19:40:25,479 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483279825.48', '#msg': 'ALREADY_REGISTERED'}
+2017-01-01 19:40:25,480 - handlers.senz_handler - INFO - senz received DATA
+2017-01-01 19:40:25,485 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:40:28,444 - __main__ - INFO - datagram received PING
+2017-01-01 19:40:32,490 - __main__ - INFO - datagram received SHARE #f cc #TIME 1483279816 #COIN #S_ID 2 #S_PARA 1111 @node1 ^h1 kH/J/gTaUKx32GuT6Zpod6b726V4vhC+/nQjRRG7QuC+LfikkQ6kuvAT82+xJKEVHH1VNmlvx1NSVuXbFIATTFc2570L65jz1PaJXDlagi1y+u5h+P975s1hipefWlTYs3t8CCqL1Nw+3MTHlJUZduTwJM8vfvK3CUZsJxhr04g=
+2017-01-01 19:40:32,490 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-01 19:40:32,490 - utils.senz_parser - INFO -                                                             kH/J/gTaUKx32GuT6Zpod6b726V4vhC+/nQjRRG7QuC+LfikkQ6kuvAT82+xJKEVHH1VNmlvx1NSVuXbFIATTFc2570L65jz1PaJXDlagi1y+u5h+P975s1hipefWlTYs3t8CCqL1Nw+3MTHlJUZduTwJM8vfvK3CUZsJxhr04g=
+2017-01-01 19:40:32,490 - utils.senz_parser - INFO -                                                             h1
+2017-01-01 19:40:32,490 - utils.senz_parser - INFO -                                                             node1
+2017-01-01 19:40:32,491 - utils.senz_parser - INFO -                                                             {'#COIN': '', '#f': 'cc', '#S_ID': '2', '#S_PARA': '1111', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483279825.48', '#msg': 'ALREADY_REGISTERED', '#TIME': '1483279816'}
+2017-01-01 19:40:32,491 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-01 19:40:32,503 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #TIME 2017-01-0119:40:32 @h1  ^node1 11dK24H1SqaXZOYviP8gfFhVJIh5uTnl3bgQHO3Klo0dt7Odj/GoB965CTT+3qz8HY+k37O2LUEh4GKHrCJIT4WOeJAAs77isitdT4UMcsVkVNEmnu3twdwHL8cP6b2BfjNO6I6ezMRvvIOpfWaJv+OW3ijkGSsGlYAsD+7QijM=
+2017-01-01 19:40:32,522 - handlers.senz_handler - INFO - Post Handled
+2017-01-01 19:40:48,457 - __main__ - INFO - datagram received PING
+2017-01-01 19:41:08,476 - __main__ - INFO - datagram received PING
+2017-01-01 19:41:28,496 - __main__ - INFO - datagram received PING
+2017-01-01 19:41:48,513 - __main__ - INFO - datagram received PING
+2017-01-01 19:42:08,531 - __main__ - INFO - datagram received PING

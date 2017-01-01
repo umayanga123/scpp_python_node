@@ -94,7 +94,12 @@ class SenzHandler():
                 coin =senz.attributes["#COIN"]
                 format_date = senz.attributes["#FORMAT_DATE"]
                 print (senz.attributes)
-                dbh.addCoinWiseTransaction(senz,coin,format_date)
+                verify_state = self.verifyCoin(coin ,senz.attributes["#S_PARA"], format_date , senz.attributes["#RECIVER"])
+                print  verify_state
+                if(verify_state==True):
+                    dbh.addCoinWiseTransaction(senz, coin, format_date)
+                else:
+                    dbh.faildVerification(senz, coin, format_date)
 
         elif (senz.type=="UNSHARE"):
             pass
@@ -179,3 +184,16 @@ class SenzHandler():
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)
+
+
+
+
+    #verify_coin_before_add_block_chain
+    def verifyCoin(self,coin,s_para,format_date,sender):
+        print "verify_coin"
+        cah = minning_algo()
+        coin2 = cah.getCoin(s_para+ "" + format_date + "" + sender)
+        if(coin == coin2):
+            return True
+        else:
+            return False

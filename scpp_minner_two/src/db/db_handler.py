@@ -79,3 +79,36 @@ class db_handler:
 
         return 'DONE'
 
+
+    # added verification failed trasaction hear
+    def faildVerification(self, senz, coin, format_date):
+        self.collection = self.db.faild_chain
+        coinValexists = self.collection.find({"_id": str(coin)}).count()
+        print('coin exists : ', coinValexists)
+        if (coinValexists > 0):
+            print('coin hash exists')
+            newTransaction = {"$push": {"TRANSACTION": {"SENDER": senz.attributes["#SENDER"],
+                                                        "RECIVER": senz.attributes["#RECIVER"],
+                                                        "T_NO_COIN": int(1),
+                                                        "DATE": datetime.datetime.utcnow()
+                                                        }}}
+            self.collection.update({"_id": str(coin)}, newTransaction)
+        else:
+            flag = senz.attributes["#f"];
+            print flag
+            if (flag == "ccb"):
+                print('new coin mined othir minner')
+                root = {"_id": str(coin)
+                    , "S_ID": int(senz.attributes["#S_ID"]), "S_PARA": senz.attributes["#S_PARA"],
+                        "FORMAT_DATE": format_date,
+                        "NO_COIN": int(1),
+                        "TRANSACTION": [{"MINER": senz.attributes["#M_S_ID"],
+                                         "RECIVER": senz.attributes["#RECIVER"],
+                                         "T_NO_COIN": int(1),
+                                         "DATE": datetime.datetime.utcnow()
+                                         }
+                                        ]
+                        }
+                self.collection.insert(root)
+
+        return 'DONE'
