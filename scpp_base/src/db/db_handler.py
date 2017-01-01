@@ -20,7 +20,9 @@ class db_handler:
         self.collection.insert(transaction)
         return 'DONE'
 
-    # added new method
+
+
+    # added new method add coin tranaction details
     def addCoinWiseTransaction(self, quarry):
         self.collection = self.db.transaction_detail
         coinValexists = self.collection.find({"_id": quarry["#COIN"]}).count()

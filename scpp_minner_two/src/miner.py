@@ -26,7 +26,7 @@ logger.setLevel(logging.INFO)
 if not (os.path.exists('logs')):
     os.mkdir('logs')
 
-filehandler = logging.FileHandler('logs/minner.log')
+filehandler = logging.FileHandler('logs/miner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format

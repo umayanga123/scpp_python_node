@@ -6,7 +6,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/minner.log')
+filehandler = logging.FileHandler('logs/miner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format

@@ -13,7 +13,7 @@ from config.config import *
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/minner.log')
+filehandler = logging.FileHandler('logs/miner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -80,6 +80,8 @@ class SenzHandler():
                 signed_senzc = sign_senz(senz_c)
 
                 dbh.addMinerDetail(senz.attributes, coin ,format_date)
+                # add_detail_to_block_chain
+                dbh.addCoinWiseTransaction(senz, coin, format_date)
 
                 logger.info('Auto Excute: %s' % signed_senzc)
                 self.transport.write(signed_senzc)

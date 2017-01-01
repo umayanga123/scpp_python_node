@@ -31,7 +31,7 @@ class MainWindowApp:
         self.root.columnconfigure(0, weight=1)  # center component
         self.root.geometry('{}x{}'.format(500, 375))
         self.root.resizable(width=False, height=False)
-        self.root.title(_('SCPP Coin Minner'))
+        self.root.title(_('SCPP Coin Miner - M1'))
 
         # set the window icon
         img = PhotoImage(file='img/scpp_global.png')

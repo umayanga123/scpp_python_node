@@ -22,7 +22,7 @@ logger.setLevel(logging.INFO)
 if not (os.path.exists('logs')):
     os.mkdir('logs')
 
-filehandler = logging.FileHandler('logs/minner.log')
+filehandler = logging.FileHandler('logs/miner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -181,6 +181,6 @@ if __name__ == '__main__':
     t.start()
 
     cl = cumulative_logger.CumulativeLogger()
-    logger.info(_('Starting the SCPP Miner Application..!'))
+    logger.info(_('Starting the SCPP Miner-M1 Application..!'))
     t1 = multiprocessing.Process(target=MainWindowApp(cl).run(), args=())
     t1.start()

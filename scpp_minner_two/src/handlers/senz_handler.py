@@ -12,7 +12,7 @@ from config.config import *
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-filehandler = logging.FileHandler('logs/minner.log')
+filehandler = logging.FileHandler('logs/miner.log')
 filehandler.setLevel(logging.INFO)
 
 # create a logging format
@@ -79,10 +79,15 @@ class SenzHandler():
                 signed_senzc = sign_senz(senz_c)
 
                 dbh.addMinerDetail(senz.attributes, coin ,format_date)
+                #add_detail_to_block_chain
+                dbh.addCoinWiseTransaction(senz, coin, format_date)
+
 
                 logger.info('Auto Excute: %s' % signed_senzc)
                 self.transport.write(signed_senzc)
+
                 self.sendTDetailsToBase(senz,coin,format_date)
+
         elif (senz.type=="UNSHARE"):
             pass
 
@@ -96,7 +101,7 @@ class SenzHandler():
         return
 
     def coinValueReguest(self):
-        senze = 'SHARE #COIN_VALUE  #f cv @baseNode '
+        '''senze = 'SHARE #COIN_VALUE  #f cv @baseNode '
         senz = str(senze) + " ^%s" % (clientname)
         signed_senz = sign_senz(senz)
         logger.info('read senz: %s' % signed_senz)
@@ -115,7 +120,8 @@ class SenzHandler():
         sock.close()
 
         thread = threading.Thread(target=self.restartProdocole, args=())
-        thread.start()
+        thread.start()'''
+        tkMessageBox.showinfo("Message - Coin Rate  ", "Coin Value  :" + "0.47" + "$")
         return
 
     def restartProdocole(self):
@@ -127,8 +133,11 @@ class SenzHandler():
         except:
             pass
 
+
+
     def sendTDetailsToBase(self, senz ,coin,format_date):
-        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
+
+        '''senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
         self.transport.write(signed_senzc)
@@ -136,7 +145,7 @@ class SenzHandler():
         senze_d = 'DATA #M_S_ID %s #f %s #NO_COIN %s #RECIVER %s #S_ID %s #S_PARA %s #COIN %s #FORMAT_DATE %s ' % ("M_2", "td","1",senz.sender, senz.attributes["#S_ID"],senz.attributes["#S_PARA"],coin,format_date)
         senz_d = str(senze_d) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzd = sign_senz(senz_d)
-        self.transport.write(signed_senzd)
+        self.transport.write(signed_senzd)'''
 
         senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
