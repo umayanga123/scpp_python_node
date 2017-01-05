@@ -101,6 +101,19 @@ class SenzHandler():
                 else:
                     dbh.faildVerification(senz, coin, format_date)
 
+            if (flag == "ctr"):
+                logger.info('Request Massage p2p Transaction :: %s' % senz)
+
+        # print senz.type=="DATA" and senz.receiver !=None
+        elif (senz.type == "DATA" and senz.receiver != None):
+            flag = senz.attributes["#f"]
+            coin = senz.attributes["#COIN"]
+            time = senz.attributes["#time"]
+            if (flag == "b_ct"):
+                logger.info('Doing p2p Transaction ::%s' % senz)
+                print (senz.attributes)
+                dbh.addCoinWiseTransaction(senz, coin, time)
+
         elif (senz.type=="UNSHARE"):
             pass
 

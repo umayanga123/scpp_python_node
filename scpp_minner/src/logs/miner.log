@@ -428,3 +428,422 @@
 2017-01-01 19:41:28,496 - __main__ - INFO - datagram received PING
 2017-01-01 19:41:48,513 - __main__ - INFO - datagram received PING
 2017-01-01 19:42:08,531 - __main__ - INFO - datagram received PING
+2017-01-05 12:12:49,812 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-05 12:12:49,812 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-05 12:12:49,839 - __main__ - INFO - client started
+2017-01-05 12:12:50,168 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483598570.17 ^mysensors M8B7xQW16ikRxZIio0vG+/tlkdfABwVaM8fzeallbRXKXhpajbjN4BTmJ5AxriRv+QWKTwhiRBv2yqicl1zwqgQgVWbOwegz3QHBQhHqZLQi35MJK6uAcUqO5UBRmjbLDEvYWalsvO8Ibfn39m6EMzaqNy1fbRHyy1HHqlaW/Bw=
+2017-01-05 12:12:50,169 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:12:50,169 - utils.senz_parser - INFO -                                                             M8B7xQW16ikRxZIio0vG+/tlkdfABwVaM8fzeallbRXKXhpajbjN4BTmJ5AxriRv+QWKTwhiRBv2yqicl1zwqgQgVWbOwegz3QHBQhHqZLQi35MJK6uAcUqO5UBRmjbLDEvYWalsvO8Ibfn39m6EMzaqNy1fbRHyy1HHqlaW/Bw=
+2017-01-05 12:12:50,169 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-05 12:12:50,169 - utils.senz_parser - INFO -                                                             None
+2017-01-05 12:12:50,169 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483598570.17', '#msg': 'ALREADY_REGISTERED'}
+2017-01-05 12:12:50,183 - __main__ - INFO - datagram received PING
+2017-01-05 12:12:50,183 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:12:50,189 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:13:10,180 - __main__ - INFO - datagram received PING
+2017-01-05 12:13:30,198 - __main__ - INFO - datagram received PING
+2017-01-05 12:13:50,217 - __main__ - INFO - datagram received PING
+2017-01-05 12:14:10,298 - __main__ - INFO - datagram received PING
+2017-01-05 12:14:30,348 - __main__ - INFO - datagram received PING
+2017-01-05 12:18:10,030 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-05 12:18:10,057 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-05 12:18:10,111 - __main__ - INFO - client started
+2017-01-05 12:18:10,833 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483598890.83 ^mysensors Clbtv6X6vui/a05/G6W+235d4274c+oBneE2Er++nCbAsn1SnAeMDpQblx7+/XtVwlQ2nGwYJfsDMI+rMaBTsYhTXc9CjnMLlR5S+4EKv3KL1cXEZqXaz58slrRpij8K8pWYxjTnob6o4gB3VlXZtY24iMdyGbj11PYRn18mf8s=
+2017-01-05 12:18:10,833 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:18:10,834 - utils.senz_parser - INFO -                                                             Clbtv6X6vui/a05/G6W+235d4274c+oBneE2Er++nCbAsn1SnAeMDpQblx7+/XtVwlQ2nGwYJfsDMI+rMaBTsYhTXc9CjnMLlR5S+4EKv3KL1cXEZqXaz58slrRpij8K8pWYxjTnob6o4gB3VlXZtY24iMdyGbj11PYRn18mf8s=
+2017-01-05 12:18:10,834 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-05 12:18:10,834 - utils.senz_parser - INFO -                                                             None
+2017-01-05 12:18:10,834 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483598890.83', '#msg': 'ALREADY_REGISTERED'}
+2017-01-05 12:18:10,868 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:18:10,874 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:18:29,851 - __main__ - INFO - datagram received PING
+2017-01-05 12:18:49,870 - __main__ - INFO - datagram received PING
+2017-01-05 12:19:09,881 - __main__ - INFO - datagram received PING
+2017-01-05 12:19:14,807 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h1 #time 1483598951 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h2 @node1 ^h1 EEoAln0VLPf5XaHsVPWLCKNJub7+vOXhqJx8t0qcnkBGTbz3zNDm2UTkkVo4WX9hM9/eT+YJwTVNCJBc/3c9savSfOGFa/EzzYAQ4Y8kbaa0M/klAqYJd7La89vqJRKp/VnATlGisARfo6nl2vw008d3gay7z2k083ckR4SERpk=
+2017-01-05 12:19:14,808 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 12:19:14,808 - utils.senz_parser - INFO -                                                             EEoAln0VLPf5XaHsVPWLCKNJub7+vOXhqJx8t0qcnkBGTbz3zNDm2UTkkVo4WX9hM9/eT+YJwTVNCJBc/3c9savSfOGFa/EzzYAQ4Y8kbaa0M/klAqYJd7La89vqJRKp/VnATlGisARfo6nl2vw008d3gay7z2k083ckR4SERpk=
+2017-01-05 12:19:14,808 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:19:14,808 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:19:14,808 - utils.senz_parser - INFO -                                                             {'#time': '1483598951', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 12:19:14,809 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 12:19:14,811 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:19:24,453 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483598961 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 HeIntk9QaJVNNLYVVHgLQtH1q4fVAJvqANunMtDyeXof1C2UIoJ/VB1+qFDRp3pAtLGfyi6jKJ0EVJA9A70yN9pEZod8X/U2NILY8h7oO+VEs6DKeNj5QX6LI1VSNNB7qG29K8PGSDCebg4E7WMQY+f4Yme9URx9SmCRp8YGCWU=
+2017-01-05 12:19:24,453 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:19:24,453 - utils.senz_parser - INFO -                                                             HeIntk9QaJVNNLYVVHgLQtH1q4fVAJvqANunMtDyeXof1C2UIoJ/VB1+qFDRp3pAtLGfyi6jKJ0EVJA9A70yN9pEZod8X/U2NILY8h7oO+VEs6DKeNj5QX6LI1VSNNB7qG29K8PGSDCebg4E7WMQY+f4Yme9URx9SmCRp8YGCWU=
+2017-01-05 12:19:24,454 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:19:24,454 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:19:24,454 - utils.senz_parser - INFO -                                                             {'#time': '1483598961', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:19:24,455 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:19:24,456 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6e10>
+2017-01-05 12:19:24,498 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:19:29,438 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483598966 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 KKAl+maDb9GhvZkwf5FGBqE2GADAQ4upwJkkyIDAfOXsR+IoAPs4mC71M4fwdMU9gfEpMv9+akXlZ16xwohuTs/MMSn4Wnuqif/6wYXQtc2eNoyatU/LrVji5BRRvIlwp1Pf2sJUy8139PzjpvRA5t2LaSf3DtZVwUT20WhqDQM=
+2017-01-05 12:19:29,438 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:19:29,438 - utils.senz_parser - INFO -                                                             KKAl+maDb9GhvZkwf5FGBqE2GADAQ4upwJkkyIDAfOXsR+IoAPs4mC71M4fwdMU9gfEpMv9+akXlZ16xwohuTs/MMSn4Wnuqif/6wYXQtc2eNoyatU/LrVji5BRRvIlwp1Pf2sJUy8139PzjpvRA5t2LaSf3DtZVwUT20WhqDQM=
+2017-01-05 12:19:29,438 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:19:29,438 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:19:29,438 - utils.senz_parser - INFO -                                                             {'#time': '1483598966', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:19:29,445 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:19:29,447 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6e90>
+2017-01-05 12:19:29,449 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:19:29,882 - __main__ - INFO - datagram received PING
+2017-01-05 12:19:34,442 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483598971 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 PBBPb0zTF3D2yqurc3So5LpMLpldMPQp1qqCatFOqQtMe34Qt4lBwO9xorm2ms1UPmSp+Pqw9fGUfHjjdIgZAU7drep24/hFt66OMNOlxrbhPZcJmNbcA2UqKTS9w1uSt9niV6AqSNshtSNsfqrFYz2cezcf+F3MnpO7J/MTOfU=
+2017-01-05 12:19:34,442 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:19:34,442 - utils.senz_parser - INFO -                                                             PBBPb0zTF3D2yqurc3So5LpMLpldMPQp1qqCatFOqQtMe34Qt4lBwO9xorm2ms1UPmSp+Pqw9fGUfHjjdIgZAU7drep24/hFt66OMNOlxrbhPZcJmNbcA2UqKTS9w1uSt9niV6AqSNshtSNsfqrFYz2cezcf+F3MnpO7J/MTOfU=
+2017-01-05 12:19:34,443 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:19:34,443 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:19:34,443 - utils.senz_parser - INFO -                                                             {'#time': '1483598971', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:19:34,444 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:19:34,445 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6d50>
+2017-01-05 12:19:34,449 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:19:39,435 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483598976 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 eonq7tpLZDsI9zSAh+6VK9BeGQKpq0pHgmBpTwbcKHB4xjlIriFMziZu+IeNUseBxDrPWS4icNm+5xRCN4HZyGdXz6GOkzwUDih3RivA1T1SAHlEmGQeD2BCEgxcZWhFo0I/9+TnIAvxmP487MuFzHH0dt5k/4/b1DBZo9kSLlo=
+2017-01-05 12:19:39,436 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:19:39,436 - utils.senz_parser - INFO -                                                             eonq7tpLZDsI9zSAh+6VK9BeGQKpq0pHgmBpTwbcKHB4xjlIriFMziZu+IeNUseBxDrPWS4icNm+5xRCN4HZyGdXz6GOkzwUDih3RivA1T1SAHlEmGQeD2BCEgxcZWhFo0I/9+TnIAvxmP487MuFzHH0dt5k/4/b1DBZo9kSLlo=
+2017-01-05 12:19:39,436 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:19:39,436 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:19:39,436 - utils.senz_parser - INFO -                                                             {'#time': '1483598976', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:19:39,437 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:19:39,438 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6e10>
+2017-01-05 12:19:39,441 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:19:49,889 - __main__ - INFO - datagram received PING
+2017-01-05 12:20:09,905 - __main__ - INFO - datagram received PING
+2017-01-05 12:20:29,924 - __main__ - INFO - datagram received PING
+2017-01-05 12:20:49,943 - __main__ - INFO - datagram received PING
+2017-01-05 12:21:09,961 - __main__ - INFO - datagram received PING
+2017-01-05 12:21:29,978 - __main__ - INFO - datagram received PING
+2017-01-05 12:21:49,993 - __main__ - INFO - datagram received PING
+2017-01-05 12:22:10,013 - __main__ - INFO - datagram received PING
+2017-01-05 12:22:30,030 - __main__ - INFO - datagram received PING
+2017-01-05 12:22:50,049 - __main__ - INFO - datagram received PING
+2017-01-05 12:23:10,067 - __main__ - INFO - datagram received PING
+2017-01-05 12:23:30,084 - __main__ - INFO - datagram received PING
+2017-01-05 12:23:50,101 - __main__ - INFO - datagram received PING
+2017-01-05 12:24:10,119 - __main__ - INFO - datagram received PING
+2017-01-05 12:24:30,135 - __main__ - INFO - datagram received PING
+2017-01-05 12:24:50,154 - __main__ - INFO - datagram received PING
+2017-01-05 12:25:10,173 - __main__ - INFO - datagram received PING
+2017-01-05 12:25:30,191 - __main__ - INFO - datagram received PING
+2017-01-05 12:25:50,209 - __main__ - INFO - datagram received PING
+2017-01-05 12:26:10,225 - __main__ - INFO - datagram received PING
+2017-01-05 12:26:30,243 - __main__ - INFO - datagram received PING
+2017-01-05 12:26:50,262 - __main__ - INFO - datagram received PING
+2017-01-05 12:27:10,280 - __main__ - INFO - datagram received PING
+2017-01-05 12:27:30,298 - __main__ - INFO - datagram received PING
+2017-01-05 12:27:31,452 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h1 #time 1483599448 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h2 @node1 ^h1 32mJ0huUYrzqVEd3/wziryEGYvbDYH8vOKy9jxY7sa+cwH67VmbIp42nk0SrtRN3PjytULKez6SoegrRG1eM0YGuv3wKd7U6EGDm/7MQdqXBc9b/t6KZR2JaaH7DPl4U/O7YALh3ApyUMNsm0le5v9PZ5T46dCGtjBm2v+Og5NI=
+2017-01-05 12:27:31,452 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 12:27:31,452 - utils.senz_parser - INFO -                                                             32mJ0huUYrzqVEd3/wziryEGYvbDYH8vOKy9jxY7sa+cwH67VmbIp42nk0SrtRN3PjytULKez6SoegrRG1eM0YGuv3wKd7U6EGDm/7MQdqXBc9b/t6KZR2JaaH7DPl4U/O7YALh3ApyUMNsm0le5v9PZ5T46dCGtjBm2v+Og5NI=
+2017-01-05 12:27:31,452 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:27:31,452 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:27:31,452 - utils.senz_parser - INFO -                                                             {'#time': '1483599448', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 12:27:31,453 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 12:27:31,457 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:27:42,581 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483599459 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 oGnyeguV8sO5toOnyvbVKRURvzyCBz7TLpof8kcifEQUAXiNU0vfQATaMUVdQz4Ep0Rv7MqGExXphXYerXFO0YcjW5xWDo0gNeLQur9gSYc0fXNeEVHk6w/C5YOAjNZY0h6SuwnLvrIL8kxDnDBOq+1S5RSmeBjrK1xUgQQzwQ8=
+2017-01-05 12:27:42,581 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:27:42,581 - utils.senz_parser - INFO -                                                             oGnyeguV8sO5toOnyvbVKRURvzyCBz7TLpof8kcifEQUAXiNU0vfQATaMUVdQz4Ep0Rv7MqGExXphXYerXFO0YcjW5xWDo0gNeLQur9gSYc0fXNeEVHk6w/C5YOAjNZY0h6SuwnLvrIL8kxDnDBOq+1S5RSmeBjrK1xUgQQzwQ8=
+2017-01-05 12:27:42,581 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:27:42,581 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:27:42,581 - utils.senz_parser - INFO -                                                             {'#time': '1483599459', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:27:42,582 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:27:42,583 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6d50>
+2017-01-05 12:27:42,586 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:27:47,592 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483599464 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 uIKEe7+pfGJTMMMxQISxZ4hDpITA1zYnrqptr6Clp9RoM3uK3Skm2Zw13V7YJqTajYdxaDglmhsUNjj1SC+U79NAdoaVNzk71uig1Slw9PWHYSparkrpsOAwfaKlPweKuLyT7yRETSLCCcKmSL34lAstk6U9GCmiUPHJgUttjEg=
+2017-01-05 12:27:47,592 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:27:47,592 - utils.senz_parser - INFO -                                                             uIKEe7+pfGJTMMMxQISxZ4hDpITA1zYnrqptr6Clp9RoM3uK3Skm2Zw13V7YJqTajYdxaDglmhsUNjj1SC+U79NAdoaVNzk71uig1Slw9PWHYSparkrpsOAwfaKlPweKuLyT7yRETSLCCcKmSL34lAstk6U9GCmiUPHJgUttjEg=
+2017-01-05 12:27:47,592 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:27:47,592 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:27:47,592 - utils.senz_parser - INFO -                                                             {'#time': '1483599464', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:27:47,593 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:27:47,594 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6ed0>
+2017-01-05 12:27:47,598 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:27:50,300 - __main__ - INFO - datagram received PING
+2017-01-05 12:27:52,580 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483599469 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 t+iuYS8KmMb974+PKrp1bcE7inP37R1K/EsO9gms90WFOI1/13flakM03J35PalLCvPJn69MvlquMLoYCskVnSDm1K6ls6uirLNmplXgiiI8eIeBuk/2mU3YuwLTLJsA5va2yu7QTGtRAHLTCw5r3ko1NJsbbHbLFtTDmYxhRVk=
+2017-01-05 12:27:52,581 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:27:52,581 - utils.senz_parser - INFO -                                                             t+iuYS8KmMb974+PKrp1bcE7inP37R1K/EsO9gms90WFOI1/13flakM03J35PalLCvPJn69MvlquMLoYCskVnSDm1K6ls6uirLNmplXgiiI8eIeBuk/2mU3YuwLTLJsA5va2yu7QTGtRAHLTCw5r3ko1NJsbbHbLFtTDmYxhRVk=
+2017-01-05 12:27:52,581 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:27:52,581 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:27:52,581 - utils.senz_parser - INFO -                                                             {'#time': '1483599469', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:27:52,582 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:27:52,583 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6f50>
+2017-01-05 12:27:52,588 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:27:57,580 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483599474 #MSG OK #COIN 9c470b3ddb585bab5b2334eeeb8730a0f1089d17 #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 iNVe5627MG32brpDrmZLgjykNBLAevo7WXP3c5rkEyrgEzQJ2Co7X6F3sE/lnFq0g3f14yiY5ozSXwQ2W6l7PCLGJYuBTnrGC3GuVMKNMopS4atpqxcOZHLZGO/d41a4t4FHtcMZWoRreJImXpBfKo8L7BaXP5F6btJ8WqivBxs=
+2017-01-05 12:27:57,580 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:27:57,580 - utils.senz_parser - INFO -                                                             iNVe5627MG32brpDrmZLgjykNBLAevo7WXP3c5rkEyrgEzQJ2Co7X6F3sE/lnFq0g3f14yiY5ozSXwQ2W6l7PCLGJYuBTnrGC3GuVMKNMopS4atpqxcOZHLZGO/d41a4t4FHtcMZWoRreJImXpBfKo8L7BaXP5F6btJ8WqivBxs=
+2017-01-05 12:27:57,580 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:27:57,580 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:27:57,581 - utils.senz_parser - INFO -                                                             {'#time': '1483599474', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '9c470b3ddb585bab5b2334eeeb8730a0f1089d17'}
+2017-01-05 12:27:57,581 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:27:57,583 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075aa6d50>
+2017-01-05 12:27:57,587 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:28:10,312 - __main__ - INFO - datagram received PING
+2017-01-05 12:28:30,330 - __main__ - INFO - datagram received PING
+2017-01-05 12:28:50,349 - __main__ - INFO - datagram received PING
+2017-01-05 12:29:10,367 - __main__ - INFO - datagram received PING
+2017-01-05 12:29:30,385 - __main__ - INFO - datagram received PING
+2017-01-05 12:29:50,400 - __main__ - INFO - datagram received PING
+2017-01-05 12:30:10,414 - __main__ - INFO - datagram received PING
+2017-01-05 12:30:30,433 - __main__ - INFO - datagram received PING
+2017-01-05 12:30:50,451 - __main__ - INFO - datagram received PING
+2017-01-05 12:31:10,468 - __main__ - INFO - datagram received PING
+2017-01-05 12:31:30,487 - __main__ - INFO - datagram received PING
+2017-01-05 12:31:50,504 - __main__ - INFO - datagram received PING
+2017-01-05 12:32:10,522 - __main__ - INFO - datagram received PING
+2017-01-05 12:32:30,541 - __main__ - INFO - datagram received PING
+2017-01-05 12:32:50,560 - __main__ - INFO - datagram received PING
+2017-01-05 12:33:10,573 - __main__ - INFO - datagram received PING
+2017-01-05 12:33:30,592 - __main__ - INFO - datagram received PING
+2017-01-05 12:33:50,610 - __main__ - INFO - datagram received PING
+2017-01-05 12:34:10,643 - __main__ - INFO - datagram received PING
+2017-01-05 12:34:30,648 - __main__ - INFO - datagram received PING
+2017-01-05 12:34:50,666 - __main__ - INFO - datagram received PING
+2017-01-05 12:35:10,677 - __main__ - INFO - datagram received PING
+2017-01-05 12:35:27,603 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h1 #time 1483599924 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h2 @node1 ^h1 E+iP/k3cuNd8//rrxxJFMub2MbrqpY+vitMQOWm4xCklCSfv9IDjf0RtEnEA9UtSJ2QwUZi14Y1oiXDJ6fLshUDv149v1Z7V6dztBFaU0SMCfo95zyVfsWF1ei+Frsd/1clVn1IMNZxFIwasU/qT5sQLVEe0b8YNllUS+JvH2+k=
+2017-01-05 12:35:27,691 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 12:35:27,692 - utils.senz_parser - INFO -                                                             E+iP/k3cuNd8//rrxxJFMub2MbrqpY+vitMQOWm4xCklCSfv9IDjf0RtEnEA9UtSJ2QwUZi14Y1oiXDJ6fLshUDv149v1Z7V6dztBFaU0SMCfo95zyVfsWF1ei+Frsd/1clVn1IMNZxFIwasU/qT5sQLVEe0b8YNllUS+JvH2+k=
+2017-01-05 12:35:27,692 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:35:27,692 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:35:27,692 - utils.senz_parser - INFO -                                                             {'#time': '1483599924', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 12:35:27,763 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 12:35:27,995 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:35:30,678 - __main__ - INFO - datagram received PING
+2017-01-05 12:35:50,708 - __main__ - INFO - datagram received PING
+2017-01-05 12:36:10,715 - __main__ - INFO - datagram received PING
+2017-01-05 12:36:25,859 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483599982 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion Bug #S_ID 2 #T_NO_COIN 1 #RECIVER h2 @node1 ^h1 uGLtUYJu75YbloC7DeRX+NFWU2aXIkwHYQlQ60absphfCywuTbeSqs3yyI6GwfmDu/tIKq+DdV2MYr2CcmPdxKqUMHV5zk9spFWVte9qIxvIaVX8Kz4k0PkG4I/0Ns90MpjJIUO0O71qV5IWQx/9chf/MRfag56FzUU8XzsgDyQ=
+2017-01-05 12:36:25,859 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 12:36:25,859 - utils.senz_parser - INFO -                                                             uGLtUYJu75YbloC7DeRX+NFWU2aXIkwHYQlQ60absphfCywuTbeSqs3yyI6GwfmDu/tIKq+DdV2MYr2CcmPdxKqUMHV5zk9spFWVte9qIxvIaVX8Kz4k0PkG4I/0Ns90MpjJIUO0O71qV5IWQx/9chf/MRfag56FzUU8XzsgDyQ=
+2017-01-05 12:36:25,860 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 12:36:25,860 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 12:36:25,860 - utils.senz_parser - INFO -                                                             {'#time': '1483599982', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 12:36:25,861 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 12:36:25,875 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7fd075a92290>
+2017-01-05 12:36:26,038 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 12:36:30,717 - __main__ - INFO - datagram received PING
+2017-01-05 12:36:50,721 - __main__ - INFO - datagram received PING
+2017-01-05 13:06:18,614 - __main__ - INFO - Starting the SCPP Miner-M1 Application..!
+2017-01-05 13:06:18,640 - utils.crypto_utils - INFO -                                                             keys exists
+2017-01-05 13:06:18,642 - __main__ - INFO - client started
+2017-01-05 13:06:18,680 - __main__ - INFO - datagram received DATA #msg ALREADY_REGISTERED #pubkey LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==  #time 1483601778.68 ^mysensors QbYAIr5E7NGRdrlxzNtnICH3J4g9lA5bQ3ppb2kQRnmp6a6hWPuny+wJQvF6naoin6LqS8RUbiDaH+BwDMiWFtEsrVGWDauSQYxPh7fhfcwAVtJHb2eCFwQLud4I0xWdUZeA4UrdmObEU7RXREnOwOy8HVf5LxKhsazTH75JdPk=
+2017-01-05 13:06:18,681 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:06:18,681 - utils.senz_parser - INFO -                                                             QbYAIr5E7NGRdrlxzNtnICH3J4g9lA5bQ3ppb2kQRnmp6a6hWPuny+wJQvF6naoin6LqS8RUbiDaH+BwDMiWFtEsrVGWDauSQYxPh7fhfcwAVtJHb2eCFwQLud4I0xWdUZeA4UrdmObEU7RXREnOwOy8HVf5LxKhsazTH75JdPk=
+2017-01-05 13:06:18,681 - utils.senz_parser - INFO -                                                             mysensors
+2017-01-05 13:06:18,681 - utils.senz_parser - INFO -                                                             None
+2017-01-05 13:06:18,681 - utils.senz_parser - INFO -                                                             {'#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#time': '1483601778.68', '#msg': 'ALREADY_REGISTERED'}
+2017-01-05 13:06:18,697 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:06:18,704 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:06:34,206 - __main__ - INFO - datagram received PING
+2017-01-05 13:06:54,207 - __main__ - INFO - datagram received PING
+2017-01-05 13:07:02,223 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h2 #time 1483601819 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h1 @node1 ^h2 fr4LvvLMlwAo6H2xq6MzIo2XEvBnpuCSFL8PtMO9oHt0aej96/dBR4CVPBUQDtg/skxYakm9NZmaEo3CdsSvknh54ZTBwmw8BGVe5Oat1P5NkBCkwzYVb1pk+pYdT1Qm3E0htrbLq18bGDL/YuH2yjKBf4kOmSRHIe8yzSDm4dM=
+2017-01-05 13:07:02,224 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:07:02,224 - utils.senz_parser - INFO -                                                             fr4LvvLMlwAo6H2xq6MzIo2XEvBnpuCSFL8PtMO9oHt0aej96/dBR4CVPBUQDtg/skxYakm9NZmaEo3CdsSvknh54ZTBwmw8BGVe5Oat1P5NkBCkwzYVb1pk+pYdT1Qm3E0htrbLq18bGDL/YuH2yjKBf4kOmSRHIe8yzSDm4dM=
+2017-01-05 13:07:02,224 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:07:02,224 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:07:02,224 - utils.senz_parser - INFO -                                                             {'#time': '1483601819', '#RECIVER': 'h1', '#f': 'b_ct', '#SENDER': 'h2', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:07:02,225 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:07:02,227 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:07:14,217 - __main__ - INFO - datagram received PING
+2017-01-05 13:07:16,261 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483601834 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion #S_ID 2 #T_NO_COIN 1 #RECIVER h1 @node1 ^h2 ElwiE0ZNjzo0E6g9wMwQQvQNRH7Cs1ZjL/MnnkwY6hAJzMpgGr2gIhpQ82tFALFfH9sinGczO2l5QaUyzyXTQgfwajwoNVd8TK7Zi0PlMavF/qI7LR1uE/pH2YakInzTav8/ybLt6Cp3MaLYtVBurCN9Wv4sQBmy0cdIPvEZWVw=
+2017-01-05 13:07:16,261 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:07:16,261 - utils.senz_parser - INFO -                                                             ElwiE0ZNjzo0E6g9wMwQQvQNRH7Cs1ZjL/MnnkwY6hAJzMpgGr2gIhpQ82tFALFfH9sinGczO2l5QaUyzyXTQgfwajwoNVd8TK7Zi0PlMavF/qI7LR1uE/pH2YakInzTav8/ybLt6Cp3MaLYtVBurCN9Wv4sQBmy0cdIPvEZWVw=
+2017-01-05 13:07:16,261 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:07:16,262 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:07:16,262 - utils.senz_parser - INFO -                                                             {'#time': '1483601834', '#RECIVER': 'h1', '#f': 'b_ct', '#SENDER': 'h2', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 13:07:16,263 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:07:16,264 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36fd0>
+2017-01-05 13:07:16,287 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:07:34,219 - __main__ - INFO - datagram received PING
+2017-01-05 13:07:54,238 - __main__ - INFO - datagram received PING
+2017-01-05 13:08:14,255 - __main__ - INFO - datagram received PING
+2017-01-05 13:08:25,044 - __main__ - INFO - datagram received SHARE #f cc #TIME 1483601902 #COIN #S_ID 2 #S_PARA 4 @node1 ^h1 VBGNhRkZaHNZsBuieyF9sVYHBsAp2P83swi7r8VXwpgqlCmJITjngkv3Fo+d7S+DOfuJ2CqOceV3V1xNHu1JRn8/JygpkGimXkp/LGKFX6bOgVHPNgDVSg0FrPbNmJ84xsfMtINi72bX++NSCg8I92HYVaVeXtJiZ1V2Nx/bRp0=
+2017-01-05 13:08:25,045 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:08:25,045 - utils.senz_parser - INFO -                                                             VBGNhRkZaHNZsBuieyF9sVYHBsAp2P83swi7r8VXwpgqlCmJITjngkv3Fo+d7S+DOfuJ2CqOceV3V1xNHu1JRn8/JygpkGimXkp/LGKFX6bOgVHPNgDVSg0FrPbNmJ84xsfMtINi72bX++NSCg8I92HYVaVeXtJiZ1V2Nx/bRp0=
+2017-01-05 13:08:25,045 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:08:25,045 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:08:25,045 - utils.senz_parser - INFO -                                                             {'#time': '1483601834', '#TIME': '1483601902', '#RECIVER': 'h1', '#f': 'cc', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': ''}
+2017-01-05 13:08:25,046 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:08:25,130 - handlers.senz_handler - INFO - Auto Excute: PUT #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #TIME 2017-01-0513:08:25 @h1  ^node1 Vmh5dZkj6Djkq8JS+tKjEkLl1BrJFmHvWkL1Zv1C+fMDOYk9Z6LSqJKonnDoFpXB2+wo25V5q+G+4Y7Tx/uYUhW/1QWZVzL8uMf3pEA2SGniicsyxzv9vmFnbOgVALh4FUf9Vrh1itIVFFZJnkDd/cSU/YbqFkRu0yt2M0KQ+/g=
+2017-01-05 13:08:25,146 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:08:34,261 - __main__ - INFO - datagram received PING
+2017-01-05 13:08:41,610 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h1 #time 1483601918 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h2 @node1 ^h1 L3LJw2SnM9chBPV8ArdnC7R9Oh6TAeVBqsyysbjzlf5rEq+f9t7n/mcBLpEnZ0pQiIIHNMgblFCS4/fDoUw6xMASPIICOVYXeogI+XtWeoqLcvV3fOClUg9SqUP/2pmBllW0gAVohKfk++dofEXZOeltJWCN62LpJ8Xr5IeBSk8=
+2017-01-05 13:08:41,610 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:08:41,610 - utils.senz_parser - INFO -                                                             L3LJw2SnM9chBPV8ArdnC7R9Oh6TAeVBqsyysbjzlf5rEq+f9t7n/mcBLpEnZ0pQiIIHNMgblFCS4/fDoUw6xMASPIICOVYXeogI+XtWeoqLcvV3fOClUg9SqUP/2pmBllW0gAVohKfk++dofEXZOeltJWCN62LpJ8Xr5IeBSk8=
+2017-01-05 13:08:41,610 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:08:41,610 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:08:41,610 - utils.senz_parser - INFO -                                                             {'#time': '1483601918', '#TIME': '1483601902', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:08:41,611 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:08:41,620 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:08:54,272 - __main__ - INFO - datagram received PING
+2017-01-05 13:08:57,269 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483601934 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER h2 @node1 ^h1 Auw0zai1844hL4gv2a0jdG6d6/UARnIO+2TQZeZ4LoepXHx3j2iaYmY398/oR/1AOCndQy3tGiyVZuTVGMVkskOJ7Q1gX1rrIIOfIKpHyf+AY62tutVxpayumdERS8h3IoP+hU2AF2quCHSPFZFKDtKIOXu2bhdy+R+b8p0h4Jk=
+2017-01-05 13:08:57,269 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:08:57,269 - utils.senz_parser - INFO -                                                             Auw0zai1844hL4gv2a0jdG6d6/UARnIO+2TQZeZ4LoepXHx3j2iaYmY398/oR/1AOCndQy3tGiyVZuTVGMVkskOJ7Q1gX1rrIIOfIKpHyf+AY62tutVxpayumdERS8h3IoP+hU2AF2quCHSPFZFKDtKIOXu2bhdy+R+b8p0h4Jk=
+2017-01-05 13:08:57,270 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:08:57,270 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:08:57,270 - utils.senz_parser - INFO -                                                             {'#time': '1483601934', '#TIME': '1483601902', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:08:57,271 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:08:57,273 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36fd0>
+2017-01-05 13:08:57,289 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:14,288 - __main__ - INFO - datagram received PING
+2017-01-05 13:09:23,766 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h2 #time 1483601961 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h1 @node1 ^h2 nd7uHRrBAj4XqOJb6gGV+RHfYoojsnjdzWZj1eUK2bSA542f4E90ff4ECgEVLvT7WNaS6jT+nuCkpw8yv/dBTNb99xLgexAungBEK2KI6vgAMhI/JOQ/UtPOzkU3e/yY4zooS3M4tb37cFuDj2dezfO1kowTXubMlNfv470VGGM=
+2017-01-05 13:09:23,766 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:09:23,767 - utils.senz_parser - INFO -                                                             nd7uHRrBAj4XqOJb6gGV+RHfYoojsnjdzWZj1eUK2bSA542f4E90ff4ECgEVLvT7WNaS6jT+nuCkpw8yv/dBTNb99xLgexAungBEK2KI6vgAMhI/JOQ/UtPOzkU3e/yY4zooS3M4tb37cFuDj2dezfO1kowTXubMlNfv470VGGM=
+2017-01-05 13:09:23,767 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:09:23,767 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:09:23,767 - utils.senz_parser - INFO -                                                             {'#time': '1483601961', '#TIME': '1483601902', '#RECIVER': 'h1', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:09:23,768 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:09:23,769 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:30,547 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483601968 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 lEqyV0faEQLeuzjiAtmODQvXv4//gFwKPW6REWtJ0vvwoop2IdP03cpvNLyvCYmCoLvvP1tTw3T7Y3lwYRt0BAum1jce4TeaNpDm0XjYtW7trm1zTnOnaIsFu0PWiEKtB8Mr8rCbLlaORRbsS5AC+CndyRV7Mdh5I/9lSDXq/ps=
+2017-01-05 13:09:30,548 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:09:30,548 - utils.senz_parser - INFO -                                                             lEqyV0faEQLeuzjiAtmODQvXv4//gFwKPW6REWtJ0vvwoop2IdP03cpvNLyvCYmCoLvvP1tTw3T7Y3lwYRt0BAum1jce4TeaNpDm0XjYtW7trm1zTnOnaIsFu0PWiEKtB8Mr8rCbLlaORRbsS5AC+CndyRV7Mdh5I/9lSDXq/ps=
+2017-01-05 13:09:30,548 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:09:30,548 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:09:30,548 - utils.senz_parser - INFO -                                                             {'#time': '1483601968', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:09:30,549 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:09:30,551 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36c90>
+2017-01-05 13:09:30,555 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:34,290 - __main__ - INFO - datagram received PING
+2017-01-05 13:09:35,564 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483601973 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 SwRT4nUeeJ6V7zVEua2gxqYwZnCGbD8xq7GoxyDg/0MQ1yKuLHtygalOCJLzmv2jrRVHPNluztVXNp0QClAki8+H7xA9uwAIXqxZdyrNt+7hZs6zK2BSPqKSNXz2deY9r9XFrclvRCN8pcYGVyLFHcTNKoSYo4oIXOLgqMXip/Y=
+2017-01-05 13:09:35,564 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:09:35,564 - utils.senz_parser - INFO -                                                             SwRT4nUeeJ6V7zVEua2gxqYwZnCGbD8xq7GoxyDg/0MQ1yKuLHtygalOCJLzmv2jrRVHPNluztVXNp0QClAki8+H7xA9uwAIXqxZdyrNt+7hZs6zK2BSPqKSNXz2deY9r9XFrclvRCN8pcYGVyLFHcTNKoSYo4oIXOLgqMXip/Y=
+2017-01-05 13:09:35,565 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:09:35,565 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:09:35,565 - utils.senz_parser - INFO -                                                             {'#time': '1483601973', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:09:35,566 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:09:35,568 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36e90>
+2017-01-05 13:09:35,572 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:40,583 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483601978 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 Qdr5495GL+2Hf4pnz/lIapFwxOoJszEmz+0sIUZkq7KFMm2Zx+ixybOz/qaeFb5hMd4I+enVci1Kt5WzAK20B5DUlCRQK7jsn+1T1yPyK7y8oXZdizkRvF7kd+nBYqA4R9gOalxnfzWuyOCKDryZWWrc9QCi2ezQ1wEHZPNTeTI=
+2017-01-05 13:09:40,583 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:09:40,583 - utils.senz_parser - INFO -                                                             Qdr5495GL+2Hf4pnz/lIapFwxOoJszEmz+0sIUZkq7KFMm2Zx+ixybOz/qaeFb5hMd4I+enVci1Kt5WzAK20B5DUlCRQK7jsn+1T1yPyK7y8oXZdizkRvF7kd+nBYqA4R9gOalxnfzWuyOCKDryZWWrc9QCi2ezQ1wEHZPNTeTI=
+2017-01-05 13:09:40,583 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:09:40,583 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:09:40,583 - utils.senz_parser - INFO -                                                             {'#time': '1483601978', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:09:40,584 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:09:40,586 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36dd0>
+2017-01-05 13:09:40,591 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:45,595 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483601983 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 GMk18NQSC5EY1S3K1OhC+3L+iZnK+MW0g1FvMec36LgpZpQOOaDshoNxD6n67cEgKmPBbfj19hQtZIGvoDwUZgA+OzO6nyJkG6AOmSNpFdGO1TYjFwX0xDStJyqyUOgDPbjC7r43VObfcpHJNfwvmJ6wD5F/FiaA3EkEIxGlEP0=
+2017-01-05 13:09:45,596 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:09:45,596 - utils.senz_parser - INFO -                                                             GMk18NQSC5EY1S3K1OhC+3L+iZnK+MW0g1FvMec36LgpZpQOOaDshoNxD6n67cEgKmPBbfj19hQtZIGvoDwUZgA+OzO6nyJkG6AOmSNpFdGO1TYjFwX0xDStJyqyUOgDPbjC7r43VObfcpHJNfwvmJ6wD5F/FiaA3EkEIxGlEP0=
+2017-01-05 13:09:45,596 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:09:45,596 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:09:45,596 - utils.senz_parser - INFO -                                                             {'#time': '1483601983', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:09:45,597 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:09:45,599 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36e50>
+2017-01-05 13:09:45,602 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:09:54,298 - __main__ - INFO - datagram received PING
+2017-01-05 13:10:14,317 - __main__ - INFO - datagram received PING
+2017-01-05 13:10:34,336 - __main__ - INFO - datagram received PING
+2017-01-05 13:10:54,337 - __main__ - INFO - datagram received PING
+2017-01-05 13:11:12,131 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h2 #time 1483602069 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h @node1 ^h2 f+3Y11+Mao/YL2F6RbYi0saFtdVmP91wnvJm6bo4Gca+6Vk+OjLn6w0w1AesrCBMqcE2NSSu/SFIgDOfqIxRj5BB+coXp9cjx8z/kEuhrgzOJ0/DXy66SC7lmvuEV8jTj7aAygUALcVprBg78j8GmglLlzytDEYrl9e+SwRb3u0=
+2017-01-05 13:11:12,132 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:11:12,132 - utils.senz_parser - INFO -                                                             f+3Y11+Mao/YL2F6RbYi0saFtdVmP91wnvJm6bo4Gca+6Vk+OjLn6w0w1AesrCBMqcE2NSSu/SFIgDOfqIxRj5BB+coXp9cjx8z/kEuhrgzOJ0/DXy66SC7lmvuEV8jTj7aAygUALcVprBg78j8GmglLlzytDEYrl9e+SwRb3u0=
+2017-01-05 13:11:12,132 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:12,132 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:12,132 - utils.senz_parser - INFO -                                                             {'#time': '1483602069', '#TIME': '1483601902', '#RECIVER': 'h', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:11:12,133 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:11:12,135 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:14,339 - __main__ - INFO - datagram received PING
+2017-01-05 13:11:17,126 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h2 #time 1483602074 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h @node1 ^h2 Q9i9KP7c/O9e5fqMDlo9ts9jOTK9Lfqw8F3iOVjrHzsreoBW4gSf1gpkC8P6fD9P0FMQuZ1utGpJboNzApTOSFVuPGGnG1vIN/t+KObdtNX2jmtP0rPkJ24C7OC2N54lv09mNldzKhBRnUI3DVhYb+XMFuE3Fd2bgll+Pjflt7A=
+2017-01-05 13:11:17,126 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:11:17,127 - utils.senz_parser - INFO -                                                             Q9i9KP7c/O9e5fqMDlo9ts9jOTK9Lfqw8F3iOVjrHzsreoBW4gSf1gpkC8P6fD9P0FMQuZ1utGpJboNzApTOSFVuPGGnG1vIN/t+KObdtNX2jmtP0rPkJ24C7OC2N54lv09mNldzKhBRnUI3DVhYb+XMFuE3Fd2bgll+Pjflt7A=
+2017-01-05 13:11:17,127 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:17,127 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:17,127 - utils.senz_parser - INFO -                                                             {'#time': '1483602074', '#TIME': '1483601902', '#RECIVER': 'h', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:11:17,128 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:11:17,129 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:30,334 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h2 #time 1483602088 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h1 @node1 ^h2 O2XEDiUPUYnnt+SX3MJzFtC949KRODTp2N/WJf+DPIBn4N0QC/tpxBevkoFtkGp3xXB+YF+X2a2CBcA1qxrHl2+tAEF3vfDEf1cGUNHtipHmurhyauO9dXFNSDUFvg4SeHx73zF1oTOa1HIL3TkxUX+Nq99/Z/db5OJbNkQBXdU=
+2017-01-05 13:11:30,335 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:11:30,335 - utils.senz_parser - INFO -                                                             O2XEDiUPUYnnt+SX3MJzFtC949KRODTp2N/WJf+DPIBn4N0QC/tpxBevkoFtkGp3xXB+YF+X2a2CBcA1qxrHl2+tAEF3vfDEf1cGUNHtipHmurhyauO9dXFNSDUFvg4SeHx73zF1oTOa1HIL3TkxUX+Nq99/Z/db5OJbNkQBXdU=
+2017-01-05 13:11:30,335 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:30,335 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:30,335 - utils.senz_parser - INFO -                                                             {'#time': '1483602088', '#TIME': '1483601902', '#RECIVER': 'h1', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:11:30,336 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:11:30,340 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:34,342 - __main__ - INFO - datagram received PING
+2017-01-05 13:11:40,820 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483602098 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 tDh1F1x1HRu8tzIgi5br3/waZODZkFYcQVN3018c2Yk8X6wjBMqVftxHD6ZAMiPGEcKPnlzDNhIwBbTC97rhMBnHfr0iNTQ8I6H6Ktln8iDsITZq+dHQ2Zy7KPeaARy2czjPnlKuKELsztor4IniNua2YEvbzV5ddo5dHbHMFS4=
+2017-01-05 13:11:40,820 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:11:40,821 - utils.senz_parser - INFO -                                                             tDh1F1x1HRu8tzIgi5br3/waZODZkFYcQVN3018c2Yk8X6wjBMqVftxHD6ZAMiPGEcKPnlzDNhIwBbTC97rhMBnHfr0iNTQ8I6H6Ktln8iDsITZq+dHQ2Zy7KPeaARy2czjPnlKuKELsztor4IniNua2YEvbzV5ddo5dHbHMFS4=
+2017-01-05 13:11:40,821 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:40,821 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:40,821 - utils.senz_parser - INFO -                                                             {'#time': '1483602098', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:11:40,822 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:11:40,824 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36d50>
+2017-01-05 13:11:40,828 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:45,840 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483602103 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 eOOS4hVcfjdvP7dAdoz4vSKVXKdW5Ho+BfgBGW9kobFkIEJWuTjmL3kiykA5rAB3NbNPI68mmtZvgUgGlvmreBkTtKwoUytQDYW2a4+L6L/mpojZT48BtHuxnPus2e3NAwLvLs1GoydFS6bcFJfe4fW67/FaCZ7MIetLEGk/e1A=
+2017-01-05 13:11:45,841 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:11:45,841 - utils.senz_parser - INFO -                                                             eOOS4hVcfjdvP7dAdoz4vSKVXKdW5Ho+BfgBGW9kobFkIEJWuTjmL3kiykA5rAB3NbNPI68mmtZvgUgGlvmreBkTtKwoUytQDYW2a4+L6L/mpojZT48BtHuxnPus2e3NAwLvLs1GoydFS6bcFJfe4fW67/FaCZ7MIetLEGk/e1A=
+2017-01-05 13:11:45,841 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:45,841 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:45,841 - utils.senz_parser - INFO -                                                             {'#time': '1483602103', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:11:45,842 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:11:45,844 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36ed0>
+2017-01-05 13:11:45,848 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:50,878 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483602108 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 ihgSumuAfyO0+EvHZZ1Z3MRds9I3TlhymBhg4vA10IrD0p00poBzYhaCGCYAr/yh/b5uM++9Q9SGpDyj3XTEQL/FDSfbI8NwoQWZw6dtIvsMM6KyrrpcPO74J+7JPpFTXvb9Bj2gkWXxjw/Qz3qFKwyLtFhMLBfVmGs7W4sQV7w=
+2017-01-05 13:11:50,878 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:11:50,878 - utils.senz_parser - INFO -                                                             ihgSumuAfyO0+EvHZZ1Z3MRds9I3TlhymBhg4vA10IrD0p00poBzYhaCGCYAr/yh/b5uM++9Q9SGpDyj3XTEQL/FDSfbI8NwoQWZw6dtIvsMM6KyrrpcPO74J+7JPpFTXvb9Bj2gkWXxjw/Qz3qFKwyLtFhMLBfVmGs7W4sQV7w=
+2017-01-05 13:11:50,879 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:50,879 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:50,879 - utils.senz_parser - INFO -                                                             {'#time': '1483602108', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:11:50,880 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:11:50,881 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36e50>
+2017-01-05 13:11:50,885 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:11:54,345 - __main__ - INFO - datagram received PING
+2017-01-05 13:11:55,889 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h2 #time 1483602113 #MSG OK #COIN 2f56eac451d9285fe864328d504d1e7e30d344bf #S_LOCATION MacDonalles #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h2 S6Wk+Tlf8AoNUubpHVIURxI17k0LkWD4lamtU7rPnnn0tRo1dAPlevxV9H98+VVCofiv4kUBAY7wbUWBTyh20Ajh/R1Lf/PT3tBLbjdNsOgCZfAhmn38/kW25rUPxQ8vxjPFaDX9RjOMLgy9a/93AdHrvEweO0mepy8HZ30l/QA=
+2017-01-05 13:11:55,889 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:11:55,890 - utils.senz_parser - INFO -                                                             S6Wk+Tlf8AoNUubpHVIURxI17k0LkWD4lamtU7rPnnn0tRo1dAPlevxV9H98+VVCofiv4kUBAY7wbUWBTyh20Ajh/R1Lf/PT3tBLbjdNsOgCZfAhmn38/kW25rUPxQ8vxjPFaDX9RjOMLgy9a/93AdHrvEweO0mepy8HZ30l/QA=
+2017-01-05 13:11:55,890 - utils.senz_parser - INFO -                                                             h2
+2017-01-05 13:11:55,890 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:11:55,890 - utils.senz_parser - INFO -                                                             {'#time': '1483602113', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h2', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'MacDonalles', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '2f56eac451d9285fe864328d504d1e7e30d344bf'}
+2017-01-05 13:11:55,891 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:11:55,893 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36dd0>
+2017-01-05 13:11:55,897 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:12:14,362 - __main__ - INFO - datagram received PING
+2017-01-05 13:12:34,381 - __main__ - INFO - datagram received PING
+2017-01-05 13:12:35,703 - __main__ - INFO - datagram received SHARE #f b_ct #SENDER h1 #time 1483602152 #MSG #COIN #S_LOCATION #S_ID #T_NO_COIN #RECIVER h2 @node1 ^h1 N9AMzkO+sHyWe9xEIai12szGKZneXUkjwmxgm2LZLVu9kzysYNuciXTucdlz2nBZrTISZQzKDo/B8WouJe5lTQivuuhohCsTDZkhGUexRex1BxncWZEjwbq0Dc4H3a7Ad3TpURBhA3t2cQwm/vnACh/YrBhQdGKpm9zQBmSJHfw=
+2017-01-05 13:12:35,703 - utils.senz_parser - INFO -                                                             SHARE
+2017-01-05 13:12:35,703 - utils.senz_parser - INFO -                                                             N9AMzkO+sHyWe9xEIai12szGKZneXUkjwmxgm2LZLVu9kzysYNuciXTucdlz2nBZrTISZQzKDo/B8WouJe5lTQivuuhohCsTDZkhGUexRex1BxncWZEjwbq0Dc4H3a7Ad3TpURBhA3t2cQwm/vnACh/YrBhQdGKpm9zQBmSJHfw=
+2017-01-05 13:12:35,703 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:12:35,703 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:12:35,704 - utils.senz_parser - INFO -                                                             {'#time': '1483602152', '#TIME': '1483601902', '#RECIVER': 'h2', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': '', '#T_NO_COIN': '', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '', '#MSG': '', '#COIN': ''}
+2017-01-05 13:12:35,705 - handlers.senz_handler - INFO - senz received SHARE
+2017-01-05 13:12:35,712 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:12:45,352 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483602162 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 tDwEeAB7BmdprhoLV9a3F4H1cKRp6K10GFPX+0LMqeAg3i4RsMDTN8D/ysAT8ICmfFP7vcrxpgd0UgzFsyynZx9nhOW2xYmUiQsUlvlXEd1Od/LTQn4RnST9r6HIn3jJqMQ880Xm5uikNueF6pTV0/VMU9tPApzhkwofpNCSiM4=
+2017-01-05 13:12:45,352 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:12:45,353 - utils.senz_parser - INFO -                                                             tDwEeAB7BmdprhoLV9a3F4H1cKRp6K10GFPX+0LMqeAg3i4RsMDTN8D/ysAT8ICmfFP7vcrxpgd0UgzFsyynZx9nhOW2xYmUiQsUlvlXEd1Od/LTQn4RnST9r6HIn3jJqMQ880Xm5uikNueF6pTV0/VMU9tPApzhkwofpNCSiM4=
+2017-01-05 13:12:45,353 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:12:45,353 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:12:45,353 - utils.senz_parser - INFO -                                                             {'#time': '1483602162', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 13:12:45,354 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:12:45,356 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36e90>
+2017-01-05 13:12:45,358 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:12:50,336 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483602167 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 PkoZpwxwFbTNQdxfI1pf+uTMenqEG1PfJa85vQGZzTolqC/Ysw1RYf/mHTM862fMC5pPGcEE/0AongzulFF+3O9Z8V97RtrjwP2aONmGeJfqd5v2L33GNx69v3BG06krNUWjJ3jJoh+uuwfuIpOVvZDaGJYp3s7dN0Q4LIBeEig=
+2017-01-05 13:12:50,337 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:12:50,337 - utils.senz_parser - INFO -                                                             PkoZpwxwFbTNQdxfI1pf+uTMenqEG1PfJa85vQGZzTolqC/Ysw1RYf/mHTM862fMC5pPGcEE/0AongzulFF+3O9Z8V97RtrjwP2aONmGeJfqd5v2L33GNx69v3BG06krNUWjJ3jJoh+uuwfuIpOVvZDaGJYp3s7dN0Q4LIBeEig=
+2017-01-05 13:12:50,337 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:12:50,337 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:12:50,337 - utils.senz_parser - INFO -                                                             {'#time': '1483602167', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 13:12:50,338 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:12:50,340 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36ed0>
+2017-01-05 13:12:50,344 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:12:54,383 - __main__ - INFO - datagram received PING
+2017-01-05 13:12:55,342 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483602172 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 aNO/9LoOzk59LW0rReNPRYgmKj/+xcARyFuZ3LwUziCHtIE+GfLKu6S3LBZg+ZGafYx/XbJQ2BP2rxfH9bjfcjf1T3hd0iSq8HT/mYqwnmK7YCci/dgiTR7iELPO/VqmGOld0gR3CxLTGy7qOVQFNMANZbBUeYcYay1o7zE5bbo=
+2017-01-05 13:12:55,343 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:12:55,343 - utils.senz_parser - INFO -                                                             aNO/9LoOzk59LW0rReNPRYgmKj/+xcARyFuZ3LwUziCHtIE+GfLKu6S3LBZg+ZGafYx/XbJQ2BP2rxfH9bjfcjf1T3hd0iSq8HT/mYqwnmK7YCci/dgiTR7iELPO/VqmGOld0gR3CxLTGy7qOVQFNMANZbBUeYcYay1o7zE5bbo=
+2017-01-05 13:12:55,343 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:12:55,343 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:12:55,343 - utils.senz_parser - INFO -                                                             {'#time': '1483602172', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 13:12:55,344 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:12:55,347 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36c90>
+2017-01-05 13:12:55,370 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:13:00,353 - __main__ - INFO - datagram received DATA #f b_ct #SENDER h1 #time 1483602177 #MSG OK #COIN 8fca19506b0eac53e5fbb6091d33a7ca2d48163b #S_LOCATION Fashion #S_ID 2 #T_NO_COIN 1 #RECIVER  @node1 ^h1 telzVrahScl1R8YMCQp9I/F76MtlkaiXm/lOSPPmcjv6VNO1riP2tiYRvix72GTCw6/Sjs/GHLZrBfIJQ+FLLFbKVall0ttQ4fe6cmcHpp0pSttX41dEZ0b1OXGYDk6SFm+e5udkQJGuvFDZNCEB5/bMVczHoyKC/W88C0pYMo4=
+2017-01-05 13:13:00,353 - utils.senz_parser - INFO -                                                             DATA
+2017-01-05 13:13:00,353 - utils.senz_parser - INFO -                                                             telzVrahScl1R8YMCQp9I/F76MtlkaiXm/lOSPPmcjv6VNO1riP2tiYRvix72GTCw6/Sjs/GHLZrBfIJQ+FLLFbKVall0ttQ4fe6cmcHpp0pSttX41dEZ0b1OXGYDk6SFm+e5udkQJGuvFDZNCEB5/bMVczHoyKC/W88C0pYMo4=
+2017-01-05 13:13:00,353 - utils.senz_parser - INFO -                                                             h1
+2017-01-05 13:13:00,353 - utils.senz_parser - INFO -                                                             node1
+2017-01-05 13:13:00,353 - utils.senz_parser - INFO -                                                             {'#time': '1483602177', '#TIME': '1483601902', '#RECIVER': '', '#f': 'b_ct', '#SENDER': 'h1', '#S_PARA': '4', '#msg': 'ALREADY_REGISTERED', '#S_LOCATION': 'Fashion', '#T_NO_COIN': '1', '#pubkey': 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FDdlZ6QU5YdUUvM0Y5a2VRc2JHbVRWNDY0WApjWWQ5dnl1OHM4MlZRcXh0NFJBQitHREVGSHRHRjlQOEtzVFNvRjJYMWVEeVpNOS9NTENLVFB2dGN5bkluOVExCnl6YVZwTm9xQWcwaXI5enB2MSszZzRWazZBUGR6QUdmZ1NCSmtnYjJHUzNpa21KdjVEYmhjY0d0dmQ5akx0NHcKQjNJYWtRUnBSSkRnRUVaWE9RSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '#S_ID': '2', '#MSG': 'OK', '#COIN': '8fca19506b0eac53e5fbb6091d33a7ca2d48163b'}
+2017-01-05 13:13:00,354 - handlers.senz_handler - INFO - senz received DATA
+2017-01-05 13:13:00,355 - handlers.senz_handler - INFO - Doing p2p Transaction ::<models.senz.Senz object at 0x7f0789d36d90>
+2017-01-05 13:13:00,359 - handlers.senz_handler - INFO - Post Handled
+2017-01-05 13:13:14,392 - __main__ - INFO - datagram received PING
+2017-01-05 13:13:34,411 - __main__ - INFO - datagram received PING
+2017-01-05 13:13:54,430 - __main__ - INFO - datagram received PING
+2017-01-05 13:14:14,448 - __main__ - INFO - datagram received PING
+2017-01-05 13:14:34,467 - __main__ - INFO - datagram received PING
+2017-01-05 13:14:54,486 - __main__ - INFO - datagram received PING
+2017-01-05 13:15:14,505 - __main__ - INFO - datagram received PING
+2017-01-05 13:15:34,524 - __main__ - INFO - datagram received PING
