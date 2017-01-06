@@ -100,8 +100,25 @@ class SenzHandler():
                 else:
                     dbh.faildVerification(senz, coin, format_date)
 
+            if (flag == "b_vct"):
+                logger.info('Recived tranaction block verification request ::%s' % senz)
+                coin = senz.attributes["#COIN"]
+                coin_sender = senz.attributes["#COIN_SENDER"]
+                print (senz.attributes)
+
+
+                #check coin privious sender and reciver - privous block
+
+
+                #if valied update probability value
+                self.updateProbabilityState(senz);
+
+
             if (flag == "ctr"):
                 logger.info('Request Massage p2p Transaction :: %s' % senz)
+
+            if (flag == "b_ct_ack"):
+                logger.info('Transaction fail ACK:: %s' % senz) #detail should remove from db
 
         # print senz.type=="DATA" and senz.receiver !=None
         elif (senz.type == "DATA" and senz.receiver != None):
@@ -207,3 +224,11 @@ class SenzHandler():
             return True
         else:
             return False
+
+
+    #if coin is verified update probaility value
+    def updateProbabilityState(self,senz):
+        senz_p = 'PUT #f %s #PROB_VALUE %d ' % ("b_vct", 1)
+        senz_p = str(senz_p) + "@%s  ^%s" % (senz.sender, clientname)
+        signed_senz_p = sign_senz(senz_p)
+        self.transport.write(signed_senz_p)
