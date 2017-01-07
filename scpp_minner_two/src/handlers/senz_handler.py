@@ -119,6 +119,11 @@ class SenzHandler():
 
             if (flag == "b_ct_ack"):
                 logger.info('Transaction fail ACK:: %s' % senz) #detail should remove db
+                coin = senz.attributes["#COIN"];
+                coin_sender = senz.attributes["#COIN_SENDER"]
+                coin_reciver = senz.attributes["#COIN_RECIVER"]
+                dbh.removeNotVerificationBlock(senz,coin, coin_sender, coin_reciver);
+
 
         # print senz.type=="DATA" and senz.receiver !=None
         elif (senz.type == "DATA" and senz.receiver != None):

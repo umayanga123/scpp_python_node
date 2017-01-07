@@ -112,3 +112,44 @@ class db_handler:
                 self.collection.insert(root)
 
         return 'DONE'
+
+
+
+    # remove not_verified_detail_from_db
+    def removeNotVerificationBlock(self,senz,  coin, coin_sender, coin_reciver):
+        print "Not Verified Transaction" + coin
+        self.collection = self.db.block_chain
+
+        pipe = [
+            {"$match": {"_id": str(coin)}},
+            {"$unwind": "$TRANSACTION"},
+            {
+                "$group": {
+                    "_id": "$_id",
+                    "last_transaction_date": {"$max": "$TRANSACTION.DATE"}
+                }
+            }
+        ]
+
+        # run aggregate pipeline
+        cursor = self.collection.aggregate(pipeline=pipe)
+        docs = list(cursor)
+
+        print docs
+
+        # run update
+        self.collection.update_one(
+            {"_id": docs[0]["_id"]},
+            {
+                "$pull": {
+                    "TRANSACTION": {
+                        "DATE": docs[0]["last_transaction_date"]
+                    }
+                }
+            }
+        )
+
+
+
+
+
