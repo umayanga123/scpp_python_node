@@ -122,7 +122,8 @@ class SenzHandler():
                 coin = senz.attributes["#COIN"];
                 coin_sender = senz.attributes["#COIN_SENDER"]
                 coin_reciver = senz.attributes["#COIN_RECIVER"]
-                dbh.removeNotVerificationBlock(senz,coin,coin_sender,coin_reciver);
+                dbh.removeNotVerificationBlock(senz,coin,coin_sender,coin_reciver)
+                dbh.faildVerification(senz, coin, "")
 
 
 

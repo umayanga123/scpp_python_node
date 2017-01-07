@@ -80,7 +80,7 @@ class db_handler:
 
     # added verification failed trasaction hear
     def faildVerification(self, senz, coin, format_date):
-        self.collection = self.db.block_chain
+        self.collection = self.db.faild_chain
         coinValexists = self.collection.find({"_id": str(coin)}).count()
         print('coin exists : ', coinValexists)
         if (coinValexists > 0):
@@ -95,7 +95,7 @@ class db_handler:
             flag = senz.attributes["#f"];
             print flag
             if (flag == "ccb"):
-                print('new coin mined othir minner')
+                print('new coin mined othir miner')
                 root = {"_id": str(coin)
                     , "S_ID": int(senz.attributes["#S_ID"]), "S_PARA": senz.attributes["#S_PARA"],
                         "FORMAT_DATE": format_date,
@@ -108,6 +108,20 @@ class db_handler:
                                         ]
                         }
                 self.collection.insert(root)
+            elif(flag == "b_ct_ack"):
+                print('p2p Traction fail')
+                root = {"_id": str(coin) ,
+                        "FORMAT_DATE":datetime.datetime.utcnow() ,
+                        "NO_COIN": int(1),
+                        "TRANSACTION": [{"SENDER":senz.attributes["#COIN_SENDER"],
+                                         "RECIVER": senz.attributes["#COIN_RECIVER"],
+                                         "T_NO_COIN": int(1),
+                                         "DATE": datetime.datetime.utcnow()
+                                         }
+                                        ]
+                        }
+                self.collection.insert(root)
+
 
         return 'DONE'
 
