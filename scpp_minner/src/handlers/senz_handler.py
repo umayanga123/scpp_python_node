@@ -113,9 +113,14 @@ class SenzHandler():
                 #if valied update probability value
                 self.updateProbabilityState(senz);
 
-
+            #App to Miner Trasaction request accept
             if (flag == "ctr"):
                 logger.info('Request Massage p2p Transaction :: %s' % senz)
+                senze_c = 'PUT #MSG %s ' % ("ShareDone")
+                senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
+                signed_senzc = sign_senz(senz_c)
+                self.transport.write(signed_senzc)
+
 
             if (flag == "b_ct_ack"):
                 logger.info('Transaction fail ACK:: %s' % senz) #detail should remove from db
@@ -132,10 +137,30 @@ class SenzHandler():
             flag = senz.attributes["#f"]
             coin = senz.attributes["#COIN"]
             time = senz.attributes["#time"]
-            if (flag == "b_ct"):
-                logger.info('Doing p2p Transaction ::%s' % senz)
-                print (senz.attributes)
-                dbh.addCoinWiseTransaction(senz,coin,time)
+            reciver = senz.attributes["#RECIVER"];
+            print "Reciver (Data)",reciver
+            if (reciver != ""):
+                if (flag == "b_ct"):
+                    logger.info('Doing p2p Transaction ::%s' % senz)
+                    print (senz.attributes)
+                    dbh.addCoinWiseTransaction(senz,coin,time)
+
+                #recived Coin
+                if(flag == "ct"):
+                    logger.info('Recived Coin ::%s' % senz)
+                    print (senz.attributes)
+                    #check valitdity (final block check)
+                    #if ok
+                    senze_c = 'PUT #MSG %s ' % ("Transaction_Success")
+                    senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
+                    signed_senzc = sign_senz(senz_c)
+                    self.transport.write(signed_senzc)
+
+                    #check coin own coin or not
+
+                    #if not own coin store folder and update block chain
+                    dbh.addCoinWiseTransaction(senz, coin, time)
+
 
         elif (senz.type=="UNSHARE"):
             pass

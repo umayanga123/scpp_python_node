@@ -44,6 +44,7 @@ class db_handler:
                                                         "T_NO_COIN": int(1),
                                                         "DATE": datetime.datetime.utcnow()
                                                         }}}
+
             self.collection.update({"_id": str(coin)}, newTransaction)
         else:
             flag = senz.attributes["#f"];
