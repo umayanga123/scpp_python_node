@@ -172,8 +172,9 @@ class SenzHandler():
         logger.info("Post Handled")
         return
 
+    #coin value check from the base
     def coinValueReguest(self):
-        '''senze = 'SHARE #COIN_VALUE  #f cv @baseNode '
+        senze = 'SHARE #COIN_VALUE  #f cv @baseNode '
         senz = str(senze) + " ^%s" % (clientname)
         signed_senz = sign_senz(senz)
         logger.info('read senz: %s' % signed_senz)
@@ -192,8 +193,7 @@ class SenzHandler():
         sock.close()
 
         thread = threading.Thread(target=self.restartProdocole, args=())
-        thread.start()'''
-        tkMessageBox.showinfo("Message - Coin Rate  ", "Coin Value  :" + "0.47" + "$")
+        thread.start()
         return
 
     def restartProdocole(self):
