@@ -32,7 +32,7 @@ class MainWindowApp:
         root.title(_('Welcome Money Exchange'))
 
         # set the window icon
-        img = PhotoImage(file='img/scpp_global.gif')
+        img = PhotoImage(file='img/scpp_global.png')
         root.tk.call('wm', 'iconphoto', root._w, img)
 
         path = "img/coin_base.png"
