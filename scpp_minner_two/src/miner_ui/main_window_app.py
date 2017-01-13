@@ -36,7 +36,7 @@ class MainWindowApp:
         self.root.title(_('SCPP Coin Minner - M2'))
 
         # set the window icon
-        img = PhotoImage(file='img/scpp_global.png')
+        img = PhotoImage(file='img/scpp_global.gif')
         self.root.tk.call('wm', 'iconphoto', self.root._w, img)
 
         path = "img/scpp_miner.png"

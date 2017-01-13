@@ -15991,3 +15991,6 @@
 2017-01-09 08:23:57,859 - __main__ - INFO - datagram received PING
 2017-01-09 08:24:17,877 - __main__ - INFO - datagram received PING
 2017-01-09 08:24:37,897 - __main__ - INFO - datagram received PING
+2017-01-13 14:17:00,805 - __main__ - INFO - Starting the SCPP Stock Exchange...!
+2017-01-13 14:17:01,285 - utils.crypto_utils - INFO - keys exists
+2017-01-13 14:17:01,285 - __parents_main__ - INFO - client started

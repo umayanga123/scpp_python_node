@@ -25,7 +25,7 @@ class MainWindowApp:
         root.resizable(width=False, height=False)
 
         # set the window icon
-        img = Tkinter.PhotoImage(file='img/scpp_global.png')
+        img = Tkinter.PhotoImage(file='img/scpp_global.gif')
         root.tk.call('wm', 'iconphoto', root._w, img)
 
         path = "img/scpp_switch.png"
