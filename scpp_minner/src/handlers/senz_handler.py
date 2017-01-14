@@ -149,26 +149,36 @@ class SenzHandler():
 
                 #recived Coin
                 if(flag == "ct"):
-                    logger.info('Recived Coin ::%s' % senz)
-                    print (senz.attributes)
-                    #check valitdity (final block check)
-                    #if ok
-                    senze_c = 'PUT #MSG %s ' % ("Transaction_Success")
-                    senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
-                    signed_senzc = sign_senz(senz_c)
-                    self.transport.write(signed_senzc)
+                    if (reciver == "node1"):
+                        logger.info('Recived Coin ::%s' % senz)
+                        print (senz.attributes)
+                        #check valitdity (final block check)
+                        #if ok
+                        senze_c = 'PUT #MSG %s ' % ("Transaction_Success")
+                        senz_c = str(senze_c) + "@%s  ^%s" % (senz.sender, clientname)
+                        signed_senzc = sign_senz(senz_c)
+                        self.transport.write(signed_senzc)
 
-                    #check coin own coin or not
-                    coin_origin = self.checkCoinOrigin(coin)
-                    if(coin_origin == True):
-                        #delect coin and broadcast it
-                        print "Delete coin and Broad Cast It"
+                        #check coin own coin or not
+                        coin_origin = self.checkCoinOrigin(coin)
+                        if(coin_origin == True):
+                            #delect coin and broadcast it
+                            print "Delete coin and Broad Cast It"
+                            senze_c = 'DELETE #MSG %s #COIN %s ' % ("DELETE COIN" , str(coin))
+                            senz_c = str(senze_c) + "@%s  @%s ^%s" % ("node3","baseNode", clientname)
+                            signed_senzc = sign_senz(senz_c)
+                            self.transport.write(signed_senzc)
+                        else:
+                            #if not own coin store folder and update block chain
+                            dbh.addCoinWiseTransaction(senz, coin, time)
                     else:
-                        #if not own coin store folder and update block chain
                         dbh.addCoinWiseTransaction(senz, coin, time)
 
         elif (senz.type == "DELETE"):
-            print "DELETE SENZ"
+            coin = senz.attributes["#COIN"]
+            dbh.delectCoinDetail(coin)
+            print "DELETE SENZ" , coin
+
 
 
         elif (senz.type=="UNSHARE"):

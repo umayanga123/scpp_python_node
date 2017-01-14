@@ -15,11 +15,14 @@ class db_handler:
     def addTransaction(self, quarry):
         #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
         self.collection = self.db.transaction_detail
-        transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),
-                       "date": datetime.datetime.utcnow()}
+        #transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),"date": datetime.datetime.utcnow()}
         #self.collection.insert(transaction)
         return 'DONE'
 
+    # Delete specific block
+    def delectCoinDetail(self, coin):
+        dc = self.db.transaction_detail.delete_one({"_id": str(coin)})
+        return dc
 
 
     # added new method add coin tranaction details

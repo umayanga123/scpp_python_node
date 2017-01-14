@@ -26,6 +26,8 @@ class SenzHandler():
         2. PUT
         3. SHARE
         4. DATA
+        5. DELETE
+        6. UNSHARE
 
     According to the senz type different operations need to be carry out
     """
@@ -78,6 +80,13 @@ class SenzHandler():
                 self.transport.write(signed_senz)
             if(flag=="ctr"):
                 logger.info('Request Massage Transaction :: %s' % senz)
+
+        elif (senz.type == "DELETE"):
+            coin = senz.attributes["#COIN"]
+            dbh.delectCoinDetail(coin)
+            print "DELETE SENZ" ,coin
+
+
         elif (senz.type=="UNSHARE"):
             pass
 
