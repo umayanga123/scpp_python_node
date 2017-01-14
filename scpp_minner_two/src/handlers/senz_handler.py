@@ -2,6 +2,7 @@ import socket
 import threading
 import tkMessageBox
 import datetime
+from pyblake2 import blake2b
 
 from db.db_handler import  *
 from minner_algo_handler.minning_algo import minning_algo
@@ -169,8 +170,10 @@ class SenzHandler():
                         else:
                             # if not own coin store folder and update block chain
                             dbh.addCoinWiseTransaction(senz, coin, time)
+                            self.creatCoinScript(senz, coin)
                     else:
                         dbh.addCoinWiseTransaction(senz, coin, time)
+
 
 
 
@@ -304,6 +307,41 @@ class SenzHandler():
         else:
             print "Store coin"
             return False
+
+
+
+
+    # create coin script
+    def creatCoinScript(self, senz, coin):
+        # reducse size to coin name sting
+        coin_name = blake2b(digest_size=10)
+        coin_name.update(coin)
+        # coin_name.hexdigest()
+        print "coin name :", coin_name.hexdigest() + ".scpp"
+
+        if not os.path.exists('.coins'):
+            # first we have to create .coins/ directory if not exists
+            try:
+                os.makedirs('.coins')
+            except OSError:
+                logger.info('coins exists')
+
+        f = open('.coins/' + coin_name.hexdigest() + ".scpp", "w+")
+        f.write("ID :%s\r\n" % coin)
+
+        curdate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        #print "Request TIME :", curdate;
+        f.write("TIME :%s\n" % curdate + "")
+
+        #f.write("IN  :%s\n" % senz.sender)
+        #f.write("OUT :%s\n" % senz.receiver)
+
+        f.write("IN  :%s\n" % "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkDbcW0W/7rrvokEf1LVELjIt5KsUwU/3Gq2x+qwpD9RJ1aQhCYsA3ds5ED0pLZzz5vpDwAFMn0zIBEbEKIhdCEocyQhPIQf26G05uXhV6NLWtZqp0wZClx6awYZG9ux9oahF39j+/OJXW4hA2NFEndyH0HF8Cvzadj7x6eZF8rwIDAQAB")
+        f.write("OUT :%s\n" % "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDkMB9aRpJ+nxRvIoludQZYqlzvKLjVgH0PLjBB0TuyWXOb01mSq09Fqq/Em1RGzoUKvysxKwMuQy27fS5Bc+68pDhkZEuH3T2Okk8NH6XJgvO0ftnfE4IVHlLCHrtzUXjWBzlIHoZAmGfZ9OnFMWYrJrxEeF/apBWxZtDCFmuMgwIDAQAB")
+
+        f.write("AMOUNT :%d\r\n" % 1)
+        f.write("Signature :%s\r\n" % senz.signature)
+        f.close()
 
 
 
