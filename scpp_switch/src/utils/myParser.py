@@ -62,7 +62,7 @@ class myParser:
         tList = msg.split()
         state = 'CLEAR'
         sen = ""
-        commandList = ["SHARE", "UNSHARE", "PUT", "GET", "DATA"]
+        commandList = ["SHARE", "UNSHARE", "PUT", "GET", "DATA", "DELETE"]
         logger.info(msg)
 
         while tList:

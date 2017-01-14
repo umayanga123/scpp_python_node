@@ -30,6 +30,16 @@ class db_handler:
         bc = self.db.block_chain.find()
         return bc
 
+    # get spcific block
+    def getRootBlockChainDetail(self, coin):
+        bc = self.db.block_chain.find({"_id": str(coin)})
+        return bc
+
+    # Delete specific block
+    def delectCoinDetail(self, coin):
+        dc = self.db.block_chain.delete_one({"_id": str(coin)})
+        return dc
+
 
     # added new method  create block chain_structure
     def addCoinWiseTransaction(self, senz, coin,format_date):

@@ -248,6 +248,29 @@ class mySensorUDPServer(DatagramProtocol):
                 else:
                     logger.error('Senz not shared with : %s' % recipient)
 
+
+
+    def DELETESensors(self, query):
+        print "Call Delete Senze"
+        global connections
+        global database
+        global serverName
+
+        usr = myUser(database, query.getSender())
+        recipients = query.getUsers()
+        for recipient in recipients:
+            print'recipient'
+            if recipient in connections.keys():
+                usr.share(recipient, query.getSensors())
+                forward = connections[recipient]
+                if forward != 0:
+                    logger.info('Forward senz to: %s' % recipient)
+                    self.transport.write(query.getFULLSENZE(), forward)
+
+                else:
+                    logger.error('Not recipient found : %s' % recipient)
+
+
     def datagramReceived(self, datagram, address):
         global serverName
         global usrDatabase
@@ -302,6 +325,8 @@ class mySensorUDPServer(DatagramProtocol):
                 self.PUTSenze(query)
             elif cmd == "DATA":
                 self.DATASenze(query)
+            elif cmd == "DELETE":
+                self.DELETESensors(query)
 
         else:
             senze = "DATA #msg SignatureVerificationFailed"

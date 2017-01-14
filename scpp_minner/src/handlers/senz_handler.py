@@ -31,6 +31,8 @@ class SenzHandler():
         2. PUT
         3. SHARE
         4. DATA
+        5. DELETE
+        6. UNSHARE
 
     According to the senz type different operations need to be carry out
     """
@@ -157,9 +159,16 @@ class SenzHandler():
                     self.transport.write(signed_senzc)
 
                     #check coin own coin or not
+                    coin_origin = self.checkCoinOrigin(coin)
+                    if(coin_origin == True):
+                        #delect coin and broadcast it
+                        print "Delete coin and Broad Cast It"
+                    else:
+                        #if not own coin store folder and update block chain
+                        dbh.addCoinWiseTransaction(senz, coin, time)
 
-                    #if not own coin store folder and update block chain
-                    dbh.addCoinWiseTransaction(senz, coin, time)
+        elif (senz.type == "DELETE"):
+            print "DELETE SENZ"
 
 
         elif (senz.type=="UNSHARE"):
@@ -264,3 +273,23 @@ class SenzHandler():
         senz_p = str(senz_p) + "@%s  ^%s" % (senz.sender, clientname)
         signed_senz_p = sign_senz(senz_p)
         self.transport.write(signed_senz_p)
+
+    # check coin origin
+    def checkCoinOrigin(self, coin):
+        print "verify_coincoin origin check"
+        dbh = db_handler()
+        r_deatail = dbh.getRootBlockChainDetail(coin)
+        print r_deatail
+
+        for document in r_deatail:
+            print  document["TRANSACTION"][0]["MINER"]
+            m1 = document["TRANSACTION"][0]["MINER"]
+
+        if (m1 == "M_1"):
+            dbh.delectCoinDetail(coin)
+            return True
+        else:
+            print "Store coin"
+            return False
+
+
