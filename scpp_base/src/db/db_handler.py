@@ -65,7 +65,7 @@ class db_handler:
             transaction = {"M_S_ID": 2, "NO_COIN": 3, "S_ID": 4, "date": datetime.datetime.utcnow(),"TEST":"TEST_DATA"}
 
             self.m_collection.insert_many(services)
-            self.t_collection.insert(transaction)
+            #self.t_collection.insert(transaction)
             print 'create test service_detail  transaction table'
             return 'ADD_TEST_DATA'
 

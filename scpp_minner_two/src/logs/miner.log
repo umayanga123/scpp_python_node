@@ -6891,3 +6891,6 @@
 2017-01-09 13:06:28,792 - __main__ - INFO - datagram received PING
 2017-01-09 13:06:48,810 - __main__ - INFO - datagram received PING
 2017-01-09 13:07:08,828 - __main__ - INFO - datagram received PING
+2017-01-13 14:15:54,210 - __main__ - INFO - Starting the SCPP Miner-M2 Application..!
+2017-01-13 14:15:54,687 - src.utils.crypto_utils - INFO -                                                             keys exists
+2017-01-13 14:15:54,687 - __parents_main__ - INFO - client started
