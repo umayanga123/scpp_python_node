@@ -231,7 +231,7 @@ class myUser:
 
     # GET Method Check
     def isShare(self, recipient, sensors):
-        print self.usrDoc
+        #print self.usrDoc
         if not (self.usrDoc): return False
         for sensor in sensors:
             if not sensor in self.usrDoc.keys(): return False

@@ -34,7 +34,7 @@ class MainWindowApp:
         self.root.columnconfigure(0, weight=1)  # center component
         self.root.geometry('{}x{}'.format(500, 375))
         self.root.resizable(width=False, height=False)
-        self.root.title(_('SCPP Coin Minner - M2'))
+        self.root.title(_('SCPP Coin Miner - M2'))
 
         # set the window icon
         img = PhotoImage(file='img/scpp_global.png')
@@ -114,7 +114,7 @@ class MainWindowApp:
     def minnerRuleDefine(self):
         """ Process 'View Log' command """
         # print 'Not Yet implement / sample DB table create'
-        tkMessageBox.showinfo("Message", "Not Yet implement / sample DB table create")
+        tkMessageBox.showinfo("Message", "Not Yet implement")
 
     def center(self, toplevel):
         toplevel.update_idletasks()

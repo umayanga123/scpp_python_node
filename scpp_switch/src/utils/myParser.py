@@ -90,7 +90,7 @@ class myParser:
             else:
                 if state == 'DATA':
                     self.data[sen] = word
-                    print self.data
+                    #print self.data
                     state = 'CLEAR'
 
     def getUsers(self):

@@ -80,7 +80,7 @@ class MainWindowApp:
         root1.title(_('Transaction Root Detail Table'))
         root1.resizable(width=False, height=False)
         DataView(root1)
-        print "take database recodes"
+
 
     def getCoinValue(self):
         """ Process 'Start' command """
@@ -97,7 +97,7 @@ class MainWindowApp:
     def putTestData(self):
         """ Process 'View Log' command """
         # print 'Not Yet implement / sample DB table create'
-        tkMessageBox.showinfo("Message", "Not Yet implement / sample DB table create")
+        tkMessageBox.showinfo("Message", "Sample DB Table Create")
 
     def center(self, toplevel):
         toplevel.update_idletasks()

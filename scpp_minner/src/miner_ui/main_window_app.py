@@ -111,9 +111,9 @@ class MainWindowApp:
 
 
     def minnerRuleDefine(self):
-        """ Process 'View Log' command """
+        """ Process 'Miner Rule Defined' command """
         # print 'Not Yet implement / sample DB table create'
-        tkMessageBox.showinfo("Message", "Not Yet implement / sample DB table create")
+        tkMessageBox.showinfo("Message", "Not Yet implement")
 
     def center(self, toplevel):
         toplevel.update_idletasks()

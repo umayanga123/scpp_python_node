@@ -11,9 +11,9 @@ class db_handler:
 
     def addMinerDetail(self, quarry, coin, formatedate):
 
-        print quarry
+        #print quarry
         miner_object = {"M_S_ID": "M_2", "S_ID": int(quarry["#S_ID"]), "S_PARA": quarry["#S_PARA"],"COIN": str(coin), "NO_COIN": int(1), "date": formatedate}
-        print miner_object
+        #print miner_object
         self.collection.insert(miner_object)
         return 'ADD DATA SUCCESSFULLY'
 
@@ -23,7 +23,6 @@ class db_handler:
 
     def getAllMinerDetails(self):
         md = self.db.miner_detail.find()
-        #md = self.db.block_chain.find()
         return md
 
     def getAllBlockChainDetail(self):
@@ -46,9 +45,9 @@ class db_handler:
 
         self.collection = self.db.block_chain
         coinValexists = self.collection.find({"_id": str(coin)}).count()
-        print('coin exists : ', coinValexists)
+        #print('coin exists : ', coinValexists)
         if (coinValexists > 0):
-            print('coin hash exists')
+            #print('coin hash exists')
             newTransaction = {"$push": {"TRANSACTION": {"SENDER": senz.attributes["#SENDER"],
                                                         "RECIVER": senz.attributes["#RECIVER"],
                                                         "T_NO_COIN": int(1),
@@ -58,9 +57,9 @@ class db_handler:
             self.collection.update({"_id": str(coin)}, newTransaction)
         else:
             flag = senz.attributes["#f"];
-            print flag
+            #print flag
             if(flag == "ccb"):
-                print('new coin mined other miner')
+                #print('new coin mined other miner')
                 root = {"_id": str(coin)
                     ,"S_ID": int(senz.attributes["#S_ID"]), "S_PARA": senz.attributes["#S_PARA"],
                         "FORMAT_DATE": format_date,
@@ -74,7 +73,7 @@ class db_handler:
                         }
                 self.collection.insert(root)
             else:
-                print('new coin mined')
+                #print('new coin mined')
                 root = {"_id": str(coin)
                     , "S_ID": int(senz.attributes["#S_ID"]), "S_PARA": senz.attributes["#S_PARA"],
                         "FORMAT_DATE": format_date,
@@ -96,9 +95,9 @@ class db_handler:
     def faildVerification(self, senz, coin, format_date):
         self.collection = self.db.faild_chain
         coinValexists = self.collection.find({"_id": str(coin)}).count()
-        print('coin exists : ', coinValexists)
+        #print('coin exists : ', coinValexists)
         if (coinValexists > 0):
-            print('coin hash exists')
+            #print('coin hash exists')
             newTransaction = {"$push": {"TRANSACTION": {"SENDER": senz.attributes["#SENDER"],
                                                         "RECIVER": senz.attributes["#RECIVER"],
                                                         "T_NO_COIN": int(1),
@@ -107,9 +106,9 @@ class db_handler:
             self.collection.update({"_id": str(coin)}, newTransaction)
         else:
             flag = senz.attributes["#f"];
-            print flag
+            #print flag
             if (flag == "ccb"):
-                print('new coin mined othir minner')
+                #print('new coin mined othir minner')
                 root = {"_id": str(coin)
                     , "S_ID": int(senz.attributes["#S_ID"]), "S_PARA": senz.attributes["#S_PARA"],
                         "FORMAT_DATE": format_date,
@@ -124,7 +123,7 @@ class db_handler:
                 self.collection.insert(root)
 
             elif (flag == "b_ct_ack"):
-                print('p2p Traction fail')
+                #print('p2p Traction fail')
                 root = {"_id": str(coin),
                         "FORMAT_DATE": datetime.datetime.utcnow(),
                         "NO_COIN": int(1),
@@ -143,7 +142,7 @@ class db_handler:
 
     # remove not_verified_detail_from_db
     def removeNotVerificationBlock(self,senz,  coin, coin_sender, coin_reciver):
-        print "Not Verified Transaction" + coin
+        #print "Not Verified Transaction" + coin
         self.collection = self.db.block_chain
 
         pipe = [
@@ -161,7 +160,7 @@ class db_handler:
         cursor = self.collection.aggregate(pipeline=pipe)
         docs = list(cursor)
 
-        print docs
+        #print docs
 
         # run update
         self.collection.update_one(

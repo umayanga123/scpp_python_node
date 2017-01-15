@@ -23,7 +23,7 @@ class DataView(Frame):
         tv.column('no_of_coin', anchor='center', width=100)
         tv.heading('s_id', text='Service ID')
         tv.column('s_id', anchor='center', width=100)
-        tv.heading('m_s_id', text='Minner ID')
+        tv.heading('m_s_id', text='Miner ID')
         tv.column('m_s_id', anchor='center', width=100)
         tv.grid(sticky=(N, S, W, E))
         self.treeview = tv
@@ -37,10 +37,10 @@ class DataView(Frame):
         dbh = db_handler()
         t_deatail = dbh.getAllTransactionDetails()
         self.rows = t_deatail.count()
-        print t_deatail, self.rows
+        #print t_deatail, self.rows
         for document in t_deatail:
-            #only moninig details are printed in table.no p2p transactions
-            print document["NO_COIN"], document["S_ID"], document["TRANSACTION"][0]["DATE"], document["TRANSACTION"][0]["MINER"]
+            #only mining details are printed in table.no p2p transactions
+            #print document["NO_COIN"], document["S_ID"], document["TRANSACTION"][0]["DATE"], document["TRANSACTION"][0]["MINER"]
             self.treeview.insert('', 'end', text=document["TRANSACTION"][0]["DATE"].date(),
                                  values=(document["NO_COIN"], document["S_ID"], document["TRANSACTION"][0]["MINER"]))
 

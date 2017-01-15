@@ -170,7 +170,7 @@ def start():
         reactor.listenUDP(0, protocol)
         reactor.run(installSignalHandlers=False)
     except KeyboardInterrupt:
-        print "Unexpected Shut Down"
+        #print "Unexpected Shut Down"
         sys.exit()
 
 

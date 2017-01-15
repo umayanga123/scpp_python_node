@@ -62,12 +62,10 @@ class SenzHandler():
             flag = senz.attributes["#f"]
             if(flag=="ct"):
                 logger.info('Doing p2p Transaction ::%s' % senz)
-                print (senz.attributes)
+                #print (senz.attributes)
                 dbh.addCoinWiseTransaction(senz.attributes)
 
             else:
-
-                print (senz.attributes)
                 dbh.addCoinWiseTransaction(senz.attributes)  # ddd added coinWiseTransaction method
         elif (senz.type == "SHARE"):
             # print dbh.calulateCoinsValue()
@@ -84,8 +82,6 @@ class SenzHandler():
         elif (senz.type == "DELETE"):
             coin = senz.attributes["#COIN"]
             dbh.delectCoinDetail(coin)
-            print "DELETE SENZ" ,coin
-
 
         elif (senz.type=="UNSHARE"):
             pass

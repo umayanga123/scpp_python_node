@@ -5,7 +5,8 @@ class minning_algo:
 
 
     def __init__(self):
-        print "call mining algo class"
+        #print "call mining algo class"
+        pass
 
 
 

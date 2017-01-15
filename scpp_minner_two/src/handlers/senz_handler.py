@@ -52,13 +52,13 @@ class SenzHandler():
         asynchronously. Whenc senz message receives this function will be
         called by twisted thread(thread safe mode via twisted library)
         """
-        print "Hanlder ", senz.attributes, senz.type, senz.receiver, senz.sender
+        #print "Hanlder ", senz.attributes, senz.type, senz.receiver, senz.sender
 
         logger.info('senz received %s' % senz.type)
         dbh = db_handler()
 
         if (senz.type == 'PUT'):
-            print "Coin value :", senz.attributes["#COIN_VALUE"]
+            #print "Coin value :", senz.attributes["#COIN_VALUE"]
             senze = 'UNSHARE #COIN_VALUE '
             senz = str(senze) + "@%s  ^%s" % (senz.sender, clientname)
             signed_senz = sign_senz(senz)
@@ -70,7 +70,7 @@ class SenzHandler():
             if (flag == "cc"):
 
                 format_date =datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S").replace(" ", "")
-                print "formateDate" + format_date.replace(" ", "") +"Sender " + senz.sender
+                #print "formateDate" + format_date.replace(" ", "") +"Sender " + senz.sender
 
                 cah = minning_algo()
                 coin = cah.getCoin(senz.attributes["#S_PARA"]+""+format_date+""+senz.sender)
@@ -94,9 +94,9 @@ class SenzHandler():
                 logger.info('Mining new coin  Verify Request::%s' % senz)
                 coin =senz.attributes["#COIN"]
                 format_date = senz.attributes["#FORMAT_DATE"]
-                print (senz.attributes)
+                #print (senz.attributes)
                 verify_state = self.verifyCoin(coin ,senz.attributes["#S_PARA"], format_date , senz.attributes["#RECIVER"])
-                print  verify_state
+                #print  verify_state
                 if(verify_state==True):
                     dbh.addCoinWiseTransaction(senz, coin, format_date)
                 else:
@@ -106,7 +106,7 @@ class SenzHandler():
                 logger.info('Recived tranaction block verification request ::%s' % senz)
                 coin = senz.attributes["#COIN"]
                 coin_sender = senz.attributes["#COIN_SENDER"]
-                print (senz.attributes)
+
 
                 # check coin privious sender and reciver - privous block
 
@@ -142,14 +142,12 @@ class SenzHandler():
             if(reciver != ""):
                 if (flag == "b_ct"):
                     logger.info('Doing p2p Transaction ::%s' % senz)
-                    print (senz.attributes)
                     dbh.addCoinWiseTransaction(senz, coin, time)
 
                 # recived Coin
                 if (flag == "ct"):
                     if (reciver == "node3"):
                         logger.info('Recived Coin ::%s' % senz)
-                        print (senz.attributes)
                         # check valitdity (final block check)
                         # if ok
                         senze_c = 'PUT #MSG %s ' % ("Transaction_Success")
@@ -161,12 +159,10 @@ class SenzHandler():
                         coin_origin = self.checkCoinOrigin(coin)
                         if (coin_origin == True):
                             # delect coin and broadcast it
-                            print "Delete coin and Broad Cast It"
                             senze_c = 'DELETE #MSG %s #COIN %s ' % ("DELETE COIN", str(coin))
                             senz_c = str(senze_c) + "@%s  @%s ^%s" % ("node1", "baseNode", clientname)
                             signed_senzc = sign_senz(senz_c)
                             self.transport.write(signed_senzc)
-                            print "Delete coin and Broad Cast It"
                         else:
                             # if not own coin store folder and update block chain
                             dbh.addCoinWiseTransaction(senz, coin, time)
@@ -180,7 +176,7 @@ class SenzHandler():
         elif (senz.type == "DELETE"):
             coin = senz.attributes["#COIN"]
             dbh.delectCoinDetail(coin)
-            print "DELETE SENZ" ,coin
+
 
 
         elif (senz.type=="UNSHARE"):
@@ -248,6 +244,8 @@ class SenzHandler():
         signed_senzu = sign_senz(senz_u)
         self.transport.write(signed_senzu)'''
 
+
+
     # send detail to M1
     def sendTDetailsToMiners(self, senz, coin, format_date):
         '''senze_c = 'SHARE #M_S_ID  #f "ccb" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
@@ -272,7 +270,7 @@ class SenzHandler():
 
     #verify_coin_before_add_block_chain
     def verifyCoin(self,coin,s_para,format_date,sender):
-        print "verify_coin"
+        #print "verify_coin"
         cah = minning_algo()
         coin2 = cah.getCoin(s_para+ "" + format_date + "" + sender)
         if(coin == coin2):
@@ -292,20 +290,20 @@ class SenzHandler():
 
     # check coin origin
     def checkCoinOrigin(self, coin):
-        print "verify_coincoin origin check"
+        #print "verify_coincoin origin check"
         dbh = db_handler()
         r_deatail = dbh.getRootBlockChainDetail(coin)
         print r_deatail
 
         for document in r_deatail:
-            print  document["TRANSACTION"][0]["MINER"]
+            #print  document["TRANSACTION"][0]["MINER"]
             m1 = document["TRANSACTION"][0]["MINER"]
 
         if (m1 == "M_2"):
             dbh.delectCoinDetail(coin)
             return True
         else:
-            print "Store coin"
+            #print "Store coin"
             return False
 
 
@@ -317,7 +315,7 @@ class SenzHandler():
         coin_name = blake2b(digest_size=10)
         coin_name.update(coin)
         # coin_name.hexdigest()
-        print "coin name :", coin_name.hexdigest() + ".scpp"
+        #print "coin name :", coin_name.hexdigest() + ".scpp"
 
         if not os.path.exists('.coins'):
             # first we have to create .coins/ directory if not exists

@@ -150,7 +150,7 @@ class mySensorUDPServer(DatagramProtocol):
         usr = myUser(database, query.getSender())
         recipients = query.getUsers()
         for recipient in recipients:
-            print'recipient'
+            #print'recipient'
             if recipient in connections.keys():
                 usr.share(recipient, query.getSensors())
                 forward = connections[recipient]
@@ -199,7 +199,7 @@ class mySensorUDPServer(DatagramProtocol):
             else:
                 if recipient in connections.keys():
                     forward = connections[recipient]
-                    print  forward, sender, query.getSensors(), recipientDB.isShare(sender, query.getSensors())
+                    #print  forward, sender, query.getSensors(), recipientDB.isShare(sender, query.getSensors())
                     if forward != 0 and recipientDB.isShare(sender, query.getSensors()):
                         self.transport.write(query.getFULLSENZE(), forward)
                     else:
@@ -251,7 +251,6 @@ class mySensorUDPServer(DatagramProtocol):
 
 
     def DELETESensors(self, query):
-        print "Call Delete Senze"
         global connections
         global database
         global serverName
@@ -259,14 +258,12 @@ class mySensorUDPServer(DatagramProtocol):
         usr = myUser(database, query.getSender())
         recipients = query.getUsers()
         for recipient in recipients:
-            print'recipient'
             if recipient in connections.keys():
                 usr.share(recipient, query.getSensors())
                 forward = connections[recipient]
                 if forward != 0:
                     logger.info('Forward senz to: %s' % recipient)
                     self.transport.write(query.getFULLSENZE(), forward)
-
                 else:
                     logger.error('Not recipient found : %s' % recipient)
 
@@ -290,7 +287,7 @@ class mySensorUDPServer(DatagramProtocol):
         senderDB = myUser(database, sender)
 
         pubkey = senderDB.loadPublicKey()
-        print sender, senderDB, database , pubkey
+        #print sender, senderDB, database , pubkey
 
         if cmd == "SHARE" and "pubkey" in sensors and serverName in recipients:
             # Create a new account
@@ -306,9 +303,7 @@ class mySensorUDPServer(DatagramProtocol):
             validQuery = True
 
         else:
-            print "wada else" + pubkey
             if pubkey != "":
-                print "else wada" + query.getFULLSENZE()
                 if cry.verifySENZE(query, pubkey):
                     validQuery = True
 
@@ -410,14 +405,14 @@ def main():
 
 
     except:
-        logger.error("Cannot aaccess the Mongo database.")
+        logger.error("Cannot access the Mongo database.")
         raise SystemExit
 
     try:
         reactor.listenUDP(port, mySensorUDPServer())
         reactor.run(installSignalHandlers=False)
     except Exception, e:
-        tkMessageBox.showinfo("SCPP Message", "Server All ready Started")
+        tkMessageBox.showinfo("SCPP Message", "Server All Ready Started")
         # logger.info(_('Switch Shut Down'))
         reactor.callFromThread(reactor.stop)
         pass

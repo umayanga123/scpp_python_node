@@ -11,14 +11,6 @@ class db_handler:
         client = MongoClient('localhost', 27017)
         self.db = client.scpp_stock_exchange
 
-    # now not used this method
-    def addTransaction(self, quarry):
-        #  print int(quarry["#NO_COIN"]) // Error and Hard Coded to checks
-        self.collection = self.db.transaction_detail
-        #transaction = {"M_S_ID": quarry["#M_S_ID"], "NO_COIN": int(quarry["#NO_COIN"]), "S_ID": int(quarry["#S_ID"]),"date": datetime.datetime.utcnow()}
-        #self.collection.insert(transaction)
-        return 'DONE'
-
     # Delete specific block
     def delectCoinDetail(self, coin):
         dc = self.db.transaction_detail.delete_one({"_id": str(coin)})
@@ -65,15 +57,16 @@ class db_handler:
                 , {"S_ID": 3, "COIN_VALUE": 30}
                 , {"S_ID": 4, "COIN_VALUE": 10}]
 
-            transaction = {"M_S_ID": 2, "NO_COIN": 3, "S_ID": 4, "date": datetime.datetime.utcnow(),"TEST":"TEST_DATA"}
+            #transaction = {"M_S_ID": 2, "NO_COIN": 3, "S_ID": 4, "date": datetime.datetime.utcnow(),"TEST":"TEST_DATA"}
 
             self.m_collection.insert_many(services)
             #self.t_collection.insert(transaction)
-            print 'create test service_detail  transaction table'
+            #print 'create test service_detail  transaction table'
             return 'ADD_TEST_DATA'
 
-    def calulateCoinsValue(self):
 
+
+    def calulateCoinsValue(self):
         totalcoin = 0;
         generate_coin_value = 0;
 
@@ -123,15 +116,15 @@ class db_handler:
     '''
     retunr all service detals table data
    '''
-
     def getAllServiceDetail(self):
         self.m_collection = self.db.service_detail
         return self.m_collection
 
+
+
     '''
     return all transaction table data
    '''
-
     def getAllTransactionDetails(self):
         self.t_collection = self.db.transaction_detail.find()
         return self.t_collection
