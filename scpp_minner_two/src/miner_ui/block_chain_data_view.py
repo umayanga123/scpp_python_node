@@ -37,7 +37,7 @@ class BlockChainDataView(Frame):
         dbh = db_handler()
         t_deatail = dbh.getAllBlockChainDetail()
         self.rows = t_deatail.count()
-        print t_deatail, self.rows
+        #print t_deatail, self.rows
         for document in t_deatail:
             #only moninig details are printed in table.no p2p transactions
             #print document["NO_COIN"], document["S_ID"], document["TRANSACTION"][0]["DATE"], document["TRANSACTION"][0]["MINER"]

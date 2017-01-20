@@ -225,11 +225,11 @@ class SenzHandler():
             pass
 
 
-
+    #send details to base
     def sendTDetailsToBase(self, senz ,coin,format_date):
 
-        pass
-        '''senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
+
+        senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
         signed_senzc = sign_senz(senz_c)
         self.transport.write(signed_senzc)
@@ -242,7 +242,7 @@ class SenzHandler():
         senze_u = 'UNSHARE #M_S_ID  #f #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_u = str(senze_u) + "@%s  ^%s" % ("mysensors", clientname)
         signed_senzu = sign_senz(senz_u)
-        self.transport.write(signed_senzu)'''
+        self.transport.write(signed_senzu)
 
 
 

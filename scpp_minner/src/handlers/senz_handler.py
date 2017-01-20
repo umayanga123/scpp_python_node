@@ -217,6 +217,8 @@ class SenzHandler():
         except:
             pass
 
+
+    #send DetailTO base
     def sendTDetailsToBase(self, senz ,coin,format_date):
         senze_c = 'SHARE #M_S_ID  #f "td" #NO_COIN #RECIVER #S_ID #S_PARA #COIN #FORMAT_DATE '
         senz_c = str(senze_c) + "@%s  ^%s" % ("baseNode", clientname)
