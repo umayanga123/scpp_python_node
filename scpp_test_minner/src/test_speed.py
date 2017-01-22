@@ -1,5 +1,8 @@
 import timeit
 
+'''
+propbablity speet test code
+'''
 t = timeit.Timer(
 """
 import hashlib

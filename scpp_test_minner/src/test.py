@@ -2,6 +2,13 @@ import hashlib
 import datetime
 from pyblake2 import blake2b
 
+
+'''
+This is a test code of coin script generation
+
+'''
+
+
 key = 'abcdefghijklmnopqrstuvwxyz'
 
 def encrypt(n, plaintext):

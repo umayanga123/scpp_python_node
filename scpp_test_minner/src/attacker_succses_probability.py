@@ -1,3 +1,7 @@
+'''
+Attacker succses probability test code
+'''
+
 def attacker_succses_probability(M, N, A, T):
     total_system_miner = M;
     attack_miner_count = A;
